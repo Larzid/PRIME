@@ -1,0 +1,10 @@
+@LAutolysis @E(Constitution) @J(Redaction)@H
+
+You are able to @Csupply@H some of @CPsionic @Ccost@H of using non-continuous
+@Fmutant powers@H.  However, the @Cprice@H is paid in your @Chit points@H.
+
+Psionic cost decrease: power_level / 2 + power_level mod 2
+Hit point cost: psi_decrease * power_level * power_level
+
+Your @Cskill decreases hit point cost@H to no less than half original value
+rounding down.  Ratio is one skill point prevents loss of one hit point.

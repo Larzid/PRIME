@@ -1,0 +1,6 @@
+@LRestoration @E(Constitution) @J(Redaction)@H
+
+This mutant power repairs long term damage of body.
+
+Ability restored: (1 + skill / 5) to (2 + skill / 3)
+Minimum is 1 to 2 points

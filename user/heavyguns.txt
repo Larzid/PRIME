@@ -1,0 +1,12 @@
+@FHeavy guns @E(Strength)@H
+
+Big and heavy cannons are different from most guns you aim with both hands.
+These have great recoil and often are very cumbersome.  This makes your
+@EStrength@H help with aiming them instead of @EDexterity@H as one might assume.
+
+Examples of such guns:
+ * pulse rifle
+ * mining laser
+ * railgun
+ * plasma cannon
+ * auto-cannon

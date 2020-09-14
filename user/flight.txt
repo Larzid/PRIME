@@ -1,0 +1,6 @@
+@LFlight @E(Psionics) @J(Telekinesis)@H
+
+While flying you @Cavoid ground traps@H and receive minor @Celectricity resistance@H.
+
+Your @Cskill@H in this power is @EUSELESS@H!  This will be corrected in upcoming
+versions.

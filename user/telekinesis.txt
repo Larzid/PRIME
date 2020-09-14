@@ -1,0 +1,13 @@
+@FTelekinesis @E(Psionics)@H
+
+Telekinesis means imparting movement with the mind.
+
+Each @Cskill point@H put in this category makes all @Fmutant powers@H based on
+@Ftelekinesis@H be @C5%@H easier to use.
+
+Powers belonging to this Metapsychic Faculty:
+- Hellbent Charge
+- War Flow
+- Psychokinetic Shove
+- Shockwave
+- Flying

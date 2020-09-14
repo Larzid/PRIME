@@ -1,0 +1,1882 @@
+DEFINE Attack kAtt Attacks[kAttNumberOf] shAttackId
+{
+ type           shAttack::kNoAttack
+ effect         shAttack::kSingle
+ flags          0
+ radius         0
+ range          0
+ hitmod         0
+ time           FULLTURN
+
+ damage
+ {
+  ef1
+  {
+   en1          kNoEnergy
+   lo1          0
+   hi1          0
+   ch1          100
+  }
+  ef2
+  {
+   en2          kNoEnergy
+   lo2          0
+   hi2          0
+   ch2          100
+  }
+  ef3
+  {
+   en3          kNoEnergy
+   lo3          0
+   hi3          0
+   ch3          100
+  }
+ }
+}
+
+Attack Dummy
+
+COMMENT
+{
+ m4 macros:
+ define(`DMG', `en$1 k$4 lo$1 $2 hi$1 $3')
+ define(`TYPE', `type shAttack::k$1')
+ define(`EFFECT', `effect shAttack::k$1')
+}
+
+TEMPLATE Melee Attack
+{
+ flags kMelee
+}
+
+TEMPLATE Missile Attack
+{
+ flags kMissile
+}
+
+TEMPLATE Aimed Attack
+{
+ flags kAimed
+}
+
+Melee ImprovisedMelee
+{
+ TYPE(Smash)
+ DMG(1,1,3,Concussive)
+ hitmod -4
+}
+
+Missile ImprovisedThrow
+{
+ TYPE(Smash)
+ DMG(1,1,2,Concussive)
+ hitmod -4
+}
+
+Attack GroundCollision
+{
+ TYPE(Smash)
+ DMG(1,1,6,Concussive)
+}
+
+Attack KickedWall
+{
+ TYPE(Smash)
+ DMG(1,1,2,Irresistible)
+}
+
+Attack KickedForceField
+{
+ TYPE(Smash)
+ DMG(1,3,4,Irresistible)
+}
+
+Attack ForceFieldContact
+{
+ TYPE(Zap)
+ DMG(1,1,1,Irresistible)
+ DMG(1,1,10,Electrical)
+}
+
+
+COMMENT { Traps. }
+
+
+Attack PitTrapFall
+{
+ TYPE(Smash)
+ DMG(1,1,6,Concussive)
+}
+
+Attack AcidPitBath
+{
+ TYPE(AcidBath)
+ DMG(1,1,5,Corrosive)
+}
+
+Attack AcidPitSip
+{
+ EFFECT(Other)
+ DMG(1,3,8,Corrosive)
+}
+
+Attack RadTrap
+{
+ TYPE(GammaRay)
+ DMG(1,11,20,Radiological)
+}
+
+Missile ACMESign
+{
+ TYPE(Crush)
+ DMG(1,1,12,Concussive)
+}
+
+Melee DoorSlam
+{
+ TYPE(Crush)
+ DMG(1,1,8,Concussive)
+}
+
+COMMENT { Miscellaneous. }
+
+
+COMMENT { 1 - regular aliens  2 - queen and praetorian }
+Attack AcidBlood1
+{
+ EFFECT(Burst)
+ TYPE(AcidSplash)
+ DMG(1,2,12,Corrosive)
+ radius 1
+}
+
+Attack AcidBlood2
+{
+ EFFECT(Burst)
+ TYPE(AcidSplash)
+ DMG(1,12,24,Corrosive)
+ radius 1
+}
+
+Attack ExplodingMonster
+{
+ TYPE(Blast)
+ EFFECT(Burst)
+ DMG(1,6,18,Concussive)
+ radius 1
+}
+
+Attack FlameNova
+{
+ TYPE(Incendiary)
+ EFFECT(Burst)
+ DMG(1,12,36,Burning)
+ radius 3
+}
+
+Attack VatCorrosion
+{
+ TYPE(Slime)
+ DMG(1,1,5,Corrosive)
+}
+
+Attack VatShock
+{
+ TYPE(Zap)
+ DMG(1,5,10,Electrical)
+}
+
+Attack VatPoison
+{
+ EFFECT(Other)
+ DMG(1,1,3,DmgCon)
+}
+
+Attack VatPlague
+{
+ TYPE(Plague)
+ EFFECT(Other)
+ DMG(1,10,30,Irresistible)
+}
+
+Attack VatSpill
+{
+ TYPE(Splash)
+ EFFECT(Burst)
+ DMG(1,3,12,Corrosive)
+}
+
+Missile FallingVat
+{
+ TYPE(Smash)
+ DMG(1,10,30,Concussive)
+}
+
+Missile AcidWaterfall
+{
+ TYPE(Splash)
+ DMG(1,5,15,Corrosive)
+}
+
+Attack RestrainingBoltWear
+{
+ TYPE(Zap)
+ DMG(1,1,1,Bugging)
+}
+
+Melee RestrainingBoltAttack
+{
+ TYPE(Attach)
+}
+
+Attack TorcRemoval
+{
+ TYPE(Zap)
+ DMG(1,4,9,Electrical)
+ DMG(2,4,9,Psychic)
+}
+
+Attack ExcruciatorBacklash
+{
+ EFFECT(Other)
+ DMG(1,9,16,Irresistible)
+ DMG(2,2,5,Confusing)
+ DMG(3,1,3,Stunning)
+}
+
+Attack Glory1
+{
+ TYPE(Blast)
+ EFFECT(Burst)
+ radius 2
+ DMG(1,6,18,Concussive)
+}
+
+Attack Glory2
+{
+ TYPE(Blast)
+ EFFECT(Burst)
+ radius 4
+ DMG(1,8,24,Concussive)
+}
+
+Attack Glory3
+{
+ TYPE(Blast)
+ EFFECT(Burst)
+ radius 6
+ DMG(1,12,36,Concussive)
+}
+
+Attack Glory4
+{
+ TYPE(Blast)
+ EFFECT(Burst)
+ radius 8
+ DMG(1,18,54,Concussive)
+}
+
+Attack Glory5
+{
+ TYPE(Blast)
+ EFFECT(Burst)
+ radius 24
+ DMG(1,500,500,Disintegrating)
+}
+
+
+
+COMMENT { Weapon attacks. }
+
+
+Missile Shuriken
+{
+ TYPE(Stab)
+ time HALFTURN
+ range 15
+ DMG(1,1,4,HackNSlash)
+}
+
+Melee SmartDiscSlash
+{
+ TYPE(Slash)
+ DMG(1,2,4,HackNSlash)
+}
+
+Missile SmartDiscThrow
+{
+ TYPE(Disc)
+ EFFECT(SmartDisc)
+ range 15
+ DMG(1,2,7,HackNSlash)
+}
+
+Missile ThrownFootball
+{
+ TYPE(Smash)
+ range 10
+ DMG(1,1,6,Concussive)
+}
+
+Missile KickedFootball
+{
+ TYPE(Smash)
+ range 20
+ DMG(1,1,6,Concussive)
+}
+
+Attack Dagger
+{
+ TYPE(Stab)
+ range 10
+ DMG(1,1,4,HackNSlash)
+ flags (kMelee | kMissile)
+}
+
+Attack Knife
+{
+ TYPE(Cut)
+ DMG(1,2,6,HackNSlash)
+}
+
+Melee Probe
+{
+ TYPE(AnalProbe)
+ DMG(1,10,100,Violating)
+}
+
+Melee Club
+{
+ TYPE(Club)
+ DMG(1,1,6,Concussive)
+}
+
+Melee Wrench
+{
+ TYPE(Club)
+ DMG(1,2,7,Concussive)
+ ch2 20
+ DMG(2,2,2,Stunning)
+}
+
+Melee Mop
+{
+ TYPE(Smash)
+ DMG(1,1,7,Concussive)
+}
+
+Melee BoStaff
+{
+ TYPE(Smash)
+ DMG(1,1,8,Concussive)
+}
+
+Melee Nunchaku
+{
+ TYPE(Club)
+ DMG(1,2,6,Concussive)
+}
+
+Melee StunRod
+{
+ TYPE(Zap)
+ DMG(1,1,2,Electrical)
+ ch2 50  DMG(2,1,2,Stunning)
+ ch3 25  DMG(2,1,2,Paralyzing)
+}
+
+Melee ZapBaton
+{
+ TYPE(Zap)
+ DMG(1,1,7,Electrical)
+ ch2 20  DMG(2,1,1,Paralyzing)
+}
+
+Melee RazorWhip
+{
+ TYPE(Whip)
+ time QUICKTURN
+ DMG(1,1,5,Concussive)
+ DMG(2,1,1,HackNSlash)
+}
+
+Melee Chainsaw
+{
+ TYPE(Saw)
+ DMG(1,4,14,HackNSlash)
+}
+
+Melee CombiStickStab
+{
+ TYPE(Stab)
+ DMG(1,1,12,HackNSlash)
+}
+
+Missile CombiStickThrow
+{
+ TYPE(Stab)
+ range 12
+ DMG(1,4,12,HackNSlash)
+}
+
+Melee CombiStickExtend
+{
+ TYPE(Combi)
+ EFFECT(Extend)
+ range 2
+ DMG(1,1,8,HackNSlash)
+}
+
+Melee GomJabbar
+{
+ TYPE(Prick)
+ DMG(1,3,4,DmgStr)
+}
+
+Melee WarpScythe
+{
+ TYPE(Slash)
+ DMG(1,27,27,Irresistible)
+ time SLOWTURN
+}
+
+Melee Katana
+{
+ TYPE(Sword)
+ DMG(1,1,10,HackNSlash)
+}
+
+Melee ElvenSword
+{
+ TYPE(Sword)
+ DMG(1,3,5,HackNSlash)
+ DMG(2,1,1,Psychic)
+}
+
+Melee Batleth
+{
+ TYPE(Slash)
+ DMG(1,2,12,HackNSlash)
+}
+
+Melee ChaosSword
+{
+ TYPE(Sword)
+ DMG(1,4,14,HackNSlash)
+ DMG(2,1,1,Psychic)
+}
+
+Melee Lightsaber
+{
+ TYPE(Sword)
+ DMG(1,2,12,HackNSlash)
+ DMG(2,1,8,Burning)
+}
+
+Melee Knuckles
+{
+ TYPE(Punch)
+ DMG(1,1,5,Concussive)
+}
+
+Melee SpikedKnuckles
+{
+ TYPE(Punch)
+ DMG(1,1,4,Concussive)
+ DMG(2,1,4,HackNSlash)
+}
+
+Melee WristBlade
+{
+ TYPE(Stab)
+ DMG(1,1,8,HackNSlash)
+}
+
+Melee PowerFist
+{
+ TYPE(Punch)
+ time SLOWTURN
+ DMG(1,3,12,Concussive)
+ ch2 80 DMG(2,1,3,Stunning)
+}
+
+Melee PowerClaw
+{
+ TYPE(Claw)
+ time SLOWTURN
+ DMG(1,2,14,HackNSlash)
+ ch2 50  DMG(2,1,2,Paralyzing)
+}
+
+Melee PhaseGloves
+{
+ TYPE(Punch)
+ DMG(1,2,8,Concussive)
+ DMG(2,2,5,Electrical)
+}
+
+Melee PsiBlade
+{
+ TYPE(Slash)
+ time HALFTURN
+ DMG(1,1,3,HackNSlash)
+ DMG(2,1,1,Psychic)
+}
+
+
+COMMENT { Grenades }
+
+
+Missile ConcussionGrenade
+{
+ radius 1
+ TYPE(Blast)
+ EFFECT(Burst)
+ DMG(1,3,18,Explosive)
+}
+
+Missile FragGrenade
+{
+ radius 1
+ TYPE(Blast)
+ EFFECT(Burst)
+ DMG(1,2,12,Shrapnel)
+ DMG(2,2,12,Explosive)
+}
+
+Missile StunGrenade
+{
+ radius 1
+ TYPE(Blast)
+ EFFECT(Burst)
+ DMG(1,3,6,Stunning)
+}
+
+Missile IncendiaryGrenade
+{
+ radius 2
+ TYPE(Incendiary)
+ EFFECT(Burst)
+ DMG(1,3,9,Burning)
+ DMG(2,2,12,Explosive)
+}
+
+Missile RadGrenade
+{
+ radius 3
+ TYPE(Flash)
+ EFFECT(Burst)
+ DMG(1,15,35,Radiological)
+}
+
+Missile Flashbang
+{
+ radius 5
+ TYPE(Light)
+ EFFECT(Burst)
+ DMG(1,2,10,Blinding)
+}
+
+Missile EMPGrenade
+{
+ radius 2
+ TYPE(Blast)
+ EFFECT(Burst)
+ DMG(1,3,18,Magnetic)
+}
+
+Missile WebbingGrenade
+{
+ radius 1
+ TYPE(Ensnare)
+ EFFECT(Burst)
+ DMG(1,5,10,Webbing)
+}
+
+Missile DispersalGrenade
+{
+ radius 1
+ TYPE(Blast)
+ EFFECT(Burst)
+ DMG(1,3,9,Transporting)
+}
+
+Missile Flare
+{
+ radius 3
+ EFFECT(Burst)
+ TYPE(Flare)
+}
+
+
+COMMENT { Other. }
+
+
+Attack HypnoDiskB
+{
+ radius 1
+ TYPE(Light)
+ EFFECT(Burst)
+ DMG(1,12,80,Mesmerizing)
+}
+
+Attack HypnoDiskD
+{
+ radius 1
+ TYPE(Light)
+ EFFECT(Burst)
+ DMG(1,6,40,Mesmerizing)
+}
+
+Attack HypnoDiskO
+{
+ radius 1
+ TYPE(Light)
+ EFFECT(Burst)
+ DMG(1,5,25,Mesmerizing)
+}
+
+Attack SickHypnoDiskB
+{
+ radius 1
+ TYPE(Light)
+ EFFECT(Burst)
+ DMG(1,12,80,Mesmerizing)
+ DMG(2,5,10,Sickening)
+ DMG(3,1,3,DrnInt)
+}
+
+Attack SickHypnoDiskD
+{
+ radius 1
+ TYPE(Light)
+ EFFECT(Burst)
+ DMG(1,6,40,Mesmerizing)
+ DMG(2,3,8,Sickening)
+ DMG(3,1,2,DrnInt)
+}
+
+Attack SickHypnoDiskO
+{
+ radius 1
+ TYPE(Light)
+ EFFECT(Burst)
+ DMG(1,5,25,Mesmerizing)
+ DMG(2,1,6,Sickening)
+ DMG(3,1,1,DrnInt)
+}
+
+Melee CaesareanSection
+{
+ DMG(1,6,36,Irresistible)
+}
+
+Attack BreakingPanel
+{
+ DMG(1,3,3,HackNSlash)
+}
+
+
+COMMENT { Mutant powers. }
+
+
+Melee HypnoGaze
+{
+ DMG(1,2,10,Mesmerizing)
+}
+
+Missile ShootWeb
+{
+ TYPE(Web)
+ range 30
+ en1 kWebbing
+}
+
+Aimed OpticBlast
+{
+ TYPE(OpticBlast)
+ EFFECT(Beam)
+ range 12
+ DMG(1,1,6,Laser)
+}
+
+Attack BurningGoggles
+{
+ DMG(1,6,12,Burning)
+}
+
+Attack MentalBlast
+{
+ TYPE(MentalBlast)
+ DMG(1,1,6,Psychic)
+ ch2 60  DMG(2,1,6,Confusing)
+}
+
+Attack PsionicStorm
+{
+ TYPE(PsionicStorm)
+ EFFECT(Burst)
+ radius 4
+ DMG(1,5,25,Psychic)
+ DMG(2,3,9,Confusing)
+ DMG(3,3,9,Stunning)
+}
+
+Attack PsiVomit
+{
+ TYPE(Vomit)
+ EFFECT(Extend)
+ DMG(1,1,1,Concussive)
+}
+
+Attack MagMayhem
+{
+ TYPE(PsionicStorm)
+ EFFECT(Burst)
+ radius 0
+ DMG(1,1,1,Magnetic)
+}
+
+Attack KineticSmash
+{
+ TYPE(Smash)
+ DMG(1,1,10,Irresistible)
+ DMG(2,1,2,Stunning)
+}
+
+Attack HellbentStun
+{
+ DMG(1,2,4,Stunning)
+}
+
+Attack AcidWave
+{
+ EFFECT(Single)
+ TYPE(AcidSplash)
+ DMG(1,2,12,Corrosive)
+ range 8
+}
+
+Attack FallingDoor
+{
+ TYPE(Crush)
+ DMG(1,12,20,Concussive)
+ DMG(2,3,6,Stunning)
+}
+
+Attack Shockwave
+{
+ TYPE(Blast)
+ EFFECT(Burst)
+ DMG(1,1,1,Irresistible)
+ radius 1
+}
+
+
+COMMENT { Guns. }
+
+
+Aimed PeaShooter
+{
+ TYPE(Pea)
+ range 30
+ DMG(1,1,4,Concussive)
+}
+
+Aimed Pistol
+{
+ TYPE(Gun)
+ range 60
+ DMG(1,1,8,Bullet)
+}
+
+Aimed Khan
+{
+ TYPE(Gun)
+ range 60
+ DMG(1,3,9,Bullet)
+}
+
+Aimed Net
+{
+ TYPE(Web)
+ range 8
+ DMG(1,2,8,Webbing)
+}
+
+Aimed Shotgun
+{
+ TYPE(Shot)
+ range 10
+ DMG(1,9,18,Shrapnel)
+}
+
+Aimed SawnoffShotgun
+{
+ TYPE(Shot)
+ EFFECT(Cone)
+ range 5
+ radius 1
+ DMG(1,3,6,Shrapnel)
+}
+
+Aimed Rifle
+{
+ TYPE(Gun)
+ range 180
+ DMG(1,1,10,Bullet)
+}
+
+Aimed LFlamer
+{
+ TYPE(Incendiary)
+ EFFECT(Cone)
+ range 6
+ radius 3
+ DMG(1,2,12,Burning)
+}
+
+Aimed HFlamer
+{
+ TYPE(Incendiary)
+ EFFECT(Cone)
+ range 8
+ radius 2
+ DMG(1,3,18,Burning)
+}
+
+Aimed Speargun
+{
+ TYPE(Spear)
+ range 60
+ DMG(1,1,10,HackNSlash)
+}
+
+Aimed Cryolator
+{
+ TYPE(Cryolator)
+ range 30
+ DMG(1,1,6,Freezing)
+}
+
+Aimed PulseRifle
+{
+ TYPE(Gun)
+ range 60
+ DMG(1,1,8,Bullet)
+}
+
+Aimed Smartgun
+{
+ TYPE(Gun)
+ range 60
+ DMG(1,1,9,Bullet)
+}
+
+Aimed Railgun
+{
+ TYPE(Rail)
+ range 180
+ time SLOWTURN
+ DMG(1,3,30,Bullet)
+}
+
+Aimed Cannon
+{
+ TYPE(Gun)
+ range 60
+ DMG(1,1,10,Bullet)
+}
+
+Aimed LaserPistol
+{
+ TYPE(LaserBeam)
+ EFFECT(Beam)
+ range 30
+ DMG(1,1,7,Laser)
+ DMG(2,1,10,Blinding)
+}
+
+Aimed Phaser
+{
+ TYPE(LaserBeam)
+ EFFECT(Beam)
+ range 30
+ DMG(1,1,8,Laser)
+ DMG(2,1,10,Blinding)
+}
+
+Aimed Blaster
+{
+ TYPE(Bolt)
+ range 30
+ DMG(1,1,8,Particle)
+}
+
+Aimed PlasmaPistol
+{
+ TYPE(PlasmaGlob)
+ range 30
+ DMG(1,1,10,Plasma)
+ DMG(2,1,6,Magnetic)
+}
+
+Aimed ZapGun
+{
+ TYPE(Bolt)
+ range 30
+ DMG(1,1,6,Electrical)
+ ch2 40  DMG(2,1,2,Paralyzing)
+}
+
+Aimed PlasmaCaster0
+{
+ TYPE(PlasmaGlob)
+ range 30
+ DMG(1,1,12,Plasma)
+ DMG(2,1,6,Magnetic)
+}
+
+Aimed PlasmaCaster1
+{
+ TYPE(Blast)
+ EFFECT(FarBurst)
+ radius 1
+ range 30
+ DMG(1,3,15,Plasma)
+ DMG(2,2,10,Magnetic)
+}
+
+Aimed Translocator
+{
+ TYPE(Bolt)
+ range 30
+ DMG(1,2,3,Transporting)
+}
+
+Aimed LaserRifle
+{
+ TYPE(LaserBeam)
+ EFFECT(Beam)
+ range 45
+ DMG(1,1,11,Laser)
+ DMG(2,3,12,Blinding)
+}
+
+Aimed BlasterRifle
+{
+ TYPE(Bolt)
+ range 45
+ DMG(1,1,14,Particle)
+}
+
+Aimed PlasmaRifle
+{
+ TYPE(PlasmaGlob)
+ range 45
+ DMG(1,2,16,Plasma)
+ DMG(2,1,8,Magnetic)
+}
+
+Aimed LaserCannon
+{
+ TYPE(LaserBeam)
+ EFFECT(Beam)
+ range 30
+ time SLOWTURN
+ DMG(1,4,44,Laser)
+ DMG(2,1,4,Blinding)
+}
+
+Aimed MiningLaser
+{
+ TYPE(LaserBeam)
+ EFFECT(Beam)
+ range 0
+ time SLOWTURN
+ DMG(1,2,22,Laser)
+ ch2 80  DMG(2,1,4,Blinding)
+ ch3 50  en3    kDigging
+}
+
+Aimed PlasmaCannon
+{
+ TYPE(PlasmaGlob)
+ range 30
+ time SLOWTURN
+ DMG(1,4,40,Plasma)
+ DMG(2,8,20,Magnetic)
+}
+
+
+COMMENT { Canisters. }
+
+
+Attack UniversalSolvent
+{
+ DMG(1,2,12,Corrosive)
+}
+
+Attack Plasma
+{
+ DMG(1,4,24,Electrical)
+}
+
+Attack Napalm
+{
+ DMG(1,4,24,Burning)
+}
+
+Attack LNO
+{
+ DMG(1,4,24,Freezing)
+}
+
+Attack PoisonCanister
+{
+ DMG(1,1,2,DmgStr)
+ DMG(2,1,2,DmgCon)
+}
+
+Attack GlueSpill
+{
+ TYPE(Blast)
+ EFFECT(Burst)
+ DMG(1,2,5,Paralyzing)
+}
+
+Attack StirredBBB
+{
+ TYPE(Blast)
+ EFFECT(Burst)
+ DMG(1,3,9,Explosive)
+}
+
+Attack LNOBlast
+{
+ TYPE(Blast)
+ EFFECT(Burst)
+ DMG(1,4,32,Freezing)
+ radius 1
+}
+
+Attack NapalmBlast
+{
+ TYPE(Blast)
+ EFFECT(Burst)
+ DMG(1,4,32,Burning)
+ radius 1
+}
+
+Attack PlasmaBlast
+{
+ TYPE(Blast)
+ EFFECT(Burst)
+ DMG(1,4,32,Burning)
+ DMG(2,4,8,Magnetic)
+ radius 1
+}
+
+Attack SolventBlast
+{
+ TYPE(Blast)
+ EFFECT(Burst)
+ DMG(1,6,14,Corrosive)
+ radius 1
+}
+
+Attack AntimatterBlast
+{
+ TYPE(Blast)
+ EFFECT(Burst)
+ DMG(1,20,40,Disintegrating)
+ DMG(2,4,16,Explosive)
+ radius 2
+}
+
+
+COMMENT { Ray guns. }
+
+
+Aimed FreezeRay
+{
+ TYPE(FreezeRay)
+ EFFECT(Beam)
+ DMG(1,4,32,Freezing)
+ range 6
+}
+
+Aimed HeatRay
+{
+ TYPE(HeatRay)
+ EFFECT(Beam)
+ DMG(1,4,32,Burning)
+ range 6
+}
+
+Aimed GaussRay
+{
+ TYPE(GaussRay)
+ EFFECT(Beam)
+ DMG(1,4,32,Magnetic)
+ range 6
+}
+
+Aimed PoisonRay
+{
+ TYPE(PoisonRay)
+ EFFECT(Beam)
+ DMG(1,1,2,DmgStr)
+ DMG(2,1,3,DrnStr)
+ range 6
+}
+
+Aimed StasisRay
+{
+ TYPE(StasisRay)
+ EFFECT(Beam)
+ DMG(1,1,6,Paralyzing)
+ range 6
+}
+
+Aimed GammaRay
+{
+ TYPE(GammaRay)
+ EFFECT(Beam)
+ DMG(1,15,45,Radiological)
+ range 6
+}
+
+Aimed TransporterRay
+{
+ TYPE(TransporterRay)
+ EFFECT(Beam)
+ DMG(1,1,100,Transporting)
+ range 6
+}
+
+Aimed HealingRay
+{
+ TYPE(HealingRay)
+ EFFECT(Beam)
+ DMG(1,3,7,Special)
+ range 6
+}
+
+Aimed RestorationRay
+{
+ TYPE(RestorationRay)
+ EFFECT(Beam)
+ range 6
+}
+
+Aimed DisintegrationRay
+{
+ TYPE(DisintegrationRay)
+ EFFECT(Beam)
+ DMG(1,20,40,Disintegrating)
+ range 6
+}
+
+Attack DisintegrationRayGunBlowUp
+{
+ TYPE(Blast)
+ EFFECT(Burst)
+ radius 1
+ DMG(1,10,30,Disintegrating)
+}
+
+Aimed AccelerationRay
+{
+ TYPE(AccelerationRay)
+ EFFECT(Beam)
+ DMG(1,3,9,Accelerating)
+ range 6
+}
+
+Aimed DecelerationRay
+{
+ TYPE(DecelerationRay)
+ EFFECT(Beam)
+ DMG(1,3,9,Decelerating)
+ range 6
+}
+
+Aimed AugmentationRay
+{
+ TYPE(AugmentationRay)
+ EFFECT(Beam)
+ range 6
+}
+
+Aimed DecontaminationRay
+{
+ TYPE(DecontaminationRay)
+ EFFECT(Beam)
+ DMG(1,15,30,Special)
+ range 6
+}
+
+Aimed SquirtWater
+{
+ TYPE(WaterRay)
+ range 12
+}
+
+
+COMMENT { Monster attacks. }
+
+
+Melee Punch
+{
+ TYPE(Punch)
+ DMG(1,1,3,Concussive)
+}
+
+Melee Kick
+{
+ TYPE(Kick)
+ DMG(1,1,3,Concussive)
+}
+
+Melee HeadButt
+{
+ TYPE(HeadButt)
+ DMG(1,1,3,Concussive)
+}
+
+Melee StrongPunch
+{
+ TYPE(Punch)
+ DMG(1,1,4,Concussive)
+}
+
+Melee StrongKick
+{
+ TYPE(Kick)
+ DMG(1,1,4,Concussive)
+}
+
+Melee StrongHeadButt
+{
+ TYPE(HeadButt)
+ DMG(1,1,4,Concussive)
+}
+
+Melee XNClaw
+{
+ TYPE(Claw)
+ DMG(1,1,7,HackNSlash)
+}
+
+Melee XNRake
+{
+ TYPE(Rake)
+ DMG(1,1,8,HackNSlash)
+}
+
+Melee XNBite
+{
+ TYPE(Bite)
+ DMG(1,1,9,HackNSlash)
+}
+
+Melee XNTail
+{
+ TYPE(TailSlap)
+ DMG(1,5,10,Concussive)
+}
+
+Melee Slime
+{
+ TYPE(Slime)
+ time SLOWTURN
+ DMG(1,1,1,Corrosive)
+}
+
+Melee GridBug
+{
+ TYPE(Zap)
+ time SLOWTURN
+ DMG(1,1,3,Electrical)
+}
+
+Melee BoreWorm
+{
+ TYPE(Bite)
+ time SLOWTURN
+ DMG(1,1,3,HackNSlash)
+}
+
+Melee Tribble
+{
+ TYPE(Bite)
+ time SLOWTURN
+ DMG(1,1,2,HackNSlash)
+}
+
+Melee 1_4Smash
+{
+ TYPE(Smash)
+ DMG(1,1,4,Concussive)
+}
+
+Melee 1_6Smash
+{
+ TYPE(Smash)
+ DMG(1,1,6,Concussive)
+}
+
+Melee Mynock
+{
+ TYPE(Bite)
+ DMG(1,1,2,HackNSlash)
+}
+
+Melee Cockroach
+{
+ TYPE(Bite)
+ time HALFTURN
+ DMG(1,1,4,HackNSlash)
+}
+
+Melee ManEater
+{
+ TYPE(Bite)
+ time QUICKTURN
+ DMG(1,2,11,HackNSlash)
+ DMG(2,1,3,DrnStr)
+ DMG(3,1,1,DmgStr)
+ ch3 45
+}
+
+Melee Pudding
+{
+ TYPE(Slime)
+ DMG(1,2,3,Concussive)
+ DMG(2,5,20,Paralyzing)
+}
+
+Attack Explode
+{
+ TYPE(Explode)
+ EFFECT(Burst)
+ radius 1
+ DMG(1,6,18,Explosive)
+}
+
+Attack SmartBomb
+{
+ TYPE(Explode)
+ EFFECT(Burst)
+ radius 3
+ DMG(1,10,20,Explosive)
+}
+
+Attack SmartMissile
+{
+ TYPE(Explode)
+ EFFECT(Burst)
+ radius 1
+ DMG(1,12,24,Explosive)
+}
+
+Melee 1_4Bite
+{
+ TYPE(Bite)
+ DMG(1,1,4,HackNSlash)
+}
+
+Melee 1_6Bite
+{
+ TYPE(Bite)
+ DMG(1,1,6,HackNSlash)
+}
+
+Melee CatbotRake
+{
+ TYPE(Rake)
+ DMG(1,1,7,HackNSlash)
+}
+
+Aimed Squirt
+{
+ TYPE(WaterRay)
+ range 6
+}
+
+Melee VatSlime
+{
+ TYPE(Slime)
+ DMG(1,1,6,Concussive)
+ DMG(2,1,6,Corrosive)
+}
+
+Melee MetalSlime
+{
+ TYPE(Slime)
+ DMG(1,4,16,Concussive)
+}
+
+Melee Astromech
+{
+ TYPE(Zap)
+ DMG(1,1,8,Electrical)
+}
+
+Melee OilSpill
+{
+ TYPE(OilSpill)
+ DMG(1,1,2,Blinding)
+}
+
+Melee CriteTeeth
+{
+ TYPE(Bite)
+ time QUICKTURN
+ DMG(1,1,6,HackNSlash)
+}
+
+Melee CriteQuill
+{
+ TYPE(Quill)
+ DMG(1,1,2,HackNSlash)
+ DMG(2,1,2,DmgStr)
+ DMG(3,1,1,DrnStr)
+}
+
+Melee StealCredits
+{
+ TYPE(CreditDraining)
+ DMG(1,1,200,Special)
+}
+
+Melee Lizard1
+{
+ TYPE(Bite)
+ DMG(1,2,12,HackNSlash)
+}
+
+Melee Lizard2
+{
+ TYPE(Bite)
+ DMG(1,6,12,HackNSlash)
+}
+
+Melee Lizard3
+{
+ TYPE(Bite)
+ DMG(1,6,18,HackNSlash)
+}
+
+Melee SewerWorm
+{
+ TYPE(Bite)
+ DMG(1,8,14,HackNSlash)
+ DMG(2,1,1,DmgStr)
+ DMG(3,1,2,DrnStr)
+}
+
+Melee NakedOrz
+{
+ TYPE(Claw)
+ DMG(1,1,3,HackNSlash)
+ DMG(2,1,3,Electrical)
+ DMG(3,1,3,Confusing)
+}
+
+Aimed LizardBreath1
+Aimed LizardBreath2
+Aimed LizardBreath3
+
+Melee PowerfulPunch
+{
+ TYPE(Punch)
+ DMG(1,1,6,Concussive)
+}
+
+Melee PowerfulKick
+{
+ TYPE(Kick)
+ DMG(1,1,6,Concussive)
+}
+
+Melee NinjaPunch
+{
+ TYPE(Punch)
+ time HALFTURN
+ DMG(1,1,6,Concussive)
+}
+
+Melee NinjaKick
+{
+ TYPE(Kick)
+ time HALFTURN
+ DMG(1,1,6,Concussive)
+}
+
+Melee FaceHug
+{
+ TYPE(FaceHug)
+}
+
+Melee RadBug
+{
+ TYPE(Bite)
+ DMG(1,1,6,HackNSlash)
+ DMG(2,1,3,DrnStr)
+ DMG(3,1,1,DmgStr)
+ ch3 30
+}
+
+Melee Chestburster
+{
+ TYPE(Claw)
+ time QUICKTURN
+ DMG(1,1,6,HackNSlash)
+}
+
+Melee AlienPrincess
+{
+ TYPE(Claw)
+ time HALFTURN
+ DMG(1,1,6,HackNSlash)
+}
+
+Melee Recognizer
+{
+ TYPE(Stomp)
+ DMG(1,3,18,Concussive)
+}
+
+Melee RadSpider
+{
+ TYPE(Bite)
+ DMG(1,1,6,HackNSlash)
+ DMG(2,1,3,DrnAgi)
+ DMG(3,1,1,DmgAgi)
+}
+
+Melee PinkHorror
+{
+ TYPE(Bite)
+ time QUICKTURN
+ DMG(1,2,16,HackNSlash)
+}
+
+Melee 1_6Claw
+{
+ TYPE(Claw)
+ DMG(1,1,6,HackNSlash)
+}
+
+Melee BrainExtraction
+{
+ TYPE(ExtractBrain)
+ DMG(1,1,10,HackNSlash)
+}
+
+Melee Docbot1
+{
+ TYPE(Saw)
+ DMG(1,3,11,HackNSlash)
+}
+
+Melee Docbot2
+{
+ TYPE(Drill)
+ DMG(1,3,11,HackNSlash)
+}
+
+Melee Docbot3
+{
+ TYPE(Cut)
+ DMG(1,3,11,HackNSlash)
+}
+
+Aimed SpiderWeb
+{
+ TYPE(Web)
+ DMG(1,3,6,Webbing)
+ range 8
+}
+
+Melee Zergling
+{
+ TYPE(Claw)
+ time HALFTURN
+ DMG(1,1,4,HackNSlash)
+}
+
+Melee ReverendMother
+{
+ TYPE(Touch)
+ DMG(1,1,10,Psychic)
+}
+
+Melee Troll1
+{
+ TYPE(Punch)
+ DMG(1,2,12,Concussive)
+}
+
+Melee Troll2
+{
+ TYPE(HeadButt)
+ DMG(1,2,12,Concussive)
+}
+
+Melee 1_8Slash
+{
+ TYPE(Slash)
+ DMG(1,1,8,HackNSlash)
+}
+
+Aimed Hydralisk
+{
+ TYPE(Spit)
+ range 6
+ DMG(1,4,12,Corrosive)
+}
+
+Melee ScorpClaw
+{
+ TYPE(Claw)
+ time HALFTURN
+ DMG(1,1,4,HackNSlash)
+}
+
+Melee ScorpTail
+{
+ TYPE(Sting)
+ DMG(1,2,8,HackNSlash)
+ DMG(2,1,5,DrnStr)
+ DMG(3,1,2,DmgStr)
+}
+
+Melee RabbitTeeth
+{
+ TYPE(Bite)
+ DMG(1,6,16,HackNSlash)
+}
+
+Melee AlienClaw
+{
+ TYPE(Claw)
+ time HALFTURN
+ DMG(1,1,8,HackNSlash)
+}
+
+Melee AlienTail
+{
+ TYPE(TailSlap)
+ time SLOWTURN
+ DMG(1,2,10,Concussive)
+}
+
+Melee AlienBite
+{
+ TYPE(Bite)
+ DMG(1,2,10,HackNSlash)
+}
+
+Melee AlienQueenBite
+{
+ TYPE(Bite)
+ time QUICKTURN
+ DMG(1,4,16,HackNSlash)
+}
+
+Attack Sorceress
+{
+ TYPE(Explode)
+ EFFECT(Burst)
+ DMG(1,20,40,Psychic)
+ radius 5
+ range 5
+}
+
+Attack SpiderMine
+{
+ TYPE(Explode)
+ EFFECT(Burst)
+ DMG(1,10,30,Concussive)
+ radius 1
+}
+
+Melee Monolith
+{
+ TYPE(Smash)
+ DMG(1,10,40,Concussive)
+}
+
+Melee Clerkbot
+{
+ TYPE(Zap)
+ DMG(1,2,12,Electrical)
+ ch2 25  DMG(2,1,6,Stunning)
+}
+
+Melee Crush
+{
+ TYPE(Crush)
+ DMG(1,1,15,Concussive)
+}
+
+Aimed TurretCannon
+{
+ TYPE(Shot)
+ range 30
+ DMG(1,5,15,Bullet)
+}
+
+Melee DefilerMaw
+{
+ TYPE(Bite)
+ DMG(1,3,9,HackNSlash)
+}
+
+Aimed PLAGUE
+{
+ TYPE(Plague)
+ time LONGTURN
+ DMG(1,8,20,Irresistible)
+ range 4
+}
+
+Melee HeavyBotSmash
+{
+ TYPE(Smash)
+ DMG(1,2,8,Concussive)
+}
+
+Aimed DalekLaser
+{
+ TYPE(LaserBeam)
+ EFFECT(Beam)
+ range 30
+ DMG(1,8,40,Laser)
+}
+
+Melee ApePunch
+{
+ TYPE(Punch)
+ time QUICKTURN
+ DMG(1,1,6,Concussive)
+}
+
+Melee GoGoSaw
+{
+ TYPE(Saw)
+ time SLOWTURN
+ DMG(1,9,17,HackNSlash)
+}
+
+Aimed GoGoParticleGun
+{
+ TYPE(Bolt)
+ range 30
+ time HALFTURN
+ DMG(1,4,10,Particle)
+}
+
+Aimed GoGoLaser
+{
+ TYPE(LaserBeam)
+ EFFECT(Beam)
+ DMG(1,8,15,Laser)
+ range 30
+}
+
+Aimed GoGoCannon
+{
+ TYPE(PlasmaGlob)
+ time LONGTURN
+ DMG(1,10,25,Plasma)
+ range 30
+}
+
+Melee Bisector
+{
+ TYPE(Half)
+ DMG(1,10,10,Irresistible)
+}
+
+Aimed KohrAhTractor
+{
+ TYPE(Tractor)
+ EFFECT(Beam)
+ range 20
+ time QUICKTURN
+}
+
+Melee BOFH
+{
+ TYPE(Touch)
+ DMG(1,1,1,Bugging)
+}
+
+Melee DaemonClaw
+{
+ TYPE(Claw)
+ time HALFTURN
+ DMG(1,1,8,HackNSlash)
+}
+
+Melee DaemonBite
+{
+ TYPE(Bite)
+ time QUICKTURN
+ DMG(1,8,12,HackNSlash)
+}
+
+Melee NNTPMelee
+{
+ TYPE(Scorch)
+ time FULLTURN
+ DMG(1,7,12,Burning)
+ DMG(2,4,7,HackNSlash)
+}
+
+Attack Viruses
+{
+ TYPE(BreatheViruses)
+ EFFECT(Beam)
+ range 10
+ DMG(1,6,36,Irresistible)
+ DMG(2,10,15,Sickening)
+}
+
+Attack Bugs
+{
+ TYPE(BreatheBugs)
+ EFFECT(Beam)
+ range 10
+ DMG(1,6,36,Irresistible)
+ DMG(2,1,2,Bugging)
+}
+
+Attack Flamewars
+{
+ TYPE(BreatheFire)
+ EFFECT(Beam)
+ range 10
+ DMG(1,6,36,Burning)
+}
+
+Attack Traffic
+{
+ TYPE(BreatheTraffic)
+ EFFECT(Beam)
+ range 10
+ DMG(1,6,36,Irresistible)
+ DMG(2,10,25,Special)
+}
+
+Melee Shodan
+{
+ TYPE(Claw)
+ DMG(1,1,12,HackNSlash)
+}
+
+DECLARE Attack NumberOf

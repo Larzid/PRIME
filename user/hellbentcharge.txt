@@ -1,0 +1,26 @@
+@LHellbent Charge @E(Constitution) @J(Telekinesis)@H
+
+You rush a short distance and make stronger melee attack.  This does not
+guarantee hitting.
+
+If @Cin a pit@H you may charge @Cupwards@H to quickly get out.
+
+You are @Eunable@H to perform this feat when @Eslowed@H, @Esore@H, @Efrightened@H or @Estrained@H
+and worse.
+
+To hit modifier: skill / 2 + bonus / 2
+To damage modifier: skill / 4 + bonus
+
+Bonus starts from zero (or 3 if you are @Cspeedy@H) and increases by two points
+for each square you run.
+
+Range increase is non-linear.  It starts at two:
+
+|  range  |  skill  |
++---------+---------+
+|    2    |    0    |
+|    3    |    2    |
+|    4    |    5    |
+|    5    |    9    |
+|    6    |   14    |
+|    7    |   20    |

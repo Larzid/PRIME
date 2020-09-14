@@ -1,0 +1,6 @@
+@LTremorsense @E(Constitution) @J(Farsenses)@H
+
+You are able to perceive vibrations created by creatures making their steps
+on solid ground.
+
+Your @Cskill@H in this power increases detection @Crange@H.

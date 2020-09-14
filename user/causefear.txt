@@ -1,0 +1,6 @@
+@LCause fear @E(Psionics) @J(Coercion)@H
+
+You instill panic by breaking morale, weakening one's courage and resolve.
+
+Duration: 2 to 2 * (4 + skill / 4)
+Defend chance: victim's_concentration_skill * 4%

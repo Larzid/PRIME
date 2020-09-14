@@ -1,0 +1,13 @@
+@FConcentration @E(Constitution)@H
+
+Helps you sustain any continuous mutant powers you are using when you might
+otherwise get distracted.
+
+Chance to fail to maintain an active power when you are being distracted is:
+@Fx@H = @C25%@H + @Ctotal skill@H * @C5%@H
+
+The above nubmer is tested against all your continuous powers in use.
+
+A non-exhaustive list of distractions follows:
+ - getting probed in the anus
+ - getting stunned

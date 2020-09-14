@@ -1,0 +1,4 @@
+@FUnarmed combat @E(Strength)@H
+
+Helps you hit with your bare fists, claws, feet or so called "unarmed" weapons
+like power fists and power claws.

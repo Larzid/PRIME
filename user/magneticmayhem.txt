@@ -1,0 +1,7 @@
+@LMagnetic Mayhem @E(Psionics) @J(Creativity)@H
+
+Short ranged power allowing to create short-lived outburst of strong
+electromagnetic wave.  Living organisms are mostly unharmed by it but
+robots suffer damage to their electronic systems.
+
+Damage: @Cskill@H / 2  to  @Cskill@H

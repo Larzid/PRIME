@@ -1,0 +1,6 @@
+@LUnderstanding @E(Intelligence) @J(Redaction)@H
+
+Allows you to converse with species using alien languages.
+
+Your @Cskill@H in this power is @EUSELESS@H!  This will be corrected in
+upcoming versions.

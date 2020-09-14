@@ -1,0 +1,7 @@
+@FRepair @E(Dexterity)@H
+
+You can repair damaged or disabled droids and robots.  You can also fix
+malfunctioning doors and dismantle radiation traps.
+
+You need a @Cmonkey wrench@H, a @Croll of duct tape@H or installed set of
+@Cmecha-dendrites@H.

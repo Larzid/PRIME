@@ -1,0 +1,78 @@
+
+--- INVENTORY ---
+
+  Energy Cells
+d - 125 energy cells {125}
+  Money
+h - 611 buckazoids {0}
+  Weapons
+b - an optimized +1 copper staff (wielded) {110}
+w - an optimized -1 elven psychic sword {125}
+  Armor
+a - a debugged corroded +0 incongruously prussian helmet (worn) {60}
+c - a buggy +0 ordinary jumpsuit (worn) {40}
+i - an optimized pair of x-ray goggles (worn) {30}
+j - a debugged +0 brain shield {10}
+k - a debugged cloaking belt {50}
+p - a debugged +4 blue chaos power armor {900}
+r - an optimized +0 tough bio armor (worn) {500}
+  Canisters
+e - 2 debugged canisters of Nano-Cola {32}
+f - an optimized canister of healing {16}
+g - a debugged canister of RadAway {16}
+v - a debugged canister of antimatter {16}
+  Ray Guns
+q - a debugged acceleration ray gun (6 charges) {150}
+  Floppy Disks
+n - a buggy clean legal floppy disk of recursive loop {6}
+s - an optimized clean legal floppy disk of reformat {6}
+t - a debugged infected legal floppy disk of debugging {6}
+x - a debugged clean legal floppy disk of object detection {6}
+y - an optimized clean legal floppy disk of bug detection {6}
+  Tools
+m - a buggy master keycard {4}
+o - a debugged clean -1 sat-com computer {100}
+l - a debugged master keycard {4}
+u - a debugged portable hole {0}
+
+--- MUTANT POWERS ---
+
+    Power               Level Chance Status
+Psi Vomit                 1    100%   
+Imbue                     3    100%   
+X-Ray Vision              4     90%   (on)
+
+--- SKILLS ---
+
+Combat Skills
+Basic Melee Weapons         Agi   1/ 6  -1  +0  
+
+Mutant Power Skills
+Psi Vomit                   Con   2/12  +3  +5  
+Imbue                       Psi   2/12  +2  +4  
+X-Ray Vision                Con   9/12  +3 +12  
+
+You had 21 unused skill points.
+
+--- DIAGNOSTICS ---
+
+Your speed was 100.
+Your psionic modifier was -1.
+You were nearly invulnerable to magnetic effects.
+You were resistant to paralysis.
+You had X-ray vision.
+You had been exposed to minimal levels of radiation.
+
+--- KILL LIST ---
+
+2 grid bugs
+1 redshirt
+1 brain mold
+1 space elf
+
+--- SUMMARY ---
+
+widmo finished adventuring on 2014-7-31.
+widmo earned 10240 experience points and achieved level 11.
+widmo attained the professional rank of Frazzler.
+Games in BOFH mode are not scored.  3740 score points go down the drain.

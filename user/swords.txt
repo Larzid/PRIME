@@ -1,0 +1,4 @@
+@FSwords @E(Agility)@H
+
+Covers all types of swords, including the bat'leth.  Swords are uncommon melee
+weapons but they are quite effective.

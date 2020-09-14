@@ -1,0 +1,3 @@
+@FBasic Melee Weapons @E(Agility)@H
+
+Covers all melee weapons that are not swords, from mop to chainsaw.

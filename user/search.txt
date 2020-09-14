@@ -1,0 +1,9 @@
+@FSearch @E(Intelligence)@H
+
+Gives you a better chance to find secrets when you are actively searching for
+them.  To make an attempt stand still in an area where you think hidden things
+are located.  All adjacent spaces will be checked.  You may need to do this
+a few times to see some results.
+
+In general this is a non-crucial skill.  It is recommended to spend only a few
+of your precious skill points on this.

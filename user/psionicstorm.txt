@@ -1,0 +1,15 @@
+@LPsionic Storm @E(Psionics) @J(Creativity)@H
+
+This extremely devastating psionic ability is trademark technique of Protoss
+High Templar.  No one has the skill to wield it like they do but nonetheless
+other users are still very dangerous when invoking it.
+
+The Psionic Storm requires only eight points to use it but will @Cdrain whole
+Psionic reserve@H upon successful use.
+
+Moreover every invocation of the power accumulates a penalty of @C-10%@H for
+further attempts of summonig the storm.  The damage can be @Clessened@H by
+application of @CKhaydarin crystal shard@H by @C%5@H for each @Ccharge@H.
+
+Range: unlimited
+Damage: 5 to 25 psychic, 3 to 9 stunning, 3 to 9 confusing

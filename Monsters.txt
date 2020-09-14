@@ -1,0 +1,2507 @@
+DEFINE MonsterIlk kMon MonIlks[kMonNumberOf] shMonId
+{
+ id                 kMonEarthling
+ kills              0
+ type               kMaxCreatureType
+ name               NULL
+ size               kMedium
+ 
+ hitdice            0
+ baselev            0
+
+ str                0
+ con                0
+ agi                0
+ dex                0
+ int                0
+ psi                0
+
+ spd                100
+ gender             0
+ hands              0
+
+ toac               0
+ feat               0
+ resistances
+ {
+  dummy             0
+  res_UNRESISTABLE  0
+  res_disin         0
+  res_psi           0
+  res_bul           0
+  res_conc          0
+  res_expl          0
+  res_hns           0
+  res_laser         0
+  res_part          0
+  res_shrap         0
+  res_burn          0
+  res_corr          0
+  res_elec          0
+  res_freeze        0
+  res_plas          0
+  res_magn          0
+  res_rad           0
+  res_accel         0
+  res_blind         0
+  res_bugs          0
+  res_conf          0
+  res_decel         0
+  res_dig           0
+  res_mesm          0
+  res_para          0
+  res_sick          0
+  res_spc           0
+  res_stun          0
+  res_toxin         0
+  res_trans         0
+  res_violate       0
+  res_web           0
+ }
+
+ intr
+ {
+  intr1             kNoIntrinsic
+  intr2             kNoIntrinsic
+ }
+
+ powers
+ {
+  pwr1              kNoMutantPower
+  pwr2              kNoMutantPower
+  pwr3              kNoMutantPower
+  pwr4              kNoMutantPower
+  pwr5              kNoMutantPower
+ }
+ numpwr             0
+
+ melee_attacks
+ {
+  ma1
+  {
+   matt1             kAttDummy
+   mprob1            0
+  }
+  ma2
+  {
+   matt2             kAttDummy
+   mprob2            0
+  }
+  ma3
+  {
+   matt3             kAttDummy
+   mprob3            0
+  }
+  ma4
+  {
+   matt4             kAttDummy
+   mprob4            0
+  }
+  ma5
+  {
+   matt5             kAttDummy
+   mprob5            0
+  }
+ }
+
+ ranged_attacks
+ {
+  ra1
+  {
+   ratt1             kAttDummy
+   rprob1            0
+  }
+  ra2
+  {
+   ratt2             kAttDummy
+   rprob2            0
+  }
+  ra3
+  {
+   ratt3             kAttDummy
+   rprob3            0
+  }
+  ra4
+  {
+   ratt4             kAttDummy
+   rprob4            0
+  }
+  ra5
+  {
+   ratt5             kAttDummy
+   rprob5            0
+  }
+ }
+
+ melsum             0
+
+ glyph 
+ {
+  sym               '@'
+  color             kBlack
+  bkgd              kBlack
+  tile_col          -1
+  tile_row          -1
+ }
+
+ strategy           shCreature::kWander
+ disposition        shCreature::kHostile
+ peaceful           0
+}
+
+COMMENT
+{
+ m4 macros:
+ define(`ABIL', `str $1 con $2 agi $3 dex $4 int $5 psi $6')
+ define(`MATK', `matt$1 kAtt$2 mprob$1 $3')
+ define(`RATK', `ratt$1 kAtt$2 rprob$1 $3')
+}
+
+MonsterIlk Earthling
+{
+ name               "earthling"
+ type               kHumanoid
+ size               kMedium
+ hitdice            1
+ baselev            1
+ ABIL(10, 10, 10, 10, 10, 10)
+ spd                100
+ gender             3
+ hands              2
+ toac               0
+ strategy           shCreature::kWander
+ sym                '@'
+ color              kWhite
+ tile_row           kRowProfession
+ tile_col           9
+ MATK(1,Punch,3)
+ MATK(2,Kick,1)
+ MATK(3,HeadButt,1)
+}
+
+MonsterIlk Ghoul
+{
+ name               "ghoul"
+ type               kHumanoid
+ size               kMedium
+ hitdice            1
+ baselev            1
+ ABIL(10, 10, 10, 10, 10, 10)
+ spd                100
+ gender             3
+ hands              2
+ toac               0
+ strategy           shCreature::kWander
+ sym                '@'
+ color              kGreen
+ tile_col           0
+ MATK(1,Punch,3)
+ MATK(2,Kick,1)
+ MATK(3,HeadButt,1)
+}
+
+MonsterIlk Yautja
+{
+ name               "Yautja"
+ type               kHumanoid
+ size               kMedium
+ hitdice            1
+ baselev            1
+ ABIL(10, 10, 10, 10, 10, 10)
+ spd                100
+ gender             3
+ hands              2
+ toac               1
+ strategy           shCreature::kWander
+ sym                'Y'
+ color              kOrange
+ tile_row           kRowProfession
+ tile_col           11
+ MATK(1,StrongPunch,3)
+ MATK(2,StrongKick,1)
+ MATK(3,StrongHeadButt,1)
+}
+
+MonsterIlk XelNaga
+{
+ name               "Xel'Naga"
+ type               kAlien
+ size               kMedium
+ hitdice            1
+ baselev            1
+ ABIL(9, 9, 9, 9, 9, 9)
+ spd                100
+ gender             0
+ hands              2
+ toac               0
+ strategy           shCreature::kWander
+ sym                'Q'
+ color              kYellow
+ tile_row           kRowProfession
+ tile_col           12
+ res_corr           10
+ intr1              kBlind
+ MATK(1,XNClaw,3)
+ MATK(2,XNRake,1)
+ MATK(3,XNBite,1)
+ MATK(4,XNTail,1)
+}
+
+MonsterIlk FuelBarrel
+{
+ name               "fuel barrel"
+ type               kConstruct
+ size               kSmall
+ hitdice            1
+ baselev            0
+ ABIL(3, 10, 1, 1, 1, 1)
+ spd                10
+ gender             0
+ hands              0
+ toac               0
+ strategy           shCreature::kSitStill
+ sym                'b'
+ color              kGray
+ tile_col           1
+ res_magn           122
+ res_para           122
+ feat               (kSessile | kExplodes | kNoTreasure)
+}
+
+MonsterIlk WarpFungus
+{
+ name               "warp fungus"
+ type               kOoze
+ size               kSmall
+ hitdice            1
+ baselev            0
+ ABIL(3, 7, 1, 1, 1, 1)
+ spd                100
+ gender             0
+ hands              0
+ toac               0
+ strategy           shCreature::kSitStill
+ sym                'f'
+ color              kNavy
+ tile_col           2
+ feat               (kSessile | kWarpish)
+ MATK(1,Slime,1)
+}
+
+MonsterIlk GridBug
+{
+ name               "grid bug"
+ type               kProgram
+ size               kSmall
+ hitdice            1
+ baselev            0
+ ABIL(5, 6, 8, 8, 3, -1)
+ spd                90
+ gender             0
+ hands              0
+ toac               0
+ strategy           shCreature::kLurk
+ sym                'x'
+ color              kMagenta
+ tile_col           1
+ MATK(1,GridBug,1)
+}
+
+MonsterIlk BoreWorm
+{
+ name               "bore worm"
+ type               kVermin
+ size               kTiny
+ hitdice            1
+ baselev            0
+ ABIL(5, 8, 6, 8, 3, 10)
+ spd                80
+ gender             0
+ hands              0
+ toac               0
+ strategy           shCreature::kLurk
+ sym                'w'
+ color              kBrown
+ tile_col           1
+ MATK(1,BoreWorm,1)
+}
+
+MonsterIlk Tribble
+{
+ name               "tribble"
+ type               kBeast
+ size               kFine
+ hitdice            1
+ baselev            0
+ ABIL(3, 6, 3, 8, 3, 8)
+ spd                60
+ gender             0
+ hands              0
+ toac               -1
+ strategy           shCreature::kLurk
+ sym                'c'
+ color              kBrown
+ tile_col           1
+ feat               kNoTreasure
+ intr1              kMultiplier
+ MATK(1,Tribble,1)
+}
+
+MonsterIlk FlyingToaster
+{
+ name               "flying toaster"
+ type               kProgram
+ size               kDiminutive
+ hitdice            1
+ baselev            1
+ ABIL(8, 8, 5, 8, 3, -1)
+ spd                60
+ gender             0
+ hands              0
+ toac               1
+ strategy           shCreature::kWander
+ sym                'a'
+ color              kCyan
+ tile_col           1
+ intr1              kFlying
+ MATK(1,1_4Smash,1)
+}
+
+MonsterIlk Mynock
+{
+ name               "mynock"
+ type               kBeast
+ size               kSmall
+ hitdice            1
+ baselev            1
+ ABIL(5, 6, 6, 10, 4, 10)
+ spd                80
+ gender             0
+ hands              0
+ toac               0
+ strategy           shCreature::kLurk
+ sym                'm'
+ color              kBrown
+ tile_col           1
+ intr1              kFlying
+ MATK(1,Mynock,1)
+}
+
+MonsterIlk GiantCockroach
+{
+ name               "giant cockroach"
+ type               kInsect
+ size               kSmall
+ hitdice            1
+ baselev            1
+ ABIL(8, 13, 8, 8, 3, 6)
+ spd                50
+ gender             0
+ hands              0
+ toac               1
+ strategy           shCreature::kWander
+ sym                'i'
+ color              kBrown
+ tile_col           1
+ feat               kHideUnderObject
+ intr1              kBreathless
+ MATK(1,Cockroach,1)
+}
+
+MonsterIlk ManEatingPlant
+{
+ name               "man eating plant"
+ type               kAberration
+ size               kMedium
+ hitdice            3
+ baselev            1
+ ABIL(12, 10, 1, 1, 1, 1)
+ spd                100
+ gender             0
+ hands              0
+ toac               2
+ strategy           shCreature::kSitStill
+ sym                't'
+ color              kMagenta
+ tile_col           1
+ feat               kSessile
+ MATK(1,ManEater,1)
+}
+
+MonsterIlk LittleGreyAlien
+{
+ name               "little grey alien"
+ type               kHumanoid
+ size               kMedium
+ hitdice            1
+ baselev            1
+ ABIL(6, 8, 8, 14, 14, 10)
+ spd                100
+ gender             2
+ hands              2
+ toac               0
+ strategy           shCreature::kLurk
+ sym                'g'
+ color              kGray
+ tile_col           1
+ MATK(1,Punch,3)
+ MATK(2,Kick,1)
+ MATK(3,HeadButt,1)
+}
+
+MonsterIlk NakedOrz
+{
+ name               "naked orz"
+ type               kAberration
+ size               kSmall
+ hitdice            1
+ baselev            1
+ ABIL(7, 7, 7, 7, 10, 14)
+ spd                70
+ gender             0
+ hands              2
+ toac               0
+ strategy           shCreature::kWander
+ sym                'O'
+ color              kYellow
+ tile_col           4
+ MATK(1,NakedOrz,1)
+}
+
+MonsterIlk Ratbot
+{
+ name               "ratbot"
+ type               kBot
+ size               kTiny
+ hitdice            1
+ baselev            2
+ ABIL(8, 10, 12, 10, 4, -1)
+ spd                100
+ gender             0
+ hands              0
+ toac               3
+ strategy           shCreature::kWander
+ sym                'x'
+ color              kBrown
+ tile_col           4
+ MATK(1,1_4Bite,1)
+}
+
+MonsterIlk GreenTomato
+{
+ name               "green killer tomato"
+ type               kAberration
+ size               kSmall
+ hitdice            1
+ baselev            2
+ ABIL(8, 8, 10, 4, 1, 4)
+ spd                100
+ gender             0
+ hands              0
+ toac               0
+ strategy           shCreature::kLurk
+ sym                't'
+ color              kGreen
+ tile_col           2
+ MATK(1,1_4Smash,1)
+}
+
+MonsterIlk MutantHuman
+{
+ name               "mutant human"
+ type               kMutant
+ size               kMedium
+ hitdice            1
+ baselev            2
+ ABIL(11, 8, 10, 8, 8, 12)
+ spd                100
+ gender             3
+ hands              2
+ toac               0
+ strategy           shCreature::kLurk
+ sym                'h'
+ color              kMagenta
+ tile_col           1
+ pwr1               kHypnosis
+ pwr2               kRegeneration
+ MATK(1,Punch,3)
+ MATK(2,Kick,1)
+ MATK(3,HeadButt,1)
+ RATK(1,SpiderWeb,20)
+}
+
+MonsterIlk SpaceGoblin
+{
+ name               "space goblin"
+ type               kHumanoid
+ size               kSmall
+ hitdice            1
+ baselev            2
+ ABIL(8, 8, 10, 10, 10, 10)
+ spd                100
+ gender             3
+ hands              2
+ toac               0
+ strategy           shCreature::kWander
+ sym                'g'
+ color              kGreen
+ tile_col           4
+ MATK(1,Punch,3)
+ MATK(2,Kick,1)
+ MATK(3,HeadButt,1)
+}
+
+MonsterIlk TapiocaPudding
+{
+ name               "tapioca pudding"
+ type               kOoze
+ size               kMedium
+ hitdice            4
+ baselev            2
+ ABIL(14, 10, 5, 5, 3, 1)
+ spd                -300
+ gender             0
+ hands              0
+ toac               1
+ strategy           shCreature::kLurk
+ sym                's'
+ color              kGray
+ tile_col           2
+ MATK(1,Pudding,1)
+}
+
+MonsterIlk SmartBomb
+{
+ name               "smart bomb"
+ type               kBot
+ size               kSmall
+ hitdice            2
+ baselev            2
+ ABIL(3, 10, 1, 1, 8, 8)
+ spd                10
+ gender             0
+ hands              0
+ toac               1
+ strategy           shCreature::kSitStill
+ sym                'b'
+ color              kBrown
+ tile_col           2
+ res_para           122
+ feat               (kSessile | kExplodes | kNoTreasure)
+ MATK(1,SmartBomb,1)
+}
+
+MonsterIlk WebCrawler
+{
+ name               "web crawler"
+ type               kProgram
+ size               kSmall
+ hitdice            3
+ baselev            2
+ ABIL(8, 8, 14, 15, 5, 6)
+ spd                100
+ gender             0
+ hands              0
+ toac               0
+ strategy           shCreature::kWander
+ sym                'i'
+ color              kOrange
+ tile_col           5
+ MATK(1,1_4Bite,1)
+ RATK(1,SpiderWeb,3)
+}
+
+MonsterIlk KamikazeGoblin
+{
+ name               "kamikaze goblin"
+ type               kHumanoid
+ size               kSmall
+ hitdice            2
+ baselev            3
+ ABIL(8, 8, 10, 10, 10, 10)
+ spd                100
+ gender             3
+ hands              2
+ toac               0
+ strategy           shCreature::kWander
+ sym                'g'
+ color              kOrange
+ tile_col           5
+ feat               kExplodes
+ MATK(1,Punch,5)
+ MATK(2,Kick,2)
+ MATK(3,HeadButt,2)
+ MATK(4,Explode,1)
+}
+
+MonsterIlk Catbot
+{
+ name               "catbot"
+ type               kBot
+ size               kSmall
+ hitdice            2
+ baselev            3
+ ABIL(12, 14, 14, 10, 7, -1)
+ spd                100
+ gender             0
+ hands              0
+ toac               3
+ strategy           shCreature::kWander
+ peaceful           50
+ sym                'x'
+ color              kYellow
+ tile_col           2
+ intr1              kJumpy
+ MATK(1,1_6Bite,4)
+ MATK(2,1_6Claw,3)
+ MATK(3,CatbotRake,2)
+}
+
+MonsterIlk Dogbot
+{
+ name               "dogbot"
+ type               kBot
+ size               kSmall
+ hitdice            2
+ baselev            3
+ ABIL(14, 16, 12, 8, 7, -1)
+ spd                100
+ gender             0
+ hands              0
+ toac               3
+ strategy           shCreature::kWander
+ peaceful           50
+ sym                'x'
+ color              kGray
+ tile_col           3
+ MATK(1,1_6Bite,1)
+}
+
+MonsterIlk RedTomato
+{
+ name               "red killer tomato"
+ type               kAberration
+ size               kSmall
+ hitdice            1
+ baselev            3
+ ABIL(10, 10, 10, 4, 1, 4)
+ spd                100
+ gender             0
+ hands              0
+ toac               0
+ strategy           shCreature::kLurk
+ sym                't'
+ color              kRed
+ tile_col           3
+ MATK(1,1_6Smash,1)
+}
+
+MonsterIlk Redshirt
+{
+ name               "redshirt"
+ type               kHumanoid
+ size               kMedium
+ hitdice            1
+ baselev            3
+ ABIL(10, 10, 8, 6, 8, 8)
+ spd                100
+ gender             3
+ hands              2
+ toac               0
+ strategy           shCreature::kWander
+ sym                'h'
+ color              kRed
+ tile_col           3
+ MATK(1,Punch,3)
+ MATK(2,Kick,1)
+ MATK(3,HeadButt,1)
+}
+
+MonsterIlk SpaceOrc
+{
+ name               "space orc"
+ type               kHumanoid
+ size               kMedium
+ hitdice            2
+ baselev            3
+ ABIL(12, 10, 10, 10, 10, 8)
+ spd                100
+ gender             3
+ hands              2
+ toac               0
+ strategy           shCreature::kWander
+ sym                'O'
+ color              kLime
+ tile_col           1
+ MATK(1,StrongPunch,3)
+ MATK(2,StrongKick,1)
+ MATK(3,StrongHeadButt,1)
+}
+
+MonsterIlk AlienEgg
+{
+ name               "alien egg"
+ type               kEgg
+ size               kTiny
+ hitdice            1
+ baselev            3
+ ABIL(1, 1, 1, 1, 1, 1)
+ spd                100
+ gender             0
+ hands              0
+ toac               0
+ strategy           shCreature::kHatch
+ sym                'o'
+ color              kBrown
+ tile_col           1
+ feat               (kSessile | kNoTreasure)
+}
+
+MonsterIlk VatSlime
+{
+ name               "vat slime"
+ type               kOoze
+ size               kMedium
+ hitdice            3
+ baselev            3
+ ABIL(10, 10, 6, 6, 3, 1)
+ spd                -50
+ gender             0
+ hands              0
+ toac               0
+ strategy           shCreature::kLurk
+ sym                's'
+ color              kGreen
+ tile_col           1
+ MATK(1,VatSlime,1)
+}
+
+MonsterIlk CylonCenturion
+{
+ name               "cylon centurion"
+ type               kDroid
+ size               kMedium
+ hitdice            2
+ baselev            3
+ ABIL(10, 10, 8, 6, 5, 10)
+ spd                80
+ gender             0
+ hands              2
+ toac               2
+ strategy           shCreature::kLurk
+ sym                'C'
+ color              kCyan
+ tile_col           1
+ MATK(1,StrongPunch,1)
+}
+
+MonsterIlk Stormtrooper
+{
+ name               "stormtrooper"
+ type               kHumanoid
+ size               kMedium
+ hitdice            1
+ baselev            4
+ ABIL(10, 10, 10, 6, 8, 10)
+ spd                100
+ gender             2
+ hands              2
+ toac               0
+ strategy           shCreature::kLurk
+ sym                'h'
+ color              kWhite
+ tile_col           2
+ MATK(1,Punch,3)
+ MATK(2,Kick,1)
+ MATK(3,HeadButt,1)
+}
+
+MonsterIlk AstromechDroid
+{
+ name               "astromech droid"
+ type               kDroid
+ size               kSmall
+ hitdice            3
+ baselev            4
+ ABIL(12, 10, 8, 14, 10, -1)
+ spd                80
+ gender             0
+ hands              1
+ toac               3
+ strategy           shCreature::kWander
+ peaceful           80
+ sym                'x'
+ color              kNavy
+ tile_col           5
+ MATK(1,Astromech,4)
+ MATK(2,OilSpill,1)
+}
+
+MonsterIlk ProtocolDroid
+{
+ name               "protocol droid"
+ type               kDroid
+ size               kMedium
+ hitdice            3
+ baselev            4
+ ABIL(12, 10, 8, 8, 10, -1)
+ spd                80
+ gender             0
+ hands              2
+ toac               3
+ strategy           shCreature::kWander
+ peaceful           80
+ sym                'X'
+ color              kYellow
+ tile_col           5
+ MATK(1,PowerfulPunch,1)
+}
+
+MonsterIlk Scrubbot
+{
+ name               "scrubbot"
+ type               kBot
+ size               kMedium
+ hitdice            3
+ baselev            4
+ ABIL(14, 10, 10, 10, 3, -1)
+ spd                100
+ gender             0
+ hands              0
+ toac               4
+ strategy           shCreature::kWander
+ peaceful           80
+ sym                'x'
+ color              kGreen
+ tile_col           7
+ MATK(1,1_6Smash,1)
+ RATK(1,Squirt,1)
+}
+
+MonsterIlk Crite
+{
+ name               "crite"
+ type               kBeast
+ size               kSmall
+ hitdice            2
+ baselev            4
+ ABIL(10, 13, 10, 6, 9, 8)
+ spd                100
+ gender             0
+ hands              0
+ toac               2
+ strategy           shCreature::kLurk
+ sym                'c'
+ color              kBlue
+ tile_col           2
+ MATK(1,CriteTeeth,3)
+ MATK(2,CriteQuill,1)
+}
+
+MonsterIlk HighPingBastard
+{
+ name               "high ping bastard"
+ type               kHumanoid
+ size               kMedium
+ hitdice            2
+ baselev            4
+ ABIL(10, 10, 8, 8, 8, 8)
+ spd                60
+ gender             3
+ hands              2
+ toac               0
+ strategy           shCreature::kLurk
+ sym                'h'
+ color              kGreen
+ tile_col           5
+ MATK(1,Punch,3)
+ MATK(2,Kick,1)
+ MATK(3,HeadButt,1)
+}
+
+MonsterIlk SpaceOrcPyromaniac
+{
+ name               "space orc pyromaniac"
+ type               kHumanoid
+ size               kMedium
+ hitdice            3
+ baselev            4
+ ABIL(12, 10, 10, 10, 10, 8)
+ spd                100
+ gender             3
+ hands              2
+ toac               0
+ strategy           shCreature::kLurk
+ sym                'O'
+ color              kPink
+ tile_col           2
+ MATK(1,StrongPunch,3)
+ MATK(2,StrongKick,1)
+ MATK(3,StrongHeadButt,1)
+}
+
+MonsterIlk CreepingCredits
+{
+ name               "creeping credits"
+ type               kConstruct
+ size               kTiny
+ hitdice            3
+ baselev            4
+ ABIL(10, 10, 8, 10, 10, 10)
+ spd                100
+ gender             0
+ hands              0
+ toac               2
+ strategy           shCreature::kHide
+ sym                '$'
+ color              kRed
+ tile_row           kRowMoney
+ tile_col           4
+ MATK(1,StealCredits,1)
+ feat               kMimicMoney
+}
+
+MonsterIlk MetalSlime
+{
+ name               "liquid metal slime"
+ type               kOoze
+ size               kMedium
+ hitdice            4
+ baselev            4
+ ABIL(10, 10, 6, 6, 3, 1)
+ spd                50
+ gender             0
+ hands              0
+ toac               0
+ strategy           shCreature::kLurk
+ sym                's'
+ color              kAqua
+ tile_col           3
+ intr1              kReflection
+ MATK(1,MetalSlime,1)
+}
+
+MonsterIlk Melnorme
+{
+ name               "melnorme"
+ type               kOutsider
+ size               kLarge
+ hitdice            6
+ baselev            4
+ ABIL(12, 10, 8, 8, 13, 15)
+ spd                100
+ gender             2
+ hands              2
+ toac               0
+ strategy           shCreature::kMelnorme
+ peaceful           100
+ sym                'M'
+ color              kGreen
+ tile_col           2
+ MATK(1,Punch,1)
+ pwr1               kTeleport
+}
+
+MonsterIlk OrzScubaDiver
+{
+ name               "orz scuba diver"
+ type               kAberration
+ size               kMedium
+ hitdice            4
+ baselev            4
+ ABIL(8, 10, 8, 12, 10, 14)
+ spd                100
+ gender             0
+ hands              2
+ toac               0
+ strategy           shCreature::kLurk
+ sym                'O'
+ color              kWhite
+ tile_col           5
+ MATK(1,NakedOrz,1)
+}
+
+MonsterIlk Lizard1
+{
+ name               "spotted lizard"
+ type               kBeast
+ size               kSmall
+ hitdice            3
+ baselev            5
+ ABIL(8, 8, 11, 10, 6, 4)
+ spd                100
+ gender             0
+ hands              0
+ toac               0
+ strategy           shCreature::kLurk
+ sym                'l'
+ color              kGreen
+ tile_col           1
+ MATK(1,Lizard1,1)
+ RATK(1,LizardBreath1,5)
+}
+
+MonsterIlk CylonCommandCenturion
+{
+ name               "cylon command centurion"
+ type               kDroid
+ size               kMedium
+ hitdice            5
+ baselev            5
+ ABIL(10, 10, 8, 6, 9, 10)
+ spd                80
+ gender             0
+ hands              2
+ toac               5
+ strategy           shCreature::kLurk
+ sym                'C'
+ color              kYellow
+ tile_col           2
+ MATK(1,PowerfulPunch,1)
+}
+
+MonsterIlk Klingon
+{
+ name               "klingon"
+ type               kHumanoid
+ size               kMedium
+ hitdice            3
+ baselev            5
+ ABIL(14, 14, 10, 10, 10, 7)
+ spd                100
+ gender             3
+ hands              2
+ toac               0
+ strategy           shCreature::kLurk
+ sym                'k'
+ color              kBrown
+ tile_col           1
+ res_freeze         -6
+ MATK(1,PowerfulPunch,3)
+ MATK(2,PowerfulKick,1)
+}
+
+MonsterIlk Troubleshooter
+{
+ name               "troubleshooter"
+ type               kHumanoid
+ size               kMedium
+ hitdice            2
+ baselev            5
+ ABIL(10, 10, 10, 10, 10, 13)
+ spd                100
+ gender             3
+ hands              2
+ toac               0
+ strategy           shCreature::kLurk
+ sym                'T'
+ color              kRed
+ tile_col           3
+ MATK(1,Punch,3)
+ MATK(2,Kick,1)
+ MATK(3,HeadButt,1)
+}
+
+MonsterIlk CheerleaderNinja
+{
+ name               "cheerleader ninja"
+ type               kHumanoid
+ size               kMedium
+ hitdice            2
+ baselev            5
+ ABIL(12, 12, 18, 10, 6, 12)
+ spd                100
+ gender             1
+ hands              2
+ toac               0
+ strategy           shCreature::kLurk
+ sym                'N'
+ color              kGray
+ tile_col           1
+ MATK(1,NinjaPunch,1)
+ MATK(2,NinjaKick,1)
+}
+
+MonsterIlk Borg
+{
+ name               "borg"
+ type               kCyborg
+ size               kMedium
+ hitdice            2
+ baselev            5
+ ABIL(14, 14, 8, 12, 6, 6)
+ spd                80
+ gender             3
+ hands              2
+ toac               1
+ strategy           shCreature::kLurk
+ sym                'B'
+ color              kNavy
+ tile_col           1
+ MATK(1,PowerfulPunch,1)
+}
+
+MonsterIlk Facehugger
+{
+ name               "facehugger"
+ type               kAlien
+ size               kTiny
+ hitdice            1
+ baselev            5
+ ABIL(12, 12, 8, 10, 6, 8)
+ spd                100
+ gender             0
+ hands              0
+ toac               0
+ strategy           shCreature::kWander
+ sym                'f'
+ color              kBrown
+ tile_col           1
+ MATK(1,FaceHug,1)
+ feat               kNoTreasure
+}
+
+COMMENT { Meant to be never generated but to count survived impregnations. }
+MonsterIlk AlienEmbryo
+{
+ name               "alien embryo"
+ type               kAlien
+ baselev            5
+ sym                'o'
+ color              kRed
+ tile_col           0
+}
+
+MonsterIlk Radbug
+{
+ name               "radbug"
+ type               kInsect
+ size               kMedium
+ hitdice            3
+ baselev            5
+ ABIL(14, 12, 8, 8, 3, 10)
+ spd                95
+ gender             0
+ hands              0
+ toac               2
+ strategy           shCreature::kLurk
+ sym                'i'
+ color              kGreen
+ tile_col           2
+ MATK(1,RadBug,1)
+}
+
+MonsterIlk SpaceOrcBoss
+{
+ name               "space orc boss"
+ type               kHumanoid
+ size               kMedium
+ hitdice            4
+ baselev            5
+ ABIL(14, 12, 10, 10, 12, 10)
+ spd                100
+ gender             3
+ hands              2
+ toac               0
+ strategy           shCreature::kLurk
+ sym                'O'
+ color              kRed
+ tile_col           3
+ MATK(1,StrongPunch,3)
+ MATK(2,StrongKick,1)
+ MATK(3,StrongHeadButt,1)
+}
+
+MonsterIlk Chestburster
+{
+ name               "chestburster"
+ type               kAlien
+ size               kSmall
+ hitdice            3
+ baselev            5
+ ABIL(16, 12, 10, 10, 14, 10)
+ spd                100
+ gender             2
+ hands              0
+ toac               4
+ strategy           shCreature::kLurk
+ sym                'c'
+ color              kRed
+ tile_col           3
+ intr1              kJumpy
+ MATK(1,Chestburster,2)
+ MATK(2,1_6Bite,1)
+}
+
+MonsterIlk AlienPrincess
+{
+ name               "alien princess"
+ type               kAlien
+ size               kSmall
+ hitdice            5
+ baselev            6
+ ABIL(16, 12, 10, 10, 14, 10)
+ spd                100
+ gender             1
+ hands              0
+ toac               4
+ strategy           shCreature::kLurk
+ sym                'A'
+ color              kMagenta
+ tile_col           1
+ MATK(1,AlienPrincess,2)
+ MATK(2,1_6Bite,1)
+}
+
+MonsterIlk Recognizer
+{
+ name               "recognizer"
+ type               kProgram
+ size               kLarge
+ hitdice            8
+ baselev            6
+ ABIL(14, 12, 10, 8, 3, -1)
+ spd                50
+ gender             0
+ hands              0
+ toac               4
+ strategy           shCreature::kWander
+ sym                'R'
+ color              kNavy
+ tile_col           1
+ MATK(1,Recognizer,1)
+ intr1              kFlying
+}
+
+MonsterIlk Radspider
+{
+ name               "radspider"
+ type               kInsect
+ size               kMedium
+ hitdice            4
+ baselev            6
+ ABIL(16, 12, 10, 8, 3, 10)
+ spd                100
+ gender             0
+ hands              0
+ toac               2
+ strategy           shCreature::kLurk
+ sym                'i'
+ color              kRed
+ tile_col           4
+ MATK(1,RadSpider,1)
+}
+
+MonsterIlk KlingonCaptain
+{
+ name               "klingon captain"
+ type               kHumanoid
+ size               kMedium
+ hitdice            6
+ baselev            6
+ ABIL(16, 16, 12, 12, 12, 7)
+ spd                100
+ gender             3
+ hands              2
+ toac               0
+ strategy           shCreature::kWander
+ sym                'k'
+ color              kRed
+ tile_col           2
+ res_freeze         -6
+ MATK(1,PowerfulPunch,3)
+ MATK(2,PowerfulKick,1)
+}
+
+MonsterIlk PinkHorror
+{
+ name               "pink horror"
+ type               kAberration
+ size               kMedium
+ hitdice            6
+ baselev            6
+ ABIL(18, 12, 10, 8, 3, 10)
+ spd                100
+ gender             0
+ hands              0
+ toac               2
+ strategy           shCreature::kLurk
+ sym                'd'
+ color              kPink
+ tile_col           1
+ MATK(1,PinkHorror,1)
+}
+
+MonsterIlk MiGo
+{
+ name               "mi-go"
+ type               kAberration
+ size               kMedium
+ hitdice            4
+ baselev            6
+ ABIL(10, 10, 9, 9, 14, 14)
+ spd                100
+ gender             0
+ hands              2
+ toac               1
+ strategy           shCreature::kWander
+ sym                'F'
+ color              kMagenta
+ tile_col           1
+ MATK(1,BrainExtraction,1)
+ feat               kWarpish
+ intr1              kFlying
+}
+
+MonsterIlk BrainMold
+{
+ name               "brain mold"
+ type               kOoze
+ size               kSmall
+ hitdice            4
+ baselev            6
+ ABIL(10, 10, 6, 6, 3, 14)
+ spd                100
+ gender             0
+ hands              0
+ toac               0
+ strategy           shCreature::kSitStill
+ sym                'f'
+ color              kMagenta
+ tile_col           3
+ feat               kSessile
+ MATK(1,Slime,1)
+ pwr1               kTelepathyPower
+ pwr2               kMentalBlast
+}
+
+MonsterIlk Zergling
+{
+ name               "zergling"
+ type               kZerg
+ size               kSmall
+ hitdice            4
+ baselev            6
+ ABIL(10, 12, 12, 10, 6, 10)
+ spd                115
+ gender             0
+ hands              0
+ toac               4
+ strategy           shCreature::kWander
+ sym                'z'
+ color              kRed
+ tile_col           1
+ MATK(1,Zergling,1)
+}
+
+MonsterIlk BeneGesserit
+{
+ name               "reverend mother"
+ type               kHumanoid
+ size               kMedium
+ hitdice            6
+ baselev            6
+ ABIL(10, 10, 10, 10, 14, 15)
+ spd                100
+ gender             1
+ hands              0
+ toac               0
+ strategy           shCreature::kWander
+ sym                'B'
+ color              kRed
+ tile_col           2
+ MATK(1,ReverendMother,1)
+ intr1              kAutoRegeneration
+ pwr1               kRegeneration
+ pwr2               kMentalBlast
+ pwr3               kTheVoice
+}
+
+MonsterIlk StormtrooperCommander
+{
+ name               "stormtrooper commander"
+ type               kHumanoid
+ size               kMedium
+ hitdice            4
+ baselev            6
+ ABIL(10, 13, 12, 12, 10, 8)
+ spd                100
+ gender             2
+ hands              2
+ toac               0
+ strategy           shCreature::kLurk
+ sym                'h'
+ color              kNavy
+ tile_col           4
+ MATK(1,Punch,3)
+ MATK(2,Kick,1)
+ MATK(3,HeadButt,1)
+}
+
+MonsterIlk SmartMissile
+{
+ name               "smart missile"
+ type               kBot
+ size               kMedium
+ hitdice            4
+ baselev            7
+ ABIL(3, 10, 1, 1, 4, 10)
+ spd                100
+ gender             0
+ hands              0
+ toac               2
+ strategy           shCreature::kWander
+ sym                'b'
+ color              kRed
+ tile_col           3
+ MATK(1,SmartMissile,1)
+ res_blind          100
+ res_stun           100
+ feat               (kExplodes | kNoTreasure)
+ intr1              kFlying
+}
+
+MonsterIlk KlingonCommander
+{
+ name               "klingon commander"
+ type               kHumanoid
+ size               kMedium
+ hitdice            7
+ baselev            7
+ ABIL(17, 17, 13, 14, 14, 8)
+ spd                100
+ gender             3
+ hands              2
+ toac               0
+ strategy           shCreature::kWander
+ sym                'k'
+ color              kMagenta
+ tile_col           3
+ res_freeze         -6
+ MATK(1,PowerfulPunch,3)
+ MATK(2,PowerfulKick,1)
+}
+
+MonsterIlk UsenetTroll
+{
+ name               "usenet troll"
+ type               kHumanoid
+ size               kMedium
+ hitdice            6
+ baselev            7
+ ABIL(18, 15, 10, 8, 6, 3)
+ spd                100
+ gender             2
+ hands              2
+ toac               2
+ strategy           shCreature::kWander
+ sym                'T'
+ color              kGray
+ tile_col           2
+ MATK(1,Troll1,2)
+ MATK(2,Troll2,1)
+ intr1              kAutoRegeneration
+}
+
+MonsterIlk LowPingBastard
+{
+ name               "low ping bastard"
+ type               kHumanoid
+ size               kMedium
+ hitdice            7
+ baselev            7
+ ABIL(10, 10, 10, 15, 10, 10)
+ spd                125
+ gender             3
+ hands              2
+ toac               0
+ strategy           shCreature::kWander
+ sym                'h'
+ color              kCyan
+ tile_col           6
+ MATK(1,StrongPunch,3)
+ MATK(2,StrongKick,1)
+ MATK(3,StrongHeadButt,1)
+}
+
+MonsterIlk SpaceElf
+{
+ name               "space elf"
+ type               kHumanoid
+ size               kMedium
+ hitdice            6
+ baselev            7
+ ABIL(10, 10, 16, 16, 12, 14)
+ spd                100
+ gender             3
+ hands              2
+ toac               0
+ strategy           shCreature::kWander
+ sym                'E'
+ color              kGreen
+ tile_col           1
+ MATK(1,Punch,3)
+ MATK(2,Kick,1)
+ MATK(3,HeadButt,1)
+}
+
+MonsterIlk Hydralisk
+{
+ name               "hydralisk"
+ type               kZerg
+ size               kLarge
+ hitdice            6
+ baselev            7
+ ABIL(20, 15, 10, 10, 8, 8)
+ spd                75
+ gender             0
+ hands              0
+ toac               2
+ strategy           shCreature::kWander
+ sym                kSymZerg
+ color              kBrown
+ tile_col           2
+ MATK(1,1_8Slash,1)
+ RATK(1,Hydralisk,2)
+}
+
+MonsterIlk SewerWorm
+{
+ name               "sewer worm"
+ type               kVermin
+ size               kSmall
+ hitdice            4
+ baselev            7
+ ABIL(12, 14, 12, 4, 3, 8)
+ spd                100
+ gender             0
+ hands              0
+ toac               0
+ strategy           shCreature::kLurk
+ sym                'w'
+ color              kLime
+ tile_col           2
+ MATK(1,SewerWorm,1)
+}
+
+MonsterIlk Lizard2
+{
+ name               "striped lizard"
+ type               kBeast
+ size               kMedium
+ hitdice            5
+ baselev            7
+ ABIL(10, 12, 14, 10, 6, 4)
+ spd                100
+ gender             0
+ hands              0
+ toac               0
+ strategy           shCreature::kLurk
+ sym                'l'
+ color              kNavy
+ tile_col           2
+ MATK(1,Lizard2,1)
+ RATK(1,LizardBreath2,4)
+}
+
+MonsterIlk Sorceress
+{
+ name               "sorceress"
+ type               kHumanoid
+ size               kMedium
+ hitdice            5
+ baselev            7
+ ABIL(8, 10, 10, 10, 14, 16)
+ spd                100
+ gender             1
+ hands              2
+ toac               0
+ strategy           shCreature::kWander
+ sym                'h'
+ color              kOrange
+ tile_col           7
+ MATK(1,Punch,1)
+ RATK(1,Sorceress,3)
+ pwr1               kHypnosis
+ pwr2               kMentalBlast
+}
+
+MonsterIlk CyborgNinja
+{
+ name               "cyborg ninja"
+ type               kCyborg
+ size               kMedium
+ hitdice            7
+ baselev            8
+ ABIL(15, 13, 14, 16, 12, 6)
+ spd                125
+ gender             3
+ hands              2
+ toac               1
+ strategy           shCreature::kWander
+ sym                'N'
+ color              kNavy
+ tile_col           6
+ MATK(1,NinjaPunch,1)
+}
+
+MonsterIlk MutantNinjaTurtle
+{
+ name               "mutant ninja turtle"
+ type               kMutant
+ size               kMedium
+ hitdice            8
+ baselev            8
+ ABIL(16, 14, 16, 12, 10, 14)
+ spd                100
+ gender             3
+ hands              2
+ toac               3
+ strategy           shCreature::kLurk
+ sym                'N'
+ color              kGreen
+ tile_col           2
+ MATK(1,NinjaPunch,1)
+ MATK(2,NinjaKick,1)
+}
+
+MonsterIlk Radscorpion
+{
+ name               "radscorpion"
+ type               kInsect
+ size               kLarge
+ hitdice            6
+ baselev            8
+ ABIL(16, 12, 10, 8, 3, 10)
+ spd                100
+ gender             0
+ hands              0
+ toac               3
+ strategy           shCreature::kLurk
+ sym                'i'
+ color              kMagenta
+ tile_col           3
+ MATK(1,ScorpClaw,3)
+ MATK(2,ScorpTail,1)
+ MATK(3,1_6Bite,1)
+}
+
+MonsterIlk KillerRabbit
+{
+ name               "killer rabbit"
+ type               kBeast
+ size               kSmall
+ hitdice            6
+ baselev            8
+ ABIL(18, 12, 20, 10, 14, 10)
+ spd                150
+ gender             0
+ hands              0
+ toac               0
+ strategy           shCreature::kLurk
+ sym                'q'
+ color              kWhite
+ tile_col           1
+ MATK(1,PowerfulKick,2)
+ MATK(2,RabbitTeeth,1)
+ feat               kUniqueMonster
+ pwr1               kTerrify
+}
+
+MonsterIlk AlienWarrior
+{
+ name               "alien warrior"
+ type               kAlien
+ size               kLarge
+ hitdice            7
+ baselev            8
+ ABIL(22, 12, 12, 10, 14, 10)
+ spd                100
+ gender             2
+ hands              0
+ toac               4
+ strategy           shCreature::kWander
+ sym                'A'
+ color              kRed
+ tile_col           2
+ MATK(1,AlienClaw,3)
+ MATK(2,AlienBite,1)
+ MATK(3,AlienTail,1)
+ feat               kHideUnderObject
+}
+
+MonsterIlk TallGreyAlien
+{
+ name               "tall grey alien"
+ type               kHumanoid
+ size               kMedium
+ hitdice            6
+ baselev            8
+ ABIL(8, 8, 18, 14, 16, 16)
+ spd                100
+ gender             2
+ hands              2
+ toac               0
+ strategy           shCreature::kLurk
+ sym                'g'
+ color              kWhite
+ tile_col           2
+ MATK(1,Punch,3)
+ MATK(2,Kick,1)
+ MATK(3,HeadButt,1)
+ pwr1               kTelepathyPower
+ pwr2               kHypnosis
+ pwr3               kRegeneration
+}
+
+MonsterIlk BrotherhoodPaladin
+{
+ name               "brotherhood paladin"
+ type               kHumanoid
+ size               kMedium
+ hitdice            7
+ baselev            8
+ ABIL(15, 15, 10, 20, 15, 11)
+ spd                100
+ gender             3
+ hands              2
+ toac               0
+ strategy           shCreature::kLurk
+ peaceful           25
+ sym                '@'
+ color              kWhite
+ tile_col           7
+ MATK(1,PowerfulPunch,1)
+}
+
+MonsterIlk SpaceElfLord
+{
+ name               "space elf lord"
+ type               kHumanoid
+ size               kMedium
+ hitdice            7
+ baselev            9
+ ABIL(10, 10, 18, 18, 12, 14)
+ spd                100
+ gender             2
+ hands              2
+ toac               0
+ strategy           shCreature::kWander
+ sym                'E'
+ color              kRed
+ tile_col           2
+ MATK(1,Punch,3)
+ MATK(2,Kick,1)
+ MATK(3,HeadButt,1)
+}
+
+MonsterIlk Monolith
+{
+ name               "monolith"
+ type               kConstruct
+ size               kLarge
+ hitdice            10
+ baselev            9
+ ABIL(12, 20, 1, 8, 18, 18)
+ spd                100
+ gender             0
+ hands              0
+ toac               0
+ strategy           shCreature::kSitStill
+ peaceful           100
+ sym                'M'
+ color              kBlack
+ tile_col           1
+ res_freeze         100
+ res_trans          100
+ MATK(1,Monolith,1)
+ feat               kSessile
+ intr1              kScary
+ pwr1               kTerrify
+ pwr2               kRegeneration
+}
+
+MonsterIlk Lawyer
+{
+ name               "lawyer"
+ type               kHumanoid
+ size               kMedium
+ hitdice            7
+ baselev            9
+ ABIL(10, 10, 18, 14, 10, 15)
+ spd                100
+ gender             3
+ hands              2
+ toac               0
+ strategy           shCreature::kWander
+ sym                'L'
+ color              kBrown
+ tile_col           1
+ MATK(1,Punch,3)
+ MATK(2,Kick,1)
+ MATK(3,HeadButt,1)
+ pwr1               kTeleport
+ pwr2               kCeaseAndDesist
+ pwr3               kSeizeEvidence
+ pwr4               kSueForDamages
+ pwr5               kSummonWitness
+}
+
+MonsterIlk SpiderMine
+{
+ name               "vulture spider mine"
+ type               kDroid
+ size               kSmall
+ hitdice            3
+ baselev            9
+ ABIL(10, 10, 14, 6, 12, 1)
+ spd                120
+ gender             0
+ hands              0
+ toac               0
+ strategy           shCreature::kWander
+ sym                'b'
+ color              kWhite
+ tile_col           4
+ MATK(1,SpiderMine,1)
+ feat               (kBurrow | kExplodes | kNoTreasure)
+}
+
+MonsterIlk Clerkbot
+{
+ name               "clerkbot"
+ type               kBot
+ size               kMedium
+ hitdice            10
+ baselev            10
+ ABIL(16, 10, 10, 10, 10, 12)
+ spd                125
+ gender             0
+ hands              2
+ toac               5
+ strategy           shCreature::kShopKeep
+ peaceful           100
+ sym                'X'
+ color              kWhite
+ tile_col           1
+ MATK(1,Clerkbot,1)
+}
+
+MonsterIlk Docbot
+{
+ name               "docbot"
+ type               kBot
+ size               kMedium
+ hitdice            10
+ baselev            10
+ ABIL(16, 10, 10, 10, 10, 12)
+ spd                100
+ gender             0
+ hands              2
+ toac               5
+ strategy           shCreature::kDoctor
+ peaceful           100
+ sym                'X'
+ color              kGreen
+ tile_col           4
+ MATK(1,Probe,1)
+ MATK(2,Docbot1,1)
+ MATK(3,Docbot2,1)
+ MATK(4,Docbot3,1)
+ MATK(5,BrainExtraction,1)
+}
+
+MonsterIlk AMarine
+{
+ name               "aquamarine marine"
+ type               kHumanoid
+ size               kMedium
+ hitdice            7
+ baselev            10
+ ABIL(16, 16, 12, 18, 14, 10)
+ spd                100
+ gender             3
+ hands              2
+ toac               0
+ strategy           shCreature::kLurk
+ sym                '@'
+ color              kAqua
+ tile_col           4
+ MATK(1,PowerfulPunch,1)
+}
+
+MonsterIlk MGMarine
+{
+ name               "mean green marine"
+ type               kHumanoid
+ size               kMedium
+ hitdice            9
+ baselev            10
+ ABIL(18, 16, 12, 18, 14, 10)
+ spd                100
+ gender             3
+ hands              2
+ toac               0
+ strategy           shCreature::kLurk
+ sym                '@'
+ color              kLime
+ tile_col           3
+ MATK(1,PowerfulPunch,1)
+}
+
+MonsterIlk FiftyFootWoman
+{
+ name               "50 foot woman"
+ type               kMutant
+ size               kHuge
+ hitdice            10
+ baselev            11
+ ABIL(30, 12, 10, 6, 10, 12)
+ spd                50
+ gender             1
+ hands              0
+ toac               2
+ strategy           shCreature::kWander
+ sym                'H'
+ color              kYellow
+ tile_col           1
+ MATK(1,PowerfulPunch,2)
+ MATK(2,PowerfulKick,2)
+ MATK(3,Crush,1)
+}
+
+MonsterIlk ReticulanDissident
+{
+ name               "reticulan dissident"
+ type               kHumanoid
+ size               kMedium
+ hitdice            8
+ baselev            11
+ ABIL(8, 10, 12, 14, 16, 16)
+ spd                100
+ gender             2
+ hands              2
+ toac               0
+ strategy           shCreature::kLurk
+ sym                'g'
+ color              kRed
+ tile_col           3
+ MATK(1,Punch,3)
+ MATK(2,Kick,1)
+ MATK(3,HeadButt,1)
+ pwr1               kTelepathyPower
+ pwr2               kHypnosis
+}
+
+MonsterIlk SpaceElfQueen
+{
+ name               "space elf queen"
+ type               kHumanoid
+ size               kMedium
+ hitdice            8
+ baselev            11
+ ABIL(10, 10, 18, 14, 12, 18)
+ spd                100
+ gender             1
+ hands              2
+ toac               0
+ strategy           shCreature::kWander
+ sym                'E'
+ color              kMagenta
+ tile_col           3
+ MATK(1,Punch,3)
+ MATK(2,Kick,1)
+ MATK(3,HeadButt,1)
+ pwr1               kHypnosis
+ pwr2               kTerrify
+ pwr3               kTelepathyPower
+ pwr4               kRegeneration
+ pwr5               kTeleport
+}
+
+MonsterIlk CCMarine
+{
+ name               "crazy chaos marine"
+ type               kHumanoid
+ size               kMedium
+ hitdice            10
+ baselev            12
+ ABIL(16, 18, 12, 18, 14, 10)
+ spd                100
+ gender             3
+ hands              2
+ toac               0
+ strategy           shCreature::kLurk
+ sym                '@'
+ color              kMagenta
+ tile_col           5
+ MATK(1,PowerfulPunch,1)
+}
+
+MonsterIlk RocketTurret
+{
+ name               "rocket turret"
+ type               kBot
+ size               kLarge
+ hitdice            10
+ baselev            12
+ ABIL(10, 12, 4, 8, 1, -1)
+ spd                100
+ gender             0
+ hands              0
+ toac               10
+ strategy           shCreature::kSitStill
+ sym                'x'
+ color              kRed
+ tile_col           6
+ RATK(1,TurretCannon,1)
+ feat               (kSessile | kExplodes | kNoTreasure)
+ pwr1               kLaunchMissile
+}
+
+MonsterIlk Defiler
+{
+ name               "defiler"
+ type               kZerg
+ size               kMedium
+ hitdice            7
+ baselev            12
+ ABIL(10, 12, 13, 11, 15, 8)
+ spd                105
+ gender             0
+ hands              0
+ toac               0
+ strategy           shCreature::kWander
+ sym                kSymZerg
+ color              kMagenta
+ tile_col           4
+ MATK(1,DefilerMaw,1)
+ RATK(1,PLAGUE,2)
+ feat               kHideUnderObject
+}
+
+MonsterIlk Zealot
+{
+ name               "zealot"
+ type               kHumanoid
+ size               kLarge
+ hitdice            9
+ baselev            12
+ ABIL(12, 12, 16, 12, 12, 18)
+ spd                100
+ gender             3
+ hands              2
+ toac               2
+ strategy           shCreature::kWander
+ peaceful           30
+ sym                'P'
+ color              kYellow
+ tile_col           1
+ MATK(1,PowerfulPunch,1)
+ pwr1               kHaste
+ pwr2               kAdrenalineControl
+}
+
+MonsterIlk HighTemplar
+{
+ name               "high templar"
+ type               kHumanoid
+ size               kMedium
+ hitdice            6
+ baselev            12
+ ABIL(7, 9, 14, 11, 16, 22)
+ spd                100
+ gender             3
+ hands              2
+ toac               0
+ strategy           shCreature::kWander
+ sym                'P'
+ color              kWhite
+ tile_col           3
+ pwr1               kPsionicStorm
+ pwr2               kTeleport
+}
+
+MonsterIlk AlienQueen
+{
+ name               "alien queen"
+ type               kAlien
+ size               kLarge
+ hitdice            12
+ baselev            13
+ ABIL(25, 16, 12, 10, 18, 10)
+ spd                100
+ gender             1
+ hands              0
+ toac               5
+ strategy           shCreature::kLurk
+ sym                'A'
+ color              kPink
+ tile_col           3
+ MATK(1,AlienClaw,3)
+ MATK(2,AlienQueenBite,1)
+ MATK(3,AlienTail,1)
+}
+
+MonsterIlk DarkTemplar
+{
+ name               "dark templar"
+ type               kHumanoid
+ size               kLarge
+ hitdice            8
+ baselev            13
+ ABIL(12, 10, 16, 12, 14, 18)
+ spd                100
+ gender             3
+ hands              2
+ toac               0
+ strategy           shCreature::kLurk
+ peaceful           20
+ sym                'P'
+ color              kBlue
+ tile_col           5
+ MATK(1,StrongPunch,1)
+ intr1              kInvisible
+}
+
+MonsterIlk Dalek
+{
+ name               "dalek"
+ type               kCyborg
+ size               kMedium
+ hitdice            10
+ baselev            13
+ ABIL(16, 12, 10, 14, 16, 8)
+ spd                100
+ gender             0
+ hands              0
+ toac               10
+ strategy           shCreature::kLurk
+ sym                'D'
+ color              kBrown
+ tile_col           1
+ MATK(1,HeavyBotSmash,1)
+ RATK(1,DalekLaser,3)
+ intr1              kShielded
+}
+
+MonsterIlk Lizard3
+{
+ name               "checkered lizard"
+ type               kBeast
+ size               kMedium
+ hitdice            8
+ baselev            13
+ ABIL(12, 14, 16, 10, 6, 4)
+ spd                100
+ gender             0
+ hands              0
+ toac               0
+ strategy           shCreature::kLurk
+ sym                'l'
+ color              kGray
+ tile_col           3
+ MATK(1,Lizard3,1)
+ RATK(1,LizardBreath3,3)
+}
+
+MonsterIlk Warbot
+{
+ name               "warbot"
+ type               kDroid
+ size               kMedium
+ hitdice            12
+ baselev            14
+ ABIL(22, 10, 12, 10, 10, -1)
+ spd                125
+ gender             0
+ hands              2
+ toac               8
+ strategy           shCreature::kLurk
+ sym                'X'
+ color              kOrange
+ tile_col           6
+ res_stun           10
+ res_para           10
+ MATK(1,HeavyBotSmash,1)
+}
+
+MonsterIlk Securitron
+{
+ name               "securitron"
+ type               kBot
+ size               kMedium
+ hitdice            12
+ baselev            14
+ ABIL(22, 10, 12, 10, 10, -1)
+ spd                125
+ gender             0
+ hands              2
+ toac               8
+ strategy           shCreature::kLurk
+ sym                'X'
+ color              kNavy
+ tile_col           2
+ res_stun           10
+ res_para           10
+ MATK(1,HeavyBotSmash,1)
+}
+
+MonsterIlk Guardbot
+{
+ name               "guardbot"
+ type               kBot
+ size               kMedium
+ hitdice            14
+ baselev            14
+ ABIL(22, 10, 12, 10, 10, -1)
+ spd                125
+ gender             0
+ hands              2
+ toac               8
+ strategy           shCreature::kGuard
+ peaceful           100
+ sym                'X'
+ color              kCyan
+ tile_col           3
+ res_stun           10
+ res_para           10
+ MATK(1,HeavyBotSmash,1)
+}
+
+MonsterIlk GiantApe
+{
+ name               "giant ape"
+ type               kMutant
+ size               kHuge
+ hitdice            14
+ baselev            14
+ ABIL(35, 15, 10, 4, 8, 10)
+ spd                50
+ gender             3
+ hands              0
+ toac               5
+ strategy           shCreature::kWander
+ sym                'H'
+ color              kNavy
+ tile_col           2
+ MATK(1,ApePunch,4)
+ MATK(1,PowerfulKick,1)
+}
+
+MonsterIlk GoGo
+{
+ name               "orz go-go"
+ type               kCyborg
+ size               kLarge
+ hitdice            13
+ baselev            14
+ ABIL(12, 16, 12, 14, 14, 19)
+ spd                110
+ gender             0
+ hands              0
+ toac               7
+ strategy           shCreature::kWander
+ sym                'O'
+ color              kBrown
+ tile_col           6
+ res_blind          5
+ res_stun           5
+ res_para           5
+ MATK(1,GoGoSaw,1)
+ RATK(1,GoGoParticleGun,2)
+ RATK(2,GoGoLaser,3)
+ RATK(3,GoGoCannon,4)
+}
+
+MonsterIlk KohrAh
+{
+ name               "Ur-Quan Kohr-Ah"
+ type               kOutsider
+ size               kLarge
+ hitdice            15
+ baselev            15
+ ABIL(15, 15, 18, 18, 11, 11)
+ spd                105
+ gender             3
+ hands              0
+ toac               8
+ strategy           shCreature::kLurk
+ sym                'Q'
+ color              kGray
+ tile_col           2
+ res_blind          100
+ feat               kExplodes
+ intr1              kShielded
+ pwr1               kTerrify
+ pwr2               kDarkness
+ MATK(1,Bisector,1)
+ RATK(1,KohrAhTractor,2)
+}
+
+MonsterIlk BOFH
+{
+ name               "Bastard Operator From Hell"
+ type               kHumanoid
+ size               kMedium
+ hitdice            14
+ baselev            15
+ ABIL(12, 12, 12, 12, 18, 18)
+ spd                100
+ gender             2
+ hands              2
+ toac               0
+ strategy           shCreature::kLurk
+ sym                '@'
+ color              kWhite
+ tile_col           1
+ feat               kUniqueMonster
+ pwr1               kTeleport
+ pwr2               kOpticBlast
+ pwr3               kHypnosis
+ pwr4               kDarkness
+ pwr5               kTelepathyPower
+ MATK(1,Punch,1)
+ MATK(2,BOFH,3)
+}
+
+MonsterIlk MailDaemon
+{
+ name               "mail daemon"
+ type               kProgram
+ size               kLarge
+ hitdice            12
+ baselev            16
+ ABIL(25, 16, 14, 14, 10, 10)
+ spd                100
+ gender             0
+ hands              0
+ toac               7
+ strategy           shCreature::kWander
+ sym                'U'
+ color              kGreen
+ tile_col           3
+ MATK(1,DaemonClaw,3)
+ MATK(2,DaemonBite,1)
+ RATK(1,Viruses,3)
+}
+
+MonsterIlk BindDaemon
+{
+ name               "bind daemon"
+ type               kProgram
+ size               kLarge
+ hitdice            12
+ baselev            16
+ ABIL(25, 16, 14, 14, 10, 10)
+ spd                100
+ gender             0
+ hands              0
+ toac               7
+ strategy           shCreature::kWander
+ sym                'U'
+ color              kYellow
+ tile_col           5
+ MATK(1,DaemonClaw,3)
+ MATK(2,DaemonBite,1)
+ RATK(1,Bugs,3)
+}
+
+MonsterIlk NNTPDaemon
+{
+ name               "nntp daemon"
+ type               kProgram
+ size               kLarge
+ hitdice            13
+ baselev            17
+ ABIL(25, 16, 14, 14, 10, 10)
+ spd                100
+ gender             0
+ hands              0
+ toac               7
+ strategy           shCreature::kWander
+ sym                'U'
+ color              kRed
+ tile_col           4
+ MATK(1,NNTPMelee,1)
+ RATK(1,Flamewars,3)
+}
+
+MonsterIlk FTPDaemon
+{
+ name               "ftp daemon"
+ type               kProgram
+ size               kLarge
+ hitdice            13
+ baselev            17
+ ABIL(25, 16, 14, 14, 10, 10)
+ spd                100
+ gender             0
+ hands              0
+ toac               7
+ strategy           shCreature::kWander
+ sym                'U'
+ color              kWhite
+ tile_col           6
+ MATK(1,DaemonClaw,3)
+ MATK(2,DaemonBite,1)
+ RATK(1,Traffic,3)
+}
+
+MonsterIlk Agent
+{
+ name               "agent"
+ type               kProgram
+ size               kMedium
+ hitdice            20
+ baselev            22
+ ABIL(40, 14, 40, 14, 18, 10)
+ spd                150
+ gender             3
+ hands              2
+ toac               0
+ strategy           shCreature::kWander
+ sym                'T'
+ color              kPink
+ tile_col           1
+ MATK(1,PowerfulPunch,5)
+ MATK(1,PowerfulKick,1)
+ intr1              kAutoRegeneration
+}
+
+MonsterIlk Shodan
+{
+ name               "Shodan"
+ type               kProgram
+ size               kLarge
+ hitdice            25
+ baselev            24
+ ABIL(35, 20, 35, 20, 50, 20)
+ spd                120
+ gender             1
+ hands              2
+ toac               7
+ strategy           shCreature::kLurk
+ sym                'U'
+ color              kLime
+ tile_col           1
+ MATK(1,Shodan,1)
+ RATK(1,Traffic,4)
+ RATK(2,Bugs,4)
+ RATK(3,Viruses,4)
+ RATK(4,Flamewars,4)
+ feat               kUniqueMonster
+ pwr1               kTeleport
+ pwr2               kTelepathyPower
+}
+
+MonsterIlk Invisible
+{
+ name               "invisible monster"
+ sym                'I'
+ color              kOrange
+ tile_col           1
+}
+
+DECLARE MonsterIlk XenosScum
+DECLARE MonsterIlk NumberOf=kMonXenosScum

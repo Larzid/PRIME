@@ -1,0 +1,4 @@
+@LIllumination @E(Constitution) @J(Creativity)@H
+
+Permanently lights up some area around you.  For every @Cskill point@H invested
+@Cradius@H increases by @Cone square@H.

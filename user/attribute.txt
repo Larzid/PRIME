@@ -1,0 +1,23 @@
+@CABILITIES@H
+
+
+You can increase an ability every fourth character level.
+
+
+@FStrength:@H     Affects your carrying capacity and the damage you do in
+              combat with melee weapons or your bare hands.
+
+@FConstitution@H: Figures in to your hit point total.
+
+
+@FDexterity@H:    Helps (or hurts) your shooting ability.  Important for
+              many manual skills like repairing and picking locks.
+
+@FAgility@H:      Improves your armor class and your chances of landing a
+              blow in melee combat.  Helps you dodge certain attacks.
+
+@FIntelligence@H: Important to your computer hacking skills and certain
+              other intellectual pursuits.
+
+@FPsionics@H:     Represents your psionic ability.  Also a measure of how
+              charming you are.

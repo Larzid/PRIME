@@ -1,0 +1,16 @@
+@LThe Voice @E(Intelligence) @J(Coercion)@H
+
+Discipline of manipulating speech to implant a message or order in individual's
+subconscous.  The resulting compulsion to obey is strong enough to overpower
+one's free will.
+
+Using the power on enemy you will issue a command.  Possible orders:
+- You will not read the Nam-Shub!               (forbids computer usage)
+- You will not indulge your mutant nature!      (forbids mutant power use)
+- You will not show belligerence!               (forbids combat)
+- You will not feast upon the poor!             (forces generosity)
+- You will not bear petty grudges!              (pacifies offended friendly)
+
+Command chosen is random from the list of those than make sense.
+
+Duration: from 3 up to skill, but never less than 3 turns

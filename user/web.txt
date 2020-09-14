@@ -1,0 +1,13 @@
+@LWeb @E(Constitution) @J(Creativity)@H
+
+You can do what Spiderman did!  By bending two of your middle fingers you
+release a strand of web at chosen target.  Watch them struggle to get free!
+Or better yet waste no time and beat them up while they try to rip the webs
+to pieces.
+
+If @Cin a pit@H you may shot the strand @Cupwards@H to lift yourself in a hurry.
+This costs @Cone @EPsionics@C point less@H to do.
+
+Min duration:   1 + your_XP_level / 2 + skill / 2
+Max duration:   6 + your_XP_level / 2 + skill
+Range:          5 + your_XP_level / 4

@@ -1,0 +1,10 @@
+@FTranslation @E(Psionics)@H
+
+Translation encompasses dimensional, phase and teleportation effects.
+
+Each @Cskill point@H put in this category makes all @Fmutant powers@H based on
+@Ftranslation@H be @C5%@H easier to use.
+
+Powers belonging to this Metapsychic Faculty:
+- Digestion
+- Teleport

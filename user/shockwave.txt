@@ -1,0 +1,30 @@
+@LShockwave @E(Psionics) @J(Telekinesis)@H
+
+You create a outburst of energy centered at you that damages all adjacent
+creatures and hurls them back.
+
+Blast damage:
+Minimum: skill - 10, but no less than 1
+Maximum: skill + 7, but no less than 7
+
+Anything that survives that is pushed away.  Range starts at one or two randomly
+and is modified according to your skill:
+
+|  range  |  skill  | |  range  |  skill  |
++---------+---------+ +---------+---------+
+|    1    |    0    | |    2    |    0    |
+|    2    |    1    | |    3    |    2    |
+|    3    |    3    | |    4    |    5    |
+|    4    |    6    | |    5    |    9    |
+|    5    |   10    | |    6    |   14    |
+|    6    |   15    | |    7    |   20    |
+|    7    |   21    | |    8    |   27    |
+|    8    |   28    | |   ...   |   ...   |
+|   ...   |   ...   | |   ...   |   ...   |
+
+If creature collides with something it takes damage on impact:
+
+Collision damage: 1 + bonus to 10 + bonus * 2
+Collision stun: 1 + bonus / 4 to 2 + bonus / 3
+
+Bonus starts at zero and increases by two point per each square flown through.

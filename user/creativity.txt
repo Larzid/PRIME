@@ -1,0 +1,16 @@
+@FCreativity @E(Psionics)@H
+
+Creativity is conjuration of matter and energy ex nihilo and harnessing
+energy forms.
+
+Each @Cskill point@H put in this category makes all @Fmutant powers@H based on
+@Fcreativity@H be @C5%@H easier to use.
+
+Powers belonging to this Metapsychic Faculty:
+- Illumination
+- Psi Vomit
+- Optic Blast
+- Web
+- Imbue
+- Electromagnetic Mayhem
+- Psionic Storm

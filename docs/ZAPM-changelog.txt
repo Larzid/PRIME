@@ -1,0 +1,506 @@
+Moved from SPACEHACK document and reversed history order.
+Newest version on top.
+
+#################################################################
+TASKLIST
+
+* "less contaminated" message when not purified
+
+<== LAST CHECK IN
+
+* monsters shouldn't zap player with healing ray gun!
+* fixed peril-sensitive sunglasses bug
+* floppy disk of hypnosis should cause sleep not paralysis
+* bug sensing only works on objects in Hero's square 
+* changed weapon descriptions
+* Fight.cpp & MonsterAI.cpp  seem to check for asleep but not paralyzed hero
+* combat more likely to awaken hero
+* can blindly attack '0'
+* don't render special effects when blind 
+* when blind, use vague name when describing enemy weapon use
+* ghost monster shows up as '0'blip  but can't be attacked
+* fixed grammar: "you spot a acid pit trap" 
+* monsters have gender
+* cylon centurion  (fixed spelling)
+* show armor, implants, weapon commands '[' '+' ')'
+* toggle autopickup command '@'
+* set armor glyph to '[' instead of ']'
+* fix memory leak in shMenu (thanks, Friedrich, for the bug report)
+* sessile monsters won't start moving when stunned or confused
+* sessile monsters can't escape traps
+* god mode 'create feature' command
+* bind uninstall command to 'R' instead of 'U'
+* unbind 'K'
+* capitalized VI keys for gliding
+* better help for VI keys (mention options menu)
+* grammar fix: "you find a acid pit trap"
+* "the anal probe corrodes" message when monster falls into acid
+* improved options menu
+* increased restoration stat repair from 1d4 to 2d4 
+* UI should use all available rows for menus, not just the first 25
+* improved menus with more nethack keybindings such as '@', '$', '?', etc. commands
+* increased alien gestation time 
+* "quick pick" lists of letters are condensed
+* "fadelog" option darkens old log lines instead of clearing them
+* interesting special effects of cloud of viruses, traffic, etc
+* robot town: hospital with docbot
+* alien princess and chestburster monsters
+* shopkeepers check the bill as well as your inventory when you leave the shop
+* obj intrinsics divided into worn/wielded/active/carried 
+* adjust canister prices
+* shopkeeper gets mad when you use a portable hole in its shop
+* fixed various weirdness when leaving shops
+* can't use lockpick/keycard to find secret doors
+* made tribbles more likely to multiply
+* energy cells are now their own object class with '*' glyph
+* sewer code
+* FOV corner peeking
+* monsters that can hide under features and objects
+* mimic monsters: T-1000
+* ratbots
+* beer removes fear, confusion provides fear immunity
+* improve lighting/darkness code
+* ctrl-N for name command
+* sewage is terrain type, not feature
+* further fixes to peril-sensing and spotting code
+* beams affect objs on ground
+* gauss ray blanks disks
+* trash compactor
+* drowning
+* don't displace pets if you're trapped
+* mainframe level
+* fake orgasmatrons
+* repeat letters when picking up items from huge stacks on ground.
+* the(), an(), etc. functions return a buffer now instead of caller having to 
+  deal with that
+* shoot locks off, repair broken locks
+* can't kick adjacent things while you're in a pit
+* brain cylinder
+* reflection for real
+* log XL in logfile, not just title 
+* mi-go, brain extraction
+* Dalek 'D'  shield
+* b: barrel, smart bomb, smart missile
+* ! brain in a jar: drink for gain Int 
+* sessile pets
+* animations for blaster bolt
+* refactor ranged weapons code
+* "web" mutant power
+* better stairs placement
+* magnetically sealed doors
+* fixed some compactor bugs
+* BOFH
+* retina scanner doors and Eye of the BOFH
+* changed implant sites
+* mi-go makes an incision before extracting brain
+* night vision goggles
+* stormtrooper helmet hurts aim
+* radspider bite might confer web mutant power
+* grammar: "Its floppy disk labeled AAIO melts!  You hit the usenet troll!"
+* reduce radspider, radscorpion poison damage
+* lawyer summon witness spell
+* traps in sewer levels 
+* sewer is smelly
+* fixed vision after closing a door.  
+* unable to create window bug (too wide)
+* more debug/diagnostic output
+* shopkeepers only buy items for 1/10 value
+* space marine gets +1 flak jacket instead of +1 pulse rifle
+* monster AI improvements
+* monsters have more HP
+* fixed shield bug
+* energy cells, some armor are lighter
+* radiation suit and power plant guaranteed in sewer plant
+* mutagen and gamma ray gun are radioactive
+* monsters less likely to hit each other with ranged weapons
+* warp-type monsters attracted to transporting hero
+* sewers populated with objects; likely to be dark
+* cockroaches immune to drowning (mythbusters)
+* monsters have more skills and HP
+* droid caller device
+* janitor
+* alarmed doors
+* fix optimized enhance implant message when already at +5
+* tazer->cattle prod, new: chainsaw
+* keycards automatically be prompted for when opening doors
+* space marine armor
+* skills advanced at will
+* print nevermind message when dismissing menu
+* adjust doors visibility in dark room
+* space elves
+* rail slug keeps moving
+* shotgun does more damage at close range, more likely to hit at long range
+* laser weapons work against locks
+* fewer objs in dungeon, but more in closets (with alarms)
+* janitor "disguise"
+* monsters attack more quickly
+* nunchucks
+* win32 build
+
+-- 2009
+
+* misc fixes to I->getStr
+* floppy disk labeled AAIO
+* selective fire for pulse rifle
+* footballs
+* lawyer monster (and powers)
+* you can look at message log when you die
+* ^C will no longer kill game in I->getstr
+* reduced effects of radiation poisoning
+
+-- release_0_6_3 2005-07-13 (special private release)
+
+* fixed encumbrance message bug
+* fixed the debugged an bizarro orgasmatron bug
+* gieger counter inventory description should indicate if it's clicking
+* fixed guardbot tameness bug
+* fixed wreck ilk merging bug
+* fixed coredump when enhancing armor while naked
+* "?" prompt indicated when appropriate
+* rad grenades
+* radiation sterilizes monsters
+* slowed tribble reproduction rate
+* low level monsters have fewer hit points and less variety in stats
+* guide explains count option
+* floppy disk labeled IHTFP
+
+-- release_0_6_2 2004-07-02
+-- release_0_6_1 2004-??-?? (crap! I lost track of this tag!)
+
+* fixed inventory corruption bug when items are melted/destroyed
+* fixed bug when attempting to spawn monster of null ilk
+* stairs no longer trumped by previous feature
+* fixed bug when retaliatory attack attempt by monster with no attacks
+
+-- release_0_6_0 2004-06-16
+
+* gamma caves 9
+* applying orgasmatron now consumes energy
+* fixed bug: "2 debugged cracked floppy DISK of identify"
+* "invisible" glyph marks location of muzzle flashes in dark rooms
+* monsters with sense of smell
+* warp function for god mode
+* tough "mainframe" final level
+* tribbles multiply now
+
+-- release_0_5_0 2004-05-22
+
+* "frightened" effect
+* healing/restoring ray works on you if you're wearing a shield belt
+* confused mapping does trap detection
+* hosed condition
+* cron daemon breathes time / drain xp, stats
+* ftp daemon breathes megabytes / slows you down
+* nntp daemon breathes flames / burns your equipment
+* bind daemon breathes bugs / makes your equipment buggy
+* mail daemon breathes viruses / makes you sick (or maybe spam??)
+* new monster mutant powers: terrify, darkness
+* healing ray doesn't get blocked by shield anymore
+* fire attacks destroy equipment
+* monolith level gain thing
+* healing and full healing no longer kill an alien parasite.
+* sickened condition: -2 to all attack rolls, damage, saves
+* recognizer
+* back to old school rabbit level
+* brain shield defends against terrify power
+* better names for levels
+* acid pits don't appear until level 7
+* monsters don't use ranged attacks from too far away
+* shields work properly again
+* changed haste power
+* acid splash 
+* gain level at the end of a turn instead of interrupting messages
+* you can't get placed on a feature when warping to a new level
+* luck affects will saves
+* bugginess attack
+
+-- release_0_4_0 2004-05-18
+
+* creeping credits attack is a touch attack now
+* multi-identify no longer hides what you found out with next menu
+* power armor, etc should not be fooproofable - they're fooproof inherently 
+* fixed identify strangeness with tools
+* computer bugginess revealed if it eats a disk
+* power plants should show charges
+* tweaked vat/canister mechanics
+* ability increase every 4 levels
+* BAB included in monster hth attacks
+* secondary attacks add 1/2 str bonus
+* optimized enhance armor floppy needed to get a bonus over +3
+* "there is a radiation trap here" (and maybe for other traps)
+* changed weapon damages significantly:
+     knife               1d4
+     club                1d6
+     tazer               1d8
+     katana              1d10
+     batleth      2d8 -> 2d6
+     light saber 1d20 -> 2d8
+
+     pea shooter         1d4
+     laser pistol        1d8
+     blaster             1d8
+     phaser              1d8
+     pistol              1d8
+     sniper rifle        1d10
+     laser rifle         1d12
+     shotgun      2d8 -> 2d6
+     pulse rifle         3d8
+     boltgun             3d10
+     railgun     3d20 -> 3d10
+     laser cannon        4d12
+     chaingun            6d10
+
+* identified ray guns should not retain their foo ray gun status at 0 charges
+* TOTALLY REDID SPEED SYSTEM
+* MAJOR TWEAKS TO MONSTER STATS AND COMBAT STUFF
+
+* grid bugs, etc. are "derezzed" instead of destroyed
+* changed lots of monster symbols
+* equipment damage affects your ac/intrinsics right away.
+* alien eggs might hatch if you shoot at them
+* better interface for lookat command.
+* most offensive canisters can kill an alien embryo
+* single user build
+
+-- release_0_3_0 2004-05-05
+
+* improvized weapons can't be welded anymore
+* worn items and welded weapons can't be thrown
+* fixed a number of timeouts inconsistencies
+* confusion
+* healing, full healing now cure stunning, confusion
+* confused disk of lifeform detect now detects droids
+* detections don't reveal map squares
+* confused enhance armor/weapon now fooproofs, repairs
+* more diagnostics
+* shield now auto-identifies (again)
+* proper capitalization
+* autopickup
+* annihilated creatures shouldn't leave corpses and inventory should be lost too
+* mental blast confuses instead of stuns
+* dungeon branching!!
+* can hack blank floppy disks
+* canisters don't identify as "rusty" or "fooproof"
+* kicking doors hurts now
+* confused debugging optimizes the debugging disk
+* optimized identify identifies multiple items
+* enemies should retaliate attack droids
+* healing ray gun
+* restoration ray gun
+* fixed resistances bug
+* little 1x1 treasure niches
+* bug: glide mode doesn't search adjacent squares
+* hero earns no xp for killing himself
+* droids follow hero upon falling down hole
+* clerkbots get angry if hero escapes through portable hole
+* targetter goggles bestow +2 tohit/damage, not x-ray goggles
+* started work on monster spoilers auto-generator
+* fixed bug: digesting installed implants / worn helmets / worn goggles
+* diagnostics tell you about your energy resistances
+* haste mutant power
+* pouring certain canisters into vats increases likelihood of a good result
+* pouring rad-away into a vat prevents mutation / irradiation results
+* confused blank floppy results in random program
+* fixed bug: redundant restraining bolt no longer causes crash
+* shield belt only works on ranged attacks now (not acid pits, etc.)
+* psion/software engineer get proper starting jumpsuit
+* fixed reflection message
+* hero gets an extra hp every level
+* slightly easier monster generation
+* monsters can be properly killed by their own exploding ray guns
+
+-- release_0_2_9 2004-04-26
+
+* adjust command for inventory
+* any canister should be usable to reload ray gun, but some of them will just
+  break it.
+* narcoleptor
+* poison resistor
+* fixed bug: inifinite loop when aiming rayguns down (and possibly up)
+* monsters throw grenades now
+* fixed bug: "something seems weaker" message rad traps
+* monsters with mutant powers
+* fixed FPE with floppy disks of enhance foo
+* brain shield and will save
+
+-- release_0_2_8 2004-04-23
+
+* bullets/ammo are now bugproof and unenhanceable
+* illumination mutant power
+* adrenaline control mutant power
+* restoration mutant power
+* adrenaline control mutant power
+* tweaked difficulty of mutant power usage
+* profession saved in logfile
+* reduced radius of x-ray vision
+* display ammo count for current weapon
+
+-- release_0_2_7 2004-04-23
+
+* stasis ray gun
+* bug: monsters can see you through walls when you have x-ray vision
+* quit games are logged
+* monsters picking up ammo, weapons and useful items
+* two cortex crossovers should cancel each other out
+* traps added to caves
+* stat boost implants auto-identify
+* rabbit's foot, luck affects saving throws and sporting chance rolls
+* killer rabbit
+* identify can't be wasted
+* spotting traps made more difficult
+* hero can deliberately jump down holes
+* fixed monsters with no hands seeking & wielding weapons
+* better random implant enhancements
+* better trap descriptions
+* portable hole
+* monsters wield railgun
+
+-- release_0_2_6 2004-04-21
+
+* bug: user-given names not saved 
+* establish jumpsuit slot for armor
+* quarterback
+* town moved to level 9, bottom moved to 15
+* fix: orgasmatron properly generated
+* ray guns rarer
+
+-- release_0_2_5 2004-04-21
+
+* tricorder
+* hero immune to critical hits
+* harder to tame higher level droids
+* droids are less inclined to attack peaceful monsters
+* fixed optic blast bug
+* don't bother saying buckazoids and energy cells are debugged
+* fixed bug: can't identify enchantment/fooproofness
+* fixed bug: implant uninstall thru helmet
+* fixed bug: applying a restraining bolt to a grid bug caused a crash.
+* ray guns are now a first class ilk
+
+-- release_0_2_4 2004-04-06
+
+* save/load
+* vi key bindings
+* high score file
+* log file
+* psion guaranteed to have force bolt power (since removed!!)
+* persistant mutant powers
+* software engineer senses bugs
+* some simple traps (trapdoors, pits, acid pits, holes)
+* monsters should avoid traps
+* clarify this whole resistance bullshit ? (resistances now damage reduction)
+* skill advancement system
+* spot skill
+* trap saving throws
+* monster awareness of traps separate from hero's
+* overhauled AI - it's much faster now, but also dumber
+* make install target, zapm runs setuid as "games"
+* better monster inventory specs
+* both stairs should not be generated in the same room
+* "creeping credits" monster
+* enhancement disks fix bugs now
+* faster hp regen at higher character levels
+* canister of spice
+* transporter ray gun
+* ctrl-keys for some commands (e.g., quit is now bound to ^Q)
+* optic blast mutant power
+* date saved in game log
+* should have a chance to spot creeping credits or other disguised monsters
+
+-- release_0_2_3
+
+* monsters carrying treasure
+* reflex saves against area effect weapons
+* floppy disk of hacking
+* fixed a lot of grammar problems
+* profession titles
+* character name
+
+-- release_0_2_2 2003-08-10
+
+* reflection (okay, implemented only as deflection for now)
+* armor modifier to mutant power chances
+* targetter goggles and x-ray goggles actually work
+* shops
+* fix line-of-sight code
+* implants
+* new disks
+* dark areas
+* town
+* guards
+
+-- release_0_2_1 2003-07-20
+
+* numpad fix
+* slightly more graceful bailout if terminal is too small
+* tombstones
+
+-- version 0.2 released -- release_0_2_0 2003-07-20
+
+* duct tape and wrench to fix doors (repair skill)
+* vats
+* corrosion attack
+* mutant powers
+* search skill to notice bad doors
+* droids as pets
+* change agility should update speed
+* pathfinding algorithm
+* simple monster AI
+* canister of speed
+* locked doors
+* droids crave beer
+* kicked objects
+* pouring canisters into vats
+* fixed (activated) message on dropped equipment
+* new monster database
+* made it easier to kick doors down?
+* no longer give away Rads taken, weight, turn counter when not in god mode
+* make low level monsters easier (shouldn't have hands, lower damage attacks)
+* "look" feature
+* better descriptive text for attacks ("the goblin claws!")
+* high AC grants damage reduction
+* sight of new enemies should interrupt hero?
+* monsters should fight back against pets
+* improve identify interface
+* bring droids back to life with repair skill!
+* "do you want your posessions identified?"
+* peaceful monsters
+* some higher level monsters, up to level 10 (well, sorta)
+* apply superglue as repair tool
+* "kill" vs "destroy" message
+* superglued tongue should wear off?
+
+-- version 0.1.0 released 2003-05-30 --
+
+* history
+* doors
+* substantial matter compiler progress
+* simple XL system
+* glide movement
+* bunkerrooms
+* monster database
+* auto-merge items in putobject
+* colors
+* power plant / energy stat
+* secret doors
+* thrown objects / grenades
+* decide whether or not to scrap the whole priority queue thing - 
+   done - things are much more synchronous now!
+* plasma gun
+* area effect weapons
+* heavy items cause encumbrance
+* sorted inventory
+* monsters using ranged weapons
+* simple character generation menu
+* some higher level monsters, up to level 7
+* 13 level dungeon
+* randomized item descriptions
+* ESC, enter keys to escape menus
+* buckazoids and energy cells should never be buggy/optimized
+* redraws better synced with log messages
+* named objects and classes
+* get rid of stupid wielding of computers
+* super simple help screen
+* god mode
+
+-- started summer 2002

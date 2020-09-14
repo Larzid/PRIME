@@ -1,0 +1,6 @@
+@LHypnosis @E(Psionics) @J(Coercion)@H
+
+With a gaze in the eye you can make others fall fast asleep.
+There is @C10%@H chance your target will blink negating the effect.
+
+Duration: (2 + skill / 4) to (10 + skill / 2) turns

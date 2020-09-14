@@ -1,0 +1,1271 @@
+ZapM, a sci-fi roguelike
+
+(other rejected titles: SpaceHack, Dork Patrol, DorkHack, Zap, ZapEm, ZapIt)
+
+
+This file is like my scratch 
+
+
+
+abilities:
+ str - melee to hit and damage
+ agi - AC, reflex saves
+ con - HP
+ dex - ranged to hit
+ int - skills only (such as hacking)
+ wis - will saves, skills
+ cha - mutant powers
+
+character class ideas:
+
+ space marine (dex, str, agi)    "Hicks" 
+   equip: pulse rifle, laser pistol, targeter, BDU
+   skills: pulse rifle, laser pistol
+   companion: combot
+   notes: total badass in combat, very little computer aptitude, not
+          very subtle
+
+ bounty hunter (dex, wis, agi)   "Boba Fett"
+   equip: laser rifle, 
+   skills: favored enemy 
+
+ pilot (agi, dex, int)           "Luke Skywalker"
+   equip: suicide pill, laser pistol, restraining bolt, flightsuit
+   companion:  astromech droid
+   notes: swashbuckling
+   
+ doctor (int, wis, dex)          "Beverly Crusher"
+   equip: hyposprays, tricorder
+   companion: docbot
+   notes: drugs opponents, heals self
+
+ software pirate (str, int, cha) <cyberpunk character>
+   equip: pirated floppy disks, laser pistol, skate board, can of nano-cola, random implant, hex editor
+   companion: utilidroid
+   notes: 1337 h4x0r, very little starting cash
+
+ software engineer (int, dex, wis)
+   equip: six-pack of nano-cola, utility knife, developer kit
+   companion: 
+   notes: wimp in combat until implanted
+
+ hitchhiker (cha, con, wis)      "Arthur Dent"
+   equip: hitchhiker's guide, towel, sturdy boots
+   companion: protocol droid
+   notes: 
+
+ quarterback (agi, cha, str)     "Flash Gordon"
+   equip: football, football pads, football helmet, six-pack of beer
+   companion: cheerleader?
+   notes: +4 jock bonus fighting against nerds / computer programmers
+          +4 bonus to throw
+
+ janitor (dex, con, wis)         "Roger Wilco"
+   equip: mop, bucket of holding, master key, janitor uniform
+   companion: scrubbot
+   notes: stealth-style exploration.  ignored by many enemies.  
+          scrubbot cleans up battle messes
+
+ empath (cha, wis, con)          "Deana Troi"
+   equip: psionic amplifier
+   companion: utilidroid
+
+ psion (wis, cha, int)
+   equip: psionic amplifier
+
+ ninja
+
+
+ techpriest (dex, int, wis)     <WH40K>
+
+
+armor
+
+  name            AC       appearance          special 
+
+ helmet
+  space helmet    2/1      sealed helmet
+  football helmet 1/1      painted helmet
+ eyewear  
+  thermal goggles 0/0      tinted goggles      +2 per, infravision
+  sunglasses      0/0      tinted eyewear  
+ suit
+  jumpsuit        1/1      *yellow jumpsuit
+  reflectsuit     1(10l)/1 silver jumpsuit
+  radiation suit  1/1      *green jumpsuit    immunity to radiation
+  janitor suit    1/1      *blue jumpsuit
+  football uniform 3/1
+  spacesuit       5(7c)/3  
+  plasteel        6(7p)/4  
+  power armor     9/5      (+4 str)
+ gloves
+  rubber gloves   0
+  powergloves     1/0      (+2 str)
+  Faraday gloves  0       *shock resistance 
+ boots
+  jump boots      1/0     *plasteel boots     (+10 jump skill)
+  gravity boots   1/0     *metallic boots     can walk in antigravity 
+  penalty boots   1       *tall boots         won't allow you to leave level
+ belt
+  displacer       0/0     *segmented belt
+  transporter     0/0     *utility belt  
+  antigravity     0/0     *reinforced belt    (usually buggy)
+  invisibility            
+
+implants
+
+  I'm thinking a player can have 3-4 cranial implants at a time?
+  Maybe some character classes have more slots than others...
+
+  can be installed in different locations
+
+  widespectrum analyzer   (+2 per, infravision)
+  target computer         (+2 ranged attack)
+  health monitor          (gives low hitpoint warning)
+
+  cardiostimulator        (+2 con)
+  autoreflex              (+2 ref)
+  psionic amplifier       (+2 psi)
+  nutrigland
+  radprotector            (radiation resistance)
+
+  skill soft              (+10 to a given skill)
+
+  babel fish              (translate)
+
+  if you're wearing implants, need to take ibuprofin all the time?
+
+pills??
+
+
+canisters
+  can be quaffed, thrown, or used as raygun fuel
+
+ alertness
+  q -> +4 perception
+
+ antibiotics
+  q -> cures disease
+ 
+ antimatter
+  q -> instakill
+  t -> touch-attack, instakill "you are vaporized"
+
+ antiradiation
+  q -> radiation protection
+
+ antitoxin
+  q -> poison immunity
+
+ beer
+  q -> confused 2d6 turns
+    (energy for droids)
+
+ energy canister
+  q -> 
+  a -> recharges an item
+
+ extra healing
+  q -> heals 2d8HP
+
+ healing
+  q -> heals d8hp
+
+ improve ability
+  q -> +1 to random stat
+
+ klein bottle
+  q,a -> wormhole teleport
+
+
+mutagen
+  - radioactive
+  - q -> grants you a new mutant power
+  - or should it transmogrify you?
+
+ nano-cola
+  q -> d4 boost to intelligence for a while
+
+ oil
+  q -> sick for 1d6 turns
+  t -> make a slick area
+
+ paralysis
+  q -> paralyzed for 2d6 turns
+
+ resistance
+  q -> resist elements
+
+ restore ability
+
+ rocket fuel
+  q -> poison
+  t -> covers target in fuel
+
+ soap
+  t, ray -> slicks the ground, neutralizes acid
+
+ superglue
+  q -> sticks to your tongue (-4 charisma, can't speak or quaff other 
+       cannisters) until removed with universal solvent or scalpel 
+
+  a -> (droid) can be used for repairs (at -4 penalty)
+       (door, box) can be used to glue a lock shut
+       (floor) can be used to lay a glue trap
+       (self) ??
+
+ water
+
+ universal solvent
+  q -> 4d6 damage, dissolves superglue
+  t -> 3d6 damage, dissolves oil, fuel, superglue, etc.
+  a -> (self) removes superglue from tongue
+
+ universal vaccine
+  q -> disease immunity
+ 
+
+
+
+more software
+ enhance armor
+ enhance weapon
+ identify
+ disable trap
+ gain ability
+ restoration
+#epilepsy
+
+ 
+
+software 
+  -execute floppy disks on a computer.  
+  -better computers are faster
+  -only a few character classes start with a computer
+  -but there is a really good chance of finding a computer in the town
+
+
+ identify         1d6   ($25 per charge)  15
+  identifies 1 item in your inventory per use
+
+ spam            10d6   ($1 per charge)   15
+  useless - deluge of special offers
+
+
+ item scanner     1d6   ($50)        5
+  detects objects
+
+ lifeform scanner 1d6   ($50)        5
+  detects creatures
+
+ cartographer     1d6   ($50)        5
+  maps the level
+
+
+ heal             1d3   ($100)       8
+  heals (6d8 optimized, 4d8 debugged, 2d8 buggy) hp per use 
+ 
+ debugging        1d3   ($100)       5
+  removes 
+
+ enhance armor    1d3   ($100)       5
+  
+ enhance weapon   1d3   ($100)       5
+
+ transport        1d3   ($200)       8
+  
+ virus protection l
+ void field       d6
+
+ operating system        ($200)
+  needed to 
+
+ cure disease     
+
+ reformat         1d6   ($400)      4
+  
+ transmogrify     1d6   ($400)      4
+  transforms target into a new object/creature
+
+ matter compiler  1d3   ($400)      0.5
+  can create any object
+
+ hex editor       d6    ($400)        2
+  prompts you to select a floppy disk or other item to crack
+   successful hack will provide unlimited charges, unsuccessful might result in a buggy item
+   the hex editor refuses to hack another hex editor disk or a matter compiler
+
+   DC = 10 + cost of software / 10
+        optimized software +4 bonus
+        buggy software     -4 penalty
+        optimzed hex editor +4 bonus
+        buggy hex editor   -4 penalty
+
+
+   
+tools
+ duct tape - (generated with 2d6 charges) make repairs (at -2), bind enemies
+ neurocoder (brain-wired computer)
+ multicoder (hand-held computer)
+ holographic projector (Total Recall)
+ matter compiler
+ battery
+ nanomatter
+ communicator - needed to communicate with your guild (everyone starts with this)
+ scalpel - carve up corpses (remove hand,eyes so you can fool 
+           fingerprint,retina scanners)
+ thumper - from Dune
+ utility knife - (leatherman)
+ restraining bolt - useful for taming droids
+ monkey wrench - make repairs (at +0)
+ neuralizer - (from MIB) stuns d6 rounds, memory loss (sunglasses defend)
+ motion tracker - (from Aliens) tracks all movement within 10 squares
+ tricorder - medical diagnostics (tells you how many rad you've taken, etc)
+
+containers
+ bucket
+ bucket of holding 
+
+commands
+
+numpad  move
+t       throw
+u       use
+a       apply (same as use)
+i       inventory
+tab     target
+f       fire weapon at target
+w...    wield weapon
+W...    wear armor
+n...    repeat
+e...    eat
+q...    quaff
+?       help
+/       extended command
+.       rest
+r       run software
+R       read something
+z       zap weapon
+
+
+IDEAS:
+
+software license expires after a certain time period forcing reinstallation
+can be cracked / pirated, but watch out for license enforcer droids!
+corrupt software - doesn't work right, 22% chance of viral infection!
+weapons / armor can be booby-trapped
+
+communicator -
+ combined with business cards allows you to contact various resources:
+  guild:            you start with this number
+  pizza station:    order a pizza into the dungeon!
+  galactic library: access to spoilers (Nethack Oracle style)
+  
+central power store, recharged with energy cells 
+
+ It's totally annoying to the player if she has to manually recharge
+ power-using items all the time.  Especially low-consumption items
+ like the health monitor.
+
+ Should the player require a main power distribution item?  probably.
+ but brings up the possibility that it could be stolen or destroyed,
+ seriously screwing the player over!  I suppose wise players would
+ have a backup power plant?  Nethack players have the same problem
+ with bags of holding (sortof). 
+
+ Or perhaps batteries in main inventory should just automatically
+ beam their energy whereever needed.  Maybe always drain the battery
+ that's closest to empty?  Even this would be an inventory management
+ annoyance, because you'd have to keep dropping the spent batteries.
+
+ Heck, now I'm thinking energy cells should be treated just like
+ buckazoids - inventory management is completely abstracted away!
+ I'll make energy cells a bit on the heavy side so the player can't
+ just hoard them, and will seek out more advanced energy production and
+ distribution items (such as Mr. Fusion).
+
+dreadnaughts and dreadnaught armor - big badass "D" monsters in mecha-like
+ armor
+ 
+
+What's programmable?  
+
+droids (pets):
+ can have a certain number of programs loaded out of these choices:
+
+  repair    50
+  guard     50
+  fetch     50
+  defend    20
+  attack    30
+  disarm    30
+  heal      30
+  scan      10
+  radio     10
+  awaken     3
+  clean     50  cleans the corridors, removing corpses, items, etc.
+  seek
+  pilot
+  speech
+  translate
+
+ different types of droid:
+
+  type                    prob  #progs  default programs
+
+  wardroid                  10    4       speech, guard, attack, defend
+  message droid             20    2       radio, seek
+  scrubbot                  20    2       clean
+  utilidroid                20    4       guard, repair, fetch
+  medical droid             10    3       speech, heal, scan
+  astromech droid           5     4       scan, radio
+  protocol droid            10    2       speech, translate
+  excavator droid           3     2       dig, fetch
+  fido droid                20    3       guard, fetch, roll over
+ 
+ memory upgrades allow for additional programming
+
+
+railgun
+
+random ideas:
+
+ed 209
+hal 9000
+grid bugs
+TRON?
+astromech droid
+Predator
+Vogon poetry attack        (deals wisdom damage)
+babelfish!
+foundation series
+ender's game
+spaceman spiff
+last starfighter: Xur, Zandozan
+brain bug
+bore worms (Flash Gordon)
+peekatie warrior
+agent (dex 30, str 30)
+
+randomized floppy disk titles:
+
+ABDA
+BAYARD WENZEL
+CONFIG.SYS
+EIT ME
+EUTOW
+FWQWGADZ
+GINOH DIVAD
+JUSTIN BAILEY
+LV FTS
+PAPOU
+PHAM NUWEN
+RIBBET
+SOO BAWLZ
+THX 1138
+XA 35
+XERTH Q3
+YERXA
+ZARRO BOOGS
+
+what to steal from
+
+Alien Nation
+Babylon 5
+The Blob
+Heavy Metal  (Lok Nar)
+Back To The Future  (Mr Fusion, flying skateboard)
+Men In Black
+Dune (hunter seeker, atomic shields, spice - look this stuff up)
+
+Artifacts
+
+Mister Pointy (Buffy)
+Continuum Transfunctioner (from Dude Where's my car?)
+  
+The Black Box (from Sneakers)
+Flux Capacitor (Back to the Future)
+Loc Nar (Heavy Metal)
+  activate to create a sphere of annihilation
+Vorillian Orb (SQ3 hintbook bogus item)
+Energy Dome (Freedom of Choice)
+  confers freedom from paralysis
+  +2 to cha, int, wis
+BFG 9000 (Doom)
+Vera (Jayne's gun from Firefly)
+Old Painless (chaingun from Predator)
+
+
+
+minesweeper level - have to get from one side to the other without
+stepping on a mine
+
+
+....200001.2......20001.......
+....30112223......20112.2.....
+....201.2.12......201.2111....
+....1011211245..2.1012.10.....
+112.21111001..33.32233210@....
+001..1..31024.22.21...100.....
+1112212..101.2112223..........
+..00001.......................
+..............................
+..............................
+
+ALIGNMENT:
+ Communist / Neutral / Capitalist
+ Robotic / Neutral / Fleshy
+ 
+
+
+
+chance in 8 for b/d/o when xecuting disk of debugging while confused:
+
+                disk     disk     disk
+                buggy    debugged optimized
+
+obj buggy       7/1/0    5/3/0    5/3/0
+obj debugged    3/4/1    3/2/3    1/4/3
+obj optimized   0/3/5    0/3/5    0/1/7
+
+               11/1/0    9/3/0    9/3/0
+                3/8/1    3/6/3    1/8/3 
+                
+
+                5/1/0    3/3/0    3/3/0
+                3/2/1    3/0/3    1/2/3
+                0/3/3    0/3/3    0/1/5
+
+                
+
+
+GUILDS:
+
+    - hero can join 1 or more guilds.  membership fee is required (200 * character level),
+       and must be renewed whenever you gain a character level.
+
+    - can be contacted via communicator:
+       "Your membership has expired.  Renew now for the low price of (200 * character level)?"
+       "how may we be of service?"
+         "transport away (100 buckazoids)"
+         "nanoparamedic repair (500 buckazoids)" 
+         "bug scan (400 buckazoids)"
+           - fixes buggy items
+         "object identification (50 buckazoids)"
+           - this might make it too easy, perhaps reserve it for merchants only
+    - service prices may be modified according to alignment
+    - will occasionally call upon you to complete a special quest, and reward
+      you with an artifact or something cool if you succeed.
+
+ L33T Software Pirates
+   Arrr!!
+   alignment good: hacking software, stealing from shops
+   alignment bad: buying software in the shop, getting arrested
+   membership benefits: hacking skill focus
+
+ Space Communists
+   good: spreading communist propaganda, converting
+   bad: spending money
+   membership benefits: communist propaganda access and skill focus
+    - no membership fee!
+    - communism is spread through the propaganda skill (neuralyze em first
+      for best results).  A successful skill check will convert the subject
+      and render them peaceful.  If Hero is converted, a deprogramming pill
+      can be used to remove the brainwashing.
+
+ Anti Droids (hate AI)
+   good: destroying droids
+   bad: using or training droids
+   membership benefits:
+
+ Warriors:
+   good: killing enemies
+   bad: running away, bribing enemies, peaceful solutions
+   membership benefits:
+
+ Archeologists:
+
+
+ Merchants:
+   good: selling items in shops
+   bad: 
+   membership benefits: cheap object id, haggling bonus
+
+ Bounty Hunters:
+   good: killing / capturing bounty monsters
+   membership benefits: exotic weapon skill focus
+
+ Thieve's Guild:
+   good: stealing / cracking
+   membership benefits: open lock skill focus
+
+
+
+TOWNS
+
+cantina
+armory
+droids r us
+software store
+
+
+SHOPS
+
+nethack style?
+
+MUTATIONS
+ - extra hand
+ - 
+
+
+GAME BALANCE
+
+  corpses
+    - dead monster should leave corpse behind?
+    - corpses that aren't cleaned up could cause problems:
+        in high-security areas, alerts the guards
+        attracts carrion eating monsters
+    - but don't burden the player with the task of cleaning up the
+      dungeon all the time because that would be really boring!
+
+  time pressure
+    - there has to be a compelling reason not to stand around doing nothing.
+      This game should not reward the typical boring RPG-style
+      stat-gain/level-up oriented play of killing the same kind of monster
+      and/or repeating a mundane task over and over.
+      (starvation /thirst danger, monsters get tougher by the round, guild
+      fees unaffordable unless you keep delving deeper?)  radiation poisoning
+      might be a good motivator at lower levels.  At high levels, this might
+      be more difficult since the Hero will be a total badass.  How about giving
+      the Hero a time limit to finish the game, because the space hulk is about 
+      to fall into a black hole or crash into a gas giant or something?
+
+  guilds
+    - optional
+    - emergency escape for low level characters, but costs money
+    - low and mid-level characters will enjoy quest opportunity
+    - high level advantages?
+    - communism is the subversive guild
+
+$ buckazoids are hard to find in early levels
+    - can be used to buy equipment in occasional shops
+    - can be used to buy guild membership and exercise services
+    - can be used to bribe certain enemies?
+    - character net worth per level?
+
+  radiation protection is important to get early on
+    -rad-away canisters cleanse your system
+    -canister of restoration can repair damage
+    -geiger counter detects radiation 
+    -rad suit, combat armor prevent exposure 
+    -occasional monsters use radiation weapons against you
+    -certain traps radiate you
+    -certain areas radiate you without any immediate clue!
+    -every 10 seconds, radiation level is checked; you take some number of rads
+      for every source that affects you
+    -every 100 seconds, if rads > 50, make con check or 
+      a while later, "you have a headache!", "you feel sick!", etc. 
+       Con damage racks up until you die. 
+    -radiation exposure has a small chance of inducing mutations /
+      psionic powers (the radioactive canister of mutagen is a much better way)
+    -radiation will blank floppy disks.  "You notice the label on one of your
+      floppy disks has peeled off"  A good clue that you're in a radioactive
+      area is that all the floppy disks are blank.
+
+
+
+
+  identifying items is a big pain
+    -the identify software is common and cheap in shops, but you'll have
+     to survive long enough to make it to a shop!
+    -maybe things can be identified by throwing them into a garbage incinerator
+     (or through some other destructive process)
+    -can be tried on or used, and hope you get lucky.
+
+  an annoying monster at early level keeps regenerating until you can
+  eradicate its corpse somehow:
+    - scrubbot will clean it up
+    - mop will too
+    - disintegration beam
+    - throw its corpse into a garbage incinerator, down the stairs, 
+      or through a trap door?
+    - superdigestion mutant power will let you eat it
+
+  droids
+    - a lot tougher than the low-level hero
+    - require restraining bolt to tame
+    - don't heal damage on their own; must be repaired with skill (and spare parts?)
+    - even when reduced to 0 hp can still be repaired; 
+    - destroyed beyond repair at -10 hp, or by annihilation, vaporization, etc
+    - might go haywire?
+    - repairing a disabled (0 hp) hostile droid will make it peaceful
+    - drink beer for fuel (Futurama joke)
+    - spare parts needed to make a droid: (?)
+        - servo actuator
+        - motivator
+        - asimov circuits
+        - armor plating
+        - 
+
+  good armor is hard to find at early levels
+
+  what to do about one-handed / two-handed weapons?
+    - should there be a shield?
+    - dual wield light saber and laser pistol
+    - -2 penalty to hit when shooting pistol with only one hand?
+
+  experience
+    - earned for defeating monsters:  XP = 2^((ML - PL) / 2) * 100
+    - earn 1000 XP, gain a character level
+
+  skills
+    - repair is quite handy for maintaining useful droids 
+       requires a monkey wrench or duct tape
+    - communication is quite handy unless / until you find a Babel Fish
+    - weapon skills (obviously) improve combat effectiveness
+
+    - Advancement is based on exercise.  Each successful use of a
+      skill earns a number of points.  Collect a number of points
+      equal to 10 * (1 + current ranks), and you earn a new rank.
+      This means to have 20 ranks requires a total of 2100 pts.  Can't
+      have more ranks in a skill than 1 + your CL.
+
+           ranks   points
+           1       10
+           2       30
+           3       60
+           4       100
+           5       150
+           6       210
+           7       280
+           8       360
+           9       450
+           10      550
+
+      * communication  ex 10 pts. per use
+      * hide           ex 1 pt per monster that doesn't notice you
+      * listen         ex 2
+      * move silently  ex 1
+      * repair         ex 10
+      * spot           ex 1
+      * search         ex 3
+      * weapon         ex 1, 5 for critical hit
+      * medicine       ex 10
+
+    - A character can only earn a certain number of ranks per level
+      (depends on your class)
+    
+weapon skills:
+
+simple melee weapons  (knife, club, probe, tazer)
+swords (katana, light saber)
+grenades
+handguns (pistol, phaser)
+light guns (shotgun, blaster, rifles)
+heavy guns (pulse rifle, boltgun)
+
+ray guns (no skill)
+
+
+
+
+  the ability to survive in a vacuum is required mid-game         
+    - sudden decompression can occur in some areas
+    - require spacesuit and space helmet or better
+    - vacuum causes death in a few seconds (but is not an instadeath)
+ 
+  coping with antigravity is also required by mid-game
+    - magnetic boots
+    - jetpack
+    - spacesuit is not enough
+
+  mutant powers
+    - latent powers available at beginning?
+    - unless playing an empath or psion, inexperienced use of powers can have 
+      unpredictable results
+    - implants interfere with psionic ability?
+     
+    - telekinesis
+    - pyrokinesis
+    - telepathy
+    - radiation resistance
+    - clairvoyance
+    - polymorphism
+    - mental blast
+    - warp control
+    - interphase
+    - super digestion
+
+
+
+MUNCHKIN CHARACTER GENERATOR
+
+Strength
+Constitution
+Agility
+Dexterity
+Intelligence
+Wisdom
+Charisma
+
+
+WORST ENEMIES
+space marines      aliens
+software engineers pointy haired bosses
+crackers           lawyers
+quarterbacks       
+
+
+TRAPS
+^ trap door     - sends you to next level (or deeper)
+^ pit trap      - you fall and take d6 damage, must climb out
+^ acid pit trap - d6 falling damage, then d6 acid every turn until climb out
+^ teleport trap
+^ 
+
+spot check DC 20 to notice trap within 
+search check DC 15 to find trap
+
+
+monster mutant powers
+ * telepathic
+ * mental blast
+ * healing
+ * teleport
+
+
+
+SYMBOLS:
+
+` 
+~ 
+! canister
+@ hero
+# wall
+$ buckazoids
+% food
+^ trap, portal
+& device
+* 
+( tool
+) weapon
+- 
+_ 
+= ammo
++ closed door, spare parts
+[ 
+{ vat
+] armor
+}
+\ computer terminal
+| 
+; 
+: 
+' open door
+" implant
+, 
+< stairs up
+. floor 
+> stairs down
+/ 
+? floppy disk
+
+
+     Inventory                                                  kraken          
+  ##  Money                                                     Spoon Bender    
+ #   j - 683 buckazoids                                         XL 11:10014     
+  #   Weapons                                                                   
+ ##  p - 2 buggy +0 stun grenades                               Str 10  Int 18  
+#    S - 3 debugged +0 concussion grenades                      Con  9  Wis 12  
+ ##  C - a debugged +0 boltgun                                  Agi 16  Cha 14  
+  #  E - a debugged +1 katana (wielded)                         Dex  8          
+  ##  Ammunition                                                                
+ #   F - 145 bullets                                            Armor 34        
+  #   Armor                                                     HitPts  50/ 50  
+  #  c - a debugged pair of sunglasses (worn)                   Energy 237/100  
+  #  s - a debugged fireproof +4 stormtrooper helmet (worn)     $683            
+   # h - a debugged fireproof +4 radiation suit (worn)                          
+  #  G - a debugged (null) +4 suit of power armor (worn)        Confused        
+   # q - a debugged shield belt (worn)                          Burdened        
+      Canisters                                                                 
+     e - 5 debugged canisters of nano cola                      Lost Maze 13    
+     l - a buggy canister of speed                                              
+     r - a debugged canister of full healing                                    
+Cong A - a debugged canister of spice                           now!  --More--  
+Do y B - a debugged canister of plasma                                          
+     b - a debugged canister of antimatter                                      
+     --More--                                                                   
+ M - a buggy canister of super glue                                             
+ O - a buggy canister of gain ability                                           
+ W - a debugged canister of liquid nitrogen                                     
+  Bionic Implants                                                               
+ J - a debugged radiation processor (installed in frontal lobe)                 
+ P - an optimized poison resistor (installed in left parietal lobe)             
+ g - an optimized +4 cerebral coprocessor (installed in left temporal lobe      
+ T - a debugged tissue regenerator                                              
+ k - an optimized +2 reflex coordinator                                         
+ t - a debugged +3 adrenaline generator (installed in right temporal lobe)      
+  Ray Guns                                                                      
+ D - a debugged empty ray gun                                                   
+ y - a debugged gauss ray gun (5 charges)                                       
+ n - a buggy empty ray gun                                                      
+ o - a debugged transporter ray gun (3 charges)                                 
+ a - a debugged restoration ray gun (3 charges)                                 
+ N - a buggy stasis ray gun (6 charges)                                         
+ U - a debugged gauss ray gun (10 charges)                                      
+  Floppy Disks                                                                  
+ v - 2 debugged floppy disks of transportation                                  
+ i - a debugged cracked floppy disk of identify                                 
+ m - an optimized cracked floppy disk of mapping    
+ ####  K - a debugged cracked floppy disk of enhance armor     Spoon Bender    
+ #    #  Tools                                                  XL 11:10014     
+  #   # H - a debugged flashlight (activated)                                   
+ ##     x - a debugged mini computer                            Str 10  Int 18  
+#       I - 2 optimized portable holes                          Con  9  Wis 12  
+ ##     f - an optimized fusion power plant (100 charges)       Agi 16  Cha 14  
+  #     d - 137 energy cells                                    Dex  8          
+  ##    R - a debugged rabbit's foot                                            
+ #      L - a debugged restraining bolt                         Armor 34        
+  #     w - a buggy monkey wrench                               HitPts  50/ 50  
+  #     u - a debugged geiger counter (activated)               Energy 237/100  
+  #     Q - a debugged The Bizarro Orgasmatron                
+
+
+NEW SPEED SYSTEM PROPOSAL:
+
+the game is played in rounds.
+Every round:
+  * the Clock is incremented
+  * some AP are awarded to each creature according to its speed.
+    The typical award is 100 AP + 5 * agility_bonus.
+  * any creatures that have accumulated positive AP can take a turn
+  * Most actions cost 1000 AP
+  * canisters of speed should 
+
+every 100 pts of speed correspond to doubling of speed
+
+
+PLOT
+
+The center of our galaxy is a dangerous place.  Gigantic stormy
+nebulae and gargantuan swallow starships and even entire worlds.
+Wormholes and other openings into warpspace ..
+
+You have piloted a small starship deep into Sector Z in search of the
+most famous of the derelict hulks, Argonaptigon.  A colony ship from
+ancient Arth, it was lost a thousand years ago.  But rumors on the
+subspace nets claim it has been found again.  Surely there must all
+kinds of glittering riches there to plunder!!
+
+The journey has been perilous.  After a harrowing laser battle with
+some space pirates, you were forced to crash land on a large
+asteroid.  Your spaceship is ruined, 
+
+
+version 0.1 dungeon layout:
+
+12 regular levels
+1 secret hideout level
+
+
+version 0.2 proposed dungeon layout:
+
+4 regular levels
+town level       - 90% chance of computer for sale here
+6 regular levels
+arena level
+2 prison levels
+4 cave levels
+3 secret hideout levels
+
+current dungeon layout
+
+15 regular levels, town on level 8
+6 cave levels branch from town
+
+
+possible dungeon layout
+
+level 1 just below surface after first airlock
+2-4 levels of ruined corridors, mostly abandoned
+A crossroads town level (two ways down from here)
+ > 2-3 levels with lots of robots
+   droid fortress level, HAL 9000 (radiation hazard)
+   2-4 ruined corridors
+   1-3 biolab levels (radiation hazard)
+   motherbrain (has some nifty item)
+
+1-3 corridor levels
+library level with computer terminal
+1-3 corridor levels
+ > 4 minesweeper levels (with a nifty prize at the end)
+2-4 corridor levels
+
+ 
+10-15 radiation waste levels
+
+
+
+
+
+creatures with minds have mutant powers.  what powers to processes have?
+ * spawn process (usually a lesser program)
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+       STILL TO DO TODO ===>
+
+* daggers should stack
+* auto pickup of thrown football 
+* displacing pets doesn't always work?
+* logic bomb (what does it do?)
+* "foo is unaffected" message when monster in acid pit trap
+* clerkbot should use short descriptions of items
+* aquamarine / mean green power armor
+* look command shows features instead of creatures (at least with x-ray vision)
+* the radscoprtion frees himself from the strange feature (deep spot)
+* double charged by shopkeeper for quaffing unpaid obj
+* fake orgasmatrons, armor and weapons too highly priced
+* bad guys too easy
+* melee swords seem too powerful
+* stuff is too heavy
+* melee damage seems really high
+* trenchcoat (enchanment provides Cha boost)
+* can of bug spray
+* pet droids should use ranged weapons
+* opening/closing doors should trigger motion tracker
+* motion tracker works while blind... is this what I want?
+* '\' known command
+* fix profession titles advancement
+
+* need a dodgemesg() func (similar to beamhitsmsg())
+
+* floppy disk of Duke Nukem Forever
+* Y yithian?
+* d flying polyp  flying spaghetti monster  
+* W wookiee
+
+* apply brain cylinder (maybe like restraining bolt to make cyborg pet?)
+
+* print "you kill foo" instead of "you hit foo" "foo is killed" (this is hard)
+
+* kick machinery / moving wall  / other features
+
+* allow pits to be dug in garbage compactor (need to resolve problem of
+  two features in same grid first)
+
+* canister pricing bug
+
+* tone down acid pits?
+
+* 'n' to repeat a command N times
+
+* healing potions should fix "sickened" condition
+
+
+* earn xp for finding secrets, spotting traps, etc?
+* monster groups (klingon captain with klingon retinue)
+* "You can't see that location from here."  But should be able report what is
+  remembered!
+
+* level description file format
+* buggy diagnostics disk should omit some data ; optimized should do a better job?
+
+* exchange weapons key
+* wield two one-handed weapons 
+* duct tape two weapons together?  (bayonet)
+* pistols as close combat weapon
+* tweak speed system: monsters with more energy should go before player?
+* reorganize inventory more often (like after optimizing/debugging/identifying)
+* backdoor into town
+* "killed by a segmentation fault"
+
+* chainsword
+* shield is still hokey
+
+* cloning machine / raygun
+
+* 'r'eload command (same as quiver in nh)
+
+* coffee canister (sleep immunity)
+* get rid of nano-cola?
+
+* should pulse rifle have integrated grenade launcher??
+
+* maybe get rid of energy cells altogether and just have different power plants?
+* strong monsters should smash doors down
+* faraday effect should protect equipment from electricity 
+* don't eject implants when wearing a helmet: destroy them!
+* disintegration beam should work on walls
+* revamp skill system
+* tac nuke (clears whole level?)
+* thermal detonator
+* space orks can use buggy gear
+* power claw
+* revisit armor bonuses
+
+
+
+* monster mutant powers:
+   - slow
+   - energy drain
+
+* daemons with silly breath weapons:
+    swap daemon breathes page faults / teleports you in (you get swapped in!)?
+    http daemon breathes pron / ??
+
+* nasty monster list: 
+    usenet troll (so the poor hero might get a computer if she needs one)
+    gray
+    warbot
+    alien warrior
+    ork
+
+* ranged weapons like angband.  launcher has a multiplier / num shots
+    * bullets (d8)
+    * pistol (1,x1)
+    * sniper rifle (1,x2) SLOWTURN
+    * pulse rifle (3,x1)
+
+* shield belt identify on other creature
+* skills system is still intimidating
+* low-level monsters less likely to use grenades?
+* pausexy on guard to indicate who is speakign?
+* "you spot something"
+* speed system
+* bug: monsters can't be killed by their own grenades
+* fortitude save
+* more messages for canisters poured in vats
+* what happens with guardbot when (accidentally) bypassed by teleport / hole?
+* need a way to summon remote droids (magic whistle)
+* monsters should heal themselves with short-circuit items in readyevent
+* check for more timeouts inconsistencies
+* shift-direction shortcut for 5/g, direction
+* canister shops
+
+* distinguish between dungeon depth and dlevel
+* nice packaging system
+* monsters should learn about triggered rad traps
+* floppy disk of create monster
+* .zapmrc file
+* show profession in logfile, highscore
+
+* prompt before picking up heavy items
+* autosave?
+* prevent lots of ways of robbing shops (falling thru hole, throwing objs)
+* transporter ray should transport objects as well as creatures
+* make sure I got base initializers everywhere!
+
+* randomize keycard colors
+* orb of savescumming artifact
+* better error recovery on save/load
+* lockfile on highscore, logfile
+* confusion
+* more work on tricorder
+* optimized restraining bolts should get a greater chance to survive droid death
+* meta-direction as a shortcut for f, direction 
+* monster that steals your armor and items
+* xray vision should penetrate blindfold
+* boots, gloves, other types of armor
+* fix "things that are here" overflow
+* figure out ^Q, ESC key problems
+* more mutant powers 
+* feature to record and playback games
+* code cleanup
+* alarmed doors
+* implant for guided transportation
+* making noise (kicking doors) should alert monsters (see makeNoise())
+* default skills should be selected for newbie
+* more ways to escape jetpack
+* a better way to detect bugs is needed!!
+* log more stuff to debug log.  such as all the output in the message window
+* compress save files (zlib? gzip?)
+* quiver ?
+* night vision goggles
+* poison ray gun encumbrance message bug
+* choice of player species (race):
+    human -   normal
+    klingon - 
+    cyborg -  +2 natural armor, +2 str, -10 speed
+    program -
+* too much teleportation should have consequences... warp rift? gate in demons?
+* earn XP for finding secret stuff?
+* named implants should appear with description
+
+* mainframe computer that's too heavy to pick up
+
+* "your shot misses something" - should be no message
+
+* Zombie process monster which can't be killed until parent is destroyed
+  - monsters spawned by others record parent id
+  - processes can be buggy
+  - process can't be derezzed if parent process is paralyzed or buggy
+  "The mail daemon is zombified!"
+  zombie is indestructible except with silver weapons 
+
+* silver bullets
+
+* more monster spellcasters (lawyer?)
+* process spellcasters 
+
+* floppy disk of spawn process (creates flying toasters)
+
+* get rid of genestealers (they're just aliens anyway)
+
+* security droid
+
+* built up poison resistance through repeated exposure
+
+* grammar: "killed by an usenet troll", "killed by a explosion"
+
+
+FUTURE VERSIONS
+
+* red pill
+* hallucination
+
+* simplify to 4 abilities:  Str / Agi / Int / Cha
+
+* ultima 4 style alignment system?
+* bfg 9000  uses 100 energy cells, but wipes out everything in LOS
+* bug spray?
+* each time you kill a borg, the collective should improve their tech
+  (+5 DR to the energy that killed them?)
+* multiple weapons, two-handed weapons, 3rd hand mutation
+* use energy cells for melee weapons (tazer, light saber)
+* munchkin character generator?
+* grenade launcher mode for pulse rifle
+* stun setting for blaster / phaser?
+* mutagen should result in a polymorphing effect; rename mutagen as 
+    radioactive waste
+* fix the damn monster AI
+* deeper dungeon
+* @ and , in inventory selection
+* more character classes
+* radiation erases floppy disks?
+* interactive inventory
+* context-help
+* lore on monsters, etc.
+* more matter compiler stuff
+* "." refers to most recently picked up item
+* minesweeper
+* deactivate dropped item
+* w/W commands shouldn't list items already wielded/worn
+* dreadnaughts
+* tractor beam
+* canister of whoop-ass
+
+* Total Perspective Vortex (Restaurant at the End of the Universe p187)
+* energon cube
+
+* invisibility belt

@@ -1,0 +1,47 @@
+# This file is intended to be included at the end of OS-specific makefiles.
+
+$(PROGRAM): config.h $(LIBPIO) $(LIBNOTEYE) $(GENFILES) $(OBJS) $(CONOBJS) $(NEOBJS) $(MOREOBJS)
+	$(CXX) -g -o $(PROGRAM) $(LDFLAGS) $(OBJS) $(CONOBJS) $(MOREOBJS) $(NEOBJS) $(LIBS) $(NELIBS) $(CONLIBS)
+
+$(PROGRAM)_con: config.h $(LIBPIO) $(GENFILES) $(OBJS) $(CONOBJS)
+	$(CXX) -g -o $(PROGRAM)_con $(LDFLAGS) $(OBJS) $(CONOBJS) $(LIBS) $(CONLIBS)
+	cp $(PROGRAM)_con $(PROGRAM)
+
+clean:
+	rm -f $(PROGRAM) $(PROGRAM)_con *.o core user/dbg.*
+
+cleaner: clean
+	rm -f support/encyclopedia2c noteye/libnoteye.o $(LIBNOTEYE)
+	rm -f user/logfile.txt user/highscores.dat user/config.txt
+	rm -rf build
+	cd support/tablemaker && $(MAKE) clean
+	cd support/pio && $(MAKE) clean
+
+cleangen:
+	rm -f $(GENFILES)
+
+Attack.h gen/Attack.cpp: Attacks.txt
+	cd support/tablemaker && $(MAKE)
+	m4 < Attacks.txt | support/tablemaker/tablemaker
+	mv Attack.cpp gen
+	touch AttackList.cpp
+Flavor.h gen/Flavor.cpp: Flavor.txt
+	cd support/tablemaker && $(MAKE)
+	m4 < Flavor.txt | support/tablemaker/tablemaker
+	mv Flavor.cpp gen
+	touch FlavorList.cpp
+MonsterIlk.h gen/MonsterIlk.cpp: Monsters.txt
+	cd support/tablemaker && $(MAKE)
+	m4 < Monsters.txt | support/tablemaker/tablemaker
+	mv MonsterIlk.cpp gen
+	touch MonsterList.cpp
+ObjectIlk.h gen/ObjectIlk.cpp: Items.txt
+	cd support/tablemaker && $(MAKE)
+	support/tablemaker/tablemaker < Items.txt
+	mv ObjectIlk.cpp gen
+	touch ObjectList.cpp
+Lore.h Lore.cpp: Lore.txt
+	$(MAKE) support/encyclopedia2c
+	support/encyclopedia2c Lore.txt
+support/encyclopedia2c: support/encyclopedia2c.cpp
+	$(CXX) support/encyclopedia2c.cpp -o support/encyclopedia2c

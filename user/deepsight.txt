@@ -1,0 +1,7 @@
+@LDeepsight @E(Constitution) @J(Farsenses)@H
+
+Somehow you can see into internal details of technological equipment
+and understand the workings intuitively.  You get @Cskill bonus@H to
+@Crepair@H, @Clock picking@H and @Cprogramming@H.
+
+Skill increase: 1 + skill / 4 but no less than 1

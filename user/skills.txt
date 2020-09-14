@@ -1,0 +1,56 @@
+@CSKILLS@H
+
+
+Each skill is described by its @Fname@H, associated @Bkey ability@H (eg. Str),
+invested points plus bonus points from equipment or other circumstances
+and maximum skill points in parentheses.  How many points you earn each
+time you gain a character level is dictated by your profession.  If you
+do not wish to advance skills right now hit enter.
+
+
+The following weapon skills affect your chances of hitting a target
+with a weapon of that type:
+
+
+@FThrown Weapons @B(Dex)@H: Grenades and any other thrown weapons.
+
+@FHandguns @B(Dex)@H: Guns you hold in one hand: pea shooters, pistols,
+  laser pistols, phasers, blasters.
+
+@FLight Guns @B(Dex)@H: Most guns you aim with both hands: laser rifles,
+  shotguns, and sniper rifles.
+
+@FHeavy Guns @B(Dex)@H: Badass guns: pulse rifles, railguns, chainguns, and
+  cannons.
+
+@FUnarmed Combat @B(Str)@H: Fighting with your bare fists or "unarmed" weapons
+  like power fists and power claws.
+
+@FBasic Melee Weapons @B(Agi)@H: Covers all melee weapons that aren't swords,
+  from mop to chainsaw.
+
+@FSwords @B(Agi)@H: Covers all types of swords, including the bat'leth.
+
+
+The following adventuring skills help you in various ways:
+
+
+@FConcentration @B(Con)@H: Helps you sustain any mutant powers you're using
+  when you might otherwise get distracted.
+
+@FPick Locks @B(Dex)@H: You can pick locks.
+
+@FRepair @B(Dex)@H: You can repair damaged droids, and other things, too.
+
+@FSearch @B(Int)@H: Gives you a better chance to find secrets when you're
+  actively searching for them.
+
+@FProgramming @B(Int)@H: Helps you do things that involve computer progamming.
+
+@FSpot @B(Int)@H: Helps you notice secrets when you're not actively
+  searching for them, even from a distance.
+
+
+@FMutant Power Skills @B(Psi)@H: Each power has a skill associated with
+  it that improves your chances of using the power successfully. Becoming
+  more skilled in use of the power might enhance it in other ways too.

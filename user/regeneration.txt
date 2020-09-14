@@ -1,0 +1,6 @@
+@LRegeneration @E(Constitution) @J(Redaction)@H
+
+You can focus your body to quickly mend wounds.
+When at full health you could regrow lost body limbs.
+
+Hit points restored: skill to skill * 2

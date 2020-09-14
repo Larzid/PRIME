@@ -1,0 +1,15 @@
+@FRedaction @E(Psionics)@H
+
+Powers belonging to Redaction are focused inwards.  Healing and control
+of bodily functions fall under this Faculty.
+
+Each @Cskill point@H put in this category makes all @Fmutant powers@H based on
+@Fredaction@H be @C5%@H easier to use.
+
+Powers belonging to this Metapsychic Faculty:
+- Regeneration
+- Haste
+- Restoration
+- Adrenaline Control
+- Bene Gesserit Awareness
+- Autolysis

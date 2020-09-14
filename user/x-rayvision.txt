@@ -1,0 +1,5 @@
+@LX-Ray Vision @E(Constitution) @J(Farsenses)@H
+
+You can see through walls and other opaque obstacles.
+
+Range: 3 + @Cskill@H / 3

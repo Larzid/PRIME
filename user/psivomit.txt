@@ -1,0 +1,10 @@
+@LPsi Vomit @E(Constitution) @J(Creativity)@H
+
+You open your mouth and let all built up psionic energy out in chosen
+direction.  Quite devastating but requires that you be at your full
+psionic capacity (or overcharged) and @Ctemporarily drains@H your @EPsionics@H
+down @Cto nothing@H.  Can hit several creatures in a row.
+
+Bonus: @EPsionics@H / 2
+Damage:  (1 + bonus + skill / 2) to (10 + bonus + skill)
+Range:   (2 to 4) + (skill / 5)

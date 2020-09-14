@@ -1,0 +1,10 @@
+@CMUTANT POWERS@H
+
+
+Mutant powers are somewhat weird abilities.  They are sensitive
+to your psionic aura which may be augmented or disrupted by
+some items you can wear.
+
+Every skill power invested in mutant power increases chance
+to use it by five percent points in addition to other effects
+gaining a skill in it might give.

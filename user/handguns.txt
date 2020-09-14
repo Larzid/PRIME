@@ -1,0 +1,7 @@
+@FHandguns @E(Dexterity)@H
+
+Into this category fall all guns you hold in one hand.  Examples:
+ * pea shooter
+ * assault pistol
+ * laser pistol
+ * net launcher

@@ -1,0 +1,981 @@
+DEFINE Flavor kF Flavors[kFNumFlavors] shFlavorId
+{
+ appear
+ {
+  appear_type       kUninitialized
+  appear_name       ""
+  appear_glyph 
+  {
+   appear_sym       '@'
+   appear_color     kBlack
+   appear_bkgd      kBlack
+   appear_tile_col  -1
+   appear_tile_row  -1
+  }
+ }
+
+ vague
+ {
+  vague_type        kUninitialized
+  vague_name        ""
+  vague_glyph 
+  {
+   vague_sym        '@'
+   vague_color      kBlack
+   vague_bkgd       kBlack
+   vague_tile_col   -1
+   vague_tile_row   -1
+  }
+ }
+
+ material           kPaper
+ cost               0
+ weight             0
+}
+
+Flavor None
+
+Flavor Belt1
+{
+ appear_name        "padded belt"
+ appear_color       kLime
+ appear_tile_col    5
+}
+
+DECLARE Flavor FirstBelt=kFBelt1
+
+Flavor Belt2
+{
+ appear_name        "old belt"
+ appear_color       kBrown
+ appear_tile_col    6
+}
+
+Flavor Belt3
+{
+ appear_name        "plated belt"
+ appear_color       kNavy
+ appear_tile_col    7
+}
+
+Flavor Belt4
+{
+ appear_name        "heavy belt"
+ appear_color       kRed
+ appear_tile_col    8
+}
+
+Flavor Belt5
+{
+ appear_name        "rugged belt"
+ appear_color       kOrange
+ appear_tile_col    9
+}
+
+Flavor Belt6
+{
+ appear_name        "thin belt"
+ appear_color       kCyan
+ appear_tile_col    10
+}
+
+Flavor Belt7
+{
+ appear_name        "patterned belt"
+ appear_color       kWhite
+}
+
+Flavor Belt8
+{
+ appear_name        "lizard skin belt"
+ appear_color       kGreen
+}
+
+Flavor Belt9
+{
+ appear_name        "shiny metal belt"
+ appear_color       kAqua
+}
+
+DECLARE Flavor LastBelt=kFBelt9
+
+Flavor Can1
+{
+ appear_name        "aluminum canister"
+ appear_color       kCyan
+ appear_tile_col    7
+}
+
+DECLARE Flavor FirstCan=kFCan1
+
+Flavor Can2
+{
+ appear_name        "brass canister"
+ appear_color       kBrown
+ appear_tile_col    8
+ material           kBrass
+}
+
+Flavor Can3
+{
+ appear_name        "copper canister"
+ appear_color       kRed
+ appear_tile_col    9
+ material           kCopper
+}
+
+Flavor Can4
+{
+ appear_name        "glass canister"
+ appear_color       kAqua
+ appear_tile_col    28
+ material           kGlass
+}
+
+Flavor Can5
+{
+ appear_name        "grooved canister"
+ appear_color       kGreen
+ appear_tile_col    10
+ material           kPlastic
+}
+
+Flavor Can6
+{
+ appear_name        "insulated canister"
+ appear_color       kLime
+ appear_tile_col    11
+ material           kCarbonFiber
+}
+
+Flavor Can7
+{
+ appear_name        "iron canister"
+ appear_color       kNavy
+ appear_tile_col    12
+ material           kIron
+}
+
+Flavor Can8
+{
+ appear_name        "magnesium canister"
+ appear_color       kWhite
+ appear_tile_col    13
+ material           kIron
+}
+
+Flavor Can9
+{
+ appear_name        "plastic canister"
+ appear_color       kWhite
+ appear_tile_col    14
+ material           kPlastic
+}
+
+Flavor Can10
+{
+ appear_name        "pressurized canister"
+ appear_color       kOrange
+ appear_tile_col    15
+ material           kPlasteel
+}
+
+Flavor Can11
+{
+ appear_name        "reinforced canister"
+ appear_color       kYellow
+ appear_tile_col    16
+ material           kSteel
+}
+
+Flavor Can12
+{
+ appear_name        "square canister"
+ appear_color       kMagenta
+ appear_tile_col    17
+ material           kPlastic
+}
+
+Flavor Can13
+{
+ appear_name        "steel canister"
+ appear_color       kCyan
+ appear_tile_col    18
+ material           kSteel
+}
+
+Flavor Can14
+{
+ appear_name        "tin canister"
+ appear_color       kBrown
+ appear_tile_col    19
+ material           kTin
+}
+
+Flavor Can15
+{
+ appear_name        "titanium canister"
+ appear_color       kAqua
+ appear_tile_col    20
+ material           kTitanium
+}
+
+Flavor Can16
+{
+ appear_name        "vacuum sealed canister"
+ appear_color       kNavy
+ appear_tile_col    21
+ material           kTitanium
+}
+
+Flavor Can17
+{
+ appear_name        "squeezable canister"
+ appear_color       kMagenta
+ appear_tile_col    22
+ material           kPlastic
+}
+
+Flavor Can18
+{
+ appear_name        "battered canister"
+ appear_color       kGray
+ appear_tile_col    23
+ material           kAluminum
+}
+
+Flavor Can19
+{
+ appear_name        "chromed canister"
+ appear_color       kWhite
+ appear_tile_col    24
+ material           kAluminum
+}
+
+Flavor Can20
+{
+ appear_name        "rusty canister"
+ appear_color       kRed
+ appear_tile_col    25
+ material           kIron
+}
+
+Flavor Can21
+{
+ appear_name        "stained canister"
+ appear_color       kGreen
+ appear_tile_col    26
+ material           kSteel
+}
+
+Flavor Can22
+{
+ appear_name        "bulbous canister"
+ appear_color       kYellow
+ appear_tile_col    27
+ material           kPlastic
+}
+
+Flavor Can23
+{
+ appear_name        "lead canister"
+ appear_color       kGray
+ appear_tile_col    30
+ material           kLead
+}
+
+Flavor Can24
+{
+ appear_name        "fragile canister"
+ appear_color       kAqua
+ appear_tile_col    31
+ material           kGlass
+}
+
+DECLARE Flavor LastCan=kFCan24
+
+Flavor Disk1
+{
+ appear_name        "floppy disk labeled AUTOEXEC.BAT"
+ appear_tile_col    3
+}
+
+DECLARE Flavor FirstDisk=kFDisk1
+
+Flavor Disk2
+{
+ appear_name        "floppy disk labeled AAIO"
+ appear_tile_col    4
+}
+
+Flavor Disk3
+{
+ appear_name        "floppy disk labeled ABDA"
+ appear_tile_col    5
+}
+
+Flavor Disk4
+{
+ appear_name        "floppy disk labeled BAYARD WENZEL"
+ appear_tile_col    6
+}
+
+Flavor Disk5
+{
+ appear_name        "floppy disk labeled CONFIG.SYS"
+ appear_tile_col    7
+}
+
+Flavor Disk6
+{
+ appear_name        "floppy disk labeled EIT ME"
+ appear_tile_col    8
+}
+
+Flavor Disk7
+{
+ appear_name        "floppy disk labeled EUTOW"
+ appear_tile_col    9
+}
+
+Flavor Disk8
+{
+ appear_name        "floppy disk labeled FORMAT C:"
+ appear_tile_col    10
+}
+
+Flavor Disk9
+{
+ appear_name        "floppy disk labeled FWQWGADZ"
+ appear_tile_col    11
+}
+
+Flavor Disk10
+{
+ appear_name        "floppy disk labeled GINOH DIVAD"
+ appear_tile_col    12
+}
+
+Flavor Disk11
+{
+ appear_name        "floppy disk labeled IHTFP"
+ appear_tile_col    13
+}
+
+Flavor Disk12
+{
+ appear_name        "floppy disk labeled JUSTIN BAILEY"
+ appear_tile_col    14
+}
+
+Flavor Disk13
+{
+ appear_name        "floppy disk labeled LV FTS"
+ appear_tile_col    15
+}
+
+Flavor Disk14
+{
+ appear_name        "floppy disk labeled PAPOU"
+ appear_tile_col    16
+}
+
+Flavor Disk15
+{
+ appear_name        "floppy disk labeled PHAM NUWEN"
+ appear_tile_col    17
+}
+
+Flavor Disk16
+{
+ appear_name        "floppy disk labeled RIBBET"
+ appear_tile_col    18
+}
+
+Flavor Disk17
+{
+ appear_name        "floppy disk labeled SOO BAWLZ"
+ appear_tile_col    19
+}
+
+Flavor Disk18
+{
+ appear_name        "floppy disk labeled THX 1138"
+ appear_tile_col    20
+}
+
+Flavor Disk19
+{
+ appear_name        "floppy disk labeled XA 35"
+ appear_tile_col    21
+}
+
+Flavor Disk20
+{
+ appear_name        "floppy disk labeled XERTH Q3"
+ appear_tile_col    22
+}
+
+Flavor Disk21
+{
+ appear_name        "floppy disk labeled YERXA"
+ appear_tile_col    23
+}
+
+Flavor Disk22
+{
+ appear_name        "floppy disk labeled ZARRO BOOGS"
+ appear_tile_col    24
+}
+
+Flavor Disk23
+{
+ appear_name        "floppy disk labeled PRIME.ZIP"
+ appear_tile_col    25
+}
+
+Flavor Disk24
+{
+ appear_name        "floppy disk labeled ZAWESOME"
+ appear_tile_col    27
+}
+
+Flavor Disk25
+{
+ appear_name        "floppy disk labeled OUTER LIMITS"
+ appear_tile_col    28
+}
+
+Flavor Disk26
+{
+ appear_name        "floppy disk labeled SUDO ROOT"
+ appear_tile_col    29
+}
+
+Flavor Disk27
+{
+ appear_name        "floppy disk labeled BARADA NIKTO"
+ appear_tile_col    30
+}
+
+Flavor Disk28
+{
+ appear_name        "floppy disk labeled HAS README"
+ appear_tile_col    31
+}
+
+Flavor Disk29
+{
+ appear_name        "floppy disk labeled BANANANANANA"
+ appear_tile_col    32
+}
+
+Flavor Disk30
+{
+ appear_name        "floppy disk labeled HELLO WORLD"
+ appear_tile_col    33
+}
+
+Flavor Disk31
+{
+ appear_name        "floppy disk labeled CTRL ALT DEL"
+ appear_tile_col    34
+}
+
+DECLARE Flavor LastDisk=kFDisk31
+
+COMMENT { Grenade names are randomly generated every game. }
+
+Flavor Grenade1
+DECLARE Flavor FirstGrenade=kFGrenade1
+Flavor Grenade2
+Flavor Grenade3
+Flavor Grenade4
+Flavor Grenade5
+Flavor Grenade6
+Flavor Grenade7
+Flavor Grenade8
+Flavor Grenade9
+Flavor Grenade10
+Flavor Grenade11
+Flavor Grenade12
+Flavor Grenade13
+Flavor Grenade14
+Flavor Grenade15
+Flavor Grenade16
+Flavor Grenade17
+Flavor Grenade18
+Flavor Grenade19
+Flavor Grenade20
+DECLARE Flavor LastGrenade=kFGrenade20
+
+Flavor Gizmo1
+{
+ appear_name        "fiddly electronic gizmo"
+ appear_color       kNavy
+}
+
+DECLARE Flavor FirstGizmo=kFGizmo1
+
+Flavor Gizmo2
+{
+ appear_name        "gimmicky electronic gizmo"
+ appear_color       kNavy
+}
+
+Flavor Gizmo3
+{
+ appear_name        "fragile electronic gizmo"
+ appear_color       kNavy
+}
+
+Flavor Gizmo4
+{
+ appear_name        "complicated electronic gizmo"
+ appear_color       kNavy
+}
+
+Flavor Gizmo5
+{
+ appear_name        "weird electronic gizmo"
+ appear_color       kNavy
+}
+
+Flavor Gizmo6
+{
+ appear_name        "clunky electronic gizmo"
+ appear_color       kNavy
+}
+
+DECLARE Flavor LastGizmo=kFGizmo6
+
+Flavor Implant1
+{
+ appear_name        "nodular bionic implant"
+ appear_color       kGray
+ appear_tile_col    10
+}
+
+DECLARE Flavor FirstImplant=kFImplant1
+
+Flavor Implant2
+{
+ appear_name        "slippery bionic implant"
+ appear_color       kGreen
+ appear_tile_col    11
+}
+
+Flavor Implant3
+{
+ appear_name        "pulsating bionic implant"
+ appear_color       kLime
+ appear_tile_col    12
+}
+
+Flavor Implant4
+{
+ appear_name        "quivering bionic implant"
+ appear_color       kMagenta
+ appear_tile_col    13
+}
+
+Flavor Implant5
+{
+ appear_name        "stretchy bionic implant"
+ appear_color       kRed
+ appear_tile_col    14
+}
+
+Flavor Implant6
+{
+ appear_name        "perforated bionic implant"
+ appear_color       kNavy
+ appear_tile_col    15
+}
+
+Flavor Implant7
+{
+ appear_name        "squishy bionic implant"
+ appear_color       kAqua
+ appear_tile_col    16
+}
+
+Flavor Implant8
+{
+ appear_name        "bumpy bionic implant"
+ appear_color       kOrange
+ appear_tile_col    17
+}
+
+Flavor Implant9
+{
+ appear_name        "glistening bionic implant"
+ appear_color       kYellow
+ appear_tile_col    18
+}
+
+Flavor Implant10
+{
+ appear_name        "spongy bionic implant"
+ appear_color       kYellow
+ appear_tile_col    19
+}
+
+Flavor Implant11
+{
+ appear_name        "gelatinous bionic implant"
+ appear_color       kCyan
+ appear_tile_col    20
+}
+
+Flavor Implant12
+{
+ appear_name        "smelly bionic implant"
+ appear_color       kNavy
+ appear_tile_col    21
+}
+
+Flavor Implant13
+{
+ appear_name        "slimy bionic implant"
+ appear_color       kWhite
+ appear_tile_col    22
+}
+
+Flavor Implant14
+{
+ appear_name        "bulbous bionic implant"
+ appear_color       kPink
+ appear_tile_col    23
+}
+
+Flavor Implant15
+{
+ appear_name        "gossamer bionic implant"
+ appear_color       kGreen
+ appear_tile_col    24
+}
+
+Flavor Implant16
+{
+ appear_name        "thin bionic implant"
+ appear_color       kGray
+ appear_tile_col    25
+}
+
+Flavor Implant17
+{
+ appear_name        "pyramidal bionic implant"
+ appear_color       kYellow
+ appear_tile_col    26
+}
+
+Flavor Implant18
+{
+ appear_name        "barbed bionic implant"
+ appear_color       kRed
+ appear_tile_col    27
+}
+
+Flavor Implant19
+{
+ appear_name        "tentacled bionic implant"
+ appear_color       kPink
+ appear_tile_col    28
+}
+
+Flavor Implant20
+{
+ appear_name        "bulging bionic implant"
+ appear_color       kOrange
+ appear_tile_col    29
+}
+
+Flavor Implant21
+{
+ appear_name        "writhing bionic implant"
+ appear_color       kRed
+ appear_tile_col    30
+}
+
+Flavor Implant22
+{
+ appear_name        "bent bionic implant"
+ appear_color       kGray
+ appear_tile_col    31
+}
+
+Flavor Implant23
+{
+ appear_name        "oozing bionic implant"
+ appear_color       kBrown
+ appear_tile_col    32
+}
+
+Flavor Implant24
+{
+ appear_name        "wooly bionic implant"
+ appear_color       kWhite
+ appear_tile_col    3
+}
+
+Flavor Implant25
+{
+ appear_name        "twisted bionic implant"
+ appear_color       kLime
+ appear_tile_col    4
+}
+
+Flavor Implant26
+{
+ appear_name        "starfish bionic implant"
+ appear_color       kMagenta
+ appear_tile_col    5
+}
+
+Flavor Implant27
+{
+ appear_name        "stemlike bionic implant"
+ appear_color       kGreen
+ appear_tile_col    6
+}
+
+Flavor Implant28
+{
+ appear_name        "elongated bionic implant"
+ appear_color       kBrown
+ appear_tile_col    7
+}
+
+DECLARE Flavor LastImplant=kFImplant28
+
+Flavor Jumpsuit1
+{
+ appear_name        "plaid jumpsuit"
+ appear_color       kGreen
+ appear_tile_col    6
+}
+
+DECLARE Flavor FirstJumpsuit=kFJumpsuit1
+
+Flavor Jumpsuit2
+{
+ appear_name        "yellow jumpsuit"
+ appear_color       kYellow
+ appear_tile_col    7
+}
+
+Flavor Jumpsuit3
+{
+ appear_name        "green jumpsuit"
+ appear_color       kLime
+ appear_tile_col    5
+}
+
+Flavor Jumpsuit4
+{
+ appear_name        "blue jumpsuit"
+ appear_color       kNavy
+ appear_tile_col    4
+}
+
+Flavor Jumpsuit5
+{
+ appear_name        "black jumpsuit"
+ appear_color       kBlue
+ appear_tile_col    3
+}
+
+Flavor Jumpsuit6
+{
+ appear_name        "red jumpsuit"
+ appear_color       kRed
+ appear_tile_col    11
+}
+
+Flavor Jumpsuit7
+{
+ appear_name        "orange jumpsuit"
+ appear_color       kOrange
+ appear_tile_col    12
+}
+
+Flavor Jumpsuit8
+{
+ appear_name        "indigo jumpsuit"
+ appear_color       kMagenta
+ appear_tile_col    13
+}
+
+Flavor Jumpsuit9
+{
+ appear_name        "violet jumpsuit"
+ appear_color       kPink
+ appear_tile_col    14
+}
+
+Flavor Jumpsuit10
+{
+ appear_name        "white jumpsuit"
+ appear_color       kWhite
+ appear_tile_col    15
+}
+
+DECLARE Flavor LastJumpsuit=kFJumpsuit10
+
+Flavor Key1
+{
+ appear_name        "red keycard"
+ appear_color       kRed
+ appear_tile_col    5
+}
+
+DECLARE Flavor FirstKey=kFKey1
+
+Flavor Key2
+{
+ appear_name        "green keycard"
+ appear_color       kGreen
+ appear_tile_col    4
+}
+
+Flavor Key3
+{
+ appear_name        "blue keycard"
+ appear_color       kNavy
+ appear_tile_col    3
+}
+
+Flavor Key4
+{
+ appear_name        "orange keycard"
+ appear_color       kOrange
+ appear_tile_col    6
+}
+
+Flavor Key5
+{
+ appear_name        "purple keycard"
+ appear_color       kMagenta
+ appear_tile_col    7
+}
+
+DECLARE Flavor LastKey=kFKey5
+
+Flavor RayGun1
+{
+ appear_name        "yellow ray gun"
+ appear_color       kYellow
+ appear_tile_col    3
+}
+
+DECLARE Flavor FirstRayGun=kFRayGun1
+
+Flavor RayGun2
+{
+ appear_name        "indigo ray gun"
+ appear_color       kBlue
+ appear_tile_col    4
+}
+
+Flavor RayGun3
+{
+ appear_name        "blue ray gun"
+ appear_color       kNavy
+ appear_tile_col    5
+}
+
+Flavor RayGun4
+{
+ appear_name        "red ray gun"
+ appear_color       kRed
+ appear_tile_col    6
+}
+
+Flavor RayGun5
+{
+ appear_name        "cyan ray gun"
+ appear_color       kCyan
+ appear_tile_col    7
+}
+
+Flavor RayGun6
+{
+ appear_name        "magenta ray gun"
+ appear_color       kMagenta
+ appear_tile_col    8
+}
+
+Flavor RayGun7
+{
+ appear_name        "white ray gun"
+ appear_color       kWhite
+ appear_tile_col    9
+}
+
+Flavor RayGun8
+{
+ appear_name        "green ray gun"
+ appear_color       kGreen
+ appear_tile_col    10
+}
+
+Flavor RayGun9
+{
+ appear_name        "orange ray gun"
+ appear_color       kOrange
+ appear_tile_col    11
+}
+
+Flavor RayGun10
+{
+ appear_name        "silver ray gun"
+ appear_color       kAqua
+ appear_tile_col    12
+}
+
+Flavor RayGun11
+{
+ appear_name        "gold ray gun"
+ appear_color       kYellow
+ appear_tile_col    13
+}
+
+Flavor RayGun12
+{
+ appear_name        "violet ray gun"
+ appear_color       kMagenta
+ appear_tile_col    14
+}
+
+Flavor RayGun13
+{
+ appear_name        "pink ray gun"
+ appear_color       kPink
+ appear_tile_col    15
+}
+
+Flavor RayGun14
+{
+ appear_name        "brown ray gun"
+ appear_color       kBrown
+ appear_tile_col    16
+}
+
+Flavor RayGun15
+{
+ appear_name        "lime ray gun"
+ appear_color       kLime
+ appear_tile_col    17
+}
+
+Flavor RayGun16
+{
+ appear_name        "black ray gun"
+ appear_color       kBlue
+ appear_tile_col    18
+}
+
+DECLARE Flavor LastRayGun=kFRayGun16
+
+DECLARE Flavor NumFlavors

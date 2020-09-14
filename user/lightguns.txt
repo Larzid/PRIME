@@ -1,0 +1,7 @@
+@FLight guns @E(Dexterity)@H
+
+Two handed rifles belong to this category.  Examples:
+ * shotgun
+ * sniper rifle
+ * laser rifle
+ * speargun

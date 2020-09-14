@@ -1,0 +1,4 @@
+@FPick Locks @E(Dexterity)@H
+
+Affects how likely you are to open a door using a @Clock pick@H.  Status of the
+pick also modifies your chance by -%5 to +5% accordingly.

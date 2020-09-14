@@ -1,0 +1,30 @@
+@CPROGRAMMING@H
+
+Programming is a difficult activity.  You set out to write a new program
+and hope it does not have bugs after you are done.  There are a few things
+that affect your success rate:
+
+
+@FCondition@H                       @Fchance@H             @Fnotes@H
+Base chance for success ........  30%
+Program complexity .............  -5%   for each full @C20 BZ@H of base cost
+Program type is identified ..... +20%
+Program type is unidentified ... -20%   (does not affect software engineers)
+Blank disk used is @Ebuggy@H ....... -20%
+Blank disk used is @Doptimized@H ... +10%
+Your programming skill .........  +5%   for each skill point
+
+
+Note that the chances for success will not include blank disk quality
+modifiers unless you know its state.  It is assumed to be debugged
+in that case.  Keep in mind this may result in inaccurate prediction.
+
+
+Your programming skill is influenced by several other factors.  To know
+what they are read its information in skill screen help. 
+
+
+Note: You can cancel writing a program at any time and the blank floppy
+disk will stay unused.  However, if you try to specify a program and
+fail (due to typo or bad guess) there is 25% chance for the disk to self
+destruct.

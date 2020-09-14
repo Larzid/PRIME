@@ -1,0 +1,15 @@
+@FProgramming @E(Intelligence)@H
+
+This skill decides how successful are you at different tasks requiring not
+merely the use of a computer but issuing complex commands to the electronic
+(or not!) "brain" inside.
+
+Activites that make use of @Iprogramming@H:
+- writing new program on @Cblank disk@H (hit help there for more information)
+- controlling output of @Cmatter compiler@H
+- using @Cfloppy disk of hacking@H for any task
+
+What affects @Iprogramming@H skill:
+- Quality of used computer's @Foperating system@H.
+- Drinking @Dcoffee@H temporarily helps for @C+2@H points.
+- Being @Econfused@H is a bad idea (@E-5@H points).

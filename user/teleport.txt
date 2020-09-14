@@ -1,0 +1,11 @@
+@LTeleport @E(Psionics) @J(Translation)@H
+
+Fold space to transport yourself far away.  Warpish creatures may intercept
+your travel and follow you.
+
+Each @Cskill point over five@H grants you @C10% chance@H to @Ccontrol@H destination
+of the teleport.
+
+After each teleport you may get disoriented for two to four turns.  With no
+skill it is guaranteed, at @Cskill 3@H chance is @C70%@H, at @Cskill 7@H
+chance is @C30%@H and at skill 10 or more you are immune to this effect.

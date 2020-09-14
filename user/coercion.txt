@@ -1,0 +1,12 @@
+@FCoercion @E(Psionics)@H
+
+Coercion involves mind control and other forms of messing with minds.
+
+Each @Cskill point@H put in this category makes all @Fmutant powers@H based on
+@Fcoercion@H be @C5%@H easier to use.
+
+Powers belonging to this Metapsychic Faculty:
+- Hypnosis
+- Mental Blast
+- Cause Fear
+- The Voice

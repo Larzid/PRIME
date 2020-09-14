@@ -1,0 +1,40 @@
+
+
+
+skill system ideas...
+
+rename 'unarmed' to 'hand-to-hand' (maybe 'Kung Fu')
+
+levels:
+                     +Hit   +Damage     Ranks     Special
+Untrained Offhand     -8      -4         -
+Untrained             -4      -1         0
+Basic                  0       0         4  
+Skilled               +2      +1         8        pistol whip, throw to square
+Expert                +4      +2         12       wield two-handed weap in 
+                                                  main hand (but not in off hand)
+
+
+
+rename hacking to "computer programming"
+
+
+
+
+
+
+
+
+
+OFFHAND Weapons
+
+new 'e'quip command for wielding 2nd weapon?
+
+TWO-HANDED GUN:
+'F' will use butt of rifle
+
+
+TWO GUNS:
+'f' will fire both, but take only elapse max (weapon1 time, weapon2 time)
+'F' will pistol whip with both
+

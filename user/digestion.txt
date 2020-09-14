@@ -1,0 +1,16 @@
+@LDigestion @E(Constitution) @J(Translation)@H
+
+You can eat and digest virtually anything without incurring any side
+effects bad or good.  This power comes with super flexibility to eat
+items that you have equipped but consuming worn eyewear, worn helmets
+and installed cranial bionic implants is going to be difficult until
+they are removed.  Mainly useful to get rid of some buggy stuff.
+
+However, it has been observed you can get @Esick@H from eating floppy
+@Cdisks containing viruses@H for some bizarre reason.
+
+If you have at least @C3 skill points@H in this power your tongue can
+become briefly long enough to @Csnatch worn eyewear@H with ease.
+
+To make your tongue have enough force to @Ctake off worn helmet@H you
+need to have at least @C6 skill points@H in digestion.

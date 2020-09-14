@@ -1,0 +1,12 @@
+@LMental Blast @E(Psionics) @J(Coercion)@H
+
+You assault someone's mind directly.  Very successful attack might temporarily
+confuse the recipient.
+
+@IPsychic harm@H:
+Min damage: 2 + skill / 3, but no less than 2
+Max damage: skill * 3 / 2, but no less than 8
+@IConfusion@H:
+Chance: 60 + skill - 5 * victim's_concentration_skill
+Min duration: 2 + skill / 4
+Max duration: 6 + skill / 4

@@ -1,0 +1,10 @@
+@FThrown Weapons @E(Dexterity)@H
+
+This skill helps you hit with all thrown weapons but is especially useful
+for grenades.  Your throw range depends on your @EStrength@H and item weight
+in most cases.
+
+You can wield @CPulse Rifle@H to use its built-in @Cgrenade launcher@H.  This
+will provide you with excellent range and additional two points to hit
+chance.  Weapon bugginess also impacts the hit chance.  Firing grenades
+with the launcher does not interfere with @LImbue@H mutant power in any way.

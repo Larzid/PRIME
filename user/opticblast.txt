@@ -1,0 +1,7 @@
+@LOptic Blast @E(Psionics) @J(Creativity)@H
+
+You focus your eyes and send forth a deadly red laser beam.  You must not be
+blind except by external means.
+
+Damage:  (1 + skill + your_XP_level) to (6 + skill * 4 + your_XP_level)
+Range:   unlimited

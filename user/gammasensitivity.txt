@@ -1,0 +1,10 @@
+@LGammasensitivity @E(Constitution) @J(Farsenses)@H
+
+You can actually see radiation!  Items that give off radiation in your 
+inventory will be marked green.  Area that is irradiated will be highlighted.
+
+Unless your skill in this power is @C5 points@H or more you will be @Eblinded@H
+whenever you are exposed to concentrated radiation.  Walking through
+contaminated room is not enough to trigger this but getting hit with gamma
+ray gun or rad grenade is.  In Gamma Caves no amount of skill is going to
+prevent blindness.

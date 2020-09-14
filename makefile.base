@@ -1,0 +1,33 @@
+# This file is intended to be included at the beginning of OS-specific
+# makefiles.
+
+OBJS = Ability.o AttackList.o AttackType.o BunkerRooms.o BOFH.o Canister.o Cave.o Creature.o Door.o Droid.o Effect.o Equipment.o Fight.o FlavorList.o FloppyDisk.o Game.o Help.o Hero.o Implant.o Interface.o Intrinsic.o Inventory.o ItemSet.o Lore.o LoreHelp.o Mainframe.o MatterCompiler.o Map.o Menu.o Monster.o MonsterAI.o MonsterList.o MonTeam.o Mutant.o Object.o ObjectList.o ObjectParser.o OperatingSystem.o Options.o Path.o Portability.o Profession.o Property.o RayGun.o Room.o SaveLoad.o Scenario.o Services.o Sewer.o Shop.o Skills.o SpecialLevel.o Tombstone.o Tool.o Transport.o TwistyRooms.o Util.o Vat.o Vision.o Weapon.o Wreck.o main.o
+
+GENFILES = gen/Attack.cpp Attack.h \
+           gen/Flavor.cpp Flavor.h \
+           gen/MonsterIlk.cpp MonsterIlk.h \
+           gen/ObjectIlk.cpp ObjectIlk.h
+
+# If going for graphical frontend both declarations are included.  Otherwise
+# only CONOBJS gets added.
+CONOBJS = NCUI.o
+NEOBJS = NEUI.o
+# Override MOREOBJS if your platform needs additional modules to compile.
+MOREOBJS =
+# Override this too unless all you need is console build.
+LIBNOTEYE =
+# Override only if you wnat to replace NCurses.
+LIBPIO = 
+
+PROGRAM=prime
+
+# These are default and you may want to change them.
+LIBS=-lsigsegv
+CONLIBS=-lncurses -lpanel
+NELIBS=-lnoteye -lz -llua5.1
+LDFLAGS=$(LDPATH) -L. -Xlinker -rpath=.
+
+CXX=g++
+
+#CXXFLAGS=-Wall -Wextra -pedantic -Wno-variadic-macros -O -DNDEBUG
+CXXFLAGS=-Wall -Wextra -pedantic -Wno-variadic-macros -g

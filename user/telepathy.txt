@@ -1,0 +1,6 @@
+@LTelepathy @E(Intelligence) @J(Farsenses)@H
+
+Telepathy allows you to hear other's thoughts and know of their
+presence before actually meeting them.
+
+Your @Cskill@H in this power increases detection @Crange@H.

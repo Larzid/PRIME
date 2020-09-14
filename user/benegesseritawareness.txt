@@ -1,0 +1,11 @@
+@LBene Gesserit Awareness @E(Psionics) @J(Redaction)@H
+
+You have full control over every cell of your organism.  This grants you
+@Cknowledge@H your brain always possessed but never made available for conscious
+mind.  Also, you are able to @Cexpend @EPsionics@H to @Cprotect@H your body from
+@Cpoison@H and @Csickness@H.  Additionally, your @Cradiation tolerance@H becomes
+@Cgreater@H while you maintain this power.  If you were to suffer effects of
+radiation sickness your body will @Cdeteriorate slower@H.
+
+Your @Cskill@H in this power is @EUSELESS@H!  This will be corrected in
+upcoming versions.

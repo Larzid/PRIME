@@ -1,0 +1,7 @@
+@LAdrenaline control @E(Constitution) @J(Redaction)@H
+
+Adjust adrenaline levels in your body to become stronger.  Grants
+@Cfour@H points of @Estrength@H in exchange for @Cfour@H points of @Epsionics@H.
+
+Your @Cskill@H in this power is @EUSELESS@H!  This will be corrected in
+upcoming versions.

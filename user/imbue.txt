@@ -1,0 +1,14 @@
+@LImbue @E(Psionics) @J(Creativity)@H
+
+Imbue differs from most other continuous powers.  While it takes @Cno points
+for activation@H they are @Cexpended each attack@H instead.  If you run out of
+Psionics in combat while Imbue is working it will be silently deactivated.
+
+While this power is active you channel some Psionic energy through wielded
+or thrown weapon increasing damage output and for thrown items hit chance.
+Fighting unarmed also triggers this effect.
+
+In @Cmelee@H this costs @Cone point@H while at @Crange@H it requires @Ctwo points@H.
+
+Damage bonus: skill / 2, but no less than 1 and no more than 8
+To hit bonus (thrown): equal to skill, but no less than 1 and no more than 10

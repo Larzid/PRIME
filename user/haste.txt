@@ -1,0 +1,5 @@
+@LHaste @E(Psionics) @J(Redaction)@H
+
+While maintained you speed up considerably.
+
+Speed change: 20 + 2 * MIN(skill, 10)

@@ -1,0 +1,12 @@
+@FSpot @E(Intelligence)@H
+
+Helps you notice secrets when you are not actively searching for them, often
+from a distance.  Unlike @Isearch@H skill you need to be able to see.
+
+How does this work?
+
+You enter a room, lay your eyes on something that is door in disguise, hidden
+trap or a monster hiding underneath an item.  Then you may either notice
+something is off and the secret is no longer so secret for you or you may
+overlook it.  You do get second chances at this but only ater long time passes
+so putting quite a bunch skill points here may be a life-saver at times.

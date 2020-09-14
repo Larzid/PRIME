@@ -1,0 +1,15 @@
+@FFarsenses @E(Psionics)@H
+
+Some mutant powers bestow additional senses the body alone could neither
+sustain nor take advantage of.
+
+Each @Cskill point@H put in this category makes all @Fmutant powers@H based on
+@Ffarsenses@H be @C5%@H easier to use.
+
+Powers belonging to this Metapsychic Faculty:
+- Deepsight
+- Gammasensitivity
+- Telepathy
+- Tremorsense
+- Understanding
+- X-Ray Vision

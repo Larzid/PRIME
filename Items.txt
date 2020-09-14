@@ -1,0 +1,4646 @@
+DEFINE ObjectIlk kObj AllIlks[kObjNumIlks] shObjId
+{
+ id                 kObjNothing
+ parent             kObjNothing
+
+ real
+ {
+  real_type         kUninitialized
+  real_name         NULL
+  real_glyph 
+  {
+   sym               '@'
+   color             kBlack
+   bkgd              kBlack
+   tile_col          -1
+   tile_row          -1
+  }
+ }
+ 
+ appear
+ {
+  appear_type       kUninitialized
+  appear_name       NULL
+  appear_glyph 
+  {
+   sym               '@'
+   color             kBlack
+   bkgd              kBlack
+   tile_col          -1
+   tile_row          -1
+  }
+ }
+
+ vague
+ {
+  vague_type        kUninitialized
+  vague_name        NULL
+  vague_glyph 
+  {
+   sym               '@'
+   color             kGray
+   bkgd              kBlack
+   tile_col          -1
+   tile_row          -1
+  }
+ }
+
+ subtype            nonspecial
+ user_name          NULL
+ material           kPlasteel
+ cost               0
+
+ flags              0
+
+ flavor             kFNone
+
+ weight             0
+ size               kSmall
+ energy_use         0
+
+ range              0
+ ammo               kObjNothing
+ burst              1
+ melee_skill        kNoSkillCode
+ gun_skill          kNoSkillCode
+
+ melee_atk          kAttDummy
+ missile_atk        kAttDummy
+ gun_atk            kAttDummy
+ zap_atk            kAttDummy
+
+ site               shObjectIlk::kNoSite
+ boost_skill        kNoSkillCode
+
+ armor              0
+ max_plus           0
+
+ resistances
+ {
+  dummy             0
+  res_IRRESISTIBLE  0
+  res_disin         0
+  res_psi           0
+  res_bul           0
+  res_conc          0
+  res_expl          0
+  res_hns           0
+  res_laser         0
+  res_part          0
+  res_shrap         0
+  res_burn          0
+  res_corr          0
+  res_elec          0
+  res_freeze        0
+  res_plas          0
+  res_magn          0
+  res_rad           0
+  res_accel         0
+  res_blind         0
+  res_bugs          0
+  res_conf          0
+  res_decel         0
+  res_dig           0
+  res_mesm          0
+  res_para          0
+  res_sick          0
+  res_spc           0
+  res_stun          0
+  res_toxin         0
+  res_trans         0
+  res_violate       0
+  res_web           0
+ }
+
+ to_hit             0
+ to_dam             0
+ to_spd             0
+
+ psi_mod            0
+ max_charge         0
+
+ use                NULL
+ quaff              NULL
+ run                NULL
+}
+
+COMMENT { kObjNothing must be first. }
+
+COMMENT {DECLARE ObjectIlk Nothing}
+
+ObjectIlk Nothing
+{
+ parent             kObjNothing
+}
+
+TEMPLATE HELMET ObjectIlk
+{
+ parent             kObjNothing
+ vague_name         "helmet"
+ real_type          kArmor
+ real_glyph
+ {
+  sym               '['
+  tile_row          kRowHelmet
+  tile_col          1
+ }
+ vague_glyph
+ {
+  color             kMagenta
+ }
+ subtype            helmet
+ armor              1
+ max_plus           2
+ size               kTiny
+ psi_mod            -1
+}
+
+HELMET KevlarHelmet
+{
+ real_name          "kevlar helmet"
+ appear_name        "heavy helmet"
+ color              kBrown
+ tile_col           3
+ res_bul            1
+ material           kKevlar
+ weight             60
+ cost               125
+}
+
+HELMET PrussianHelmet
+{
+ real_name          "incongruously prussian helmet"
+ appear_name        "heavy helmet"
+ color              kBrown
+ tile_col           3
+ material           kSteel
+ weight             60
+ cost               50
+}
+
+HELMET StormtrooperHelmet
+{
+ real_name          "stormtrooper helmet"
+ appear_name        "plastic helmet"
+ color              kWhite
+ tile_col           4
+ flags              kSealed
+ to_hit             -2
+ material           kPlastic
+ weight             80
+ cost               50
+}
+
+HELMET SpaceHelmet
+{
+ real_name          "space helmet"
+ appear_name        "sealed helmet"
+ color              kWhite
+ tile_col           5
+ flags              kSealed
+ res_blind          100
+ material           kSteel
+ weight             80
+ cost               100
+}
+
+HELMET FootballHelmet
+{
+ real_name          "football helmet"
+ appear_name        "padded helmet"
+ color              kRed
+ tile_col           6
+ psi_mod            0
+ material           kSteel
+ weight             60
+ cost               25
+}
+
+HELMET EnergyDome
+{
+ real_name          "energy dome"
+ appear_name        "flowerpot"
+ color              kYellow
+ tile_col           7
+ max_plus           3
+ psi_mod            +4
+ material           kPlastic
+ weight             10
+ cost               25
+}
+
+HELMET HarmonyDome
+{
+ real_name          "harmony dome"
+ appear_name        "flowerpot"
+ color              kLime
+ tile_col           8
+ max_plus           3
+ psi_mod            -8
+ material           kPlastic
+ weight             10
+ cost               25
+}
+
+HELMET BrainShield
+{
+ real_name          "brain shield"
+ appear_name        "tinfoil hat"
+ vague_name         "hat"
+ color              kCyan
+ tile_col           9
+ armor              0
+ psi_mod            -20
+ material           kSteel
+ weight             10
+ cost               25
+}
+
+HELMET AquamarinePH
+{
+ real_name          "aquamarine power helmet"
+ appear_name        "aqua rounded helmet"
+ vague_name         "armored helmet"
+ color              kAqua
+ tile_col           10
+ flags              (kPowered | kSealed)
+ res_blind          5
+ size               kSmall
+ armor              2
+ material           kPlasteel
+ weight             100
+ cost               500
+}
+
+HELMET MeanGreenPH
+{
+ real_name          "mean green power helmet"
+ appear_name        "green rounded helmet"
+ vague_name         "armored helmet"
+ color              kGreen
+ tile_col           11
+ flags              (kPowered | kSealed)
+ res_blind          5
+ size               kSmall
+ armor              2
+ material           kPlasteel
+ weight             100
+ cost               500
+}
+
+COMMENT { Adds +1 to psionics. }
+HELMET BrotherhoodPH
+{
+ real_name          "brotherhood power helmet"
+ appear_name        "insectoid rounded helmet"
+ vague_name         "armored helmet"
+ color              kWhite
+ tile_col           12
+ flags              (kPowered | kSealed)
+ energy_use         180000
+ res_rad            5
+ size               kSmall
+ armor              2
+ material           kSteel
+ weight             100
+ cost               500
+}
+
+HELMET ElvenCH
+{
+ real_name          "elven combat helmet"
+ appear_name        "pointy pink helmet"
+ vague_name         "pointy helmet"
+ color              kMagenta
+ tile_col           13
+ flags              kSealed
+ res_psi            1
+ armor              2
+ psi_mod            +1
+ material           kBone
+ weight             60
+ cost               100
+}
+
+HELMET ElvenEH
+{
+ real_name          "elven exarch helmet"
+ appear_name        "pointy pink helmet"
+ vague_name         "pointy helmet"
+ color              kMagenta
+ tile_col           14
+ flags              kSealed
+ res_psi            1
+ to_spd             +5
+ psi_mod            +1
+ material           kBone
+ weight             60
+ cost               300
+}
+
+HELMET BioMask
+{
+ real_name          "bio-mask"
+ appear_name        "bio-mask"
+ vague_name         "mask"
+ color              kMagenta
+ tile_col           15
+ res_psi            1
+ to_hit             +3
+ psi_mod            +1
+ material           kCarbonFiber
+ weight             80
+ cost               300
+}
+
+TEMPLATE GOGGLES ObjectIlk
+{
+ parent             kObjNothing
+ appear_name        "pair of goggles"
+ vague_name         "pair of goggles"
+ real_type          kArmor
+ 
+ real_glyph
+ {
+  sym               '8'
+  tile_row          kRowGoggles
+  tile_col          0
+ }
+ appear_glyph
+ {
+  tile_col          1
+ }
+ vague_glyph
+ {
+  color             kRed
+ }
+ subtype            goggles
+ size               kTiny
+ material           kPlastic
+ weight             30
+}
+
+GOGGLES Sunglasses
+{
+ real_name          "pair of sunglasses"
+ appear_name        "pair of glasses"
+ vague_name         "pair of glasses"
+ tile_col           3
+ color              kYellow
+ res_blind          100
+ cost               50
+ weight             10
+}
+
+GOGGLES PerilGlasses
+{
+ real_name          "pair of peril-sensitive sunglasses"
+ appear_name        "pair of glasses"
+ vague_name         "pair of glasses"
+ color              kYellow
+ res_blind          100
+ cost               50
+ weight             10
+}
+
+GOGGLES Blindfold
+{
+ real_name          "blindfold"
+ appear_name        "blindfold"
+ vague_name         "blindfold"
+ tile_col           8
+ color              kNavy
+ sym                ']'
+ material           kCloth
+ flags              kPreidentified
+ res_blind          100
+ cost               5
+ weight             10
+}
+
+GOGGLES TargeterGoggles
+{
+ real_name          "pair of targeter goggles"
+ color              kRed
+ to_hit             +2
+ to_dam             +2
+ cost               100
+}
+
+GOGGLES XRayGoggles
+{
+ real_name          "pair of x-ray goggles"
+ color              kRed
+ cost               100
+}
+
+GOGGLES NVGoggles
+{
+ real_name          "pair of night vision goggles"
+ color              kRed
+ cost               100
+}
+
+GOGGLES ScouterGoggles
+{
+ real_name          "pair of scouter goggles"
+ color              kRed
+ cost               100
+}
+
+TEMPLATE BELT ObjectIlk
+{
+ parent             kObjNothing
+ vague_name         "belt"
+ real_type          kArmor
+
+ real_glyph
+ {
+  sym               ']'
+  tile_row          kRowTag1
+  tile_col          38
+ }
+ appear_glyph
+ {
+  tile_row          kRowBelt
+  tile_col          0
+ }
+ vague_glyph
+ {
+  color             kNavy
+ }
+ subtype            belt
+ size               kTiny
+ material           kSteel
+ weight             50
+ cost               300
+}
+
+BELT ShieldBelt
+{
+ real_name          "shield belt"
+ flavor             kFBelt1
+ real_glyph
+ {
+  tile_row          kRowBelt
+  tile_col          3
+ }
+}
+
+BELT ArmoredBelt
+{
+ real_name          "armored belt"
+ armor              1
+ tile_col           21
+ flavor             kFBelt2
+}
+
+BELT EnergyBelt
+{
+ real_name          "energy belt"
+ max_charge         100
+ tile_col           3
+ flavor             kFBelt3
+}
+
+BELT FashionBelt
+{
+ real_name          "fashionable belt"
+ flavor             kFBelt4
+ flags              kUsuallyBuggy
+ real_glyph
+ {
+  tile_row          kRowBelt
+  tile_col          4
+ }
+}
+
+BELT CloakingBelt
+{
+ real_name          "cloaking belt"
+ energy_use         250
+ tile_col           33
+ flavor             kFBelt5
+}
+
+BELT StabilizerBelt
+{
+ real_name          "stabilizer belt"
+ flavor             kFBelt6
+}
+
+BELT SuspensorBelt
+{
+ real_name          "suspensor belt"
+ flavor             kFBelt7
+}
+
+TEMPLATE CLOAK ObjectIlk
+{
+ parent             kObjNothing
+ real_type          kArmor
+
+ real_glyph
+ {
+  sym               '['
+  tile_row          kRowCloak
+  tile_col          0
+ }
+ vague_glyph
+ {
+  color             kGreen
+ }
+ subtype            cloak
+ size               kLarge
+ material           kCloth
+ weight             100
+ armor              1
+ max_plus           2
+}
+
+CLOAK AdamantineCloak
+{
+ real_name          "adamantine cloak"
+ appear_name        "metallic cloak"
+ vague_name         "heavy cloak"
+
+ tile_col           3
+ color              kGray
+ material           kAdamantium
+ armor              2
+ to_hit             -3
+ psi_mod            -4
+ res_hns            3
+ weight             300
+ cost               330
+}
+
+CLOAK BadassTrenchcoat
+{
+ real_name          "badass trenchcoat"
+ appear_name        "trenchcoat"
+ vague_name         "trenchcoat"
+ tile_col           5
+ color              kBrown
+ to_hit             +2
+ cost               120
+}
+
+CLOAK LoserAnorak
+{
+ real_name          "loser anorak"
+ appear_name        "trenchcoat"
+ vague_name         "trenchcoat"
+ real_glyph
+ {
+  tile_col           6
+ }
+ appear_glyph
+ {
+  tile_col           5
+ }
+ color              kBrown
+ material           kPlastic
+ to_hit             -2
+ flags              kUsuallyBuggy
+ cost               120
+}
+
+CLOAK SuperheroCape
+{
+ real_name          "superhero cape"
+ appear_name        "cape"
+ vague_name         "cape"
+
+ tile_col           4
+ color              kRed
+
+ res_hns            2
+ psi_mod            +2
+ to_spd             +5
+ cost               300
+}
+
+CLOAK TransparentJacket
+{
+ real_name          "transparent jacket"
+ appear_name        "transparent jacket"
+ vague_name         "cloak"
+ real_glyph
+ {
+  color             kWhite
+  tile_col          7
+ }
+ weight             250
+ material           kCloth
+ armor              1
+ psi_mod            -1
+ cost               100
+}
+
+TEMPLATE BOOTS ObjectIlk
+{
+ parent             kObjNothing
+ vague_name         "pair of boots"
+ real_type          kArmor
+
+ real_glyph
+ {
+  sym               '['
+  tile_row          kRowBoots
+  tile_col          0
+ }
+ vague_glyph
+ {
+  color             kWhite
+ }
+ subtype            boots
+ size               kSmall
+ material           kLeather
+ max_plus           2
+}
+
+BOOTS SturdyBoots
+{
+ real_name          "pair of sturdy boots"
+ appear_name        "pair of sturdy boots"
+ real_glyph
+ { tile_col         3 }
+ flags              kPreidentified
+ color              kBrown
+ weight             25
+ cost               25
+}
+
+BOOTS JumpBoots
+{
+ real_name          "pair of jump boots"
+ appear_name        "pair of hiking boots"
+ real_glyph
+ { tile_col         3 }
+ flags              kPreidentified
+ color              kBrown
+ weight             25
+ cost               25
+}
+
+BOOTS SpaceBoots
+{
+ real_name          "pair of space boots"
+ appear_name        "pair of sealed boots"
+ real_glyph
+ { tile_col         4 }
+ flags              kSealed
+ color              kWhite
+ material           kSteel
+ armor              1
+ weight             60
+ cost               50
+}
+
+BOOTS StormtrooperBoots
+{
+ real_name          "pair of stormtrooper boots"
+ appear_name        "pair of plastic boots"
+ real_glyph
+ { tile_col         5 }
+ flags              kSealed
+ color              kWhite
+ material           kPlastic
+ armor              1
+ weight             60
+ cost               50
+}
+
+BOOTS ZealotLegEnhancements
+{
+ real_name          "pair of zealot leg enhancements"
+ appear_name        "pair of mechanical leggings"
+ vague_name         "pair of mechanical leggings"
+ real_glyph
+ { tile_col         6 }
+ vague_glyph
+ { tile_col         6 }
+ color              kYellow
+ material           kGold
+ flags              kPowered
+ to_spd             +10
+ weight             75
+ cost               800
+}
+
+TEMPLATE JUMPSUIT ObjectIlk
+{
+ parent             kObjNothing
+ vague_name         "jumpsuit"
+ real_type          kArmor
+ real_glyph
+ {
+  sym               '['
+  tile_col          38
+  tile_row          kRowTag1
+ }
+ appear_glyph
+ {
+  tile_row          kRowJumpsuit
+ }
+ vague_glyph
+ {
+  color             kGray
+  tile_col          1
+ }
+ subtype            jumpsuit
+ size               kMedium
+ weight             40
+ material           kCloth
+ armor              1
+ max_plus           4
+ cost               25
+}
+
+JUMPSUIT OrdinaryJumpsuit
+{
+ real_name          "ordinary jumpsuit"
+ real_glyph
+ {
+  color             kGreen
+ }
+ flavor             kFJumpsuit1
+}
+
+JUMPSUIT JanitorUniform
+{
+ real_name          "janitor uniform"
+ real_glyph
+ {
+  color             kOrange
+ }
+ flavor             kFJumpsuit2
+}
+
+JUMPSUIT RadiationSuit
+{
+ real_name          "radiation suit"
+ real_glyph
+ {
+  color             kYellow
+  tile_col          31
+ }
+ flavor             kFJumpsuit3
+ psi_mod            -1
+ res_rad            10
+ cost               100
+}
+
+JUMPSUIT ChameleonSuit
+{
+ real_name          "chameleon suit"
+ real_glyph
+ {
+  color             kMagenta
+  tile_col          1
+ }
+ flavor             kFJumpsuit4
+ psi_mod            -1
+ cost               100
+}
+
+JUMPSUIT AsbestosJumpsuit
+{
+ real_name          "asbestos jumpsuit"
+ real_glyph
+ {
+  color             kRed
+  tile_col          13
+ }
+ material           kAsbestos
+ flavor             kFJumpsuit5
+ res_burn           3
+}
+
+JUMPSUIT ElvenJumpsuit
+{
+ real_name          "elven jumpsuit"
+ appear_name        "pink jumpsuit"
+ psi_mod            +1
+ armor              2
+
+ appear_glyph
+ {
+  color             kPink
+  tile_col          9
+ }
+}
+
+JUMPSUIT ReticulanJumpsuit
+{
+ real_name          "reticulan jumpsuit"
+ appear_name        "silver jumpsuit"
+ psi_mod            +1
+ res_psi            1
+
+ appear_glyph
+ {
+  color             kWhite
+  tile_col          8
+ }
+}
+
+COMMENT
+{ All body armor with vague name "mechanical armor" should have
+  their vague glyph color set to bright yellow. }
+
+TEMPLATE BODYARMOR ObjectIlk
+{
+ parent             kObjNothing
+ real_glyph
+ {
+  sym               '['
+  tile_row          kRowBodyArmor
+  tile_col          0
+ }
+ vague_glyph
+ {
+  color             kBrown
+ }
+ vague_name         "suit of armor"
+ real_type          kArmor
+ subtype            body_armor
+ size               kMedium
+ max_plus           6
+ material           kCloth
+}
+
+BODYARMOR ReflecSuit
+{
+ real_name          "suit of reflec armor"
+ appear_name        "suit of shiny armor"
+ real_glyph
+ {
+  color             kAqua
+  tile_col          3
+ }
+ weight             100
+ armor              1
+ res_laser          4
+ cost               100
+}
+
+BODYARMOR TeslaSuit
+{
+ real_name          "suit of tesla armor"
+ appear_name        "suit of shiny armor"
+ real_glyph
+ {
+  color             kCyan
+  tile_col          3
+ }
+ appear_glyph
+ {
+  color             kAqua
+ }
+ material           kIron
+ max_charge         30
+ weight             100
+ armor              1
+ cost               100
+}
+
+BODYARMOR FootballPads
+{
+ real_name          "set of football pads"
+ appear_name        "padded uniform"
+ vague_name         "uniform"
+ real_glyph
+ {
+  color             kRed
+  tile_col          4
+ }
+ weight             350
+ armor              3
+ cost               100
+}
+
+BODYARMOR PlateArmor
+{
+ real_name          "plate armor"
+ real_glyph
+ {
+  color             kBrown
+  tile_col          5
+ }
+ flags              kPreidentified
+ material           kPlasteel
+ weight             400
+ armor              4
+ psi_mod            -2
+ cost               100
+}
+
+BODYARMOR FlakJacket
+{
+ real_name          "flak jacket"
+ appear_name        "combat jacket"
+ vague_name         "jacket"
+ appear_glyph
+ {
+  color             kBrown
+  tile_col          6
+ }
+ real_glyph
+ {
+  color             kBrown
+  tile_col          6
+ }
+ weight             250
+ armor              3
+ psi_mod            -1
+ cost               75
+}
+
+BODYARMOR KevlarJacket
+{
+ real_name          "kevlar jacket"
+ appear_name        "combat jacket"
+ vague_name         "jacket"
+ appear_glyph
+ {
+  color             kBrown
+  tile_col          6
+ }
+ real_glyph
+ {
+  color             kGray
+  tile_col          7
+ }
+ weight             250
+ material           kKevlar
+ armor              3
+ psi_mod            -1
+ res_bul            3
+ cost               100
+}
+
+BODYARMOR AsbestosJacket
+{
+ real_name          "asbestos jacket"
+ appear_name        "combat jacket"
+ vague_name         "jacket"
+ appear_glyph
+ {
+  color             kBrown
+  tile_col          6
+ }
+ real_glyph
+ {
+  color             kRed
+ }
+ weight             250
+ material           kAsbestos
+ armor              3
+ psi_mod            -1
+ res_burn           3
+ cost               100
+}
+
+BODYARMOR StormtrooperSuit
+{
+ real_name          "stormtrooper suit"
+ appear_name        "suit of plastic armor"
+ real_glyph
+ {
+  color             kWhite
+  tile_col          8
+ }
+ flags              kSealed
+ material           kPlastic
+ weight             630
+ armor              4
+ psi_mod            -2
+ cost               400
+}
+
+TEMPLATE POWERARMOR ObjectIlk
+{
+ parent             kObjNothing
+ vague_name         "mechanical armor"
+ real_type          kArmor
+ subtype            body_armor
+ flags              (kSealed | kPowered)
+ material           kPlasteel
+ size               kMedium
+ weight             900
+ armor              7
+ max_plus           +6
+ psi_mod            -2
+ cost               1500
+ real_glyph
+ {
+  sym               '['
+  tile_row          kRowBodyArmor
+  tile_col          0
+ }
+ vague_glyph
+ {
+  color             kYellow
+ }
+}
+
+POWERARMOR AquamarinePA
+{
+ real_name          "aquamarine power armor"
+ appear_name        "aqua mechanical armor"
+ real_glyph
+ {
+  color             kAqua
+  tile_col          9
+ }
+}
+
+POWERARMOR MeanGreenPA
+{
+ real_name          "mean green power armor"
+ appear_name        "green mechanical armor"
+ real_glyph
+ {
+  color             kGreen
+  tile_col          10
+ }
+}
+
+POWERARMOR DeepBluePA
+{
+ real_name          "deep blue power armor"
+ appear_name        "blue mechanical armor"
+ real_glyph
+ {
+  color             kNavy
+  tile_col          0
+ }
+}
+
+BODYARMOR SpaceSuit
+{
+ real_name          "space suit"
+ appear_name        "space suit"
+ vague_name         "sealed suit"
+ real_glyph
+ {
+  color             kWhite
+  tile_col          11
+ }
+ flags              kSealed
+ material           kSteel
+ weight             500
+ armor              4
+ psi_mod            -2
+ cost               800
+}
+
+BODYARMOR ElvenSpaceSuit
+{
+ real_name          "elven space suit"
+ appear_name        "pink space suit"
+ vague_name         "sealed suit"
+ real_glyph
+ {
+  color             kMagenta
+  tile_col          12
+ }
+ flags              kSealed
+ material           kSteel
+ weight             450
+ armor              4
+ cost               1300
+}
+
+BODYARMOR ElvenCA
+{
+ real_name          "elven combat armor"
+ appear_name        "pink curvy armor"
+ vague_name         "curvy armor"
+ real_glyph
+ {
+  color             kMagenta
+  tile_col          13
+ }
+ material           kBone
+ weight             405
+ armor              4
+ psi_mod            +1
+ to_spd             +5
+ res_psi            3
+ cost               800
+}
+
+BODYARMOR ElvenEA
+{
+ real_name          "elven exarch armor"
+ appear_name        "pink curvy armor"
+ vague_name         "curvy armor"
+ real_glyph
+ {
+  color             kMagenta
+  tile_col          14
+ }
+ material           kBone
+ weight             450
+ armor              5
+ to_spd             +10
+ res_psi            3
+ cost               1000
+}
+
+BODYARMOR PowerSuit
+{
+ real_name          "protoss power suit"
+ appear_name        "golden mechanical armor"
+ vague_name         "mechanical armor"
+ real_glyph
+ {
+  color             kYellow
+  tile_col          15
+ }
+ vague_glyph
+ {
+  color             kYellow
+ }
+ flags              kPowered
+ material           kGold
+ weight             900
+ armor              7
+ psi_mod            +2
+ res_stun           10
+ cost               2000
+}
+
+BODYARMOR BrotherhoodPA
+{
+ real_name          "brotherhood power armor"
+ appear_name        "vintage mechanical armor"
+ vague_name         "mechanical armor"
+ real_glyph
+ {
+  color             kWhite
+  tile_col          16
+ }
+ vague_glyph
+ {
+  color             kYellow
+ }
+ flags              (kSealed | kPowered)
+ material           kSteel
+ weight             900
+ armor              6
+ psi_mod            -2
+ res_rad            20
+ cost               2000
+}
+
+TEMPLATE BIOARMOR ObjectIlk
+{
+ appear_name        "bio armor"
+ real_type          kArmor
+ material           kFleshy
+ size               kMedium
+ weight             500
+ flags              kPowered
+ max_plus           +6
+ res_para           5
+ subtype            body_armor
+ real_glyph
+ {
+  sym               '['
+  color             kRed
+  tile_row          kRowBodyArmor
+  tile_col          0
+ }
+}
+
+BIOARMOR BioArmor
+{
+ parent             kObjNothing
+ real_name          "reticulan bio armor"
+ real_glyph
+ {
+  tile_col          17
+ }
+ armor              3
+ cost               280
+}
+
+BIOARMOR MBioArmor0
+{
+ parent             kObjBioArmor
+ real_name          "mutated bio armor"
+ real_glyph
+ {
+  color             kGreen
+  tile_col          18
+ }
+ flags              (kPowered | kRadioactive)
+ armor              2
+}
+
+BIOARMOR MBioArmor1
+{
+ parent             kObjMBioArmor0
+ real_name          "pulsating bio armor"
+ real_glyph
+ {
+  color             kLime
+  tile_col          19
+ }
+ flags              (kPowered | kRadioactive)
+ armor              4
+ res_toxin          2
+ res_corr           10
+ res_sick           10
+}
+
+BIOARMOR MBioArmor2
+{
+ parent             kObjMBioArmor0
+ real_name          "glistening bio armor"
+ real_glyph
+ {
+  color             kLime
+  tile_col          20
+ }
+ flags              (kPowered | kRadioactive)
+ armor              4
+}
+
+BIOARMOR EBioArmor1
+{
+ parent             kObjBioArmor
+ real_name          "tough bio armor"
+ real_glyph
+ {
+  tile_col          21
+ }
+ armor              5
+ cost               540
+}
+
+BIOARMOR EBioArmor2
+{
+ parent             kObjBioArmor
+ real_name          "vigorous bio armor"
+ real_glyph
+ {
+  tile_col          22
+ }
+ armor              3
+ to_spd             +5
+ to_hit             +1
+ cost               540
+}
+
+BIOARMOR EBioArmor3
+{
+ parent             kObjBioArmor
+ real_name          "psionic bio armor"
+ real_glyph
+ {
+  tile_col          23
+ }
+ armor              3
+ psi_mod            +2
+ res_psi            3
+ cost               540
+}
+
+BIOARMOR SBioArmor1
+{
+ parent             kObjEBioArmor1
+ real_name          "bio carapace"
+ real_glyph
+ {
+  tile_col          24
+ }
+ armor              7
+ weight             700
+ res_rad            5
+ res_bul            4
+ res_shrap          8
+ res_hns            4
+ res_conc           4
+ cost               1080
+}
+
+BIOARMOR SBioArmor2
+{
+ parent             kObjEBioArmor1
+ real_name          "receptive bio armor"
+ real_glyph
+ {
+  tile_col          25
+ }
+ armor              6
+ max_plus           +10
+ cost               1080
+}
+
+BIOARMOR SBioArmor3
+{
+ parent             kObjEBioArmor2
+ real_name          "zesty bio armor"
+ real_glyph
+ {
+  tile_col          26
+ }
+ armor              4
+ to_spd             +10
+ to_hit             +3
+ cost               1080
+}
+
+BIOARMOR SBioArmor4
+{
+ parent             kObjEBioArmor3
+ real_name          "sentient bio mass"
+ real_glyph
+ {
+  tile_col          27
+ }
+ armor              3
+ res_psi            8
+ psi_mod            +2
+ cost               1080
+}
+
+POWERARMOR RedCPA
+{
+ real_name          "red chaos power armor"
+ appear_name        "red riveted armor"
+ real_glyph
+ {
+  color             kOrange
+  tile_col          28
+ }
+ psi_mod            -3
+ res_stun           2
+ res_burn           10
+ to_spd             +10
+ to_dam             +3
+ to_hit             -1
+ cost               2500
+}
+
+POWERARMOR PinkCPA
+{
+ real_name          "pink chaos power armor"
+ appear_name        "pink ornate armor"
+ real_glyph
+ {
+  color             kMagenta
+  tile_col          29
+ }
+ res_laser          10
+ to_spd             +20
+ to_dam             -2
+ to_hit             +3
+ cost               2500
+}
+
+POWERARMOR BlueCPA
+{
+ real_name          "blue chaos power armor"
+ appear_name        "blue glowing armor"
+ real_glyph
+ {
+  color             kNavy
+  tile_col          30
+ }
+ res_psi            10
+ to_dam             -1
+ to_hit             -1
+ cost               2500
+}
+
+POWERARMOR GreenCPA
+{
+ real_name          "green chaos power armor"
+ appear_name        "sickly green armor"
+ real_glyph
+ {
+  color             kGreen
+  tile_col          31
+ }
+ armor              8
+ weight             20000
+ res_sick           10
+ res_toxin          10
+ to_dam             -1
+ to_hit             -1
+ to_spd             -5
+ cost               2500
+}
+
+COMMENT { Weapons. }
+
+TEMPLATE MSL_WEAPON ObjectIlk
+{
+ parent             kObjNothing
+ real_type          kWeapon
+ flags              kMergeable
+ max_plus           +5
+ real_glyph
+ {
+  sym               ')'
+  tile_row          kRowMissile
+  tile_col          0
+ }
+}
+
+MSL_WEAPON Shuriken
+{
+ real_name          "shuriken"
+ appear_name        "throwing star"
+ vague_name         "pointy star"
+ real_glyph
+ {
+  color             kCyan
+  tile_col          3
+ }
+ material           kSteel
+ size               kTiny
+ weight             10
+ cost               10
+ missile_atk        kAttShuriken
+}
+
+MSL_WEAPON SmartDisc
+{
+ real_name          "Smart-Disc"
+ appear_name        "throwing disc"
+ vague_name         "throwing disc"
+ real_glyph
+ {
+  sym               '*'
+  color             kGreen
+  tile_col          5
+ }
+ melee_skill        kMeleeWeapon
+ material           kTitanium
+ size               kSmall
+ weight             65
+ cost               1000
+ melee_atk          kAttSmartDiscSlash
+ missile_atk        kAttSmartDiscThrow
+}
+
+MSL_WEAPON Football
+{
+ real_name          "football"
+ appear_name        "prolate spheroid"
+ vague_name         "spheroid"
+ real_glyph
+ {
+  color             kBrown
+  tile_col          4
+ }
+ material           kLeather
+ size               kSmall
+ weight             15
+ cost               25
+ missile_atk        kAttThrownFootball
+}
+
+TEMPLATE MEL_WEAPON ObjectIlk
+{
+ parent             kObjNothing
+ real_type          kWeapon
+ max_plus           +5
+ real_glyph
+ {
+  sym               ')'
+  tile_row          kRowMelee
+  tile_col          0
+ }
+ melee_skill        kMeleeWeapon
+}
+
+MEL_WEAPON ElvenDagger
+{
+ real_name          "elven dagger"
+ appear_name        "wooden dagger"
+ vague_name         "dagger"
+ real_glyph
+ {
+  color             kCyan
+  tile_col          3
+ }
+ flags              kMergeable
+ material           kWood
+ size               kTiny
+ weight             30
+ cost               10
+ melee_atk          kAttDagger
+ missile_atk        kAttDagger
+}
+
+MEL_WEAPON CombatKnife
+{
+ real_name          "combat knife"
+ appear_name        "steel knife"
+ vague_name         "knife"
+ real_glyph
+ {
+  color             kWhite
+ }
+ flags              kMergeable
+ material           kSteel
+ size               kTiny
+ weight             55
+ cost               10
+ melee_atk          kAttKnife
+}
+
+MEL_WEAPON AnalProbe
+{
+ real_name          "anal probe"
+ real_glyph
+ {
+  color             kGray
+  tile_col          4
+ }
+ flags              kPreidentified
+ material           kPlastic
+ size               kTiny
+ weight             10
+ cost               10
+ melee_atk          kAttProbe
+}
+
+MEL_WEAPON Club
+{
+ real_name          "club"
+ real_glyph
+ {
+  color             kBrown
+  tile_col          5
+ }
+ flags              kPreidentified
+ material           kWood
+ size               kSmall
+ weight             90
+ cost               1
+ melee_atk          kAttClub
+}
+
+MEL_WEAPON StunRod
+{
+ real_name          "stun rod"
+ appear_name        "stun rod"
+ vague_name         "energy baton"
+ real_glyph
+ {
+  color             kGray
+  tile_col          13
+ }
+ material           kSteel
+ size               kSmall
+ weight             85
+ cost               50
+ melee_atk          kAttStunRod
+}
+
+MEL_WEAPON ZapBaton
+{
+ real_name          "reticulan zap baton"
+ appear_name        "stylish baton"
+ vague_name         "energy baton"
+ real_glyph
+ {
+  color             kCyan
+  tile_col          11
+ }
+ material           kPlastic
+ size               kSmall
+ to_hit             +1
+ weight             85
+ cost               100
+ melee_atk          kAttZapBaton
+}
+
+MEL_WEAPON Mop
+{
+ real_name          "mop"
+ real_glyph
+ {
+  color             kLime
+  tile_col          9
+ }
+ flags              kPreidentified
+ material           kWood
+ size               kMedium
+ weight             60
+ cost               5
+ melee_atk          kAttMop
+}
+
+MEL_WEAPON Nunchaku
+{
+ real_name          "pair of nunchucks"
+ appear_name        "pair of chained sticks"
+ real_glyph
+ {
+  color             kBrown
+  tile_col          6
+ }
+ material           kWood
+ size               kMedium
+ weight             80
+ cost               50
+ melee_atk          kAttNunchaku
+}
+
+MEL_WEAPON RazorWhip
+{
+ real_name          "razor whip"
+ appear_name        "razor whip"
+ vague_name         "whip"
+ real_glyph
+ {
+  color             kOrange
+  tile_col          8
+ }
+ flags              kPreidentified
+ material           kCarbonFiber
+ size               kMedium
+ weight             150
+ cost               250
+ melee_atk          kAttRazorWhip
+}
+
+MEL_WEAPON Chainsaw
+{
+ real_name          "chainsaw"
+ real_glyph
+ {
+  color             kYellow
+  tile_col          14
+ }
+ flags              kPreidentified
+ material           kSteel
+ size               kMedium
+ ammo               kObjEnergyCell
+ to_hit             -2
+ weight             170
+ cost               500
+ melee_atk          kAttChainsaw
+}
+
+MEL_WEAPON BoStaff
+{
+ real_name          "bo staff"
+ appear_name        "wooden stick"
+ vague_name         "stick"
+ real_glyph
+ {
+  color             kBrown
+  tile_col          16
+ }
+ material           kWood
+ size               kMedium
+ to_hit             +1
+ weight             55
+ cost               5
+ melee_atk          kAttBoStaff
+}
+
+MEL_WEAPON CopperStick
+{
+ real_name          "copper staff"
+ appear_name        "copper stick"
+ vague_name         "stick"
+ real_glyph
+ {
+  color             kOrange
+  tile_col          15
+ }
+ material           kCopper
+ size               kMedium
+ weight             110
+ cost               5
+ melee_atk          kAttBoStaff
+}
+
+MEL_WEAPON CombiStick
+{
+ real_name          "combi-stick"
+ appear_name        "retractable spear"
+ real_glyph
+ {
+  color             kOrange
+  tile_col          7
+ }
+ gun_skill          kMeleeWeapon
+ material           kTitanium
+ size               kMedium
+ weight             190
+ cost               900
+ melee_atk          kAttCombiStickStab
+ missile_atk        kAttCombiStickThrow
+ gun_atk            kAttCombiStickExtend
+}
+
+MEL_WEAPON WarpScythe
+{
+ real_name          "warp scythe"
+ appear_name        "metal scythe"
+ vague_name         "scythe"
+ real_glyph
+ {
+  color             kGreen
+  tile_col          12
+ }
+ material           kTitanium
+ size               kLarge
+ to_hit             -15
+ weight             300
+ cost               700
+ melee_atk          kAttWarpScythe
+}
+
+TEMPLATE SWORD ObjectIlk
+{
+ parent             kObjNothing
+ real_type          kWeapon
+ max_plus           +5
+ real_glyph
+ {
+  sym               '\\'
+  tile_row          kRowSword
+  tile_col          0
+ }
+ vague_name         "sword"
+ subtype            sword
+ melee_skill        kSword
+ material           kSteel
+ size               kSmall
+}
+
+SWORD BloodSword
+{
+ real_name          "blood sword" 
+ appear_name        "antique sword" 
+ appear_glyph
+ {
+  color             kGray
+  tile_col          3
+ }
+ real_glyph
+ {
+  color             kRed
+  tile_col          16
+ }
+ weight             140
+ cost               2500
+ melee_atk          kAttKatana
+}
+
+SWORD Katana
+{
+ real_name          "katana" 
+ appear_name        "antique sword" 
+ real_glyph
+ {
+  color             kGray
+  tile_col          3
+ }
+ weight             140
+ cost               1000
+ melee_atk          kAttKatana
+}
+
+SWORD ElvenSword
+{
+ real_name          "elven psychic sword" 
+ appear_name        "organic sword" 
+ vague_name         "curvy blade"
+ real_glyph
+ {
+  color             kMagenta
+  tile_col          4
+ }
+ material           kBone
+ weight             125
+ to_hit             +2
+ cost               1500
+ melee_atk          kAttElvenSword
+}
+
+SWORD Batleth
+{
+ real_name          "bat'leth" 
+ real_glyph
+ {
+  color             kGray
+  tile_col          6
+ }
+ flags              kPreidentified
+ size               kMedium
+ weight             150
+ to_hit             -1
+ cost               1200
+ melee_atk          kAttBatleth
+}
+
+SWORD ChaosSword
+{
+ real_name          "sword of chaos" 
+ appear_name        "ominous sword" 
+ real_glyph
+ {
+  color             kGray
+  tile_col          5
+ }
+ weight             140
+ cost               1900
+ melee_atk          kAttChaosSword
+}
+
+COMMENT
+{
+ Comes in three base colors: red, green and blue.  These modify
+ name and appearance at runtime in getShortDescription () and
+ getGlyph () respectively.  kGray and (1) are default values for
+ unknown appearance.
+}
+SWORD LightSaber
+{
+ real_name          "lightsaber" 
+ real_glyph
+ {
+  tile_col          1
+ }
+ appear_name        "flashlight"
+ appear_type        kTool
+ appear_glyph
+ {
+  sym               '('
+  color             kRed
+  tile_row          kRowGenTool
+  tile_col          6
+ }
+ vague_name         "flashlight"
+ vague_type         kTool
+ vague_glyph
+ {
+  sym               '('
+  color             kRed
+ }
+ material           kTitanium
+ weight             12
+ cost               2000
+ melee_atk          kAttLightsaber
+}
+
+TEMPLATE UNARMED ObjectIlk
+{
+ parent             kObjNothing
+ real_type          kWeapon
+ max_plus           +5
+ real_glyph
+ {
+  sym               ')'
+  tile_row          kRowUnarmed
+  tile_col          0
+ }
+ melee_skill        kUnarmedCombat
+ material           kSteel
+ size               kSmall
+}
+
+UNARMED BrassKnuckles
+{
+ real_name          "brass knuckles"
+ real_glyph
+ {
+  color             kOrange
+  tile_col          10
+ }
+ material           kBrass
+ flags              kPreidentified
+ weight             14
+ cost               30
+ melee_atk          kAttKnuckles
+}
+
+UNARMED SpikedKnuckles
+{
+ real_name          "spiked knuckles"
+ real_glyph
+ {
+  color             kCyan
+  tile_col          11
+ }
+ flags              kPreidentified
+ weight             16
+ cost               50
+ melee_atk          kAttSpikedKnuckles
+}
+
+UNARMED WristBlade
+{
+ real_name          "wrist blade"
+ real_glyph
+ {
+  color             kCyan
+  tile_col          3
+ }
+ flags              kPreidentified
+ weight             25
+ cost               100
+ melee_atk          kAttWristBlade
+}
+
+UNARMED PowerFist
+{
+ real_name          "power fist"
+ appear_name        "armored glove"
+ vague_name         "mechanical glove"
+ real_glyph
+ {
+  color             kGray
+  tile_col          4
+ }
+ weight             200
+ cost               1400
+ melee_atk          kAttPowerFist
+}
+
+UNARMED PowerClaw
+{
+ real_name          "power claw"
+ appear_name        "steel pincers"
+ vague_name         "mechanical pincers"
+ real_glyph
+ {
+  color             kGray
+  tile_col          5
+ }
+ weight             200
+ to_hit             -1
+ cost               350
+ melee_atk          kAttPowerClaw
+}
+
+UNARMED PhaseGloves
+{
+ real_name          "pair of phase gloves"
+ appear_name        "pair of shimmering gloves"
+ vague_name         "pair of unstable gloves"
+ real_glyph
+ {
+  color             kNavy
+  tile_col          7
+ }
+ material           kCarbonFiber
+ weight             50
+ ammo               kObjEnergyCell
+ burst              4
+ to_hit             +2
+ cost               2000
+ melee_atk          kAttPhaseGloves
+}
+
+UNARMED PsiBlades
+{
+ real_name          "pair of psi blades"
+ appear_name        "pair of generators"
+ vague_name         "pair of generators"
+ real_glyph
+ {
+  color             kYellow
+  tile_col          8
+ }
+ material           kGold
+ weight             75
+ to_hit             +2
+ cost               1800
+ melee_atk          kAttPsiBlade
+}
+
+UNARMED GomJabbar
+{
+ real_name          "Gom Jabbar"
+ appear_name        "poison needle"
+ vague_name         "needle"
+ real_glyph
+ {
+  color             kWhite
+  tile_col          9
+ }
+ material           kTitanium
+ size               kTiny
+ weight             5
+ cost               500
+ melee_atk          kAttGomJabbar
+}
+
+TEMPLATE GRENADE ObjectIlk
+{
+ parent             kObjNothing
+ real_type          kWeapon
+ real_glyph
+ {
+  sym               '*'
+  tile_row          kRowTag1
+  tile_col          38
+ }
+ appear_glyph
+ {
+  tile_row          kRowGrenade
+  tile_col          0
+ }
+ vague_glyph
+ {
+  color             kCyan
+ }
+ subtype            grenade
+ flags              kMergeable
+ weight             20
+ material           kSteel
+ size               kTiny
+ cost               25
+}
+
+GRENADE ConcussionGrenade
+{
+ real_name          "concussion grenade"
+ real_glyph
+ { color            kCyan }
+ flavor             kFGrenade1
+ missile_atk        kAttConcussionGrenade
+}
+
+GRENADE FragGrenade
+{
+ real_name          "frag grenade"
+ real_glyph
+ { color            kBrown }
+ flavor             kFGrenade2
+ missile_atk        kAttFragGrenade
+}
+
+GRENADE StunGrenade
+{
+ real_name          "stun grenade"
+ real_glyph
+ { color            kGray }
+ flavor             kFGrenade3
+ missile_atk        kAttStunGrenade
+}
+
+GRENADE Flashbang
+{
+ real_name          "flashbang"
+ real_glyph
+ { color            kWhite }
+ flavor             kFGrenade4
+ missile_atk        kAttFlashbang
+}
+
+GRENADE IncendiaryGrenade
+{
+ real_name          "incendiary grenade"
+ real_glyph
+ {
+  color             kOrange 
+  tile_col          13
+ }
+ flavor             kFGrenade5
+ missile_atk        kAttIncendiaryGrenade
+}
+
+GRENADE RadGrenade
+{
+ real_name          "rad grenade"
+ real_glyph
+ {
+  color             kLime
+  tile_col          16
+ }
+ flavor             kFGrenade6
+ flags              (kRadioactive | kMergeable)
+ missile_atk        kAttRadGrenade
+}
+
+GRENADE EMPGrenade
+{
+ real_name          "EMP grenade"
+ real_glyph
+ {
+  color             kNavy
+  tile_col          14
+ }
+ flavor             kFGrenade7
+ missile_atk        kAttEMPGrenade
+}
+
+GRENADE WebbingGrenade
+{
+ real_name          "webbing grenade"
+ real_glyph
+ { color            kGreen }
+ flavor             kFGrenade8
+ missile_atk        kAttWebbingGrenade
+}
+
+GRENADE DispersalGrenade
+{
+ real_name          "dispersal grenade"
+ real_glyph
+ { color            kAqua }
+ flavor             kFGrenade9
+ missile_atk        kAttDispersalGrenade
+}
+
+GRENADE Flare
+{
+ real_name          "flare"
+ real_glyph
+ {
+  color             kYellow
+  tile_row          kRowTag2
+  tile_col          4
+ }
+ flavor             kFGrenade11
+ missile_atk        kAttFlare
+}
+COMMENT { kFGrenade10 is reserved for proximity mine. }
+
+TEMPLATE AMMUNITION ObjectIlk
+{
+ parent             kObjNothing
+ real_type          kProjectile
+ real_glyph
+ {
+  sym               '='
+  tile_row          kRowAmmunition
+  tile_col          0
+ }
+ flags              (kMergeable | kBugProof | kPreidentified)
+ size               kFine
+}
+
+AMMUNITION Bullet
+{
+ real_name          "bullet"
+ real_glyph
+ {
+  color             kBrown
+  tile_col          3
+ }
+ material           kSteel
+ weight             1
+ cost               1
+}
+
+AMMUNITION ShotgunShell
+{
+ real_name          "shotgun shell"
+ real_glyph
+ {
+  color             kYellow
+  tile_col          4
+ }
+ material           kLead
+ weight             2
+ cost               1
+}
+
+AMMUNITION RailgunSlug
+{
+ real_name          "railgun slug"
+ appear_name        "slug"
+ real_glyph
+ {
+  color             kRed
+  tile_col          5
+ }
+ material           kDepletedUranium
+ weight             8
+ cost               2
+}
+
+AMMUNITION FlamerFuel
+{
+ real_name          "flamer fuel tank"
+ real_glyph
+ {
+  color             kCyan
+  tile_col          7
+ }
+ max_charge         50
+ material           kSteel
+ weight             70
+ cost               15
+}
+
+AMMUNITION WebCasket
+{
+ real_name          "web casket"
+ appear_name        "casket"
+ real_glyph
+ {
+  color             kGray
+  tile_col          8
+ }
+ material           kPlasteel
+ weight             3
+ cost               3
+}
+
+AMMUNITION SpearheadDart
+{
+ real_name          "spearhead dart"
+ real_glyph
+ {
+  color             kBrown
+  tile_col          6
+ }
+ material           kPlasteel
+ weight             2
+ cost               1
+}
+
+TEMPLATE HANDGUN ObjectIlk
+{
+ parent             kObjNothing
+ real_type          kWeapon
+ vague_name         "pistol"
+ real_glyph
+ {
+  sym               ')'
+  color             kNavy
+  tile_row          kRowHandgun
+  tile_col          0
+ }
+ vague_glyph
+ {
+  tile_col          1
+ }
+ max_plus           +5
+ gun_skill          kHandgun
+ material           kSteel
+ size               kMedium
+}
+
+HANDGUN PeaShooter
+{
+ real_name          "pea shooter"
+ appear_name        "wimpy pistol"
+ real_glyph
+ {
+  tile_col          3
+ }
+ appear_glyph
+ {
+  tile_col          1
+ }
+ cost               50
+ weight             50
+ gun_atk            kAttPeaShooter
+}
+
+HANDGUN ConvPistol
+{
+ real_name          "conventional pistol"
+ appear_name        "conventional pistol"
+ real_glyph
+ {
+  tile_col          4
+ }
+ ammo               kObjBullet
+ to_hit             -1
+ cost               100
+ weight             100
+ gun_atk            kAttPistol
+}
+
+HANDGUN AssaultPistol
+{
+ real_name          "assault pistol"
+ appear_name        "assault pistol"
+ real_glyph
+ {
+  tile_col          5
+ }
+ ammo               kObjBullet
+ burst              2
+ to_hit             -1
+ cost               100
+ weight             100
+ gun_atk            kAttPistol
+}
+
+HANDGUN KhanHeavyPistol
+{
+ real_name          "Khan heavy pistol"
+ appear_name        "robust pistol"
+ real_glyph
+ {
+  tile_col          6
+ }
+ ammo               kObjBullet
+ weight             144
+ to_hit             -2
+ cost               250
+ gun_atk            kAttKhan
+}
+
+HANDGUN NetLauncher
+{
+ real_name          "net launcher"
+ appear_name        "wimpy pistol"
+ real_glyph
+ {
+  tile_col          13
+ }
+ appear_glyph
+ {
+  tile_col          1
+ }
+ ammo               kObjWebCasket
+ cost               500
+ weight             50
+ gun_atk            kAttNet
+}
+
+TEMPLATE LIGHTGUN ObjectIlk
+{
+ parent             kObjNothing
+ real_type          kWeapon
+ real_glyph
+ {
+  sym               ')'
+  color             kNavy
+  tile_row          kRowLightGun
+  tile_col          0
+ }
+ max_plus           +5
+ gun_skill          kLightGun
+ flags              kPreidentified
+ material           kSteel
+ size               kLarge
+}
+
+LIGHTGUN Shotgun
+{
+ real_name          "shotgun"
+ real_glyph
+ {
+  tile_col          3
+ }
+ ammo               kObjShotgunShell
+ to_hit             +1
+ weight             220
+ cost               150
+ gun_atk            kAttShotgun
+}
+
+LIGHTGUN SawnoffShotgun
+{
+ real_name          "sawn-off shotgun"
+ real_glyph
+ {
+  tile_col          10
+ }
+ ammo               kObjShotgunShell
+ to_hit             +1
+ weight             205
+ cost               150
+ gun_atk            kAttSawnoffShotgun
+}
+
+LIGHTGUN SniperRifle
+{
+ real_name          "sniper rifle"
+ appear_name        "telescoped rifle"
+ vague_name         "rifle"
+ real_glyph
+ {
+  tile_col          4
+ }
+ flags              0
+ ammo               kObjBullet
+ to_hit             +3
+ weight             195
+ cost               300
+ gun_atk            kAttRifle
+}
+
+LIGHTGUN LightFlamer
+{
+ real_name          "light flamethrower"
+ real_glyph
+ {
+  color             kAqua
+  tile_col          5
+ }
+ ammo               kObjFlamerFuel
+ burst              3
+ weight             300
+ cost               200
+ gun_atk            kAttLFlamer
+}
+
+LIGHTGUN Speargun
+{
+ real_name          "speargun rifle"
+ real_glyph
+ {
+  color             kRed
+  tile_col          11
+ }
+ ammo               kObjSpearheadDart
+ weight             210
+ cost               300
+ gun_atk            kAttSpeargun
+}
+
+LIGHTGUN Cryolator
+{
+ real_name          "cryolator"
+ real_glyph
+ {
+  color             kAqua
+  tile_col          0
+ }
+ weight             230
+ max_charge         150
+ cost               300
+ gun_atk            kAttCryolator
+}
+
+TEMPLATE HEAVYGUN ObjectIlk
+{
+ parent             kObjNothing
+ real_type          kWeapon
+ real_glyph
+ {
+  sym               ')'
+  color             kNavy
+  tile_row          kRowHeavyGun
+  tile_col          0
+ }
+ vague_glyph
+ {
+  tile_col          1
+ }
+ max_plus           +5
+ gun_skill          kHeavyGun
+ material           kSteel
+ size               kLarge
+}
+
+HEAVYGUN PulseRifle
+{
+ real_name          "pulse rifle"
+ appear_name        "assault rifle"
+ vague_name         "heavy rifle"
+ real_glyph
+ {
+  tile_col          4
+ }
+ flags              kSelectiveFire
+ ammo               kObjBullet
+ burst              3
+ weight             400
+ cost               400
+ gun_atk            kAttPulseRifle
+}
+
+TEMPLATE SMARTGUN ObjectIlk
+{
+ appear_name        "assault rifle"
+ vague_name         "heavy rifle"
+ real_type          kWeapon
+ real_glyph
+ {
+  sym               ')'
+  color             kNavy
+  tile_row          kRowHeavyGun
+  tile_col          6
+ }
+ vague_glyph
+ {
+  tile_col          1
+ }
+ flags              kSelectiveFire
+ max_plus           +5
+ gun_skill          kHeavyGun
+ ammo               kObjBullet
+ burst              3
+ to_hit             +1
+ material           kSteel
+ size               kLarge
+ weight             400
+ cost               700
+ gun_atk            kAttSmartgun
+}
+
+SMARTGUN M56Smartgun
+{
+ real_name          "M56 Smartgun"
+}
+
+SMARTGUN M57Smartgun
+{
+ real_name          "M57 Smartgun"
+}
+
+COMMENT
+{
+/*
+    NEW_GUN(kObjBoltgun,
+        "boltgun", "pistol", "assault pistol",
+        kCyan, kHeavyGun, NULL, kSteel,
+        0, 1000, kMedium, 10, 3, kObjBullet, 3, +0,
+        newGunAttack (shAttack::kBullet, FULLTURN, 60, kPiercing, 1, 10),
+        500 BZ, 25);
+*/
+}
+
+HEAVYGUN Railgun
+{
+ real_name          "railgun"
+ vague_name         "heavy rifle"
+ real_glyph
+ {
+  color             kRed
+  tile_col          3
+ }
+ flags              kPreidentified
+ ammo               kObjRailgunSlug
+ weight             525
+ cost               800
+ gun_atk            kAttRailgun
+}
+
+HEAVYGUN AutoCannon
+{
+ real_name          "auto-cannon"
+ appear_name        "barreled cannon"
+ vague_name         "heavy cannon"
+ real_glyph
+ {
+  color             kPink
+  tile_col          5
+ }
+ ammo               kObjBullet
+ burst              6
+ to_hit             -1
+ weight             600
+ cost               800
+ gun_atk            kAttCannon
+}
+
+HEAVYGUN Flamer
+{
+ real_name          "flamethrower"
+ real_glyph
+ {
+  color             kAqua
+  tile_col          7
+ }
+ flags              kPreidentified
+ ammo               kObjFlamerFuel
+ burst              5
+ weight             410
+ cost               300
+ gun_atk            kAttHFlamer
+}
+
+TEMPLATE E_HANDGUN ObjectIlk
+{
+ parent             kObjNothing
+ appear_name        "energy pistol"
+ vague_name         "pistol"
+ real_type          kWeapon
+ real_glyph
+ {
+  sym               ')'
+  color             kCyan
+  tile_row          kRowHandgun
+  tile_col          0
+ }
+ vague_glyph
+ {
+  tile_col          2
+ }
+ max_plus           +5
+ gun_skill          kHandgun
+ material           kSteel
+ weight             50
+ ammo               kObjEnergyCell
+ size               kMedium
+}
+
+E_HANDGUN LaserPistol
+{
+ real_name          "laser pistol"
+ real_glyph
+ {
+  tile_col          9
+ }
+ burst              5
+ to_hit             -2
+ cost               50
+ gun_atk            kAttLaserPistol
+}
+
+E_HANDGUN BlasterPistol
+{
+ real_name          "blaster pistol"
+ real_glyph
+ {
+  tile_col          12
+ }
+ burst              5
+ to_hit             -1
+ cost               50
+ gun_atk            kAttBlaster
+}
+
+E_HANDGUN PhaserPistol
+{
+ real_name          "phaser pistol"
+ appear_name        "ergonomic energy pistol"
+ real_glyph
+ {
+  tile_col          10
+ }
+ max_plus           +6
+ burst              5
+ to_hit             +1
+ cost               50
+ gun_atk            kAttPhaser
+}
+
+E_HANDGUN ZapGun
+{
+ real_name          "reticulan zap gun"
+ appear_name        "stylized energy pistol"
+ real_glyph
+ {
+  color             kGray
+  tile_col          11
+ }
+ burst              4
+ to_hit             +1
+ cost               50
+ gun_atk            kAttZapGun
+}
+
+E_HANDGUN PlasmaPistol
+{
+ real_name          "plasma pistol"
+ appear_name        "coiled pistol"
+ real_glyph
+ {
+  color             kGreen
+  tile_col          8
+ }
+ burst              6
+ cost               150
+ gun_atk            kAttPlasmaPistol
+}
+
+E_HANDGUN PlasmaCaster
+{
+ real_name          "plasma caster"
+ appear_name        "coiled pistol"
+ real_glyph
+ {
+  color             kGreen
+  tile_row          kRowHeavyGun
+  tile_col          12
+ }
+ appear_glyph
+ {
+  color             kCyan
+  tile_row          kRowHandgun
+ }
+ max_charge         2
+ weight             120
+ burst              9
+ to_hit             -8
+ psi_mod            -1
+ cost               1275
+ gun_atk            kAttPlasmaCaster0
+}
+
+E_HANDGUN CombatTranslocator
+{
+ real_name          "translocator pistol"
+ appear_name        "ergonomic energy pistol"
+ real_glyph
+ {
+  color             kAqua
+ }
+ appear_glyph
+ {
+  color             kCyan
+  tile_row          kRowHandgun
+ }
+ burst              15
+ to_hit             -4
+ gun_atk            kAttTranslocator
+}
+
+TEMPLATE E_LIGHTGUN ObjectIlk
+{
+ parent             kObjNothing
+ vague_name         "rifle"
+ real_type          kWeapon
+ real_glyph
+ {
+  sym               ')'
+  color             kCyan
+  tile_row          kRowLightGun
+  tile_col          0
+ }
+ vague_glyph
+ {
+  tile_col          2
+ }
+ max_plus           +5
+ gun_skill          kLightGun
+ ammo               kObjEnergyCell
+ material           kSteel
+ size               kLarge
+}
+
+E_LIGHTGUN LaserRifle
+{
+ real_name          "laser rifle"
+ appear_name        "energy rifle"
+ real_glyph
+ {
+  tile_col          7
+ }
+ burst              8
+ to_hit             +1
+ weight             160
+ cost               200
+ gun_atk            kAttLaserRifle
+}
+
+E_LIGHTGUN BlasterRifle
+{
+ real_name          "blaster rifle"
+ appear_name        "energy rifle"
+ real_glyph
+ {
+  tile_col          9
+ }
+ burst              9
+ to_hit             +1
+ weight             160
+ cost               200
+ gun_atk            kAttBlasterRifle
+}
+
+E_LIGHTGUN PlasmaRifle
+{
+ real_name          "plasma rifle"
+ appear_name        "coiled rifle"
+ real_glyph
+ {
+  color             kGreen
+  tile_col          8
+ }
+ burst              10
+ to_hit             +1
+ weight             160
+ cost               450
+ gun_atk            kAttPlasmaRifle
+}
+
+TEMPLATE E_HEAVYGUN ObjectIlk
+{
+ parent             kObjNothing
+ real_type          kWeapon
+ real_glyph
+ {
+  sym               ')'
+  color             kCyan
+  tile_row          kRowHeavyGun
+  tile_col          0
+ }
+ vague_glyph
+ {
+  tile_col          2
+ }
+ max_plus           +5
+ gun_skill          kHeavyGun
+ ammo               kObjEnergyCell
+ material           kSteel
+ size               kLarge
+}
+
+E_HEAVYGUN MiningLaser
+{
+ real_name          "mining laser"
+ appear_name        "energy cannon"
+ vague_name         "heavy cannon"
+ real_glyph
+ {
+  color             kCyan
+  tile_col          9
+ }
+ burst              25
+ to_hit             +8
+ weight             600
+ cost               800
+ gun_atk            kAttMiningLaser
+}
+
+E_HEAVYGUN LaserCannon
+{
+ real_name          "laser cannon"
+ appear_name        "energy cannon"
+ vague_name         "heavy cannon"
+ real_glyph
+ {
+  color             kCyan
+  tile_col          10
+ }
+ burst              35
+ to_hit             +1
+ weight             600
+ cost               800
+ gun_atk            kAttLaserCannon
+}
+
+E_HEAVYGUN PlasmaCannon
+{
+ real_name          "plasma cannon"
+ appear_name        "coiled cannon"
+ vague_name         "heavy cannon"
+ real_glyph
+ {
+  color             kGreen
+  tile_col          11
+ }
+ burst              40
+ weight             600
+ cost               1200
+ gun_atk            kAttPlasmaCannon
+}
+
+
+
+COMMENT { Tools and other useful things. }
+
+
+TEMPLATE TOOL ObjectIlk
+{
+ parent             kObjNothing
+ real_type          kTool
+ real_glyph
+ {
+  sym               '('
+  tile_row          kRowGenTool
+  tile_col          0
+ }
+}
+
+COMMENT { Weight is same as 100 energy cells. }
+ObjectIlk SmallEnergyTank
+{
+ parent             kObjNothing
+ real_name          "small energy tank"
+ real_type          kTool
+
+ real_glyph
+ {
+  sym               '('
+  color             kYellow
+  tile_col          4
+  tile_row          kRowEnergy
+ }
+ max_charge         300
+ subtype            energy_tank
+
+ flags              (kPreidentified | kBugProof)
+ material           kSteel
+ size               kSmall
+ weight             100
+ cost               400
+}
+
+DECLARE ObjectIlk EnergyTank=kObjSmallEnergyTank
+
+COMMENT { Weight is same as 150 energy cells. }
+ObjectIlk LargeEnergyTank
+{
+ parent             kObjNothing
+ real_name          "large energy tank"
+ real_type          kTool
+
+ real_glyph
+ {
+  sym               '('
+  color             kYellow
+  tile_col          5
+  tile_row          kRowEnergy
+ }
+ max_charge         500
+ subtype            energy_tank
+
+ flags              (kPreidentified | kBugProof)
+ material           kSteel
+ size               kMedium
+ weight             150
+ cost               1100
+}
+
+TEMPLATE POWERPLANT ObjectIlk
+{
+ parent             kObjNothing
+ appear_name        "power plant"
+ vague_name         "power plant"
+ real_type          kTool
+ real_glyph
+ {
+  sym               '('
+  tile_row          kRowPowerPlant
+ }
+
+ subtype            power_plant
+ max_charge         100
+ size               kSmall
+ weight             500
+ material           kPlasteel
+}
+
+POWERPLANT FissionPlant
+{
+ real_name          "fission power plant"
+ real_glyph
+ {
+  color             kOrange
+  tile_col          3
+ }
+ energy_use         5000
+ cost               1000
+}
+
+POWERPLANT FusionPlant
+{
+ real_name          "fusion power plant"
+ real_glyph
+ {
+  color             kOrange
+  tile_col          4
+ }
+ energy_use         2500
+ cost               2000
+}
+
+COMMENT
+{
+    Left out. It's too good.
+    NEW_TOOL(kObjZeroPointPlant,
+        "zero point power plant", "power plant", "power plant",
+        kMagenta, 0, kObjGenericPlant, 4000 BZ, kPlasteel,
+        kChargeable, 5000, kSmall, 10, 10,
+        1250, 1000, NULL, 5);
+
+    This should behave in different way. Until then it is also left out.
+    NEW_TOOL(kObjPsionicShield,
+        "psionic shield generator", "power plant", "alien power plant",
+        kYellow, 0, kObjGenericPlant, 3000 BZ, kGold,
+        kChargeable, 3000, kSmall, 5, 5,
+        3000, 100, NULL, 1);
+  tile_col          5
+    AllIlks[kObjPsionicShield]->mCarriedIntrinsics |= kShielded;
+}
+
+TOOL DuctTape
+{
+ real_name          "roll of duct tape"
+ real_glyph
+ {
+  color             kGray
+  tile_col          5
+ }
+ flags              (kPreidentified | kMergeable)
+ material           kPlastic
+ size               kFine
+ weight             8
+ cost               5
+}
+
+TOOL MonkeyWrench
+{
+ real_name          "monkey wrench"
+ appear_name        "wrench"
+ real_glyph
+ {
+  color             kYellow
+  tile_col          4
+ }
+ flags              kPreidentified
+ material           kSteel
+ weight             24
+ size               kTiny
+ cost               20
+
+ melee_atk          kAttWrench
+ melee_skill        kMeleeWeapon
+ max_plus           +4
+}
+
+TOOL Flashlight
+{
+ real_name          "flashlight"
+ real_glyph
+ {
+  color             kRed
+  tile_col          6
+ }
+ flags              kPreidentified
+ size               kTiny
+ weight             12
+ energy_use         180000
+ cost               10
+}
+
+TEMPLATE GIZMO ObjectIlk
+{
+ parent             kObjNothing
+ vague_name         "electronic gizmo"
+ real_type          kTool
+ real_glyph
+ {
+  sym               '('
+  tile_row          kRowGizmo
+ }
+ appear_glyph
+ {
+  tile_col          1
+  color             kNavy
+ }
+ vague_glyph
+ {
+  color             kNavy
+ }
+ subtype            gizmo
+ weight             53
+ size               kTiny
+ material           kSteel
+ cost               400
+}
+
+GIZMO GeigerCounter
+{
+ real_name          "Geiger counter"
+ real_glyph
+ {
+  color             kLime
+  tile_col          4
+ }
+ flavor             kFGizmo1
+ energy_use         20000
+}
+
+GIZMO MotionTracker
+{
+ real_name          "motion tracker"
+ real_glyph
+ {
+  color             kOrange
+  tile_col          3
+ }
+ flavor             kFGizmo2
+ energy_use         10000
+}
+
+GIZMO DroidCaller
+{
+ real_name          "droid caller"
+ real_glyph
+ {
+  color             kBrown
+  tile_col          5
+ }
+ flavor             kFGizmo3
+}
+
+GIZMO Tricorder
+{
+ real_name          "tricorder"
+ real_glyph
+ {
+  color             kWhite
+  tile_col          6
+ }
+ material           kPlastic
+ flavor             kFGizmo4
+}
+
+GIZMO RemoteControl
+{
+ real_name          "remote control"
+ real_glyph
+ {
+  color             kNavy
+ }
+ material           kPlastic
+ flavor             kFGizmo5
+}
+
+TEMPLATE KEYCARD ObjectIlk
+{
+ parent             kObjNothing
+ real_type          kTool
+ real_glyph
+ {
+  sym               '('
+  tile_row          kRowKeycard
+  tile_col          0
+ }
+ vague_glyph
+ {
+  tile_col          1
+ }
+ vague_name         "keycard"
+ subtype            keycard
+ weight             4
+ material           kPlastic
+ size               kFine
+}
+
+KEYCARD Keycard1
+{
+ cost               10
+ flavor             kFKey1
+}
+
+KEYCARD Keycard2
+{
+ cost               20
+ flavor             kFKey2
+}
+
+KEYCARD Keycard3
+{
+ cost               30
+ flavor             kFKey3
+}
+
+KEYCARD Keycard4
+{
+ cost               50
+ flavor             kFKey4
+}
+
+KEYCARD MasterKeycard
+{
+ real_name          "master keycard"
+ cost               150
+ flavor             kFKey5
+}
+
+DECLARE ObjectIlk Keycard5=kObjMasterKeycard
+
+TOOL LockPick
+{
+ real_name          "lock pick"
+ real_glyph
+ {
+  color             kNavy
+  tile_col          10
+  tile_row          kRowKeycard
+ }
+ flags              kPreidentified
+ weight             19
+ material           kPlastic
+ size               kFine
+ cost               200
+}
+
+COMMENT
+{
+KEYCARD License
+(
+ parent             kObjGenericTool
+ real_name          "detective license"
+ appear_name        "detective license"
+ real_glyph
+ (
+  color             kGray
+  tile_col          11
+ )
+ flags              kPreidentified
+ cost               10
+)
+}
+
+TOOL RestrainingBolt
+{
+ real_name          "restraining bolt"
+ appear_name        "magnetic bolt"
+ real_glyph
+ {
+  color             kNavy
+  tile_col          8
+ }
+ flags              (kPreidentified | kMergeable)
+ material           kSteel
+ weight             11
+ size               kFine
+ cost               200
+}
+
+TOOL Medicomp
+{
+ real_name          "medicomp"
+ real_glyph
+ {
+  color             kRed
+  tile_col          10
+ }
+ flags              kPreidentified
+ material           kTitanium
+ size               kSmall
+ weight             110
+ max_charge         40
+ cost               2000
+}
+
+TEMPLATE COMPUTER ObjectIlk
+{
+ parent             kObjNothing
+ real_type          kTool
+ size               kSmall
+ max_plus           +5
+ subtype            computer
+ real_glyph
+ {
+  sym               '('
+  tile_row          kRowComputer
+  tile_col          0
+ }
+}
+
+COMPUTER MiniComputer
+{
+ real_name          "mini computer"
+ real_glyph
+ {
+  color             kWhite
+  tile_col          3
+ }
+ flags              kPreidentified
+ material           kPlastic
+ weight             35
+ cost               500
+}
+
+COMPUTER MegaComputer
+{
+ real_name          "mega computer"
+ real_glyph
+ {
+  color             kWhite
+  tile_col          4
+ }
+ flags              kPreidentified
+ material           kTitanium
+ weight             250
+ cost               1000
+}
+
+COMPUTER BioComputer
+{
+ real_name          "bio computer"
+ real_glyph
+ {
+  color             kRed
+  tile_col          5
+ }
+ flags              kPreidentified
+ material           kFleshy
+ weight             150
+ cost               1250
+}
+
+COMPUTER SatCom
+{
+ real_name          "sat-com computer"
+ appear_name        "armworn computer"
+ real_glyph
+ {
+  color             kCyan
+ }
+ flags              kPreidentified
+ material           kTitanium
+ weight             100
+ cost               750
+}
+
+DECLARE ObjectIlk ComputerOS=kObjSatCom
+
+TOOL PortableHole
+{
+ real_name          "portable hole"
+ real_glyph
+ {
+  color             kBlack
+  tile_col          9
+ }
+ flags              (kPreidentified | kMergeable)
+ weight             0
+ material           kLeather
+ cost               200
+}
+
+TOOL ProximityMine
+{
+ real_name          "proximity mine"
+ real_glyph
+ {
+  color             kGray
+  tile_row          kRowTag1
+  tile_col          38
+ }
+ appear_type        kWeapon
+ appear_glyph
+ {
+  sym               '*'
+  tile_row          kRowGrenade
+  tile_col          0
+ }
+ flags              kMergeable
+ flavor             kFGrenade10
+ weight             20
+ material           kSteel
+ size               kFine
+ cost               100
+}
+
+TOOL Khaydarin
+{
+ real_name          "Khaydarin crystal shard"
+ appear_name        "crystal shard"
+ real_glyph
+ {
+  color             kAqua
+  tile_col          11
+ }
+ flags              (kPreidentified | kBugProof)
+ psi_mod            +1
+ max_charge         4
+ material           kCrystal
+ size               kFine
+ weight             7
+ cost               1000
+}
+
+TOOL RabbitFoot
+{
+ parent             kObjNothing
+ real_name          "rabbit's foot"
+ real_glyph
+ {
+  color             kNavy
+ }
+ flags              kPreidentified
+ material           kFleshy
+ size               kTiny
+ cost               400
+ weight             3
+}
+
+TOOL BluePill
+{
+ real_name          "blue pill"
+ vague_name         "pill"
+ real_glyph
+ {
+  sym               '%'
+  color             kNavy
+  tile_col          5
+  tile_row          kRowCanister
+ }
+ flags              (kPreidentified | kBugProof | kMergeable)
+ size               kFine
+ material           kFleshy
+ cost               1
+ weight             1
+}
+
+TOOL RedPill
+{
+ real_name          "red pill"
+ vague_name         "pill"
+ real_glyph
+ {
+  sym               '%'
+  color             kRed
+  tile_col          6
+  tile_row          kRowCanister
+ }
+ flags              (kPreidentified | kBugProof | kMergeable)
+ size               kFine
+ material           kFleshy
+ cost               1
+ weight             1
+}
+
+TOOL TransferCable
+{
+ real_name          "transfer cable"
+ vague_name         "cable"
+ real_glyph
+ {
+  color             kGray
+  tile_col          6
+  tile_row          kRowEnergy
+ }
+ flags              kPreidentified
+ material           kPlastic
+ size               kFine
+ cost               100
+ weight             19
+}
+
+TOOL Junk
+{
+ parent             kObjNothing
+ real_name          "heap of space junk"
+ real_type          kOther
+ real_glyph
+ {
+  color             kBrown
+  tile_col          7
+ }
+ flags              kPreidentified
+ size               kLarge
+ weight             1500
+ material           kPlasteel
+ cost               5
+}
+
+COMMENT
+{
+ Originally money was plastic. Needs to stay plasteel to be
+ fireproof since burnt money is not yet taken care of.
+}
+ObjectIlk Money
+{
+ real_name          "buckazoid"
+ real_type          kMoney
+ real_glyph
+ {
+  sym               '$'
+  color             kGreen
+  tile_row          kRowMoney
+  tile_col          3
+ }
+ vague_glyph
+ {
+  color             kGreen
+ }
+ flags              (kMergeable | kPreidentified | kBugProof)
+ material           kPlasteel
+ weight             0
+ size               kFine
+}
+
+ObjectIlk EnergyCell
+{
+ real_name          "energy cell"
+ real_type          kEnergyCell
+ real_glyph
+ {
+  sym               '*'
+  color             kAqua
+  tile_col          3
+  tile_row          kRowEnergy
+ }
+ material           kSteel
+ weight             1
+ size               kTiny
+ cost               1
+ flags              (kBugProof | kPreidentified | kMergeable)
+}
+
+ObjectIlk Wreck
+{
+ real_name          "wreck"
+ real_type          kOther
+ real_glyph
+ {
+  sym               '&'
+  color             kCyan
+  tile_col          0
+  tile_row          kRowWreck
+ }
+ material           kSteel
+ weight             700
+ size               kMedium
+ cost               10
+ flags              (kBugProof | kPreidentified)
+}
+
+
+
+TEMPLATE IMPLANT ObjectIlk
+{
+ parent             kObjNothing
+ vague_name         "bionic implant"
+ real_type          kImplant
+ size               kDiminutive
+ weight             2
+ material           kFleshy
+ site               shObjectIlk::kAnyBrain
+ psi_mod            -3
+ real_glyph
+ {
+  sym               ':'
+  tile_row          kRowTag1
+  tile_col          38
+ }
+ appear_glyph
+ {
+  tile_row          kRowImplant
+  tile_col          0
+ }
+}
+
+IMPLANT HealthMonitor
+{
+ real_name          "health monitor"
+ cost               300
+ flavor             kFImplant1
+}
+
+IMPLANT RadiationProcessor
+{
+ real_name          "radiation processor"
+ cost               300
+ flavor             kFImplant2
+ tile_col           31
+}
+
+IMPLANT PoisonResistor
+{
+ real_name          "poison resistor"
+ cost               300
+ res_toxin          10
+ flavor             kFImplant3
+}
+
+IMPLANT BabelFish
+{
+ real_name          "babel fish"
+ appear_name        "yellow fish"
+ vague_name         "fish"
+ real_glyph
+ {
+  color             kYellow
+ }
+ appear_glyph
+ {
+  tile_row          kRowFixedImplant
+  tile_col          9
+ }
+ site               shObjectIlk::kAnyEar
+ cost               300
+ psi_mod            0
+ weight             3
+}
+
+IMPLANT CerebralCoprocessor
+{
+ real_name          "cerebral coprocessor"
+ max_plus           +5
+ cost               300
+ flavor             kFImplant4
+}
+
+IMPLANT MotoricCoordinator
+{
+ real_name          "motoric coordinator"
+ max_plus           +5
+ cost               300
+ flavor             kFImplant5
+}
+
+IMPLANT ReflexCoordinator
+{
+ real_name          "reflex coordinator"
+ max_plus           +5
+ cost               300
+ flavor             kFImplant6
+}
+
+IMPLANT AdrenalineGenerator
+{
+ real_name          "adrenaline generator"
+ max_plus           +5
+ cost               300
+ flavor             kFImplant7
+}
+
+IMPLANT MyfilamentHypertensor
+{
+ real_name          "myfilament hypertensor"
+ max_plus           +5
+ cost               300
+ flavor             kFImplant15
+}
+
+IMPLANT PsiAmp
+{
+ real_name          "psionic amplifier"
+ max_plus           +5
+ cost               400
+ psi_mod            0
+ flavor             kFImplant8
+}
+
+IMPLANT TissueRegenerator
+{
+ real_name          "tissue regenerator"
+ cost               400
+ flavor             kFImplant9
+ tile_col           19
+}
+
+IMPLANT Narcoleptor
+{
+ real_name          "narcoleptor"
+ flags              kUsuallyBuggy
+ cost               400
+ flavor             kFImplant10
+}
+
+IMPLANT GloryDevice
+{
+ real_name          "glory device"
+ flags              kUsuallyBuggy
+ cost               400
+ flavor             kFImplant11
+}
+
+IMPLANT Excruciator
+{
+ real_name          "excruciator"
+ flags              kUsuallyBuggy
+ cost               400
+ flavor             kFImplant14
+}
+
+IMPLANT ShockCapacitor
+{
+ real_name          "shock capacitor"
+ max_charge         24
+ cost               400
+ flavor             kFImplant16
+ tile_col           4
+}
+
+IMPLANT MechaDendrites
+{
+ real_name          "set of mecha-dendrites"
+ appear_name        "set of mecha-dendrites"
+ vague_name         "set of mecha-dendrites"
+ real_glyph
+ {
+  color             kNavy
+ }
+ appear_glyph
+ {
+  tile_row          kRowFixedImplant
+  tile_col          3
+ }
+ flags              kPreidentified
+ material           kCarbonFiber
+ site               shObjectIlk::kCerebellum
+ cost               700
+ psi_mod            -5
+ weight             9
+}
+
+IMPLANT Torc
+{
+ real_name          "torc"
+ vague_name         "torc"
+ flags              (kUsuallyBuggy | kPreidentified)
+ material           kTitanium
+ site               shObjectIlk::kNeck
+ appear_glyph
+ {
+  tile_row          kRowFixedImplant
+  tile_col          5
+ }
+ cost               250
+ weight             15
+}
+
+IMPLANT SearchSkillsoft
+{
+ real_name          "search skillsoft"
+ cost               200
+ psi_mod            -2
+ boost_skill        kSearch
+ flavor             kFImplant12
+ subtype            skillsoft
+}
+
+IMPLANT RepairSkillsoft
+{
+ real_name          "repair skillsoft"
+ cost               200
+ psi_mod            -2
+ boost_skill        kRepair
+ flavor             kFImplant13
+ subtype            skillsoft
+}
+
+IMPLANT SpotSkillsoft
+{
+ real_name          "spot skillsoft"
+ cost               200
+ psi_mod            -2
+ boost_skill        kSpot
+ flavor             kFImplant17
+ max_charge         10
+ subtype            skillsoft
+}
+
+IMPLANT LockPickSkillsoft
+{
+ real_name          "pick locks skillsoft"
+ cost               200
+ psi_mod            -2
+ boost_skill        kOpenLock
+ flavor             kFImplant18
+ subtype            skillsoft
+}
+
+IMPLANT WarpStabilizer
+{
+ real_name          "warp stabilizer"
+ cost               400
+ psi_mod            -3
+ max_plus           +5
+ flavor             kFImplant19
+}
+
+IMPLANT Ungooma
+{
+ real_name          "Ungooma"
+ real_glyph
+ {
+  tile_row          kRowFixedImplant
+  tile_col          33
+  color             kBrown
+ }
+ cost               300
+ psi_mod            -1
+ flavor             kFImplant20
+}
+
+IMPLANT BOFHEye
+{
+ real_name          "Eye of the BOFH"
+ appear_name        "detached retina"
+ real_glyph
+ {
+  color             kRed
+  tile_row          kRowFixedImplant
+  tile_col          7
+ }
+ flags              (kUnique | kIndestructible)
+ cost               1000
+ site               shObjectIlk::kAnyEye
+ psi_mod            0
+ weight             0
+}
+
+
+
+TEMPLATE RAYGUN ObjectIlk
+{
+ parent             kObjNothing
+ real_type          kRayGun
+ vague_name         "ray gun"
+ material           kPlasteel
+ size               kMedium
+ weight             150
+ cost               800
+ max_charge         20
+ real_glyph
+ {
+  sym               '/'
+  tile_row          kRowTag1
+  tile_col          38
+ }
+ appear_glyph
+ {
+  tile_row          kRowRayGun
+  tile_col          0
+ }
+ vague_glyph
+ {
+  tile_col          1
+ }
+}
+
+RAYGUN EmptyRayGun
+{
+ real_name          "empty ray gun"
+ flavor             kFRayGun1
+ cost               200
+ real_glyph
+ { tile_col         10 }
+}
+
+DECLARE ObjectIlk RayGunPreamble=kObjEmptyRayGun
+DECLARE ObjectIlk UnknownRayGun=kObjEmptyRayGun
+
+RAYGUN FreezeRayGun
+{
+ real_name          "freeze ray gun"
+ flavor             kFRayGun2
+ real_glyph
+ { tile_col         11 }
+ zap_atk            kAttFreezeRay
+}
+
+RAYGUN HeatRayGun
+{
+ real_name          "heat ray gun"
+ flavor             kFRayGun3
+ real_glyph
+ { tile_col         13 }
+ zap_atk            kAttHeatRay
+}
+
+RAYGUN GaussRayGun
+{
+ real_name          "gauss ray gun"
+ flavor             kFRayGun4
+ real_glyph
+ { tile_col         14 }
+ zap_atk            kAttGaussRay
+}
+
+RAYGUN PoisonRayGun
+{
+ real_name          "poison ray gun"
+ flavor             kFRayGun5
+ real_glyph
+ { tile_col         15 }
+ zap_atk            kAttPoisonRay
+}
+
+RAYGUN GammaRayGun
+{
+ real_name          "gamma ray gun"
+ flavor             kFRayGun6
+ flags              kRadioactive
+ real_glyph
+ { tile_col         16 }
+ zap_atk            kAttGammaRay
+}
+
+RAYGUN StasisRayGun
+{
+ real_name          "stasis ray gun"
+ flavor             kFRayGun7
+ real_glyph
+ { tile_col         17 }
+ zap_atk            kAttStasisRay
+}
+
+RAYGUN TransporterRayGun
+{
+ real_name          "transporter ray gun"
+ flavor             kFRayGun8
+ real_glyph
+ { tile_col         18 }
+ zap_atk            kAttTransporterRay
+}
+
+RAYGUN HealingRayGun
+{
+ real_name          "healing ray gun"
+ flavor             kFRayGun9
+ real_glyph
+ { tile_col         19 }
+ zap_atk            kAttHealingRay
+}
+
+RAYGUN RestorationRayGun
+{
+ real_name          "restoration ray gun"
+ flavor             kFRayGun10
+ real_glyph
+ { tile_col         20 }
+ zap_atk            kAttRestorationRay
+}
+
+RAYGUN DisintegrationRayGun
+{
+ real_name          "disintegration ray gun"
+ flavor             kFRayGun11
+ cost               2000
+ real_glyph
+ { tile_col         12 }
+ zap_atk            kAttDisintegrationRay
+ missile_atk        kAttDisintegrationRayGunBlowUp
+}
+
+RAYGUN AccelerationRayGun
+{
+ real_name          "acceleration ray gun"
+ flavor             kFRayGun12
+ zap_atk            kAttAccelerationRay
+ real_glyph
+ { tile_col         35 }
+}
+
+RAYGUN DecelerationRayGun
+{
+ real_name          "deceleration ray gun"
+ flavor             kFRayGun13
+ zap_atk            kAttDecelerationRay
+ real_glyph
+ { tile_col         34 }
+}
+
+RAYGUN DecontaminationRayGun
+{
+ real_name          "decontamination ray gun"
+ flavor             kFRayGun14
+ zap_atk            kAttDecontaminationRay
+ real_glyph
+ { tile_col         31 }
+}
+
+RAYGUN AugmentationRayGun
+{
+ real_name          "augmentation ray gun"
+ flavor             kFRayGun15
+ zap_atk            kAttAugmentationRay
+ real_glyph
+ { tile_col         30 }
+}
+
+RAYGUN SquirtRayGun
+{
+ real_name          "squirt ray gun"
+ appear_name        "gray ray gun"
+ real_glyph
+ {
+  tile_col          2
+ }
+ appear_glyph
+ {
+  tile_col          20
+  color             kGray
+ }
+ zap_atk            kAttSquirtWater
+}
+
+
+
+
+TEMPLATE CANISTER ObjectIlk
+{
+ parent             kObjNothing
+ real_type          kCanister
+ vague_name         "canister"
+ real_glyph
+ {
+  sym               '!'
+  tile_row          kRowTag1
+  tile_col          38
+ }
+ appear_glyph
+ {
+  tile_row          kRowCanister
+  tile_col          0
+ }
+ flags              kMergeable
+ material           kGlass
+ weight             16
+ size               kTiny
+}
+
+COMMENT { Cola canisters get same appearance! }
+
+CANISTER NanoCola
+{
+ real_name          "canister of Nano-Cola"
+ cost               5
+ flavor             kFCan1
+}
+
+CANISTER NukaCola
+{
+ real_name          "canister of Nuka-Cola"
+ cost               5
+ flavor             kFCan1
+}
+
+CANISTER B3
+{
+ real_name          "canister of Bouncy Bubbly Beverage"
+ cost               5
+ flavor             kFCan1
+ missile_atk        kAttStirredBBB
+}
+
+CANISTER Beer
+{
+ real_name          "canister of beer"
+ cost               5
+ flavor             kFCan2
+ real_glyph
+ { tile_col         32 }
+}
+
+CANISTER SuperGlue
+{
+ real_name          "canister of super glue"
+ cost               5
+ flavor             kFCan3
+ missile_atk        kAttGlueSpill
+}
+
+CANISTER Coffee
+{
+ real_name          "canister of coffee"
+ cost               5
+ flavor             kFCan4
+ real_glyph
+ { tile_col         27 }
+}
+
+CANISTER Water
+{
+ real_name          "canister of water"
+ appear_name        "clear canister"
+ real_glyph
+ {
+  tile_col          2
+  color             kAqua
+ }
+ appear_glyph
+ {
+  tile_col          29
+ }
+ flags              (kMergeable | kPreidentified)
+ cost               5
+}
+
+
+COMMENT
+{ Cyrus stated there should be no doozies in the 50 buckazoid category. }
+
+CANISTER RadAway
+{
+ real_name          "canister of RadAway"
+ cost               50
+ flavor             kFCan5
+ real_glyph
+ { tile_col         31 }
+}
+
+CANISTER RestorationCanister
+{
+ real_name          "canister of restoration"
+ cost               50
+ flavor             kFCan6
+ real_glyph
+ { tile_col         20 }
+}
+
+CANISTER HealingCanister
+{
+ real_name          "canister of healing"
+ cost               50
+ flavor             kFCan7
+ real_glyph
+ { tile_col         19 }
+}
+
+
+CANISTER LNO
+{
+ real_name          "canister of liquid nitrogen"
+ cost               75
+ flavor             kFCan8
+ missile_atk        kAttLNOBlast
+ real_glyph
+ { tile_col         11 }
+}
+
+CANISTER Napalm
+{
+ real_name          "canister of napalm"
+ cost               75
+ flavor             kFCan9
+ missile_atk        kAttNapalmBlast
+ real_glyph
+ { tile_col         13 }
+}
+
+
+CANISTER UniversalSolvent
+{
+ real_name          "canister of universal solvent"
+ cost               100
+ flavor             kFCan10
+ missile_atk        kAttSolventBlast
+}
+
+CANISTER SpeedCanister
+{
+ real_name          "canister of speed"
+ cost               100
+ flavor             kFCan11
+ real_glyph
+ { tile_col         26 }
+}
+
+CANISTER PoisonCanister
+{
+ real_name          "canister of poison"
+ cost               100
+ flavor             kFCan12
+ real_glyph
+ { tile_col         15 }
+}
+
+CANISTER PlasmaCanister
+{
+ real_name          "canister of plasma"
+ cost               100
+ flavor             kFCan13
+ missile_atk        kAttPlasmaBlast
+ real_glyph
+ { tile_col         25 }
+}
+
+CANISTER Buffout
+{
+ real_name          "canister of Buffout"
+ cost               100
+ flavor             kFCan18
+}
+
+
+CANISTER MutagenCanister
+{
+ real_name          "canister of mutagen"
+ cost               200
+ flavor             kFCan14
+ real_glyph
+ { tile_col         24 }
+}
+
+CANISTER FullHealingCanister
+{
+ real_name          "canister of full healing"
+ cost               200
+ flavor             kFCan15
+ real_glyph
+ { tile_col         29 }
+}
+
+CANISTER GainAbilityCanister
+{
+ real_name          "canister of gain ability"
+ cost               200
+ flavor             kFCan16
+ real_glyph
+ { tile_col         30 }
+}
+
+CANISTER SpiceMelange
+{
+ real_name          "canister of spice melange"
+ cost               200
+ flavor             kFCan17
+ real_glyph
+ { tile_col         33 }
+}
+
+
+CANISTER Antimatter
+{
+ real_name          "canister of antimatter"
+ appear_name        "canister with death symbol"
+ real_glyph
+ {
+  color             kGray
+  tile_col          12
+ }
+ appear_glyph
+ {
+  tile_col          4
+ }
+ material           kAdamantium
+ cost               1000
+ missile_atk        kAttAntimatterBlast
+}
+
+CANISTER Brain
+{
+ real_name          "brain cylinder"
+ appear_name        "brain in a jar"
+ real_glyph
+ {
+  color             kBrown
+ }
+ appear_glyph
+ {
+  tile_col          1
+ }
+ material           kTitanium
+ flags              (kPreidentified | kMergeable)
+ cost               1000
+ weight             32
+}
+
+CANISTER CannedEmbryo
+{
+ real_name          "canned alien embryo"
+ appear_name        "veiny canister"
+ real_glyph
+ {
+  color             kBrown
+ }
+ appear_glyph
+ {
+  tile_col          3
+ }
+ material           kPlasteel
+ cost               1000
+}
+
+CANISTER SithGravy
+{
+ real_name          "Sith alchemical gravy"
+ appear_name        "sinister canister"
+ real_glyph
+ {
+  color             kBlue
+ }
+ material           kAdamantium
+ cost               1000
+}
+
+
+
+
+TEMPLATE FLOPPYDISK ObjectIlk
+{
+ parent             kObjNothing
+ real_type          kFloppyDisk
+ vague_name         "floppy disk"
+ flags              kMergeable
+ size               kFine
+ weight             6
+ material           kPlastic
+ real_glyph
+ {
+  sym               '?'
+  tile_row          kRowILabel
+  tile_col          1
+ }
+ appear_glyph
+ {
+  tile_row          kRowULabel
+  tile_col          0
+ }
+ vague_glyph
+ {
+  tile_row          kRowFloppyDisk
+  tile_col          1
+ }
+}
+
+FLOPPYDISK CorruptDisk
+{
+ real_name          "corrupt floppy disk"
+ appear_name        "unlabeled floppy disk"
+ real_glyph
+ {
+  color             kGray
+  tile_col          6
+ }
+ appear_glyph
+ {
+  tile_col          1
+ }
+ cost               25
+}
+
+FLOPPYDISK BugDetectionDisk
+{
+ real_name          "floppy disk of bug detection"
+ cost               25
+ flavor             kFDisk1
+ real_glyph
+ { tile_col         3 }
+}
+
+FLOPPYDISK IdentifyDisk
+{
+ real_name          "floppy disk of identify"
+ cost               25
+ flavor             kFDisk2
+ real_glyph
+ { tile_col         4 }
+}
+
+FLOPPYDISK SpamDisk
+{
+ real_name          "floppy disk of spam"
+ cost               25
+ flavor             kFDisk3
+ real_glyph
+ { tile_col         5 }
+}
+
+
+FLOPPYDISK BlankDisk
+{
+ real_name          "blank floppy disk"
+ appear_name        "unlabeled floppy disk"
+ real_glyph
+ {
+  color             kGray
+  tile_col          7
+ }
+ appear_glyph
+ {
+  tile_col          1
+ }
+ cost               50
+}
+
+FLOPPYDISK ObjectDetectionDisk
+{
+ real_name          "floppy disk of object detection"
+ cost               50
+ flavor             kFDisk4
+ real_glyph
+ { tile_col         8 }
+}
+
+FLOPPYDISK LifeformDetectionDisk
+{
+ real_name          "floppy disk of lifeform detection"
+ cost               50
+ flavor             kFDisk5
+ real_glyph
+ { tile_col         9 }
+}
+
+FLOPPYDISK MappingDisk
+{
+ real_name          "floppy disk of mapping"
+ cost               50
+ flavor             kFDisk6
+ real_glyph
+ { tile_col         10 }
+}
+
+FLOPPYDISK DiagnosticsDisk
+{
+ real_name          "floppy disk of diagnostics"
+ cost               50
+ flavor             kFDisk7
+ real_glyph
+ { tile_col         11 }
+}
+
+FLOPPYDISK WarpTracerDisk
+{
+ real_name          "floppy disk of warp tracer"
+ cost               50
+ flavor             kFDisk8
+ real_glyph
+ { tile_col         12 }
+}
+
+FLOPPYDISK LogicBombDisk
+{
+ real_name          "floppy disk of logic bomb"
+ cost               50
+ flavor             kFDisk23
+ real_glyph
+ { tile_col         26 }
+}
+
+
+FLOPPYDISK DebuggerDisk
+{
+ real_name          "floppy disk of debugging"
+ cost               100
+ flavor             kFDisk9
+ real_glyph
+ { tile_col         13 }
+}
+
+FLOPPYDISK EnhanceArmorDisk
+{
+ real_name          "floppy disk of enhance armor"
+ cost               100
+ flavor             kFDisk10
+ real_glyph
+ { tile_col         14 }
+}
+
+FLOPPYDISK EnhanceWeaponDisk
+{
+ real_name          "floppy disk of enhance weapon"
+ cost               100
+ flavor             kFDisk11
+ real_glyph
+ { tile_col         15 }
+}
+
+FLOPPYDISK EnhanceImplantDisk
+{
+ real_name          "floppy disk of enhance implant"
+ cost               100
+ flavor             kFDisk12
+ real_glyph
+ { tile_col         16 }
+}
+
+FLOPPYDISK HypnosisDisk
+{
+ real_name          "floppy disk of hypnosis"
+ cost               100
+ flavor             kFDisk13
+ real_glyph
+ { tile_col         18 }
+}
+
+FLOPPYDISK TransportDisk
+{
+ real_name          "floppy disk of transportation"
+ cost               100
+ flavor             kFDisk14
+ real_glyph
+ { tile_col         17 }
+}
+
+FLOPPYDISK RecursiveLoopDisk
+{
+ real_name          "floppy disk of recursive loop"
+ cost               100
+ flavor             kFDisk22
+ flags              (kUsuallyBuggy | kMergeable)
+ real_glyph
+ { tile_col         27 }
+}
+
+FLOPPYDISK AntivirusDisk
+{
+ real_name          "floppy disk of antivirus"
+ cost               100
+ flavor             kFDisk24
+ real_glyph
+ { tile_col         26 }
+}
+
+
+FLOPPYDISK ReformatDisk
+{
+ real_name          "floppy disk of reformat"
+ cost               200
+ flavor             kFDisk15
+ real_glyph
+ { tile_col         19 }
+}
+
+FLOPPYDISK ComputerVirus
+{
+ real_name          "floppy disk of computer virus"
+ cost               200
+ flavor             kFDisk16
+ real_glyph
+ { tile_col         20 }
+}
+
+FLOPPYDISK RecallDisk
+{
+ real_name          "floppy disk of Smart-Disc recall"
+ cost               200
+ flavor             kFDisk17
+ real_glyph
+ { tile_col         25 }
+}
+
+
+FLOPPYDISK OperatingSystem
+{
+ real_name          "floppy disk of operating system"
+ cost               300
+ flavor             kFDisk18
+ real_glyph
+ { tile_col         21 }
+}
+
+FLOPPYDISK HackingDisk
+{
+ real_name          "floppy disk of hacking"
+ cost               300
+ flavor             kFDisk19
+ real_glyph
+ { tile_col         22 }
+}
+
+FLOPPYDISK ResidentAntivirusDisk
+{
+ real_name          "floppy disk of resident antivirus"
+ cost               300
+ flavor             kFDisk20
+ real_glyph
+ { tile_col         23 }
+}
+
+FLOPPYDISK MatterCompiler
+{
+ real_name          "floppy disk of matter compiler"
+ cost               300
+ flavor             kFDisk21
+ real_glyph
+ { tile_col         24 }
+}
+
+TEMPLATE ORGASMATRON ObjectIlk
+{
+ real_type          kTool
+ real_glyph
+ {
+  sym               '('
+  color             kPink
+  tile_col          0
+ }
+ vague_name         "Orgasmatron"
+ material           kPlastic
+ flags              (kUnique | kIndestructible | kPreidentified | kBugProof)
+ weight             100
+ size               kMedium
+ cost               10000
+}
+
+ORGASMATRON TheOrgasmatron
+{
+ real_name          "Bizarro Orgasmatron"
+ appear_name        "Bizarro Orgasmatron"
+}
+
+ORGASMATRON FakeOrgasmatron1
+{
+ real_name          "Bizarre Orgasmatron"
+ appear_name        "Bizarre Orgasmatron"
+}
+
+ORGASMATRON FakeOrgasmatron2
+{
+ real_name          "Bizaaro Orgasmatron"
+ appear_name        "Bizaaro Orgasmatron"
+}
+
+ORGASMATRON FakeOrgasmatron3
+{
+ real_name          "Bizzaro Orgasmatron"
+ appear_name        "Bizzaro Orgasmatron"
+}
+
+ORGASMATRON FakeOrgasmatron4
+{
+ real_name          "Bazaaro Orgasmatron"
+ appear_name        "Bazaaro Orgasmatron"
+}
+
+ORGASMATRON FakeOrgasmatron5
+{
+ real_name          "Bazarro Orgasmatron"
+ appear_name        "Bazarro Orgasmatron"
+}
+
+COMMENT { kObjNumIlks must be last. }
+DECLARE ObjectIlk NumIlks

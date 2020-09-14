@@ -1,0 +1,5 @@
+@LWar Flow @E(Psionics) @J(Telekinesis)@H
+
+You can psychokinetically adjust your attack motions at the speed of thought.
+
+Your to hit modifier is increased by: 2 + skill / 4, but never less than 2.

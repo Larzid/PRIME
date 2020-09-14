@@ -1,0 +1,109 @@
+@CRACE AND PROFESSION@H
+
+
+@CSoldier@H:
+  Strong fighters tough enough to withstand a lot of punishment and
+  deal a lot of pain.  They carry some armor and powerful weapons
+  but are useless at programming and make lousy mutant power users.
+
+@FSpace Marine@H: You're one of the tough hombres that defends our planet
+  against aliens every night and day.  Your equipment is state of
+  the badass art, and you've got a badass attitude to match it.
+
+  You get a motion tracker, a pulse rifle, a flak jacket and some flares.
+
+@FStormboy@H: Among your warband you and your buddies are viewed with a bit
+  of suspicion due to your cunning in battle.  You have a talent for
+  using any type of acquired weaponry and can work around many defects.
+
+  You get a sniper rifle, a flak jacket an two incendiary grenades.
+
+@FHunter@H: At last chance to prove yourself!  After long and very difficult
+  training you are finally an adult and about to decorate yourself with
+  some freshly killed trophies.
+
+  You are equipped with some superior Yautja technology.
+
+
+@CPsyker@H:
+  Uncommon individuals gifted with psionic powers other of their kin can
+  only envy.  While not especially good in combat once they develop their
+  talents their might is undisputable.  They get some Rad-Away so they
+  can try drinking some sludge early in hopes of gaining new powers.
+
+@FPsion@H: You're a scrawny freak.  A freak with strange mutant powers.
+  Momma always said not to drink radioactive waste, but you didn't
+  listen and now your DNA is supercharged.
+
+@FEmpath@H: You were gifted with strange powers from birth but you didn't
+  know when enough is enough and made your community exile you for
+  polluting your environment with psychic residue.
+
+@FMastermind@H: You are even more evil than most of your reticulan kin.
+  Abusing your telepathy you masquerade as benevolent space brothers - to
+  your own species and others.  Why?  Because of the inmense financial
+  benefits you can reap from them.
+
+@FWeirdboy@H: For most space orcs sensitive to psionic waves the intense
+  emanations are unpleasant experience.  However, you not only greatly
+  enjoy them but also become thoroughly addicted to the feeling of
+  psionic power release.
+
+
+@CSubversive Element@H:
+  These guys and gals do not work well within their own society.  They
+  have some quite good combat skills and are keen on breaking software
+  laws too.
+
+@FNinja@H: A master of stealth and disguise is you!  As long as you keep
+  to walls or other opaque obstacles you blend in and are very hard to
+  spot.  Who cares if you don't have a ranged weapon when you can freely
+  sneak up to unsuspecting victims and poke their guts out?
+
+  You start with optimized katana and some fragmentation grenades.
+
+@FDissident@H: You are one of the more corrupted member of your species.
+  Although not sexually deviant, you play urban poker with star systems,
+  and turn planets into giant computers.
+
+  You start with a computer of your own making and good weapons.
+
+
+@COther@H:
+
+@FSoftware Engineer@H: Your Mountain Dew gut and carpal tunnel syndrome put
+  you at a physical disadvantage but at least you remembered to bring
+  your laptop computer along.  And your innate ability to notice buggy
+  equipment sure is handy.
+
+@FAstronaut@H: You hoped for boring but safe job in the space far away from
+  galactic invaders, civil wars, hired assassins and obnoxious salesmen.
+  Unfortunately for you this idyll ended in explosion of your spaceship.
+  You have some funny junk and full astronaut suit but no weapon.
+
+@FQuarterback@H: Back on Earth, you thrill crowds with your athletic skill
+  and you have a cheerleader girlfriend.  But in space, you can be
+  savior of the universe!
+
+@FJanitor@H: You're used to being ignored by those with more glamorous job
+  titles, but it's you who keeps the galaxy turning, unclogging its
+  billions and billions of toilets.  You begin your quest with two
+  indispensable tools: a master keycard and monkey wrench.  Being an
+  orc allows you to use buggy weapons and armor with ease.
+
+
+@COutsider@H:
+  These are challenge professions.  Sure, you get some nice benefits
+  but compared to your disadvantages they are merely a consolation
+  prize.
+
+@FXel'Naga@H: Designing specimens was your daily job but you grew bored
+  and decided to explore the galaxy somewhat.  Your ship was caught
+  in a space-time anomaly.  Here you are, stranded on a lone asteroid
+  with nothing to help you.  Not even a piece of information.
+
+
+Some professions are just plain more difficult than others.  Probably
+the best roles for beginners are the Space Marine, the Yautja Hunter,
+the Ninja, the Janitor and the Software Engineer.  Xel'Naga are blind
+and ridiculously difficult.
