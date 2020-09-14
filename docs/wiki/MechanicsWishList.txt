@@ -1,0 +1,181 @@
+Brain lobes interact with cranial implants
+
+Each type of implant would have a brain lobe where it would perform slightly better. Implants could also have a lobe where they perform worse to make things more interesting.
+
+The frontal lobe is associated with reasoning, motor skills, higher level cognition, and expressive language. Responsible for problem solving and judgment.
+   * cerebral coprocessor
+   * psionic amplifier
+   * third eye (only possible location)
+Parietal lobe is associated with movement, orientation, recognition, perception of stimuli and with processing tactile sensory information. It manages sensation, handwriting, and body position.
+   * motoric coordinator
+   * search skillsoft
+Cerebellum is involved in the coordination of motor movements as well as basic facets of memory and learning.
+   * reflex coordinator
+   * repair skillsoft
+   * mecha-dendrites (only possible location)
+Temporal lobe is important for interpreting sounds and the language we hear. Hippocampus is also located there, which is why this portion of the brain is also heavily associated with the formation of memories.
+   * ?
+Occipital lobe is associated with interpreting visual stimuli and information.
+   * spot skillsoft
+Tricipital lobe (klingons)
+   * adrenaline generator
+   * myfilament hypertensor
+
+Unassigned implants:
+   * Excruciator
+   * Poison resistor
+   * Radiation processor
+   * Health monitor
+   * Tissue regenerator
+   * Narcoleptor
+
+As exception to rule some bionics could not care about their position in the brain.
+
+Intentionally unassigned implants:
+   * Glory device
+   * Shock capacitor
+
+What goes with the idea: an implant that has function dependent on its location within the brain. "Degeneration blocker"?
+   * Prevents strength drain in tricipital lobe
+   * Prevents constitution drain in temporal lobe
+   * Prevents agility drain in parietal lobe
+   * Prevents dexterity drain in cerebellum
+   * Prevents intelligence drain in frontal lobe
+   * Prevents psionics drain in occipital lobe
+
+
+
+
+Use mutant power on gaining it
+
+%GREEN% Another interesting idea would be a 50% chance to forcefully use a mutant power the moment it's gained. %ENDCOLOR%
+
+%BLUE% Could be risky. Especially if you roll up digestion and don't get to choose. Your mini computer suddenly smells irresistably delicious! You devour it. %ENDCOLOR%
+
+%GREEN% Well, let you target it if applicable. Telepathy or adrenaline control just come online of their own, you have to shoot your laser sight somewhere, or you have to devour something.
+
+Another, less troublesome idea would be delaying mutation sometimes. 3-20 turns or something like that after quaffing mutagen, and make it silent (some useless message from a vat, a "you have a sense of looming weirdness" from a canister.
+
+Superdigestion power could try to digest an alien embryo. Not 100% reliable, if unsuccessful... shortens the countdown until birth as the embryo gets nervous and wants to get out of you ASAP. %ENDCOLOR%
+
+
+
+Dress codes
+
+Looks like ninja consequences in robot town:
+" *Halt!* Rogue agents not allowed to enter the premises of Robot Town burbclave!"
+"The guardbot beeps and screeches intimidatingly"
+
+Door locks, you can't pay a fee for entrance, upon opening of the door the guardbot becomes hostile - any ninja stupid enough to *look like one* upon entering a guarded place is in over his head.
+
+Getting out of sight of the guardbot allows the player another check - you *can* go back and disguise yourself.
+
+Snow Crash reference.
+
+MegaBelterBonus: If the player tries to change his/her appearance in sight of the guardbot:
+*"I don't buy it, punk! You just changed in front of me."
+"The guardbot clicks and whirrs in exhasperation".*
+
+Looks like ninja:
+   * A sword wielded
+   * Goggles worn (not glasses!)
+   * Uncovered chameleon jumpsuit worn
+
+Looks like Janitor: (implemented already by Cyrus)
+   * Wielding mop
+   * Wearing janitor uniform
+   * Not wearing any body armor or cloak (actual Janitors are absolved of this)
+
+Looks like troubleshooter:
+   * Wielding laser pistol or laser rifle
+   * Wearing suit of reflec armor but no cloak
+
+
+
+Plasma canister + plasma weapon
+
+We have plasma weapons (which I introduced) and plasma canisters (since ZAP'M), which are WHOLLY UNRELATED.
+
+What about making plasma weapons chargeable with plasma canisters?
+
+9 charges for pistols, 6 for rifles and 3 for cannons.
+
+That could make them fire "supercharged" shots in the presence of an
+energy source, or normal shots in its absence.
+
+The only uses for plasma canisters are:
+   * Abortion
+   * Making gauss ray guns (which are pretty damn awesome, if a bit restricted in their uses)
+   * Tossing them at monsters.
+
+More a matter of coherence than anything.
+
+To charge a gun we could allow one to 'a'pply plasma guns and pick a known plasma canister to add charges.
+
+What if the player picks a different canister? Error message, item damage?
+
+The prompt could include only known plasma canisters. However, what if the player knows an item is plasma canister but does not have it formally identified? That would be unfair. Error message would go against TDTTOE. But we have a similar outcome already for other type of objects.
+
+"Your raygun is ruined!"
+
+With plasma weapons such is the result of applying most canisters.
+
+Exceptions:
+plasma: supercharges
+antimatter: annihilates (identifies canister, otherwise just a different message)
+napalm, fuel drum: BOOOM!
+
+If we are feeling especially evil, the explosion could be delayed. The plasma weapon seems to be supercharged at first (same messages as for plasma) but blows up in your face when it is fired. And then some clever player who cannot get rid of klingon commander fills spare plasma rifle with napalm. Next, he drops it along with 50 energy cells on the floor baiting the klingon to pick it up. Which it does ... KABLAMM!! "You've obtained level 8!" ^_^
+
+
+
+
+Psychoconductive weapons:<br />A new tag to be appended to elven psychic swords, psi blades, Swords of the Mind, and any new weapons that qualify. Maybe light sabers?<br />Some mutant powers would give additional effects to attacks made with psychoconductive weapons.
+
+
+
+Criticality of radiaoctive items:<br />If enough radioactive items are put together, on the floor or inside an inventory, a chain reaction starts, giving off heat and high doses of hard radiation. Separating the items stops the reaction. Radioactive dungeon features (radioactive traps, sludge vats) should be counted together with objects (maybe adding more) when items are left on the floor, but making them count for inventory checks sounds way too sadistic (it would turn sludge vats into radiation traps and radiation traps into roasting death on a stick)
+
+_Realistic and TDTTOE but potentially cruel for the player. How would heat emitting part work though?_
+
+Let's assume criticality sparks when at least 4 radioactive items are together in the same tile or inventory. Every radioactive item beyond 3 does 2 burning damage per turn. If you resist the damage, you get a message: "It's awfully hot in here!", if you don't: "There's something burning [in your inventory/on the ground]!" Radioactive items are listed in red text, and are appended "hot".
+
+Radiation emitted should be harsher than heat.
+
+
+
+Dimensional Fatigue: (second, less pretentious draft)<br />An environmental hazard, similar to radiation, Crawl's magical contamination, Mage's Paradox (old World of Darkness), following the concept found in Star Control.
+
+_Isolated, self-enclosed spatial regions are separated from each other by comparatively small "buffers" or "chasms" of virtually empty higher-dimensional space. Dimensional Fatigue is the name given to the possibility that through intense or persistent spatial distortion, the outer surfaces of two such spatial regions experience attraction around the distorted extension, eventually bridging the higher-dimensional gap and sharing an interphase._
+
+Dimensional Fatigue is tracked by a level-wide or game-wide value, which could be increased both permanently and transiently <span style="color: #dcdcdc;">(now that's a word!) %BLACK%by different factors%ENDCOLOR%</span>%BLACK%,%ENDCOLOR% and which could decrease each time the 30-turns-or-something function is called.
+
+Dimensional fatigue boosts the spawn rate of warpish monsters, and gives a malus to translation powers success rate (a bonus if under the effects of Spice)
+
+If warpish monsters increase dimensional fatigue, it could potentially lead to runaway scenarios of an ever-increasing horde of warpish monsters, which is what dimensional fatigue accidents are all about: Androsynth vs Orz, Doom demons, Half-Life Compact (I think), and every other summoning accident/OMGWTF MONTERS OUT OF THIN AIR scenario.
+
+Dimensional Fatigue could be read with a new gizmo, a P-K meter, from the Ghostbusters :)
+
+
+
+Extended Excruciator mechanics
+
+Have powers belonging to different metafaculties react in different ways :
+
+   * redaction gets a damage backlash,
+   * coercion is outright impossible,
+   * creativity deals half damage,
+      * _Only creativity directly targeted at excrutiator wearer should be affected._
+   * farsensing can't pick up excruciated entities (or they display as a red ?),
+   * psychokinesis and translation have the success rate halved and if they do take effect, the direction is randomized.
+
+Current state: mental blast gets damage backlash
+
+Besides that, all psychic contact gives excruciation maluses for some turns towards whomever attempts psychic contact with the excruciator wearer.
+<br />just a new condition "in pain". However maybe plain old stunned condition would suffice.
+
+If farsensing is able to pick up excruciated entities, then every turn you're seeing the excruciator wearer through telepathy or whatever, you get minor damage (1 or 1-2 is enough I think) So, turn off that telepathy or X-Ray vision and god help you if you're wearing a torc.
+
+Xel'Naga would be in trouble too.
+
+_Xel'Naga are in trouble all the time anyways. Fuck, any roguelike character is always in trouble all the time._

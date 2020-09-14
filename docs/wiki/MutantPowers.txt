@@ -1,0 +1,96 @@
+Regroup the skill-per-power system into 6 broad categories, modeled after the "metapsychic faculties"<br />elaborated on in Julian May's fiction (Intervention saga, saga of the Pliocene Exiles, Galactic Milieu trilogy)
+
+Farsenses: Anything to do with perception
+
+Telekinesis: Imparting movement with the mind.
+
+Creativity: Conjuration of matter and energy ex nihilo and harnessing energy forms.
+
+Redaction: Healing, mind reading, control of bodily functions
+
+Coercion: Mind control and other forrms of messing with other minds.
+
+Translation: Dimensional, phase and teleportation effects.
+
+On top of that, I would like Psionic/Metabolic division from Paranoia Live. Psionic powers are Psi-based skills. Metabolic powers are Con-based skills. Almost all mutant powers have a skill directly tied to them that is responsible for power of associated effect.
+
+There would be six general skills falling under "Psionics":
+
+Farsenses, Telekinesis, Creativity, Redaction, Coercion, Translation. They all are Psi-based and decide how large a bonus or malus to mutant power use chance is.
+
+_Psiweapon: Sounds solid and more rational than the current mutant power = skill approach. Let non-psions train them, but make psions start with a random allotment of psionic skills and fitting powers, AND non-psions start with no powers and negative points all-around in psionic skills. Easily extendable to jedi/sith stuff (light side skill, dark side skill)_
+
+Suppressed Powers: See * SuppressedMutantPowers
+
+
+<h2>Farsenses</h2>
+   * <p>Deepsight (con as per X-ray and tremorsense): Lvl 1 or 2 toggled, psychic.</p> <p> _In-Game Rationale:_ Lets you see internal details of stuff.</p> <p> _Out-of-Game Rationale:_ allows for hybridization between psyker, fixit-man and hacker types.</p> <p> _Effect:_ Gives you current psi based bonuses when using computers, locks, and repair tools. Maybe lets you in on some enemy details.</p>
+   * gammasensitivity (con) - level 1 - you are able to see radiation - radiating items and squares. Irradiated squares would obstruct your sight making it useless in Gamma Caves and only partially helpful in spotting irradiated rooms in Space Base, because you would have periodically turn it on and off.
+   * telepathy (psi) - level 2
+   * tremorsense (con) - level 2
+   * understanding (psi) - level 3, you gain translation intrinsic as long as it is active.
+   * X-ray (con) - level 4 - con-based so it does not shift so often.
+
+
+<h2>Telekinesis</h2>
+   * Hellbent Charge (con) - level 2 - asks for a direction, short ranged. Rushes some squares in a single turn, and makes an enhanced attack at enemy on collision. If the player collides with a door gets stunned and the door reacts as if kicked with a lot of strength, player can suffer damage. If the player collides with a wall, even more damage and stunning.
+      * Automatic doors of all kind are too slow to react except for malfunctioning doors. Charging creature has higher chance to stumble on a trap but will continue to charge forward unless stopped by falling into a pit, getting webbed or getting killed.
+      * Bashing doors with force fields damages the charging entity. Closed doors may be bashed open (this breaks lock if door was locked), hold firm (charge stopped) or get player off-balance additionally (stuns). Chance depends on strength, run distance and previous attempts. Whole bash door mechanic closely mimics Angband. After bashing a door successfully you continue although the door counts as two tiles.
+      * You can charge through glass panels breaking them provided you gave yourself at least one space to run.
+   * <p> War Flow: Lvl 2, toggled, metabolic.</p> <p> _I-G-R:_ You can psychokinetically enhance and adjust your attack motions at the speed of thought.</p> <p> _O-G-R:_ Telekinesis buff, thinking about the finesse often attributed to elves. Makes jedi sense too.</p> <p> _Effect:_ After missing an attack, you have an additional, current-psi based chance to not actually miss, as the supernaturally accurate movements of the character sometimes are able to compensate for the enemies' sudden movements, or the inaccuracy of the weapon.</p>
+   * Pychokinetic Shove (psi) - level 3 - asks for a target spot in short range (like mental blast) and a direction. hurls target creature, mobile feature or item in that order in specified direction. Creatures and objects take damage on impact.
+   * *Gravity Crush* (psi) - level 3 - mental blast targeting, target is slowed during a few turns, and takes choking damage.
+   * Shockwave (psi) - level 4 - affects all adjacent squares, does some sort of hard to avoid damage and pushes stuff back one or two squares.
+   * *Groundburst* (con) - level 6, attack <br /><i>I-G-R:</i> You stomp the ground and telekinetically channel forward a seismic wave.<br /><i>O-G-R:</i> Mid-High Telekinesis attack, scenery interaction, TDTTOE power.<br /><i>Effect:</i> Asks for cardinal direction, and deals damage to anything in 4 tiles in that direction. Very low chance for any of the floor tiles to turn into pits. Very low chance for pit tiles to turn into holes. Travels through walls. Shatters glass panels, and splashes some adjacent tiles with acid if it goes through an acid pit (careful!). Doors can malfunction. Traps might trigger. Vats can be destroyed. Flying enemies take greatly reduced damage.
+   * Flying (psi) (6, toggled) - player gets a minor speed boost, is immune to floor traps, gets a bonus to dodging and slight electrical resistance.
+
+
+<h2>Creativity</h2>
+   * psi vomit (con) - level 1 - Deals damage in beam shape targeted in chosen direction based on how much psi you have. Usable only when your psi is full or more and it drains it all down to zero. Chance to use is always 100% or 0% if conditions are not met.
+   * illumination (con) - level 1
+   * optic blast (psi) - level 2
+   * shoot web (con) - level 3
+   * imbue (psi) (level 3) Charges the wielded weapon with up to 3 psi points. As many next attacks will be enhanced with psychic energy. Only costs as many psi points as invested. Dissipates on unwielding, but works on thrown weapons too. Thrown weapons release all energy at once upon collision or explosion. Might synergize well with Sword of the Mind and footballs.
+      * _How about the power does not take away any psi points when it is activated? It would then drain one per hit with weapon or up to three per throw. Subject to turning off if Psi stat runs low._
+         * _But if it is toggled, it *has* to drain some psi points, hasn't it?? Make it plain toggled. But yeah my formulation is too finicky._
+         * Scratch that. Make it take away no points at first. It's actually cool that it works different.
+   * *sword of the mind* (psi) - level 4 - <strike>morphs wooden item in your hand (club, elven dagger) into very fragile item</strike>creates "psychic sword". Less powerful than elven psychic sword and will always shatter if you drop it.
+      * _That sounds a bit lame for a level 4 power. I say: No object needed, accuracy and duration depending on invested points, and damage based on psi points remaining. Make it level 5 if need be._
+      * Okay, scratch the idea that some kind of object is needed. How would you decide how many points to invest though?
+      * With invested points I actually meant creativity skill score.
+   * psionic storm (psi) - level 8
+
+
+<h2>Redaction</h2>
+   * regeneration (con) - level 1
+   * haste (psi) - level 2 - it would be best if this remained at psi despite speeding up reflexes and metabolism seems to sound better as constitution based power. When your psi changes then so does your haste speed - this makes it more interesting.
+   * restoration (con) - level 3
+   * adrenaline control (con) - level 4
+   * <p><b>Salt the Wound </b>(psi) lvl 4, psychic:</p> <p><i>I-G-R: </i>An offensive and cruel use of Redaction, this power disrupts and perverts a living body's natural responses to harm, aggravating what is already done.</p> <p> _O-G-R:_ Redaction attack power, parallel to Crawl's pain-agony line of spells.</p> <p> _Effect:_ Only effective on living things, deals damage based on a percentage of the damage already suffered (20% of already lost hitpoints or something)</p>
+   * Bene Gesserit awareness (psi) - level 5 - control stat raise/loss, know biological timeouts, fight sickness and plague with psi points. Know precise radiation intake, slow radiation sickness, increase rad tolerance.
+   * autolysis (con) - level 6<br />When active, the PSI cost of all regular powers (not toggled, not suppressed) is halved, rounded down. The remainder of their usage cost is paid in hitpoints. If the power fails, twice the amount of HP are consumed. Recklessly indulging in autolysis can and _will_ kill you. Death message: _"You just wrung out the last drop of metacreative energy in your body. You die"_. Cause of death: _"Generalized, spontaneous tissue breakdown"_.
+
+
+<h2>Coercion</h2>
+   * hypnosis (psi) - level 1
+   * mental blast (psi) - level 3
+   * cause fear (psi) - level 3 - causes monsters to flee
+   * the Voice (psi) - level 4
+   * *Mark of Hate* (psi) - level 5<br />Makes all living, thinking creatures in sight hostile to the target for between 2 and (CoercionSkill) turns. Works on all types of targets, because the target isn't affected, _everything else is._
+   * *charm* (psi) - level ? - if successful sets one thinking monster as an ally. One Psi point is lost as long as the connection is maintained. One can free creature from thrall at will regaining the point. If charmed creature dies the invested Psi point is not recoverable although you may get the chance if wearing a third eye.
+   * MindControl (psi) - level 8 - long until this one is implemented but it certainly should belong there.
+   * *shroud of pariah* (?) -
+
+
+<h2>Translation</h2>
+   * digestion (con) - level 1
+   * apportation (con) - level 1
+      * Pick a square in short distance.  Items lying there appear at your feet.  Clerkbots should notice such theft.
+   * teleport (psi) - level 5
+   * *Phase step* - level 6 - Asks for a cardinal direction. The first square in that direction must be either a tile that can not be stepped on, or have a monster standing on it. Croses as many tiles as needed to stand on a steppable tile. Each tile crossed consumes two psi points. If psi points run out before the procedure is complete, hit points are instead taken, at a rate of 3HP=1psi. Monsters will never try to walk through the same path. Speed is base character speed.
+      * _If one would try to phase step through one monster the cost would be only four points but I like the idea that to start it one needs at least six. I would like to take hit points away in the following fashion: 3HP for first psi point, 4HP for next, 5HP for another and so on._
+         * _Suggestion for death messages: "You become an intermolecular blood smear" cause of death: "terminal phase erosion"_
+         * _Of course, you have final say in most implementation details like that._
+      * _Also, what to do if player decides to phase through a level boundary? For the sake of TDTTOE we need to answer that._
+         * _He or she reaches outer space. If wearing enclosed armor AND helmet, they have a chance to phase-step back into the dungeon. Else, they die of sudden hard vacuum exposure._
+   * <p><b>Stasis Field </b>(psi): lvl 8, psychic:</p> <p><i>I-G-R:</i>An outward, defensive/utility of Translation, this power encases targets in a closed, impregnable spatial distortion in the shape of an icosahedron.</p> <p> _O-G-R:_ Another high-powered, protoss themed capstone power. More varied use for Translation. BIG, costly, all-purpose panic button power.</p> <p> _Effect:_ The target and any surrounding potential targets are prevented from interacting with the outside world for a prolonged duration (Defining how much this should be is probably the hardest part). It can target the caster. It affecfts all kinds of targets (save for some exceptions) Entities suffering this effect can't attack, be attacked or otherwise interact with anything, but they keep regaining HP and can use self-actions, the inventory, etc. You can use it to encase a nasty or a squad and run away, or encase yourself in an otherwise recoverable situation if it wasn't for your low HP.</p> <p> _Reference crossover:_ As per Larry Niven's work, it should be absolutely reflective (100% reflection of laser shots, no seeing what's inside EVER) and induce time stasis too. I favor the former but not the latter (reflection as per niven, time passage as per starcraft) but really, your choice.</p>

@@ -1,0 +1,195 @@
+﻿PROPOSAL OF ENERGY TYPES, ATTACK TYPES AND ATTACK EFFECTS REVISION
+
+1. Energy types
+
+As it stands anything that is an energy may be resisted and items and monsters have resistance fields for this energy.  Effects that are truly unique or should not be resisted are not to be an "energy type".
+
+As of now we seem to have too many energy types to worry about, especially from player perspective.
+
+In parentheses comments on energy type's design state.
+
+List of energy types:
+    kHackSlash, (was kSlashing, will incorporate cutting and piercing melee weapons and some missiles like shurikens and Smart-Disc.  Also a reference. :-p)
+    kConcussive, (smashing melee weapons, kicks, punches, being thrown against a wall, something falling on you etc.)
+    kPiercing, (to be eliminated)
+
+    kAccelerating,  (May stay.  One can actually have vulnerability to this and be sped up for longer when hit with such an attack.  Or resistance, in which case speeding up the creature is harder or not possible.)
+    kAugmenting,    (since it always improves a single stat it is better off as an attack)
+    kBlinding,  (Fine as it is.)
+//    kBrainDraining,  /* neuralizer, brain bug */ (Not implemented and would be better off as an attack anyway IMO.  A major problem with this is blanking out map knowledge and reverting identification of items.  Such progress undoing is ragequit fuel.  DCSS devs just got rid of 95% sources of amnesia in their game and this made it better.)
+        Yes. Straight amnesia would be a real annoyance, and blanking
+        out map knowledge would be a major kick in the ballz. What
+        could be cool, if you can find a way to do it, is erasing a %
+        of random tiles in map knowledge, gruyere-cheesing the map.
+        That way, just one or two brain-draining attacks would leave
+        you with a perfectly serviceable map, but if you do take a lot,
+        it'd start to feel unnerving,
+    kBrainExtracting,/* mi-go */ (to be eliminated, the attack suffices)
+    kBugging, (Analog to cursing attack of NetHack liches.  Fine in current state.)
+    kBullet,  (NEW: For most conventional guns.  Pea shooter coould still deal concussive because it does not penetrate armor like bullets do.)
+    kBurning, (Fine.)
+    kChoking, (Nothing uses it so far but decompression may.  Could it stay?  Perhaps yes, because vacuum would not hurt some creatures at all.  Perhaps no, because creature type might be used to check that condition as well.)
+        Decompression should deal this AND kFreezing
+        damage in increasing amounts during a set of turns until
+        it hits a given maximum, then stay at there until the
+        hull breach is fixed (if such a thing can be done). Also,
+        "force choke" ;D Helmets with an air supply should protect
+        against decompression (OBVIOUSLY, THAT'S WHAT
+        THEY'RE FOR) but *not* force choke.
+    kConfusing, (Okay.)
+    kCorrosive, (Good as well.) /* acid */
+    kCreditDraining, /* creeping credits :-) */ (Remove, this is better as an attack type)
+    kDecelerating, (See kAccelerating.)
+    kDecontaminating, /* purge radiation */ (Sort of inverse to kRadiological.  Vat slimes could take damage from it.  Not much reason to keep but better than none.)
+    kDigging, (Most monsters would be immune as is the case with fleshy things and kMagnetic.  Some could take damage.)
+        Ideas for monsters that could be damaged with
+        kDigging: Weeping Angels from Dr. Who, Taalo
+        from Star Control, Concrete Birds from Incal.
+    kDisintegrating, /* antimatter */ (Damage amount for annihilation matters.  It tells how much energy a shield needs to pump out to block it.  Also, few things could be disintegration immune.)
+        Monoliths should be disintegration immune
+        AND stop the disintegration beam:
+        "The antimatter stream harmlessly enters the Monolith"
+        IIRC, in the 2001-2010-2061-3001 novels, the Monoliths are
+        speculated to be formed of fricking SPATIAL DISTORTIONS,
+        not any kind of matter. Maybe there *is* matter somewhere,
+        but they seem to involve some sort of *dimensional fatigue.
+    kElectrical,  (Fine as it is.)
+    kExplosive,   (NEW: Any kaboom that rips things apart.  Examples: Concussion grenades, fuel barrel blow up, kamikaze goblin blow up.  Smart missile explosion should deal also burning damage.)
+    kFaceHugging, (to be eliminated)
+    kFlare,       (to be eliminated)
+    kForce,       (What is this?  Only phase gloves, blaster and phaser use it.  If no one knows, get rid of it!)
+    kLaser,       (All laser weapons and phasers use this.)
+    kFreezing,    (Used only by freeze ray gun and canister of liquid nitrogen.  Klingons are vulnerable to freezing.  A keeper but underused.)
+    kHealing,     (Damage value not used but this is to be rectified in future.)
+    kHosing, /* ftp daemon breathe traffic */ ()
+    kMagnetic, (This probably is the energy type with most interactions.)
+    kMesmerizing, /* hypnotic gaze */ (Resistance to hypnosis and narcolepsy.  Seems useful.)
+    kParalyzing, (Fine too.)
+    kPlaguing, /* defiler vomit */ (Plague does actual damage besides trashing your health this is might be okay to keep.  However, the attack type is plague so damage could be kSickening.)
+    kPlasma, (NEW: Would have greater melting potential than fire.  Steel armors for example could melt if exposed to plasma.  I think plasma weapons could deal plasma + magnetic damage as they do now.)
+    kPoisonous,  (Very useful.  Poison not only interacts with monsters but also some items.)
+    kRadiological, (Radiation has varying effects on )
+    kRestoring, (Like healing knowning how many points to restore is useful.  Bots, unliving things resist restoring.  Ghouls also may partially resist this.  Creatures with regeneration affinity may have big vulnerability to this and recover from prolonged plague with single restoration zap or canister.)
+    kPsychic,  (Fine as it is.  If anything sources of kPsychic need attention.)
+    kShrapnel, (NEW: For shotguns, frag grenades and imploding items if we get some.)
+    kSickening, /* viruses */ (Sickened effect itself is quite weak.  It stops regeneration and modifies all skill rolls by -2.  However, it stands on its own when it comes to whether it should be an energy type.)
+    kStunning, (Good one.)
+    kTransporting, (I toyed around with specifying damage to indicate distance the transportation may take you and creating short teleport effects and far teleport effects.  Creatures resisting teleport no longer either submit or 100% resist it.  They may just not travel as far away as expected.  Warp fungus would have huge vulnerability.  Almost any teleport zap will fling it very far.)
+    kViolating, (Okay.)
+    kWebbing, (Webbing is broken right now.  Okay, it totally sucks.  Still it has merit as damage type.  Oozes have resist webbing.  BTW: I am thinking of naming the resistance Spiderman like you suggested.  Taking things not very seriously is one of PRIME's strenghts.)
+
+
+2. Attack types.
+
+List of attack types is placed mainly for informative purposes.  Attack type encompasses its textual description in game and provides basis for checking for special effects.  Unfortunately it also decides on animation which is problematic when several weapons using the same attack (because it fits) need different animations.
+
+enum Type {        /* primarily used for descriptive purposes */ (well, no longer if this proposal passes and gets implemented)
+    kNoAttack,
+    kAccelerationRay,
+    kAcidBath,     /* acid trap */
+    kAcidSplash,   /* acid blood */
+    kAnalProbe,
+    kAttach,       /* e.g. attaching a restraining bolt */
+    kAugmentationRay,
+    kBite,
+    kBlast,        /* explosion */
+    kBullet,
+    kBolt,         /* energy bolt, e.g. pea shooter, blaster bolt */
+    kBreatheBugs,
+    kBreatheFire,
+    kBreatheTime, (unimplemented)
+    kBreatheTraffic,
+    kBreatheViruses,
+    kClaw,
+    kClub,
+    kChoke,
+    kCombi,        /* combi-stick */
+    kCook, (unused, should go away in the meantime)
+    kCrush,
+    kCut,
+    kDecelerationRay,
+    kDecontaminationRay,
+    kDisc,         /* Smart-Disc */
+    kDisintegrationRay,
+    kDrill,
+    kExplode,
+    kExtractBrain, /* mi-go */
+    kFaceHug,      /* facehugger */
+    kFlash,        /* radiation grenade */
+    kFreezeRay,
+    kGammaRay,
+    kGaussRay,
+    kHeadButt,
+    kHealingRay,
+    kHeatRay,
+    kImpact,       /* football, improvised thrown weapon */
+    kIncendiary,
+    kKick,
+    kLaserBeam,
+    kLight,        /* blinding flash */
+    kLegalThreat,
+    kLightningBolt,
+    kMentalBlast,
+    kOpticBlast,
+    kPlasmaGlob,   /* plasma guns */
+    kPoisonRay,
+    kPrick,        /* Gom Jabbar needle */
+    kPsionicStorm,
+    kPunch,
+    kQuill,
+    kRail,         /* railgun bullet */
+    kRake,         /* rear claws of catbot */
+    kRestorationRay,
+    kSaw,
+    kShot,         /* shotgun pellets */
+    kSlash,
+    kSlime,
+    kSmash,
+    kSpear,        /* speargun short spear */
+    kSpit,         /* for hydralisk */
+    kStab,
+    kStasisRay,
+    kSting,
+    kStomp,
+    kSword,
+    kTailSlap,
+    kTouch,
+    kTransporterRay,
+    kTractorBeam,
+    kVomit,
+    kWaterRay,     /* squirt ray gun */
+    kWeb,
+    kWhip,
+    kZap,
+    kMaxAttackType
+};
+
+
+Right now the attack type also defines how it is going to be drawn.  It is problematic with cases like pea shooter and other pistols.  Both do the same kind of damage but pea shooter has to have kPea animation.  Current unsolution is to check for damage ranges and compare it to specific pattern only pea shooter has.  However, nothing guarantees uniqueness of that pattern or that when it changes the shooter retains the correct animation.
+
+Solution: decouple effects and attack types.  Let attack type imply a default effect but be overridable for items that need it.
+
+3. Attack effects
+
+Attack effects:
+ - kSingle: Hits one target in meele or travels until it hits first eligible target.  Can be reflected sometimes.
+ - kSmartDisc: Quite complex algoritm, if situational.
+ - kCone: Flamethrowers and sawn-off shotguns use it.
+ - kExtend: Combi-stick fire uses it.  Kind of early Stone Soup reach weapons but quick to use.
+ - kBeam: This has problems.  Explanation below.
+ - kBurst: Grenades and explosions rely on it.
+ - kFarBurst: Travels like kSingle but behaves as kBurst when target is hit.
+ - kOther: Effect is applied directly by the code - it does not cause any inventory damage. example: drinking napalm does not burn your stuff but bypasses resistances other than innate.
+
+Problems:
+Ray guns are handled in a tricky ways.  Some rays pass through doors, some destroy them and others are stopped by them.
+
+Solution: Decouple kBeam.
+ - kBeam: Single ray that does not affect items it travels over.  Hits first creature it meets.  It interacts with features and may be stopped by them.  Can be reflected.  Examples: laser beams, optic blasts.
+ - kFocusedRay: Single ray that does not affect items and cannot be reflected.  Can be dodged completely.  Interacts with every hit monster and feature.  May be stopped by features.  Examples: poison, disintegration, stasis
+ - kWideRay: Single ray that does affect items it travels over.  Monsters can dodge for half damage, no complete damage avoidance.  Examples: heat, freezing.
+ not be reflected.  Examples: heat, freezing, poison, disintegration.
+ - kWave: Single ray that does affect items and travels through all obstacles except walls indiscriminately.  No dodging possible.  Examples: gauss, gamma.
+    Psiweapon: I think kWaves should be able to pass through 1 tile thick walls.
+
+Set ray guns that affect a single target (water, augmentation, (ac/de)celeration, healing/restoration) to kSingle.

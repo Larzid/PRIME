@@ -1,0 +1,29 @@
+---++ Titles
+
+---+++ Psyker
+
+| *Psion* | *Mastermind* | *Empath* | *Warphead* |
+| Odd Ball | Far Herald | Seeker | Crazy One |
+| Weirdo | Space Brother | Enlightened One | Mad Orc |
+| Mind Reader | Cult Idol | Mind Mirror | Very Mad Orc |
+| Spoon Bender | First Contact | Thought Catcher | Frazzler |
+| Freakazoid | Federation Envoy | Subconscious Link | Humming Head |
+| Mutant | Galactic Senator | Psionic Vein | Head Asploder |
+| Empath | Coadunator | Brainwave Warper | Walking Psi Bomb |
+| Psion | Uplifter | Neuroconductor | One Orc Storm |
+| Psyker | Terraformer | Mind Overlord | Warptide |
+| Farseer | Astronaut God | Fate Weaver | Warp Unleasher |
+
+---+++ Soldier
+
+| *Space Marine* | *Stormboy* | *Hunter* |
+| Private | Yoof | Unblooded |
+| Corporal | Cannon Fodder | Blooded |
+| Sergeant | Meatshield | Hunter |
+| Cadet | Warbuddy | Honored One |
+| Lieutentant | Skarboy | Master Hunter |
+| Captain | Mob Kaptain | Vanguard |
+| Major | Nob | Elite |
+| Lt. Colonel | Meganob | Clan Leader |
+| Colonel | Warboss | Elder |
+| General | Waagh Lord | Adjudicator |

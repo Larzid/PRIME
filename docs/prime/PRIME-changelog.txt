@@ -1,0 +1,1298 @@
+version 2.5
+BUG FIXES:
+- Last traces of welded weapons erased.
+- Source distribution contained an object file.
+- Usage printed old website address.
+- Remote control had wrong tile.
+- Liquid metal slime had only 1% reflection instead of 100%.
+- If you abort choice for Melnorme item service you get money back.
+- In NotEye mode weapon effects were not drawn for ASCII view.
+- White background of message area fixed.
+CHANGES:
+- Quitting does not require so much confirmation.
+- Name is asked on version screen.
+- Profession choice screen tells you about descriptions.
+- Decreased antivirus disk message output.
+- Made grenades lighter.
+ADDITIONS:
+- Daleks can LEVITATE and follow you to another level by stairs.
+- Guardbot has something against ninjas.
+- Warp tracer program improved.
+- Tricorder can detect Ungooma.
+- Buggy grenades may fail to explode on impact.
+- Add swap command to help screen.
+- In shops your debt is visible in side bar.
+- Unpaid items are colored cyan in inventory.
+- Messages discern between your and unpaid stuff better.
+- Remote control can manipulate doors.
+REMOVALS:
+- Chance to fail to understand Melnorme without translation is gone.
+TECHNICAL:
+- Directory structure reorganization.
+- Introductions ripped from code and put in text files.
+- Pointer save/load algorithm improved from O(n) to O(1)
+- Running speed improved.  No more eating 100% CPU in graphical mode.
+
+version 2.4a
+BUG FIXES:
+- Reflecting laser off suit of reflec armor crashed the game.
+- Monster spoiler file could not be generated.
+- Wording fix for item slipping from hands/claws.
+- Wording fixes in help files.
+- Rephrased part of ninja introduction.
+- Removing a door to dark room created sight artifact.
+- Wrong base range in X-Ray Vision mutant power help.
+CHANGES:
+- Hydralisk in melee slashes you instead of clawing.
+- Uncategorized yet in job choice becomes peaceful citizen.
+- Use item from inventory dialog hides minimap temporarily and highlights key
+  associated with command.
+
+version 2.4
+BUG FIXES:
+- Confused antivirus worked well when buggy.
+- Hypnotic screensaver was sickening when it was not infected.
+- Bug detection program did not reveal its status sometimes.
+- Psychokinesis did not check for traps on last flight square.
+- Pit filling is not reported if it is out of sight.
+- Dissolving stuck canister of super glue granted four psi.
+- Gliding would stop before running into burrowed spider mines.
+- Going downwards on a square with feature crashed the game.
+- Clerkbots charged only for first drank canister from a stack.
+- Smartgun modifies heavy guns skill right after wielding.
+- Extending combi-stick to ceiling and floor also damages it.
+- Taped pits are now described as such.
+- Debugging a worn buggy skillsoft now identifies it.
+- You are added to kill list if you commit suicide.
+- Thrown canisters of antimatter were quite unimpressive.
+- Corrected post mortem diagnostics message about impregnation.
+- Burden was not adjusted when using up items from a stack.
+- Some help files had typos.
+- EMP grenades now properly gauss objects.
+- Plasma pistol had ridiculous weight.
+- FPP door display glitch clumsily fixed.
+- Proximity mine was not displayed properly.
+- Doors in dark visibility mismatch resolved.
+- Enhancing +0 ability booster implant did not identify it.
+- Automatic doors could close on items.
+- Hitting something in darkness with laser beam prints messages.
+- Vat was being reported as both vat and rad trap when annihilated.
+- Metal slime used vat slime tile.
+- Fixed crash which happened by optimizing a debugged floppy disk of debugging
+  with last use of an optimized floppy disk of debugging.
+- Inconsistencies in behavior of automatic doors resolved.
+CHANGES:
+- Intrinsics are not necessarily binary.
+- Parrying with light saber depends on sword skill.
+- When gain ability cannot increase stat it tries to restore it.
+- Fuel drums get replaced by flamer fuel tanks.
+- Buggy Geiger counters merely pretend to work.
+- Light and camouflage do not mix.
+- Weight is rebalanced.
+- Docbot removes your helmet before extracting an implant.
+- When you hear more than one door whoosh the messages are combined.
+- Restraining weak bots is automatic.
+- Monster generation for Space Base made nastier.
+- Spiders renamed to web crawlers. They also get new tile.
+- Expired reformat disk reformats itself.
+- Troubleshooters moved to 'T'.
+- Software engineers no longer know bugginess of every item.
+- Bio armor grants regeneration only if no jumpsuit is worn.
+- Camouflage improved.
+- Portable holes no longer burn.
+- Buggy spice melange poured into a vat has reduced range.
+- Infected identify program is not as bad as it used to be.
+- Scouter reports HP instead of AC to make it more useful.
+- Skill in Cause Fear makes resistance check harder for target.
+ADDITIONS:
+- Pick locks skillsoft.
+- Implants thrown into vats react.
+- Additional implant reactions on sludge vat.
+- Objects may grant intrinsics conditionally.
+- Warp stabilizer implant.
+- Brain cylinders also provide temporary intelligence boost.
+- Pregnancy progress is expressed in percentage when known.
+- You can turn into radiation ghoul.
+- Setting Willy free grants experience.
+- Items dropped on down stairs fall down.
+- Weight of objects is shown.
+- Suspensor belt.
+- Ungooma.
+- Loose ACME signs.
+- Remote control.
+- Monsters may put away their weapon to melee unarmed.  This takes a turn
+  and produces appropriate message.
+- Monsters generated may now appear in teams and/or with escorts.
+- Spam has new messages.
+- Naked Orz monster.
+- Worn bio armor fears digestion.
+- Astromech droid can spill oil to briefly blind.
+- Quaffing of known antimatter canister must be confirmed.
+- New look of disintegration and heat rays.
+- Beer hits your intelligence temporarily.
+- Gammasight spots radioactive items on ground.
+- Gammasight makes gamma rays visible.
+- Seeing ray gun fire gamma ray identifies it.
+- Clearing explosions and other effect is done after initialing attack
+  finalizes.  Ray guns blowing up multiple things look better.
+- Electromagnetic Mayhem mutant power.
+- Transparent jacket. Ninjas rejoice.
+- Neat shield bubbles in NotEye.
+- Professions have their own specific area of knowledge and expertise.
+  For example ninjas know enhancements of every sword.
+- Quarterbacks can swim from character level 9.
+- Quarterback introductory text.
+- Orz Scuba diver monster.
+- Dispersal grenade.
+- Each game one type of beverage poured in vat will reveal its health status.
+- Spawning monsters by genus in BOFH mode.
+- Matter compiler categories enriched.
+REMOVALS:
+- Buggy tool jamming is gone.
+- "You da boss" for Orcs at experience level 10 is dropped.
+- Buggy weapon welding to hand is gone.
+TECHNICAL:
+- Eliminated all warnings previously silenced by -Wno-unused-parameters.
+
+version 2.3a
+BUG FIXES:
+- Cancelling digestion triggered NULL pointer read.
+- Some powers did not refund Psi cost when cancelled.
+- When autolysis was active wrong number of Psi was refunded.
+- Cause fear was broken regarding unliving targets.
+- Makefile fix.
+- Optic blasting a lock led to a crash.
+- Version title correction.
+CHANGES:
+- No targeting self with Optic Blast.
+ADDITIONS:
+- Blindness timeout is revelead by health monitor and awareness.
+
+version 2.3
+BUG FIXES:
+- Purging a xenos triggered two messages.
+- Fixed off by one error in post mortem mutant powers list.
+- Monoliths could appear on stairs.
+- Kicking downwards always printed "you kick the air".
+- Mining laser can hit things again.
+- Items you leave lose prepared and designated status if any.
+- Two railgun directions were swapped in NotEye mode.
+- Melting floppy disks had chance to go negative in quantity.
+- Firing cone weapons up down and at self was not handled.
+- Warbots were invisible.
+- Canister of healing would always heal fully.
+- Dropping heap of space junk while in a pit crashed the game.
+- Peril-sensitive goggles fixed.
+- In Gamma Caves ceiling is now visible in NotEye's FPP mode.
+- One could manipulate doors while webbed or taped.
+- Belts could be used while not worn.
+- Message spam for thrown weapon damage culled.
+- Unidentified thrown proximity mine would vanish.
+- Fixed off by one in melee fuel barrel prompt condition.
+- Flamethrower cone could travel through walls.
+- Loading empty ray gun identified both ray gun and canister used.
+- Known floppy disks of computer virus are always marked as infected.
+- Blank floppies could get infected.
+- Torcs were not preidentified.
+- Doors caught within player psionic storm crashed the game.
+- Characters could start with clean floppy disk of computer virus.
+- Pluralisation bug manifesting when applying grenades fixed.
+- Examining an item revealed its enhancement even if unknown.
+- Transfer cable messages were pluralised incorrectly.
+- Bio-mask and pulse rifle did not show mode sometimes.
+- Learning appearance of known item did not identify class.
+CHANGES:
+- Irradiation explosion in ASCII is cooler.
+- Brain shield blocks telepathy.
+- Cracked floppy disk of enhance weapon works to the extremes.
+- Charge count is also displayed for weapons with charges.
+- Debugged floppy disk of debugging offers menu-based choice.
+- Infected HAS README floppies do not affect your computer if you decide to
+  read the readme file.  Reading time increased.
+- Protoss were moved from 'Z' to 'P' symbol.
+- Spiders and mutants no longer web you if you are webbed.
+- Transfer cable unusable underwater.
+- Vulture spider mines nerfed.
+- Diagonal movement cost changed to 1.0 basic turns.
+- Seeing monster discover a pit for you does not prompt "--More--".
+- Character log omits mutant skills in which you did not invest.
+- Energy tank charge count display changed to (current/max).
+- Vulture spider mine reclassified as 'b'omb.
+- Vat restoration effect made more likely to kick in.
+- Imprecise transports may land you on a trap.
+- Autopickup ignores unpaid items.
+- If you have lots of identify results they are shown in menu.
+- Mecha-dendrites double as a lock pick.
+- Cattle prod becomes stun rod.
+- Melnorme can be spawned by BOFH command.
+- Vat effects have been rebalanced.
+- Using teleport mutant power may confuse you afterwards.
+ADDITIONS:
+- Insects meleed with buggy items receive only 50% damage. Insects meleed with
+  debugged items take 150% damage.
+- Dark Templar: the invisible individualistic warrior.
+- Warp scythe is Dark Templar weapon of choice. Very difficult to wield but
+  is likely to be lethal when it finally hits.
+- Brotherhood power helmet has integrated flashlight.
+- The Excruciator bionic implant.
+- Understanding mutant power.
+- Liquid metal slime. It has reflective surface.
+- Myfilament hypertensor bionic implant.
+- Failing to crack nanomachines in restoration serum will trigger attack
+  of the nanomachines!
+- Kicking is sometimes called "applying your mighty boot".
+- Geiger counter reacts to radbugs, radspiders and radscorpions.
+- Stuck implant extraction medical service.
+- Flight mutant power.
+- Gammasensitivity mutant power. Allows to see radioactive things.
+- Psionic vomit mutant power.
+- Kicking a sludge vat spills harmful goo.
+- But the goo is actually beneficial for vat slimes.
+- Shoot web at ceiling to get out of pits.
+- Canceled web power usage refunds psi points.
+- Cryolator.
+- Fleshed out Ninja introduction.
+- Imbue mutant power.
+- Any additional weapon in starting inventory starts prepared.
+- War Flow mutant power.
+- Deepsight mutant power.
+- Cause Fear mutant power.
+- Shock capacitor implant and suit of tesla armor.
+- Explosions affecting doors destroy locks.
+- Ur-Quan Kohr-Ah.
+- Blood sword.
+- Tricorder may scan bio armors, bio computers and brain cylinders.
+- Bene Gesserit awareness.
+- Auto pickup of thrown weapons.
+- Psychokinetic Shove versatile mutant power.
+- Shockwave mutant power.
+- Yautja have their sat-com marked as prepared weapon if they start with
+  plasmacaster initially.
+- Computers in initial inventory are designated.
+- Door slam would not make exploding monsters go boom.
+- The Voice can be disobeyed if you also know this power.
+- Pouring certain canisters on doors has effects.
+- Named item classes are also listed in discoveries.
+- Spot skillsoft.
+- Zapping transportation ray down teleports vat.
+- Zapping transportation ray down teleports acid from pits.
+- Multishot guns may jam in middle of a burst if buggy.
+- Buggy recursive loop may drop a hint how to combat it.
+- Clerkbots now charge for employed unpaid guns and weapons.
+- A new vat drinking outcome.
+- Railgun pierces closed doors without force fields.
+REMOVALS:
+- Distinction of what operating system supports what computer interface is gone.
+
+
+version 2.2c
+BUG FIXES:
+- Web shot at a closed door provoked a crash.
+- It was possible to drink with canister glued to your mouth.
+
+version 2.2b
+BUG FIXES:
+- When finding a secret door the --More-- prompt was colored according to
+  color of the door's lock.  Appeared only in NotEye mode.
+- No kicking or equipment swapping when webbed or taped.
+REMOVALS:
+- On Windows tombstone screen crashed so it was just axed.
+TECHNICAL:
+- It is possible to compile out emergency save feature.
+
+version 2.2a
+BUG FIXES:
+- Canister amputation service fell through to teef extraction.
+- Finding door blindly in graphical mode no longer crashes.
+- Many items did not have their tile displayed.
+- Some items did not have their overlay tile displayed. 
+- Applying grenades printed sound twice.
+- Invisible monster was missing tile reference.
+- Viewing creature lore caused its tile to disappear briefly.
+- Side bar money display is updated after paying your bill.
+- Logic bomb did not reveal bugginess in one case.
+- Fixed false losing camouflage message.
+- Climbing out of acid pits took ten turns!
+- Troubleshooters were not drawn in NotEye mode.
+CHANGES:
+- Stairs illuminate 3x3 area around them.
+- Successful gauss ray gun attacks are described.
+- Spiders are programs (web crawlers) as intended.
+ADDITIONS:
+- When blind you feel the three squares in front of you.
+- You will not glide into contact with hostile creatures.
+TECHNICAL:
+- Assimilated changes of ronw23 for Mac OS X builds.  Thank you!
+- Much makefile restructuring happened.
+
+version 2.2
+BUG FIXES:
+- "You is killed" was shown upon being mental blasted to death.
+- Whoever mental blasts you from afar is revealed.
+- Psions again receive their RadAway.
+- Laser corners interfered with explosions in ASCII mode.
+- Shoot web is able to hit.
+- Resisting a damage type does not protect your equipment.
+- Quaffing from acid pits no longer harms your stuff.
+- Vat plague leaves your bio armors alone as it should.
+- Buckazoids are again weightless.
+- Energy cells costed nothing.
+- Reformatting a floppy disk identifies it as a blank.
+- Removed redundant --More-- from reformat.
+- Health monitor had a typo in name.
+- Flashlight could give light through walls with X-Ray.
+- Brain food takes into account cerebral coprocessors.
+- Creature attack omits empty entries.
+- Enforced generation of Shodan and BOFH.
+- Fixed orcish bugproof equipment gaining internal bugginess.
+- Corrected a message given by object detection program.
+- Crites could attack four times in a turn.
+- Help screen now stops scrolling where it should.
+- Fixed horizontal flag for niche doors.
+- Player characters were hurt by magnetic attacks.
+- Some attacks dealt double damage to objects.
+- Two railgun fire glyphs were swapped.
+- Side bar is shown when there is space. (NotEye mode)
+- Fixed grammar concerning modifying the phase variance.
+- Identifying discharged ray gun turns it into empty one.
+- Seeing motion tracker blip reveals trackers in your inventory.
+- Multiple identify was not updating object names.
+- Inverted logic doors won't close on items.
+- Earthlings (meta monster) could be generated due to a mistake.
+- Recursive loop disks now stack.
+- Recursive loop could target robots outside view.
+- Auto-identify condition for chameleon suit was wrong.
+- Tricorder would announce itself over and over for blind chars.
+- A suiciding entity that kills you is not considered "taken with you".
+- Suicide explosions were bugged.
+- Uncovering chameleon jumpsuit identifies it.
+- Death always sets your hit points to zero.
+- No more creeping creditses in kill list.
+- Mecha-dendrites can be applied regardless what you hold.
+- You can use buggy monkey wrench you are wielding.
+- Applying buggy wrench will have it weld to your hand.
+- Rewiring inverted logic circuits gives XP only to Janitors.
+- Confusion would sometimes return bogus direction.
+- Pouring nuka cola into a vat now works as intended.
+- Fixed grammar for pouring canister from a stack into vat.
+- Monsters shooting easy to identify ray guns would not set these as known
+  to you despite it did the thing if you shot them yourself.
+- Floppy disks sometimes revealed infectedness prematurely.
+- You will always hit when targeting self with beam weapons.
+- Flashlights could be named as class in wrong circumstances.
+- Throwing at yourself led to a crash.
+- Enhance weapon program acknowledges Xel'Naga have claws.
+- Applying restraining bolt could lie in case of smart bombs.
+- Toggling 'other' category is possible.
+CHANGES:
+- Sewage pits trap you for longer.
+- No more bathing in acid message spam for resistant characters.
+- Lessened message spam about corroding thoroughly corroded items.
+- Shotgun damage output nerfed.
+- Sewage is excepted from flashlight effect in Curses mode.
+- Dissidents are always hostile.
+- Clerkbots are less prone to standing idle over items you want.
+- Implants that are ejected from your head end up on ground.
+- Creeping credits save only 66% money they get from you.
+- Made canister and floppy disk loss from attacks less common.
+- Map revealing option after death shows traps.
+- "Really attack" prompt treats every input except y or Y as no.
+- Hydralisks appear alone instead of groups up to three.
+- Combi-stick reach reduced.
+- Critical hits do not affect special damage.
+- Tricorder may scan vats from adjacent tile.
+- Power fist slightly nerfed. Stuns only 80% of the time.
+- Kicking a force fields hurts more than usual.
+- Orcs recover from damage faster.
+- Restraining bolts are mergeable.
+- Mi-go are flying.
+- Xel'Naga may sometimes tail-slap when using kick command.
+- Universal solvent dissolves ray guns.
+- Canister of restoration has effect dependent on bugginess.
+- Restoration ray gun only restores a single ability point.
+- Medical restoration treatment is more effective.
+- Regeneration power is useless when sick.
+- Floppy disks infecting your computer are set as known to be infected if
+  you noticed your system losing stability.
+- Monster types bot, droid and program nerfed: removed ther immunity to
+  stunning and paralysis.
+- Warbots, guardbots and securitrons gain good resistance to stunning
+  and paralysis.
+- Smart missile being a heat seeker is immune to blinding.
+- Profession skills and equipment rebalanced.
+- Goggles and belts are represented by ']' character.
+ADDITIONS:
+- In a pit and drowning statuses with countdown.
+- Abductors are notified when their hit counts as abduction.
+- Health monitor reveals timeouts of some bodily afflictions.
+- Greatly improved programming of blank floppy disks.
+- Writing an unknown floppy disk program earns XP.
+- Programming a blank disk has a help file.
+- Spam program can be used to find shops on a level.
+- Rad traps can be dismantled with sufficient repair skill.
+- Motoric coordinator bionic implant.
+- Asbestos jumpsuit and jacket.
+- Sewage provides camouflage to smaller vermin.
+- Sewer worm.
+- Yautja hunters are guaranteed Con of at least 12.
+- Imbibing Parlor! Really, its just a canister shop.
+- Spot and search messages recognize found multiples.
+- Astromech droids engage thrusters to avoid pit falls.
+- Webbing grenades.
+- Kicking the bio computer may cause it brain damage.
+- Antivirus has been split into two programs.
+- Vulture spider mines.
+- YAFM for reformat program being labeled "FORMAT C:".
+- Brain extraction attack will have the creature performing it take away
+  your helmet and implants to its inventory.
+- Quarterbacks avoid hurting their foot in almost all cases.
+- Minimap.
+- Being in a pit provides camouflage.
+- Extendable weapons may jam when buggy.
+- Thoroughly corroded weapons react badly to misfires.
+- New medical service: tail amputation.
+- Regeneration used at full health can regrow tail.
+- On level up orcs get minor restoration effect.
+- Psions are able to recognize psionic amplifiers in most states.
+- Improved restoration messages.
+- Wound healing messages are more informative.
+- NotEye ASCII mode is supported.
+- Hold left alt to see ASCII map in NotEye mode.
+- Mining laser will dig when pointed downwards.
+- Enriched brain cylinder mechanics and messages.
+- At least one computer is guaranteed in Robot Town.
+- Applying grenades directly is more helpful.
+- Spam program may offer you donation to charity causes.
+- NNTP daemon scorches in melee.
+- You can water tomatoes and man eating plants.
+- A noiseless patient spider.
+REMOVALS:
+- Detective profession commented out.
+- No more randomly spawning monsters after level has been cleared.
+TECHNICAL:
+- Request 0 charges possible for objects in BOFH mode.
+
+version 2.1d
+BUG FIXES:
+- Bringing up help while keymap was featuring vi keys led to a crash.
+- Some tiles for floppy disk labels did not match with description.
+- Fixed lightsaber appearance problem.
+- Added new key translation for NotEye user interface.
+
+version 2.1c
+BUG FIXES:
+- Laser ray corners are not drawn when they cannot be seen.
+- Some objects had wrong tiles.
+- Torc's vague name was "bionic implant".
+- Psions again get their Nano-Cola.
+- Resistances were shifted leaving the Gamma Caves unpassable.
+- "Some kind of keycard" bug fixed.
+- Yautja can start with wrist blade again.
+- BOFH retina is again eye bionic implant.
+- Examining monkey wrench crashed the game.
+- Moved misplaced comma in text viewer screen.
+- Keypad 5 added to several keymaps.
+- Fixed transportation ray gun trying to freeze things.
+- Crazy marines' random chaos power armor crashed the game.
+CHANGES:
+- Catbot has jumpy intrinsic.
+- Aliens except egg and alien queen have jumpy intrinsics.
+- Yautja get skills tailored to starting weapons.
+- Failure to understand Melnorme is better hinted at in messages.
+ADDITIONS:
+- Optic blast produces red beam.
+- Stairs have lights and are always visible.
+- Better help.
+
+version 2.1,2.1a,2.1b
+BUG FIXES:
+- Automatic doors react if creature blocking them gets killed.
+- Melnorme cheated on prices of certain services.
+- Naming a class of item requires knowing its appearance.
+- Designating a computer no longer takes time.
+- Corrected preposition when mind blasting unrecognized being.
+- Tricorder would perform on insufficient energy.
+- Doors in isometric mode are displayed on one tile side.
+- Each computer has its own update time.
+- Mortem file skill headers order fixed.
+- On Windows all command line arguments are now interpreted.
+- Combi-stick does not misfire.
+- Sound describing messages for inverted doors were off.
+CHANGES:
+- Energy cell loss due to shortening out is reported precisely.
+- Alarm on doors is not reported by looking. Broken lock is.
+- Programming tests rely more on hero skill than blind luck.
+- Orcs start without bugginess indentified in their inventory.
+- No more random secret doors. Room 1x1 niches are always secret.
+- Dalek energy supplies for shields vary.
+- Changed how much a canister fills a raygun.
+- Infected computers make programming slightly more difficult.
+- Drunk coding succeess rate lowered to 75% from 90%.
+- Some programs are less needlessly verbose once identified.
+- Orcs get items of randomly chosen bugginess except where it would render
+  item in question useless.
+- Natural stat max of 25 also enforced during level up.
+- Xel'Naga gain jumpy intrinsic at 6th level, telepathy at 12th.
+- Alien nest message is given only once.
+- Made RadAway react to bugginess.
+- Canister bugginess usually has effect on loading a ray gun.
+- Changed glyph for pea shooter.
+- Computer virus has been nerfed. It never makes a floppy disk completely
+  useless and in edge cases may end up benefical.
+- Updated game lore to reflect mechanics changes.
+- Brotherhood power armor has one less AC point to match its lore.
+- Rustproof renamed to acidproof.
+- Monolith is immune to freezing.
+ADDITIONS:
+- Fuel drums can be drunk.
+- Game recognizes when you die while helpless.
+- Plague prints messages when draining a stat.
+- Predator roars after killing alien warrior or alien queen.
+- Geiger counter detects vat slimes.
+- Game acknowledges if your slayer dies with you.
+- Automatic doors with inverted logic circuits.
+- Stabilizer belt.
+- Jump boots, jumpy intrinsic.
+- Yautja have inherent jumpy intrinsic.
+- New matter compiler choice: ammunition.
+- Improved skill screen.
+- Unidentified items can be perceived to belong to different category than
+  they really are.
+- Xel'Naga blood splash is stronger after they reach level 15.
+- Not infected software media are known as "clean".
+- Lightsaber is trickier to identify.
+- Swap to prepared item command.
+- Docbot has more fun attacks.
+- Parental gambit is suggested in alien warrior description.
+- Cursors are shown in graphical mode.
+- Yautja mask changes your graphical cursor.
+- Mutant powers use their own cursor for targeting.
+- Floppy disk of recursive loop.
+- Quarterbacks automatically pick up footballs.
+- Gamma ray guns and rad grenades are banned from starting player inventory.
+  Non-Yautja also do not receive Smart-Disc recall disks. 
+- Coffee gives minor bonus to programming.
+- Floppy disk of logic bomb.
+- Zapping gamma ray gun downwards irradiates a square.
+- Lead canisters are never radioactive.
+- Known cracked identify program offers multiple selection.
+- Infected floppy disk of hypnosis does even more evil things.
+- Menus show more scrolling information.
+- Smashing a buggy floppy disk might release the bug.
+- Known cracked debugging program can act on multiple objects.
+- Confusion and stunning now affect all direction prompts. Drunk heroes now
+  can't shoot straight.
+- Spice melange allows to control metabolism to an extent.
+- Quantity choice in menu is shown in a more transparent way.
+- If you throw something and hear it explode you are prompted for name if you
+  know its appearance.
+- Brain mold from ZapM 0.6.2 is back!
+- Scouter can detect and measure shields on monsters.
+- Ninjas picking a lock learn lock pick quality.
+- New ray guns: decontamination, augmentation, acceleration, deceleration.
+- Monster ASCII glyphs in graphical mode are colored.
+- Digesting infected floppy disks makes you sick.
+- Canister material matters.  Only fragile canisters will shatter.
+- Graphical attack effects are now in place.
+REMOVALS:
+- Heat ray effect is completely replaced with incendiary effect.
+- No redundant information about radioactivity in examine screen.
+TECHNICAL:
+- Source wide style change. "&&" to "and", "||" to "or"
+- Global.cpp is no more!  Quest to rid source of everpresent globals continues.
+- Chance of monster power usage is no longer dependent on total power number.
+- Make target to compile terminal only version added.
+- Removed most dependency on "raw" read/write.  Only SaveLoad.cpp uses
+  binary saving and loading unfortunately leaving saved games still unportable.
+- Items, monsters, object flavors and attacks moved to plain text files.
+
+version 2.0
+BUG FIXES:
+- Look command exits also on enter, space and rest.
+- Reticulan zap baton could cause floating point error.
+- Mental blast also angers peacefuls.
+- Melee attacks name the attacker correctly while blind.
+- Object detection reports quantities while blind.
+- Armor subclass corrected for advanced bio armors.
+CHANGES:
+- God mode renamed to BOFH mode.
+- History extended to 300 lines.
+- High score table extended to 100 entries.
+ADDITIONS:
+- Necklace of the Eye support! WOOT!
+- Equippy chars from Angband.
+- Damage dealt is shown.
+
+version 1.11
+BUG FIXES:
+- Continuous rest was not doing searching unlike single turn rest.
+- Bump to open did not mark the door as open while blind.
+- Ctrl+I is was not represented as tab.
+- Failure to take off gray torc reveals its appearance.
+- Fixed filter dropping mechanism.
+- Wield used to filter known items with weapon qualities.
+- High score table had highlighted entry while in debug mode.
+- No warning for entering obscured traps while resting in place.
+- Name prompt recognizes backspace.
+- Only item examination possible from death menu.
+- Tricorder identification message was cleared too fast.
+- Dropping an item while blind did not mark it on map.
+- Side window is refreshed after purchase to reflect cash changes.
+- Vats, rad traps and pits were erroneously blocking laser beams.
+- Examined floppy disks are known to be vulnerabile to fire.
+- Blank floppy disk could be cracked.
+- Hypnotizing monsters work again.
+- Single drop respects item count again.
+- Corrected contradictory statements for item vulnerabilities.
+- Hidden creeping credits are visible again.
+- Kicking stack of items will pick the one displayed on top.
+- Pouring antimatter into pit will not create hole when there is no level below.
+- Cloaks were not protecting body armor from damage.
+- Stormtrooper boots were steel. They are supposed to be plastic.
+- Robots receive psychic immunity.
+- Continuous walk is possible while sick.
+- Ray guns are barred from shooting locks like ordinary guns.
+CHANGES:
+- Naming already named item prompts you to rename it.
+- Incendiary attacks can be ducked for half damage.
+- Power fist is no longer orc knowledge. It is imperial stuff actually.
+  Instead marines get to recognize power fists.
+ADDITIONS:
+- Object verb interaction permits drop action.
+- Facehuggers are less likely to succeed if you wear sealed helmet but
+  when they do your helmet will get damaged or destroyed.
+- Facehugger attacks are better described.
+- Smart missiles can be fooled by flares.
+- Klingons are vulnerable to cold.
+- Some shops are infested with giant cockroaches.
+- You can forcefully open buggy belts at risk of destroying them.
+- Pulse Rifle has a grenade launcher.
+- Chameleon suit gives camouflage.
+- Cloaking belt.
+- You can ask for profession to be chosen randomly for you.
+- Radiation traps interact with poured canisters.
+- Improved post-death reveal map option.
+- Sawn-off shotgun.
+- Yautja technology: cloaking belt, medicomp, bio-mask, sat-com, plate armor.
+- Yautja weapons: razor whip, wrist blade, combi-stick, net launcher,
+  speargun, Smart-Disc, spearhead darts web caskets.
+- Ninjas know some random implant types.
+- Floppy disk of Smart-Disc recall and corrupt floppy disk.
+- Glory Devices can be deliberately activated.
+- Multiple Glory Devices make for greater explosions.
+- Help files can contain color.
+- Kill list viewable after death.
+
+version 1.10a
+BUG FIXES:
+- Cracked status for floppy disk is displayed again.
+- Floppy disk detection routines show monsters again.
+- X-ray vision is omitted in Xel'Naga diagnostics.
+- Flares illuminate walls.
+- Cancelling filtered inventory action does not prompt you to choose again
+  but without the filter.
+- Fixed a bug with identifying Geiger counters.
+- Hero will be warned about fuel barrels only if he is aware of it.
+- Stormtrooper boots were brown instead of white.
+- Seeing a creature clears any previous remembered creatures there.
+- Cancelling a quaff would lose a turn.
+- Correct preposition restored when bumping into obstacle.
+CHANGES:
+- Item bugginess of tool used for repairs modifies test roll.
+- Delimiter of examine item entries is centered.
+- Menus not dealing with items are centered.
+ADDITIONS:
+- Killer tomato slain with clubbing weapon go splat.
+- Sturdy boots, and space boots.
+- Monkey wrench can have pluses. Counts both for combat and repair.
+- Attaining new professional title on level up is announced.
+- Item sale prices are listed if hero is in shop.
+
+version 1.10
+BUG FIXES:
+- Stat boosting implants identify at +0 if you know the type.
+- Items on the floor list sometimes caused log to overflow.
+- Fixed another multiple Geiger counter glitch.
+- Direction prompt was not cleared for west and south.
+- Continuous wait works at 'w5' in ADOM keymap.
+- Doors without lock cannot have their lock broken.
+- Can quit while entering hero name.
+- Rad greandes regain bugginess status.
+- Item can be selected by its letter even if not displayed on page.
+- Blindfold was not considered preidentified.
+- Keymap choice dialog is now more bulletproof.
+- Geiger counter was not capitalized.
+- Finding an item damaged reveals it is not fooproof.
+CHANGES:
+- Blaster, phaser and pistol renamed to respectively blaster pistol,
+  phaser pistol and ordinary pistol.
+- Weaker creatures have their symbol moved to lowercase letters.
+- Bionic implant glyph is now ':'.
+- Buckazoids are always picked up and do not weigh anything.
+- Pets are described as 'restrained' rather than 'peaceful'.
+- Motion tracker, Geiger counter and droid caller are automatically identified
+  in appropriate cases.
+- Resting will search automatically.
+- Gamma Caves now have walls surround floor in all eight directions.
+- Menus have category toggle key displayed next to respective headers.
+- Restrained droids will attack only hostile targets.
+- Walking into doors opens them.
+- Death menu is a single choice and does not close until dismissed.
+- Ability increase messages are shown in bright green.
+- Ray guns with no charges become empty ray guns immediately once
+  number of charges becomes known.
+- Firing empty ray gun takes a full turn instead of a fraction.
+- Melnorme reveal quality knowledge is split into two other.
+- Antivirus is more common but operating system is less common.
+- Tricorder is now a gizmo to be identified.
+- Menus for item choice are now immediately shown.
+ADDITIONS:
+- Unpaid item price is now visible on pick up.
+- Doors are color coded by their lock.
+- Creatures with acidic blood that die in a pit do not splash surroundings.
+  The blood fills the pit with acid if it is empty.
+- Acidic blood splash has chance to fill nearby pits.
+- Using the Voice against yourself delivers appropriate messages.
+- Closing a closed door is an attempt to lock it.
+- On invalid direction help is offered.
+- Escape brings up a menu with save game, options, version and quit.
+- Electronic gizmos have flavor descriptions.
+- Stepping over stairs tells you the key to use them.
+- Armor pieces can be swapped by wearing another of same type.
+- If invalid name is entered this is reported.
+- High score table is accessible inside game.
+- Menu and text viewer now have proper scrolling.
+- Item description now reveals ability modifiers.
+- Item description reveals fooproofness, cracks and viruses.
+- High score can be accessed from death menu.
+- Flashight now has yellow halo.
+- Grenades have Xenocide style flavor names.
+- You are warned before entering known traps obscured by items.
+- You are warned you cannot push barrels but just one time.
+- Discoveries command.
+- New Melnorme service: reveal proofing.
+- Selecting item from inventory acts object-verb way on it.
+- You can designate computers as your primary machine.
+- Take all command.
+REMOVAL:
+- Mutant powers are accessible only by single key.
+- Removed commands: search, show weapons/armor/implants, edit options,
+  save game, quit and version.
+- Install command has been unified with wear command.
+- Uninstall command has been unified with take off command.
+- Removed floppy disk of analysis.
+TECHNICAL:
+- Picking up whole stack of objects no longer leaves an empty vector.
+- Fixed a linking problem in Makefile. It manifested when using older gcc.
+- Removed all friend coupling between many classes.
+- Menu can be called again without destroying it and creating again.
+- Enhancement and charge count knowledge is decoupled.
+
+version 1.9a
+BUG FIXES:
+- Poisonous vat sludge also kills alien embryo.
+- Malfunctioning doors can be repaired when closed.
+- It is possible to pay shopkeeper when guardbot is present.
+- Repairing objects could crash the game.
+- Reformatting floppy disk of reformat is possible again.
+CHANGES:
+- Reduced tricorder's "Optimize your ..." message spam.
+ADDITIONS:
+- Death by a man eating plant's bite means getting devoured.
+- Zerg creature type introduced.
+TECHNICAL:
+- Partial separation of UI from engine.
+
+
+version 1.9
+BUG FIXES:
+- Corrected pluralization of Melnorme.
+- Repaired canister of gain ability formula.
+- Fixed inconsistent messages of detective license use.
+- Secret doors hiding additional guardbots in Robot Town are revealed in case
+  of emergency.
+- Infected items are not treated as damaged in repair object dialog.
+- Floppy disks blanked by magnetism are now correctly assumed to be neither
+  infected nor cracked.
+- Dying player Xel'Naga now properly splash acidic blood.
+- Repair creature check corrected.
+- Made indestructible objects really indestructible.
+- Clerkbots now react to destruction of merchandise when hero is outside
+  shop at the time.
+- Incinerating your blindfold or peril sensitive glasses with optic blast
+  used to set whole hero inventory on fire.
+- Trippy swirls no longer bypass caffeine.
+- Monolith touching checks your boots if you kick it.
+- Sometimes bunker room generator would place hallways next to another.
+- Fixing malfunctioning door will mark it as safe even when blind.
+- Fixed revealing weapon appearance under wrong conditions.
+- Automatic searching is accounted for upon entering new level.
+- Monsters will untrap themselves even out of your sight.
+- Plague deterioration triggers side effects of ability drain.
+- Powered body armor changes hero color provide he has seen its appearance.
+- Space Elf Queens cannot be male.
+- Automatic search picks current locations of nearby monsters.
+- Spotting is impossible while blind.
+- Search marks invisible only when needed.
+- On first turns motion tracker could pick up creatures before their first move.
+- Object is colored only if you know its appearance.
+- Plasma weapons knowledge was assigned to wrong profession.
+CHANGES:
+- Non-attacks no longer anger monsters.
+- Paralytic weapons are back. This time paralysis might not kick in all
+  the time.
+- Only humans can tell apart flak jackets from kevlar jackets from the start.
+- Optimized smartgun grants higher boost to skill.
+- No stairs from Rabbit Hole to Mainframe.
+- Bizarro Orgasmatron must be taken outside Mainframe to work.
+- Super glue cannot be used for repairing.
+- Letters for mutant powers are static.
+- Laser cannon is no longer commonly known because it might be confused with
+  mining laser at first. Humans recognize both.
+- Floppy disk colors are decoupled from labels.
+- Charisma is renamed to psionics.
+- Gain ability choices have letters tied to first letter of ability.
+- Xel'Naga have corrosive resistance.
+- Security Droid is now bright blue.
+- Rabbit hole does not permit digging.
+- Use your keycard/lockpick question at locked doors removed.
+- Janitors lose lock pick skill but gain some more aptitude in basic melee
+  weapons.
+- Janitor is a space orc.
+- Melnorme describe appearance service is cheaper.
+- Object detection program might reveal object appearances.
+- Mortem lists only skills you have ranks or bonus in.
+ADDITIONS:
+- Health monitor can be applied to gauge rad dosage unless buggy.
+- Flares. Marines start with some.
+- Some canisters have explosive properties.
+- Some dark rooms can be lit by repairing the light.
+- Wielding Khaydarin crystal shard gives bonus to concentration skill.
+- Bouncy bubbly beverage canister.
+- Shield belt can be toggled on/off.
+- Monkey wrenches are good for clubbing now.
+- Energy belt.
+- Digging is possible.
+- Health monitor always colors HP.
+- Disintegration and antimatter can dig walls.
+- Pits can be filled with heaps of space junk.
+- Kevlar armor and helmet.
+- Fashionable belt.
+- Tremorsense mutation.
+- Ninjas can disable door alarms with lock pick and get XP.
+- Bribing.
+- Holes also can be taped to look like solid ground.
+- Mecha-dendrites implant.
+- Open your pet droids to remove restraining bolt or deactivate them.
+- Any canister can be applied.
+- Red and blue pills. Ask Morpheus.
+- Bio armor + brain = bio computer.
+- Bio computer + brain = smarter bio computer.
+- Portable holes work on walls.
+- Buggy X-Ray goggles are radioactive.
+- Unused skill points are listed in mortem.
+- Skill in illumination increases lit radius.
+- Mutant, pulsating and glistening varieties of bio armor.
+- Tough, receptive and psionic varieties of bio armor.
+- Sentient bio mass, bio carapace and zesty bio armor.
+- It is possible to turn reticulan bio armor into one of above by pouring
+  canister of gain ability or in some cases mutagen over it.
+- Transfer cable.
+- Annihilation blasts affect radiation traps and vats.
+- You can hack keycards.
+- You can hack nanomachines in restoration serum.
+- You can reenable copy protection on software.
+- Restraining bolt works when thrown.
+- Glory device.
+- Monsters equip bionic implants.
+- Unwisely pouring out mutagen makes the spot radioactive.
+- Weapon damage screen is much prettier.
+- Enhance weapon program can change bugginess state of everything that has
+  some form of non-improvised attack even if not enhanceable.
+- Enhance skills dialog overhaul.
+- Quick and dirty help file viewer.
+- Help available for skills, mutant powers, profession selection and
+  ability increase on level up.
+- Gom Jabbar.
+- Doors with force fields are marked yellow.
+- Radiation processor dipped in vat sludge now really causes an explosion
+  but only if it is radioactive.
+- Mutant lizards.
+- Mining laser.
+- Detect objects program also picks up constructs.
+- Rossak sorceresses.
+- The Voice.
+- Bene Gesserit.
+- New names for some attack types.
+- Keycard and door lock colors are now properly randomized. Master keycard
+  is no longer trivially recognized.
+- Ray guns can be zapped downward at objects for effect.
+- Autolysis mutant power.
+- Sealed and open helmets are distinguished. Only the former conflict with
+  mecha-dendrites.
+- Some melee weapons can now use energy cells for power.
+- Wearing right attire makes you call all space elves and space orcs xenos scum.
+- It is useful to put skill points in haste power.
+- The Bizarro Orgasmatron is safeguarded against digestion.
+- Buggy keycards cannot open doors.
+- Observing reflec armor or brain shield reflect beams identifies them.
+- Made clear what losing concentration means.
+- Losing concentration is not all or nothing.
+- Meeting Melnorme for the first time each game triggers information they may
+  sell you some services.
+- Psi drain or boost is colored.
+- One in ten doors to 1x1 treasure niches has force field.
+- Player space orcs can take off buggy armor pieces and unwield buggy weapons.
+- Abilities not at their maximum are displayed in yellow.
+- Vats might restore your abilities.
+- Canisters of antimatter have distinct static description.
+- You can hear automatic doors make whooshing sound while blind.
+- Empty ray gun will announce itself more clearly.
+- Space Marines equipping Marine gear get a thematic quote.
+- Robots do not throw grenades. They launch them.
+- Shooting yourself requires confirmation.
+- You can gain access to The Voice by using certain related item while under
+  its power. ( <- hint :-D )
+- Price of unpaid items you walk over is shown.
+- Optimized debugging returns only valid targets.
+- Tricorder is affected by its bugginess.
+- EMP grenade.
+- Janitor becomes "da boss" at level ten.
+REMOVAL:
+- Useless wisdom ability is no more.
+
+TECHNICAL
+- MatterCompiler.h was found unnecessary.
+- Items previously based on OO paradigm are now based on DD paradigm.
+- Application of non-tools no longer relies on hacks.
+- Weapons can have differing skills used for attacking with it in melee
+  and shooting it.
+- Fixed autopickup unrecognized character false alarm.
+- Conditions are accessed by a generic interface.
+- Man page.
+
+version 1.8a
+BUG FIXES:
+- Skillsofts respect quiet donning. No more spam at game start.
+- Hypnosis messages corrected yet another time.
+- Football lore can be accessed without triggering null pointer exception.
+
+
+version 1.8
+BUG FIXES:
+- No hypnotizing yourself.
+- Melting shop door with ray gun is also considered damage.
+- Map memory bug with not moving but not sessile monsters fixed.
+- Clerkbots will unblock the door even if hero is not in shop.
+- Gain ability uses raw scores to determine increase.
+- Canister of plasma now will work when poured into a vat.
+- Shield does not protect against flashbang.
+- Additional effects of ranged weapons like laser blinding or zap gun
+  paralysis do not cost energy when primary damage is absorbed by shield.
+- Enhance weapon now handles grenades properly.
+- Items without bug state cannot be optimized.
+- Clerkbots will warn about theft only for their shop.
+- Skillsofts autoidentify mechanism corrected.
+- Zealots are no longer going to prefer anal probe or other mediocre
+  weapon over their psi blades.
+- Vulnerability to radiation alone is not enough to radiate you.
+- Resistances could wrap around. Was death sentence.
+- Game will not allow you to try 0% chance mutant powers.
+- Smart missile or smart bomb explosion is not going to produce a sad feeling.
+- You may break door lock even if the door is not locked.
+- Trying to place proximity mine inside a wall does not waste it.
+- Optic blast respects eyewear fireproofness.
+- Flamethrowers always require full amount of fuel drums to fire.
+- Debug flag modification made safer.
+- Bug detection merges eligible items immediately.
+- Blind heroes will not see glow of radiation traps.
+- Corrected message for thrown items getting smashed.
+- Matter compiler offers choices denoted by letters.
+- Area attacks no longer give away secret doors.
+- Fixed not remembered mimics.
+- Darkness is handled more coherently.
+- Installation / removal of implants now takes into account time needed
+  to remove and put back on headgear if worn.
+- Bumping messages tweaked to recognize a wall/the wall.
+- Full restoration message condition fixed.
+- Pouring canned alien embryo while blind behaves properly.
+- Ray gun explosion message fixed.
+- Grenade explosion drawn only if you actually can see the burst.
+- Grenade autoidentification sanitized.
+- Fixed fadelog causing more prompt when looking around.
+- Cone attacks no longer penetrate door force fields.
+- Shooting downward message uses target square name.
+- Windows without picks stopped saying 'LETTER to accept'.
+- Diagnostics window was created even if there was no space. This bug affected
+  only Windows platform.
+- Averted character level 30 title crash. Not that it was attainable without
+  cheating or extraordinary scumming.
+- Bat'leth and elven psychic sword belong to sword category.
+- Clerkbots will free the way if hero is in doorway.
+- Code made much more 64 bit safe.
+- Repairing with rolls of duct tape does not crash the game.
+- Corrected message for dropped items getting corroded.
+- Plasma rifle is a light weapon.
+CHANGES:
+- Writing operating system is now an exhausting task.
+- Software Engineer starts with coffee instead of nano cola.
+- Reversed effects of buggy and infected matter compiler.
+- Only certain kind of monsters will get random treasure.
+- Energy tank becomes large energy tank. Astronaut starts with small
+  energy tank which is half as heavy but only holds 300 units.
+- Matter compiler is very hard to write.
+- Made several weapons cheaper.
+- Droids, bots and constructs cannot be blinded.
+- Only sunglasses and peril-sensitive goggles protect against blindness.
+  On the other hand aquamarine and mean green power helmets now partially
+  do too.
+- Radiation suit nerfed. It is sufficient to protect against background
+  radiation but traps and gamma rays are still dangerous.
+- Replaced messages for damaging door locks.
+- Tricorder will only reveal creature type instead of full name if hero
+  is not able to see. Sessile creatures can be fully diagnosed.
+- Armor enhancements rebalanced.
+- Reticulan zap gun no longer fires laser. It made no sense because its
+  damage type is electrical.
+- Gamma damage nerfed somewhat.
+- Using tricorder costs nominal energy.
+- Disintegration ray is not blocked by doors.
+- Ninjas recognize shuriken, bo, nunchucks.
+- Bore worms are classified as vermin instead of insects.
+- Weapon stores now sometimes stock ray guns.
+- Marines recognize plasma weaponry.
+ADDITIONS:
+- Canister of coffee.
+- Universal solvent has another use.
+- You may opt to see area map after game over.
+- Floppy disk of hypnosis sometimes can be useful.
+- Detective license.
+- The Abductor will now gain experience for succesful abductions! Amount gained
+  is as if you have killed given creature.
+- Your options are now remembered.
+- Objects dropped in acid pit get corroded.
+- Dropped items remember their assigned inventory letters and try to be
+  placed back where they were.
+- Incendiary damage burns down doors.
+- Skilled users can learn weapon enhancement in combat.
+- Nature of some ray guns must be discovered by testing on right subjects
+  or identification.
+- You can now wear and take off jumpsuit even with body armor worn over.
+- It is possibile to halt garbage compactor.
+- Rest in place command. Glide + rest or glide + glide.
+- Badly abused computers produce sparks and get buggy.
+- Radiation zombie and radiation ghoul status.
+- Consuming spice melange temporarily grants new senses.
+- Daleks scream "EXTERMINATE!" upon sighting the hero.
+- Player will be asked to choose keymap if none is loaded.
+- A hierarchical lore system.
+- Randomized lore for weapons, general objects and monsters.
+- Post mortem questions are asked through a menu.
+- Melnorme.
+- Bumping blindly into certain monsters will make them known.
+- Shops may have a guard droid.
+- Additional guardbots in case of emergency in Robot Town.
+- Restrained Cylon Centurions utter "By your command" phrase.
+- It is possible to create a door with all features in god mode.
+- Bio armors can burn.
+- Magnetic damage made more varied and interesting.
+- Bio armors react to damage types in a peculiar way.
+- Green chaos power armors interact with poison.
+- Added item repairing.
+- Motion tracker identifies if you look at the blips on map display.
+- Gauss damage might degenerate a smartgun to a pulse rifle.
+- Motion tracker identifies when named so while blips are visible on map
+  display.
+- Elven psychic sword damage is linked to charisma.
+- Randomized lore for floppy disk programs.
+- Floppy disk of analysis.
+- Sense life intrinsic.
+REMOVAL:
+- Cortex crossover is no more.
+TECHNICAL:
+- SewerPlant.cpp is merged into SpecialLevel.cpp
+- Profession skills and powers are in tables.
+- Base Attack Bonus is gone.
+- Doctor.cpp renamed to Services.cpp since inclusion of Melnorme.
+- SH_DEBUG conditional define eliminated.
+
+
+version 1.7
+BUG FIXES:
+- Fixed chaos power armor appearances, red/green overwrite, don message.
+- Alien birth will happen when there is space for baby to pop out.
+- Made inventory sort after usage of disk of debugging.
+- Fixed BOFH glitch.
+- Reticulans are now colored before their equipment comes into effect.
+- Repaired Optic Blast. Shooting locked doors will no longer randomly
+  cause crashes.
+- Repaired Web. Webbing will no longer cause crashes.
+- Inspecting help with vi keys on will no longer crash the game.
+- Using unpaid for power plants in shop makes you their owner.
+- Creeping credits transport crash bug alleviated.
+- Transport will only kill if allowed.
+- Suicidal pets (smart bombs and missiles) will now explode near any enemy;
+  including also those that are more than a level higher than they.
+- No dodging for paralyzed monsters. No climbing pits either. 
+- Mutant ninja turtles now may get bo for real.
+- Staring equipment will no longer print wearing messages except chaos power
+  armors if ever anyone is going to start with them.
+- Night vision will not cause open door to overwrite remembered stuff lying
+  on the same square.
+- Blind heroes will not be able to learn ray gun identity by looking at
+  color of serum used by docbot.
+- You can now rustproof shield belt.
+- You no longer can gain experience after death.
+- Monsters will no longer steal stuff from shops.
+- If you dare shoot yourself this will now be done with full rounds.
+- Geiger counters now work properly.
+- Fixed test for high score table corrupt message.
+- Waste treatment plant has correct depth.
+- You will hit monsters whose thoughts you hear instead of bumping into
+  them while blind and telepathic.
+- No more infected or cracked blank floppy disks.
+- Disinfection of floppy disks fixed.
+- Vat teleportation won't reset it.
+- Canned alien embryo is correctly detected when pouring into a vat.
+- There now really are no traps on first level. In 1.7 malfunctioning doors
+  could still instakill reticulans.
+- Corrected death message for falling into a pit.
+- Persistent mutant powers cannot be abused to pump up charisma.
+- Wearing a helmet will not protect energy cells from electrical attacks. 
+  Moreover only unprotected cells can be affected.
+- It is not possible to request a infected protected computer or any of those
+  two qualities on a computer with no system.
+- Locked automatic doors will not open.
+- Shooting yourself with pea shooter is no longer instant death.
+- Brotherhood power helmet also gets kAirSupply.
+- Shooting web at self works properly.
+- A set of bugs connected with telepathy has been fixed.
+- Clerkbots will say goodbye just once when you teleport out.
+- Monster reticulans may now receive cells for zap guns.
+- Fixed kicking terrain features message.
+- Sometimes connecting a level with stairs would fail.
+- Removed an insignificant memory leak.
+- Protocol droids can only provide translation if on same level.
+CHANGES:
+- Paralyzing now lasts equal time both for monsters and hero.
+- Clerkbots and docbot get less buckazoids.
+- Made floppies more fragile.
+- Rad grenades are radioactive.
+- God mode overrides transport restrictions.
+- Shop locations in robot town are permuted.
+- Software engineer loses one rank in search, repair, and open locks
+  but gains one in programming.
+- Tricorder cost increased due to new functionality.
+- Ninja has hit die size changed to 9.
+- Disintegration ray will vaporize your trenchcoat first, then your armor,
+  then jumpsuit and finally you.
+- Bonus from hero level to mutant power use chance capped at 10.
+- Experience is counted for every monster death regardless what caused it.
+- Unarmed Combat becomes strength based skill.
+- Ninja now starts with his implant already inside skull.
+- No traps on first level to avoid reticulan instadeaths.
+- Capped farming multiplier creatures for XP.
+- Repaired bots will neither give XP nor get items.
+- You cannot avoid deep spots if you are not aware of them.
+- Buckazoid generation capped at 10d50.
+- Buggy tools are jammed and cannot be turned off the usual way.
+- Astronaut starts with energy tank instead of power plant.
+- Pouring antimatter into a sludge vat will not only annihilate it but also eat
+  out a hole (or a pit) in ground.
+- Reticulan abductors get no skill in programming.
+- Brotherhood paladins may appear in Gamma Caves.
+- Robot Town moved to depth 10.
+- Cracking unidentified floppy disks is slightly harder.
+- Software engineer now starts with between three and five floppy disks that
+  are never cracked and never infected.
+- Reticulan and human preidentified items differ.
+- Mastermind will start with neither optic blast nor shoot webs. Also, no
+  skill in those powers for the Mastermind.
+- Cracked floppy disks of hacking will not occur randomly.
+- Reticulan Abductors and Masterminds start with telepathy on.
+- Named individual items will no longer stack.
+- Hero no longer earns XP when monster suicides.
+- Hero may only learn mutant power not of greater power level than hero's
+  character level plus three.
+ADDITIONS:
+- Added creation of sludge vats to god mode.
+- Added modification of story flags to god mode.
+- Added precise mutation gain/lose to god mode.
+- YAFM for buggy computer eating a disk while blind.
+- Bio computer now allows to receive information that voice interface alone
+  cannot provide when hero is blind.
+- Floppy disk of operating system and operating systems.
+- You can quaff from acid pits if you so desire.
+- Two new grenade types: incendiary and flashbang.
+- Made rectal examination medical service useful in a border case.
+- Floopy disks have nice colors.
+- Floppy disks of reformat.
+- Proximity mine.
+- For using unpaid tools you incur a small fee.
+- Additional medical service for docbot.
+- One of weapon store and armor store will appear in town.
+- Implant store has 50% chance to appear in robot town.
+- Tricorder can be used to obtain full diagnostics on willing subjects.
+  With right equipment unwilling subjects can be made willing.
+- You learn ray gun colors when docbot uses serum on you.
+- Computers and floppy disks may be infected. Computers may be protected.
+- Floppy disks of virus and antivirus.
+- Can use tricorder to learn vat health level.
+- You glow when irradiated really much.
+- Can pick arbitrary target for diagnosis in god mode.
+- Post mortem character file.
+- Added creation of altars to god mode.
+- Added darkening and lighting of rooms to god mode.
+- Item generation probability tables.
+- Energy tank.
+- Space orc pyromaniac.
+- Defiler with plague vomit.
+- Name category of clicking electronic gizmos "geiger counter" to identify them.
+- Janitors are rewarded with XP for repairing door malfunctions.
+- Vats start with variable sludge health level.
+- Enriched array of possible vat effects.
+- Implemented kAutoSearch intrinsic.
+- Confused floppy disk of detect object has different effect.
+- Confused floppy disk of operating system has another effect.
+- Smart bomb hit with gauss ray turns into a proximity mine.
+- You can tape a pit to make it appear as safe ground.
+- Rocket turret from Dune II.
+- Scrubbots will clean up leftower wrecks and turn them into energy cells.
+  Pet scrubbots will leave cells on floor to pick up.
+- Harmony dome will negate psionic aura disruption caused by cranial implants.
+- While hacking a floppy disk you may notice its infectedness.
+- Modifiers "not infected", "not cracked", "not damaged", "not buggy"
+  and "not protected" added to object name parser.
+- Armored belt.
+- Floppy disk of matter compiler.
+- Scout goggles.
+- Teleporting a vat has potential of triggering additional consequences.
+- Command list for multiple choice menus.
+- Looking at a door reveals useful information.
+- Door opening or closing is picked up by motion tracker.
+- Khan heavy pistol from DeadCold.
+- Search skillsoft implant. Repair skillsoft implant.
+- M56 Smartgun.
+- Sessile creatures are remembered on display.
+- Floppy disk of warp tracer.
+- There is an abstract monster "alien embryo" to count how many impregnations
+  you have survived.
+- Psionic Storm.
+- Khaydarin crystal shard.
+- High Templar.
+TECHNICAL:
+- Modified Makefile to suit PRIME.
+- Logo printing function prettified.
+- RabbitLevel.cpp and Town.cpp become SpecialLevel.cpp
+- kRadioactive is now an object ilk flag instead of object flag.
+- Floppy disk execution now always calls tool use code.
+- doDiagnostics is now creature method instead of hero's. 
+- Chaos power armors have their own parent category.
+- All doDetectFoo where Foo is monster kind are collapsed into a single
+  function. Adding another detect effect is matter of calling the function
+  with correct parameter.
+- CrazyIvan and cortex crossover are now conditionally compiled.
+- Profession inventory is in tables.
+- Items have been put into handy abstract categories.
+- Compiler switch -Wno-char-subscripts cut out from Makefile as all sources
+  of this warning are finally eliminated.

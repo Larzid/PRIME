@@ -1,0 +1,734 @@
+PLASMA:
+We have plasma weapons (which I introduced) and plasma canisters
+(since ZAP'M), which are WHOLLY UNRELATED.
+
+What about making plasma weapons chargeable with plasma canisters?
+
+9 charges for pistols, 6 for rifles and 3 for cannons.
+
+That could make them fire "supercharged" shots in the presence of an
+energy source, or normal shots in its absence.
+
+AFAIK the only uses for plasma canisters are:
+
+Abortion
+Making gauss ray guns (which are pretty damn awesome, if
+a bit restricted in their uses)
+Tossing them at monsters if you implemented their explosion.
+
+More a matter of coherence than anything.
+
+TDTTOE: The bio computer shoud *at least* be partially
+resistant to gaussing. You could make it vulnerable to
+poison instead, like bio armors.
+
+
+
+NAPALM + FUEL:
+> You can now drink fuel drums. Yes, the fuel for flamethrowers. It only
+> poisons you regardless of resistance (minus between 1 and 3 points to both
+> con and str) but also kills that maturing chestburster. However, it is
+> better to drink other harmful canisters, even regular poison. Less damage
+> taken. Quaffing fuel should be the last resort. Who said you cannot drink
+> ammunition? Prime is roguelike so there is nothing to prevent you.
+
+Hahahah awesome. Could you make it so that drinking napalm afterwards
+results in instadeath?
+
+You know, who in the right mind would drink napalm right after fuel?
+
+(someone who just drank fuel to get rid of an alien and then desperately
+quaffs everything looking for a canister of restoration/radaway/whatever)
+
+
+
+
+BELT:
+When trying to forcibly remove:
+You exert your abdominal muscles and a thunderous noise reverbs
+throughout the [room/corridor/cave/sewer/town/weird mainframe desc]
+
+(Alert monsters, if wearing a sealed helmet, make player sickened until
+removed)
+
+
+GHOSTS:
+My bad about the protoss ghost. It seemed cool, but yeah, you're right.
+See, that's why it's better if you take care of protoss lore and stuff - I
+may very well fumble on my way. Space elves are out of the question for a
+similar reason - they store their souls in gemstones upon death or slaanesh
+eats them.
+
+Ghosts:
+attack: they might *flail away at you with their cold, cold hands.*
+
+Yeah, tombs should be pretty rare. I was thinking a range of 1~3 per game,
+taking the sith tomb into account. The sith tomb could be one place where
+digging comes in handy: the door could have a special sith requirement
+(similar to the retina scanner) and to loot the tomb as the first part of
+the sith quest you'd have to dig your way into it.
+
+Coherent holes would be quite !!FUN!! if they happen to be accidentally dug
+on top of any tomb (slim chance, though)
+
+
+
+
+
+DRESSING:
+LooksLikeNinja (chameleon suit, katana, goggles):
+
+"*Halt! Rogue agents not allowed to enter the premises of Robot Town
+burbclave!"
+"The guardbot beeps and screeches intimidatingly"
+*
+Door locks, you can't pay a fee for entrance, upon opening of the door the
+guardbot becomes hostile - any ninja stupid enough to *look like one* upon
+entering a guarded place is in over his head.
+
+Getting out of sight of the guardbot allows the player another check - you *
+can* go back and disguise yourself.
+
+Snow Crash reference.
+
+MegaBelterBonus: If the player tries to change his/her appearance in sight
+of the guardbot:
+*"I don't buy it, punk! You just changed in front of me."
+"The guardbot clicks and whirrs in exhasperation".*
+
+> Also, we talked about looks-like-<someone> part of PRIME. Thanks to your
+> drawing skills I can make your portrait change to one of appropriate class
+> when you fulfill the requirements.
+
+ACID SPLASH:
+Acid splashes could have other effects besides damaging the player.
+
+Hitting in melee range always splashes the player.
+
+Hitting from afar might change one tile adjacent to the alien:
+
+floor tile: 50% to turn into a pit
+
+pit tile: 25% to turn into a hole, 25% to turn into an acid pit. (this
+should also be checked for an alien bleeding inside a pit)
+
+Queens could have those percentages doubled.
+
+
+
+AMMO:
+> Hmm. How about EM rounds, toxin rounds and hollow rounds? The former would
+> make good anti-robot asset, next would help against living targets. The
+> last simply assures no damage done.
+
+Sounds pretty good! But if with "hollow" you mean rounds that don't actually
+shoot anything, just make a blast of sound, I think they're called "blanks"
+in english. At least that's what I've always thought, we need to do the
+research or it might induce confusion in our players.
+
+
+
+CLERKBOTS:
+> EM rounds would be permitted in weapons shop only if it has a guard or
+> this is Robot Town where external support can be summoned.
+>
+>
+Make the guardbot at the entrance charge an additional insurance fee for
+controlled hardware.
+Something like $3- $10 per EM round. If you put this, gauss rayguns should
+incur an additional (higher) insurance fee ($25-$50 *per charge?*).
+
+Plasma guns are okay because they have a wider scope of uses, but quick
+decommission of robots is pretty much the only use for EM rounds and gauss
+rayguns.
+
+
+
+DRAGOONS:
+Hey, remember the rejected protoss tomb?
+
+No ghost. No traps No loot. Just a yellow D.
+
+That's, of course, a Dragoon: a shooty, shielded, killing machine.
+
+It's funny how it's a concept very similar to Daleks: A physically unfit
+alien interred in a mechanical "body". Were daleks shielded too?
+
+Even funnier how there's another contraption which follows the same concept
+and starts with D: Dreadnoughts from WH40k. (just with a mutant human
+inside)
+
+
+So that D monster class could be expanded in the future to Dalek, Dragoon
+and Dreadnought. Which one should be tougher I guess it's up for debate.
+
+The dalek is brown/dark yellow I think, the Dragoon and Dreadnought could
+be bright yellow and really any other color (Aquamarine Dreadnought more
+close combat, Mean Green Dreadnought more shooty?)
+
+MegaBelterBonus: Dragoons aren't slow but move like grid bugs, to reflect
+how f*cking bad they go around obstacles in SC1 thanks to that odd thing of
+not even turning around. Although they do move in diagonals in SC. Well,
+whatever, no need to do this.
+
+
+
+DREADNOUGHTS:
+> Why not! Need to look up what weapons would be appropriate for
+> Dreadnoughts.
+>
+
+So far I've seen them employing the following:
+
+Power fist (just give it a nasty crushing attack or whatever)
+Laser cannons
+Plasma cannons
+Rocket launchers (which we don't have)
+Fusion cannons (which we don't have)
+Assault Cannons (we can give them a heavy machinegun instead)
+
+Any arm with a power fist instead of a heavy weapon is also supplemented
+with either a flamer or an assault bolter (I think it's an assault bolter,
+that
+should be an assault rifle for us)
+
+Hmm. Should we even have rocket launchers? It's a pretty common trope.
+
+
+
+BASE FEATURES:
+Elevator:
+
+This one came to mind after reading some talk, maybe rgrd? about prime
+still having staircases whiel being sci-fi. Well, it's not a substitute
+for stairs.
+
+Elevators shafts that span 7 levels, and can carry you from the 2nd to the
+6th.
+
+The trick is that you have to activate them on their bottom level. Or maybe
+being able to use them right away is good enough since going 5 levels
+straight down puts you damn out of depth.
+
+See attachment for diagrams.
+
+> Had a look and I like it! Tricky part will be finding right place on all
+> seven levels to cram it in. Rooms might overlap too much.
+>
+Place it wherever it doesn't oblliterate any staircase, then delete
+any rooms it would overlap? Or don't delete them, let's just have them
+irregular shaped.
+
+
+==BEGIN ATTACHMENT==
+
+Side cut view:
+
+#%%# 1st - machinery room
+#..+ 2nd - upper entry, elevator cabin present
+#^^# 3rd - shaft, elevator cabin not present
+#^^# 4th - shaft, elevator cabin not present
+#^^# 5th - shaft, elevator cabin not present
+#^^+ 6th - lower entry, elevator cabin not present
+#%%# 7th - machinery room
+
+Possible room configurations:
+
+Machinery rooms, top and bottom levels:
+
+####
+#%%#
+#%%#
+####
+
+If you break the machinery, the elevator
+stops working. If it stops working while
+not being on the bottom floor, it plummets
+down, probably instakilling anything standing
+below.
+
+Entry room with elevator cabin present:
+
+####
+#..#
+#..#
+#++#
+
+If you press < or > inside this room, the elevator
+goes up or down if it's able to. The cabin moves one
+level per turn (the ^ hole tiles in the shaft in the
+next level ar turned into . floor and the player ins
+transported there)
+
+Entry room with cabin not present:
+
+####
+#^^#
+#^^#
+#++#
+
+The doors should be locked, this is the really
+dangerous configuration to step into cluelessly.
+
+
+Elevator shaft:
+
+####
+#^^#
+#^^#
+####
+
+(Cabin not present)
+
+####
+#..#
+#..#
+####
+
+(cabin present)
+
+
+If you step on one of the ^ tiles, well, you fall
+down the shaft, which shouldn't be pretty. Falling
+onto machinery could qualify for impalement.
+
+==END ATTACHMENT==
+
+
+Generator room:
+
+A smal room with a machinery tile. If you fix it by applying tools,
+unlit rooms in the same level (what about the levels above and
+below?) light up. If you break it, lights go out.
+
+Server room:
+Same as above, but dealing with computer terminals rather than
+lights.
+
+Ventilation ducts:
+
+single-level branches filled with criss-crossing corridors that connect
+two branches horizontally (e.g. one exit to a sewers level and another
+one to a space base level of equivalent depth).
+
+Should be unlit, filled with i monsters and the occasional A, and their
+placement chosen at random at dungeon generation.
+
+> Nice, finally an excuse to code another dungeon generator. Even simple one
+> is going to be fun trip. As for monsters kInsect and kAlien should suit us
+> well. That would allow us to include facehuggers. I'll make sure alien egg
+> and alien queen are rejected as those two don't make big sense.
+>
+> Should there be fans? Passing a fan would damage one much like
+> malfunctioning doors do now.
+
+Yes, fans sound pretty interesting.
+
+In some ways they would work the opposite to doors:
+
+They could harm you AND prevent passage while working properly (*You tackle
+the fan! [1-4] of its blades slashes you! *player remains in the same
+square) but do no damage AND allow passage when blocked (item or greater
+than some certain size in the fan tile,)
+
+Really, all these ideas are about making the dungeon more interconnected
+and "whole" and less a collection of discrete levels.
+
+
+
+ABOUT ORCS:
+As you can see, I got a little bit... creative when drawing the orcs.
+
+See, sci-fi orcs are usually presented as some sort of stand-in for
+politically incorrect, dangerous (or apparently so) social and racial
+minorities, troublemakers, misfits.
+
+So I decided to keep that but taking a distance from the usual
+biker / punk / skinhead slurry of WH40K orks , and depict some
+more contemporary takes on orcs.
+
+Space Orc as a Chav. Space orc boyz, skulking around the local
+unfriendly hab complex, smoking, drinking, wearing tacky
+jewelry and making life unpleasant to anybody they decide that
+looks funny.
+
+Space Orc Pyromaniac as a sociopathic, get-off-my-lawn redneck.
+The close encounter of the third kind you *don't* want to have
+when you touch down on an isolated asteroid to have sexy times
+with that blueskinned space babe you met at Betelgeuse I.
+Territorial, isolationist and homicidal, these space orcs are prone
+to having a moonshine still and shouting GET OFF MY PROPERTY
+
+"Leather Dominator" Orc Boss: Okay, there are no orc females,
+but who's to say that orcs are completely asexual?
+These orcs, although popular and very welcome in the more
+sexually liberated polities, where they exhibit a surprisingly
+peaceful and friendly behavior, are still orcs and very dangerous
+should you somehow cross them. The command capacities
+of these orcs are a breakthrough in orcish society, as they tend
+to employ a dazzling array of reward and punishment techniques
+with their underlings, who are soon mesmerized after a life
+of "bonks to da 'ead", the traditional orcish disciplinary measure.
+
+Oh well the Space Orc trousers and boots do look rather skinhead-ish.
+
+
+
+ABOUT PRIME:
+History of the project:
+It's parent game ZAP'M, my original clumsy modding, your
+arrival and takeover as a real programmer, Jo's appearance,
+eventual introduction of graphics, bundle.
+
+Project's philosophy and goals
+Willingness to introduce (sensible or cool) suggestions,
+reference overdosing, sci-fi kitchen sink, nethack IN
+SPAAAAAAAAACE, TDTTOE ideal, Can you Get the Reference?,
+stupid humor.
+
+http://tvtropes.org/pmwiki/pmwiki.php/Main/ReferenceOverdosed
+http://tvtropes.org/pmwiki/pmwiki.php/Main/TheDevTeamThinksOfEverything
+I hold these two as the staple principles of PRIME design. Do you
+concur/ any further thoughts on the matter?
+
+
+GRENADES:
+> Sometimes it is hard
+> to convey it through other media. If all the shapes are grayish then I'll
+> be able to call tilerecolor supplied by NotEye and produce colored
+> variants.  No idea about how to represent metal types but do we need to do
+> that? I think adjectives "tiny", "small", "little" can be cut. The "heavy"
+> and "strange" can be moved to middle descriptor. That would ensure only
+> one part is not represented - and one hard to convey from looks.
+>
+> I can also put additional constraint on the algorithm: no description
+> shall differ only by middle word. Thus every generated tile combination
+> will result in something different. How about that?
+>
+> Sounds like a great deal. Small, tiny, etc. could be cut because scale is
+hardly represented at all in roguelikes - but if you want to keep them, it's
+okay exactly for the same reason: Everything is as big as a 32x32 square.
+In fact, scale tends to be reversed: smaller objects and creatures look
+comparatively big in RL tiles and vice-versa, big creatures and objects
+tend to look rather small.
+
+If you recolor them on the fly, that's a whole new layer of adaptability,
+so the picture actually looks far better than I thought.
+
+
+
+ICONS:
+green death skull for infected floppies
+white skull with red bandana for cracked
+The cracked icon alone can be a reference to Spinal from
+Killer Instict.
+
+-A cockroach for buggy
+-A golden thumb-up for optimized
+
+-crossed-out clock for stasis
+-radiation symbol for gamma/rad
+-scorpion stinger for poison?
+-magnet for gauss
+-little red cross for healing
+-green cross with something else
+
+Hard to represent stuff:
+-teleport
+-antimatter
+
+
+
+PROFESSIONS:
+> Did I mention I was toying with the idea of modifying Psion profession to
+> be of space elf race? No idea what special power they would have.
+>
+>
+Mmmm, I object *in part* to this, let me explain.
+
+I really like the idea of having a more flavorful Space elf psion, what
+I do have qualms about is replacing the current psion. It may sound
+awkward and is probably quite a bit of work but I'd really prefer a wide
+selection on roles and races (nethack/crawl) than agglutinating race
+and role (old, thin book D&D) save exceptions.
+
+Of course we can't have reticulan space marines, robot mutants or
+yautja detectives - that's plain silly. But we could sort of define
+"role slots" that vary depending on race and are not necessarily
+available in all combinations (not at all)
+
+Killing machine: Marine - Hunter - Dissident
+Crafty warrior: Ninja - Hunter - Abductor - Janitor
+Burly guy: Quarterback - Hunter
+Survivor: Astronaut - Xel'Naga
+Psionic: Psionic - Mastermind
+Techie: S. Engineer - Dissident - Janitor
+????: Detective
+
+Hunters, dissidents and janitors cover more than one slot.
+
+I'd rather be adding to those lines and have *both* human and
+elven psions, with different starting inventories, and varying
+ability scores and mutant powers accesibility.
+
+
+
+RADZOMBIE:
+Whatever happened to the Radiation Zombie?
+Just a story flag?
+
+Suggestions:
+Whenever the player accumulates rads, gains HP
+between 1 and rads dosage. For canister of mutagen this
+should rather be between 1/10 and 1/5 the rad dosage.
+
+Whenever intelligence takes damage, it has a chance (1/3)
+to take double damage; whenever intelligence is healed it
+has a chance (2/3) that the amount healed is halved. 1 pt
+heal minimum.
+(...feral ghouls)
+
+A radiation zombie with 0 int doesn't die until a rad check
+is made, then a message is printed along the lines of:
+*"Having lost your mind, you wander the (zone name)
+aimlessly for years to come"*
+
+I'm not sure if you ended up glowing when very heavily irradiated
+or that's just Crawl :P but if you do then the stat line should
+change from "rad ghoul" or "rad zombie" to "Glowing One"
+
+
+MEGA COMPUTER:
+I'd rather see a "backpack" slot for that.
+
+We could make powerplants worn on that same slot, so you can't
+have a mega computer AND a powerplant.
+
+What for? Mutual equipment exclusion (hey that sounds like a certain
+doctrine)
+
+If you're wearing Power Armor, you can't wear a backpack: power armors
+almost always have already some sort of powerpack built in the back.
+
+(That could be an additional difference between energy tanks and
+powerplants: you *can* use energy tanks with a power armor, say,
+fastened to your belt, you *can't* use power plants with power armor
+because they're so bulky an unwieldy that you have to strap them to
+your back (devote your backpack slot)
+
+So, you can't have power armor AND powerplant, or megacomputer AND
+powerplant, or power armor AND mega computer.
+
+We could also introduce a "rugged backpack" that lets you store say,
+10 small-to-medium items to protect them from fire/freeze/electricity.
+
+
+
+LEVEL LIGHTS:
+> I looked at the space base wall decoration tile. Then thoughts about our
+> ideas with missing lightbulbs and power generator collided with that.
+> Could you paint a wall with the light grayed out? I would then make it
+> possible to break the lights by shooting, explosions and other collateral
+> damage. If at least one wall light is intact the room is lit. Otherwise
+> darkness falls. On a level with downed generator all rooms start with
+> broken lights and cannot be repaired until the power source is restored.
+>
+>
+We'd need THREE variants then: lit, unlit, and broken.
+unlit: needs generator repair and will automatically lit up when the
+generator is repaired.
+broken: needs to be repaired on the spot, and possibly bringing a generator
+back online.
+
+
+
+POWER ARMOR:
+*CRAZY IDEAS ON POWER ARMOR:*
+
+*Bells and whistles:*
+*
+*
+Flashlight, vision modes, other built-in gadgetry should be present
+in power armor suits and power armor helmets following reference
+detail.
+
+Fallout power helmet: built-in flashlight
+
+Space Marine power helmets:
+Can you do this with the individual item properties thing?:
+Randart.
+Each space marine helmet has a chance for granting
+one goggles/gizmo type utility, together with all it's usual costs
+or lack thereof. Should be biased in favor of combat stuff (scouting,
+targeting) and against ninja stuff (x-ray). The pool should be selected
+carefully (making them able to substitute *some* goggles and
+gizmos but not all)
+
+Terran Marine armor if you include it should have a flashlight, for
+sure... and a damn stimpack! :D (the kind that makes you shoot
+faster and damages you, not the kind of stimpack that heals you)
+
+Space helmet needs a lot of kBlinding resistance if it doesn't have it
+already.
+
+*Restrictions:*
+
+Right now, power armor seems too "cheap" - it's almost a life
+insurance when you find it (unless you have really few hitpoints).
+
+But I don't think that making them any less good would do them
+justice - they're POWERED ARMOR.
+
+So, I feel it'd be a good idea to add traits that make players "devote"
+more of their gameplay if they want to fully enjoy Power Armor.
+
+Fallout style: Power Armor Training. Add an Armor skill that waives
+additional penalties  to power armor. Space marines would be
+paramount users, followed by astronauts and dissidents in that
+order.
+
+Item interdependence: A powered helmet only works properly with
+a power armor. A powered helmet only carries it's own weight if
+power armor is present - and only then do it's intrinsics and other
+functions come online. Properly connecting a power helmet to
+a different type of power armor suit requires a successful repair check.
+
+Arcane Penalties: penalties to power-armor performance that require
+ifferent in-game remedies to overcome.
+
+*Adeptus Astartes Power Armor*
+
+Pieces:
+-Helmet
+-Power armor suit
+-Black Carapace (mutation and/or implant)
+
+
+Arcane penalties: if the Black Carapace, a biological interface space
+marines use to communicate with their suits, is not present, user
+takes agility type additional penalties (to hit, or speed, whatever).
+( Other power armor users in WH40k lack this mutation/implant and
+as such their use of power armor is comparatively impaired)
+
+Black carapace could give a couple of CON points when used
+together with power armor.
+
+*Fallout Power Armor*
+
+Pieces:
+-Helmet
+-Power armor suit
+-Recon armor (slightly armored jumpsuit)
+
+Arcane penalties: if the user isn't wearing recon armor underneath
+power armor, s/he gets no strength bonus, and takes a hit to
+burning and freezing resistances. (he's going to be either too hot
+or too cold inside the armor and can't activate it properly.
+
+The recon armor itself should sport more AC than other jumpsuits
+and a little bit of rad resistance.
+
+*Zealot Power Armor*
+
+-Zealot Leg Enhancements
+-Zealot armor suit
+
+-Leg enhancements depend on the suit just like helmets.
+
+Arcane penalties: Some benefits scale to PSI.
+
+
+Chaos and bio armors already have enough unique characteristics.
+
+*Bottom line:*
+*
+*
+Powered armor can easily be over-powered, especially if found
+early. I think they'd work better as sets of 2-4 items. To prevent
+overabundance of components some of the items worn by enemies
+could self-destruct on death (they're coveted technology, and
+are rigged with fail-deadly mechanisms), say a 66% chance
+for each item to self-destruct on death
+
+Connecting different astartes and/or chaos armor pieces together
+should be easiest. Astartes and fallout medium difficulty, and
+connecting protoss pieces with anything else the most difficult
+since they're alien technology.
+
+
+PLASMA CASTER, BACKPACK SLOT:
+Yeah, the predator plasma caster is mostly unobtrusive, although
+we could get finicky on this. We could make things compatible in different
+orders. You can first wear a trenchcoat, and THEN strap a powerplant or
+shoulder cannon over it, but not the other way around. Or in any case make
+the game go through a "remove item A, wear item B, wear item A" routine
+as is the case with jumpsuits and armor, if only to make it non-trivial in
+combat
+(when it *does* matter)
+
+Power armors should be compatible with capes, but not trenchcoats
+or backpacks (power plants, mega computer, plasma caster). Backpacks and
+capes are incompatible, trenchcoats and capes... not sure. Backpacks and
+trenchcoats should be compatible.
+
+Zealot armor should be compatible only with the psionic shield generator -
+that is, if the item is still around XD.
+
+An exception should be made if you ever introduce the Power Harness
+(technological medium to a third arm), that should be a backpack AND
+be compatible with astartes and brotherhood armor (repair check
+required for the later)
+
+> Power body armor restricts cloaks to capes.
+> Backpacks restrict cloaks to trenchcoats.
+>
+> I also have an idea for "rationalization":
+>
+> "Backpacks cannot be worn with capes together. This is because a cape is
+> supposed to heroically flow around the person wearing it. Only then it can
+> make badass impression on any onlookers thus improving wearer's image. Any
+> backpack makes the flowing around imperfect thus totally ruining the
+> intended effect. At this point all bonuses are lost, the cape is no good
+> even for proper gloating over your fallen enemies."
+
+> At this point an idea crossed my mind. Why not have the powerpack as an
+> actual item? That way when you find mean green power armor you still have
+> an excellent AC item to wear but ... it weighs. A lot. Without the
+> (appropriate type or not) powerpack you can wear backpack with your armor
+> but still not trenchcoat. Also, power armors may now have one AC point
+> less which will be supplied by the powerpack.
+>
+> Fuck yeah. I had contemplated the thought but discarded it as too over the
+top.
+But if you had the same idea, dude, it has to be done. I'd say you could
+even
+move two points of AC from the suit to the backpack, it's pretty big.
+
+We'd have to find some use for JUST the powerpack, since "no useless items"
+
+Hmm. "No useless items" is a corollary of TDTTOE, right?
+
+Some more thoughts on SM helmets:
+
++Psionic amplifier = Librarian Helmet
++Tricorder = Apothecary helmet
+
+
+
+ZEALOT:
+> > IIRC, zealots don't actually get killed in action in SC, they're
+> > supposed to teleport somewhere safe, the reason of the blue smoke
+> > thing. AFAIK you're better versed in SC lore than me so check that.
+>
+> This is the case only if the teleport measures kick in soon enough. These
+> are supposed to activate when the wearer is near death and can be
+> triggered manually too. However, it does not help if the said protoss is
+> hit with transformed Arclite tank shell. Too great damage to withstand.
+> So, it depends how you kill the zealot and high templar really.
+>
+> Still, if the protoss survives the teleport he may be so wounded that he
+> dies anyway. Some will be permanently injured making them good only for
+> transplantation into a dragoon. Most lucky will be those that can heal and
+> fight again someday.
+
+> Alternatively "The zealot disappears in a flash of bright blue flame!".

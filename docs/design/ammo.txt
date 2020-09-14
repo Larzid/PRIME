@@ -1,0 +1,33 @@
+Paranoia cone rifle shells. 
+ ECM: electronic jamming equipment - any electrical equipment (including robots) in the Area of Effect stopped working. 
+Smoke: smoke cloud that blocked normal vision. 
+ Corrosion gas: damaged all metal in the Area of Effect. 
+Vomit gas: caused severe nausea in victims. 
+ Gauss gas: laser fire through the Area of Effect is more effective. 
+ Dirt gas: made laser reflec armor less effective. 
+Hallucinogenic gas: Oh look! Beautiful pink unicorns! 
+Shadowrun 
+ Paintball rounds - used to mark enemies for later identification. 
+ Gel ammo: does stun damage instead of lethal. 
+ Ex-Ex: or (extra) explosive rounds. For when a grenade is too lethal, but regular ammo isn't lethal enough—or illegal enough. 
+ Capsule rounds: for delivering a drug cocktail of your choice directly into the bloodstream. 
+ The following rounds also exist in the game, but have real life counterparts 
+ Dragon's Breath: shotgun -> flamethrower 
+ Stick 'n Shock: taser rounds 
+ Shock Lock: for breaching doors 
+Eclipse Phase, being made by some of the Shadowrun devs and set just a little past the Technological Singularity, has several of these for Firearms, on top of the usual ammo types like Armor Piercing rounds. Railguns can only use regular and Armor Piercing rounds, though. 
+ 'Flux' ammo, that can reconfigure itself, allowing users to inflict normal wounds, or inflict lesser injuries for crowd control. 
+ Bug ammo, which tags the target and allows you to track them via the Mesh. 
+ Capsule ammo, as per Shadowrun Capsule rounds above. 
+ Jammer ammo, which sticks to the target and jams wireless signals. 
+ Splash ammo, which is similar to Capsule, but splashes the contents on the target instead of injecting it directly into them. 
+ Zap ammo, which stuns enemies like a taser shot. 
+ There are also several 'smart' ammo types, which - with the exception of Biter, Flayer, and Proximity types, can be combined with the above-mentioned types. 
+ Accushot ammo, which reconfigures itself in-flight to ignore the effects of wind, drag, and gravity - allowing users to ignore range penalties. 
+ Biters and Flayers, which increase damage dealt, and Proximity ammo that can harm targets even if it doesn't strike them directly. 
+ Homing and Laser-Guided ammo, Exactly What It Says on the Tin. 'Zero' ammo allows burst and full-auto weapons to 'zero in' on a target during extended firing. 
+GURPS 
+ Ultra-Tech has a truly amazing number: Aerosol, liquid, flare, memory baton, tangler, stingray (to disable robots), swarm, EMP, jammer, strobe, warbler, force, implosion, psibomb, stasis, vortex. Those are just the non-lethal ones. 
+ High-Tech has basically everything realistic. 
+Warhammer40000 (of course) has the Imperium employ these, specifically for the Bolters. Because having full-auto .75 caliber RPG-bullets wasn't enough, they also come in super-armor-piercing, anti-materiel, anti-psyker, incendiary, sniper and "mutagenic acid" flavors. The last one is pretty much official terminology for "Tyranid killers". 
+ A scenario in the old Adventurer's Club magazine called for the PCs to be spies trying to infiltrate a company headquarters. This was actually a training mission, and the "guards" carried guns loaded with specialized ammo that felt like a normal bullet but didn't do the damage. The GM was told to tell the players they'd taken damage based on the caliber of gun they were shot with, but track the actual damage secretly until someone got around to checking the injury. (One option for this scenario involved real criminals trying to break into the "headquarters" while the PCs were in the middle of their infiltration ... and their weapons were real.)

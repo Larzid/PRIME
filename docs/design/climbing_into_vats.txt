@@ -1,0 +1,79 @@
+> Had a go at PRIME code during the weekend and progressed to Tools.cpp.  I
+> can't wait till the time you can dominate other orcs and lead them to the
+> docbot for teef removal.  Profit!
+
+Hahaha, good to hear that!
+
+> > Maybe climbing into and quaffing from vats could have slightly
+> > different lists of possible effects?
+>
+> Fine idea.  Climbing into pit mechanic could be reused here.  With
+> camouflage ninjas also could hide in them.
+
+Hey, one good thing to have for ninjas would be some sort of vest that can
+be worn over the jumpsuit without blocking camouflage. Puny armor, but at
+least would allow them to wear SOMETHING over the jumpsuit.
+
+> > E.G.: climbing into the vat won't kill a parasite; but if it's
+> > a healthy vat, it could heal more HP or have a better chance for
+> > restoration effects.
+>
+> Yes, a somewhat different effect set should be prepared.  Parasite killing
+> and electroshock should not appear.  Slipping in is impossible thus
+> corrosion could be checked once, right after climbing in.  Maybe
+> periodically too, because sludge is not very corrosive.  An additional
+> effect could be shifting of one attribute point to another attribute.
+
+Attribute shifting sounds very good :)
+
+> > Quaffing could be biased towards psionics, and climbing towards
+> > metabolics. Climbing in and waiting (if the player has a sealed helmet)
+> > could speed up health regen, and check for vat drying-out when
+> > climbing out.
+>
+> Cat effects could kick in once after you climb in and then every X turns
+> until it is dried up, but then drying up does not happen until you climb
+> out as you write.  So, you can stay and regenerate to full HP in them but
+> that also may get you radiated a bit more just by staying there if
+> purifying effect does not happen.  Ghouls could regenerate only in
+> radioactive vats.
+
+Everything sounds very solid. When there vat dries up as you come out of
+it, the game should print a message along the lines of "*the vat drains out
+the spent sludge" *
+
+TDTTOE:
+
+Here are a variety of potential conflicts while inside a vat for you to
+ponder :)
+
+If damaged bio-equipment is worn and a restoration effect triggers, the
+bio-equipment should "steal" the restoration effect from the player and get
+healthier.
+
+If the player vomits inside the vat, he should become sickened on top of
+radiation sick (vomiting inside a liquid you're floating in is just
+gross) *"You
+can see bits of your last lunch/dinner/breakfast floating around! Ewwww"*
+
+Being inside a tank could prevent quaffing *"your mouth is too busy with
+the respiration apparatus"*. This measure could prevent abuse of
+submerging+quaffing. Likewise, going into a tank with a canister stuck to
+your tongue should be either impossible or incur drowning damage.
+
+Trying to operate energy tanks, transfer cables or tesla equipment inside a
+vat should be either impossible "Come to think of it, doing that now really
+is a bad idea" or incur shocking damage and energy loss.
+
+Similar with freezing weapons: Either bad idea, or freeze damage and
+immobilization for several turns.
+
+Flamers can't be operated inside a vat.
+
+Conventional weapons, plasma, laser, heat rays work as intended, maybe with
+a chance for misfiring. Antimatter annihilates the vat from the inside.
+
+When resurrecting in a QR chamber, the player could appear not only naked
+but also inside a vat. Nakedness should be listed as a status in the
+sidebar (even if it doesn't do anything by itself, just so the player
+notices and for the evulz)

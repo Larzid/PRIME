@@ -1,0 +1,149 @@
+﻿Guilds:
+
+TETRAGRAMMATON?*
+(Galactic government)
+-Masterminds
+-Abductors
+
+*: Sounds cool but it's kind of stupid since "tetragrammaton" is not a tetragrammaton, and trying to reduce it to one gives results similar to the Teenage Mutant Ninja Turtles acronym, so it's probably a good idea to change the name.
+
+BLACK REAVERS
+(crime syndicate?)
+-Ninjas
+-Reticulan Dissidents
+
+GALAC-TV
+(Trash TV channel)
+-Quarterbacks
+-Janitors
+
+???
+(Militaristic enforcers)
+-Space Marines
+-Detectives
+
+HYDRA COVENANT
+(Underdogs, metapsychic rebellion)
+-Psions
+-Software Engineers?
+
+Probably there should be guild choice inside the same profession, and not just only profession choice inside the same guild, but the chart above can set primary favor affinities, and then we can go for the secondary ones.
+
+
+What about Astronauts?
+
+And Xel'Naga? Judging by their perma-blind, clean slate theme, either no guild (as Crawl demigods), something weird just for them, or any guild.
+
+They can add skills to almost anything so any guild fits but only as secondary affinity. They get no primary affinity.
+
+
+Astronaut
+GOAL: Call earth?
+ENEMIES:
+ENVIRONMENT: White space station
+REWARD:
+NEMESIS: HAL?
+
+Janitor
+GOAL: Wage raise? Become empolyee of the month?
+ENEMIES:
+ENVIRONMENT: Demolished level.
+REWARD:
+NEMESIS: Corporate CEO
+
+Space Marine
+GOAL: Nuke something?
+ENEMIES: Aliens?
+ENVIRONMENT: "Biological level" style
+REWARD: Lots of railgun slugs? A nuke?
+NEMESIS:
+
+Ninja
+GOAL: grand heist of thievery? Get into protected area and hack a server there?
+ENEMIES: 
+ENVIRONMENT: 
+REWARD: 
+NEMESIS:
+
+Psion
+GOAL: 
+ENEMIES: 
+ENVIRONMENT: 
+REWARD: Mutant power of choice? Khaydarin crystals?
+NEMESIS: Daemon Prince?
+
+Quarterback
+GOAL: Defeat a lot of enemies without using canisters or implants?
+ENEMIES: American Gladiators?
+ENVIRONMENT: GALAC-TV combat show?
+REWARD: 
+NEMESIS: Hulk Hogan?
+
+Software Engineer
+GOAL: Leak info?
+ENEMIES: 
+ENVIRONMENT: Cyberspace?
+REWARD: 
+NEMESIS:
+
+Abductor
+GOAL: Abduct many creatures but kill few
+ENEMIES: Cattle, wild and domestic animals, carnivorous plants
+ENVIRONMENT: Space farm?
+REWARD: Telescopic anal probe? Allows probing of beings two squares away?
+NEMESIS: Mulder?
+
+Mastermind
+GOAL: Alien infiltration?
+ENEMIES: 
+ENVIRONMENT: 
+REWARD: 
+NEMESIS:
+
+Dissident
+GOAL: Break buddies from SPAAAAACEprison
+ENEMIES: Government authority figures, cops, marines, guard droids
+ENVIRONMENT: Guarded prison
+REWARD: 
+NEMESIS:
+
+Janitor quest proposal:
+There is a demolished level that must be prepared for arrival of guests. The challenge is doing all the fixing in time. You will be given score. If you manage to reach stairs before time runs out the score is doubled. After time runs out you no longer get points.
+
+The level itself contains many malfunctioning doors, doors with broken locks, damaged nonhostile robots, wrecks, traps, items scattered around to be put in niches and locked away, items that should be carried away, damaged items you ought to repair, monsters you should kill, missing doors, perhaps a public terminal in need of operating system if we include that. There is a possibility of special ground tiles with trash, blood or other unpleasantness. Applying a mop would revert it to regular floor. Walls can be like that too. “You scrape klingon intestines from the wall. It looks much better now.”
+
+For each good deed points are increased. To receive points you must look like a janitor. This means wielding a mop and wearing appropriate uniform. Then sum of points decides how good your raise is and what additional benefits you receive. Benefits could include:
+ - health insurance (cheap docbot services)
+ - babel fish if you do not have one already
+ - more?
+
+Mop needs to have 'a'pplicable ability. Perhaps cleaning up blood pools and corpses. Maybe neutralizing glue traps.
+
+Detective quest proposal:
+A level where applying the license would have way different effects. You would have to find some murderer and defeat him.
+
+Maybe a "housing" level (a sort of second town), filled with peaceful/indifferent monsters ('h', 'X', 'x'. One of them (chosen at random) is the murderer and given stat boosts / better equipment. and you have to find three-four pieces of evidence scattered through the level.
+
+Bonus points: if you manage to find all evidence, you can request the aid of one or two local law enforcers to help you confront the murderer.
+
+Megadwarfitybonuspoints: There's a passenger shuttle scheduled to depart and you have to find the murderer before it leaves.
+
+Space Marine quest proposal:
+
+You climb aboard skyranger and are transported to an UFO landing site where you have to kill the aliens. To make things more fun lets include several larger craft with stairs leading to multiple levels. Goal is to make the ship unoperable. This can be done by:
+
+ - blowing up all UFO power sources
+ - planting a nuke in control room (one will be placed in skyranger at mission site)
+ - killing both alien navigators and UFO commander
+
+Bonus for doing all at once. Mission will end if you use stairs in skyranger (meaing fly away). For your score following factors are counted:
+
+ - demolition rating
+ - UFO crew killed
+ - friendly marines survived
+ - elerium-115 objects carried and dropped in special skyranger tile
+ - alien corpses not destroyed
+
+Rewards:
+ - promotion
+ - equipment (+4 optimized psi amp, ammo, whatever you scavenged, more?)

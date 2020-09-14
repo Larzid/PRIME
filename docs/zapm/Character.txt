@@ -1,0 +1,131 @@
+Character Stats in ZAPM
+
+CURRENT:
+
+7 abilities from SRD:
+
+Str - melee to hit and damage, carrying capacity (*)
+Con - hit points, saving throw
+Agi - AC, speed (*)
+Dex - ranged to hit bonus, various skills
+Int - hacking skill
+Wis - spot, listen skill
+Cha - mutant powers
+
+(*) indicates it's not a straightup bonus computation
+
+Speed = 1300 - agi * 30
+        can be temporarily boosted by potions of speed,
+        permanently by optimized potions of speed
+
+HP 
+
+
+AC
+
+
+INTRINSICS:
+
+Telepathy
+ acquired by: 
+  -zapping telepathy mutant power
+ effects:
+  -you sense sentient monsters within (20+clevel) squares, even without LOS
+
+MotionDetection
+ acquired by:
+  -using motion tracker
+ effects:
+  -you see blips for moving creatures within 10 squares, even without LOS
+
+RadiationDetection
+ acquired by:
+  -using geiger counter
+ effects:
+  -the geiger counter clicks when you are in radiactive squares
+
+Scent
+
+XRayVision
+ acquired by:
+  -wearing x-ray goggles
+  -zapping x-ray vision mutant power
+ effects:
+  -you see all terrain up to 5 squares away
+  -peril-sensitive sunglasses don't blind you
+
+Reflection
+ acquired by:
+  -wearing a brain shield
+  -wearing a reflecsuit
+  -wielding a light saber
+ effects:
+  -you harmlessly scatter laser beams
+
+AutoSearching
+ acquired by:
+  -search skillsoft implant (not implemented)
+
+Translation
+ acquired by:
+  -babel fish implant
+ effects:
+  -you can understand all languages
+
+HealthMonitoring
+ acquired by:
+  -health monitor implant
+ effects:
+  -when your hitpoints get low, you get a warning message, and they turn red
+   in the status window
+
+RadiationProcessing
+ acquired by:
+  -radiation processor implant
+ effects:
+  -you recover from radiation damage more rapidly
+
+CrazyIvan
+ acquired by:
+  -cortex crossover implant
+ effects:
+  -all your movement keys get swapped :-P
+
+AutoRegeneration
+ acquired by:
+  -tissue regenerator implant
+ effects:
+  -your hitpoints regenerate quikcly
+
+LightSource
+ acquired by:
+  -activating a flashlight
+ effects:
+  -you see in the dark 25 ft
+
+PerilSensing
+ acquired by:
+  -wearing peril-sensitive sunglasses
+ effects:
+  -you are blinded whenever a monster is in LOS
+  -if you have X-Ray vision, you aren't blinded
+
+Blind
+ acquired by:
+  -wearing a blindfold (TODO without x-ray vision)
+  -wearing peril-sensitive sunglasses while in peril and without x-ray vision
+ effects
+  -you can't see
+
+Shielded
+ acquired by:
+  -wearing a shield belt
+ effects
+  -the shield absorbs damage that would otherwise hurt you
+
+BugSensing
+
+
+
+IDEAS:
+

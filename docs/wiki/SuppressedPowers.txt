@@ -1,0 +1,22 @@
+Supressed Powers: Exactly like toggled powers, but in reverse. Having them toggled OFF employs a number of your psi points; and having them toggled ON frees psi points. The catch? They have bad effects.
+
+%GREEN% _Okay I've already written a bunch of this stuff but no matter how much quirky and multi-faceted I envision them as, they need some standarization, so I'm going to write up some rules and proportions that can be used in all of them, trying to standardize them a bit._ %ENDCOLOR%
+
+%GREEN% _Now I'm also taking the tiers off them and trying to make them less pretentious. And ditched two on my way._ %ENDCOLOR%
+
+General rules:
+   * Additional damage dealt is calculated from current psi points:<br />
+      1 Minor additional damage: 1/4 current psi of damage
+      1 Medium additional damage: 1/2 current psi of damage
+      1 Major additional damage: current psi of damage
+
+   * Resistances gained are calculated from Metapsychic School (the applicable skill) score:
+      1 Minor resistance: 2% per Metapsychic School point
+      1 Medium resistance: 4% per Metapsychic School point
+      1 Major resistance: 8% per Metapsychic School point
+
+   * *Elemental Essence*: Fire/electric/freezing versions - levels 4, Creativity, Metabolic, Supressed:<br /><i>You're saturated with dangerous elemental energy - for good and bad.</i>
+      * You damage all fire/electricity/cold-vulnerable items you wield, pick up, handle, stand over; or are in your inventory EVERY TURN. You inflict *medium additional elemental damage* when unarmed or using an elven psychic blade, Sword of the Mind, or protoss psi blades. You gain *medium resistance to the element you're attuned to*. You regain one psi-point when you're hit with an attack of the element you're attuned to. *Restraint: asbestos jumpsuit / winter jumpsuit / faraday jumpsuit.*
+   * *Pariah Gene*: Levels 4, Coercion, Psychic, Supressed:<br /><i>You are a psychic null, and as such you enjoy unique anti-psyker advantages... unfortunately, nearly every living being hates you, inevitably seeing you as an abominable fluke of genetics, or a scion of a vaguely remembered, nightmarish ancient evil. Nature <b>does </b>abhor a vacuum.</i>
+      * All living, non-mindless beings enjoy +2/+2 targeting bonuses against you. Psychically aware beings and races gain double the bonus(+4/+4). You enjoy a +2/+2 targeting bonus against living, non mindless beings, and and deal *minor additional special damage* to psychically aware beings and races. Psychic p<b>ower success rate is dampened by current psi%</b> on all the level (player included). You only suffer *1/2 of the usual psionic maluses for bionic implants*. You gain a guaranteed PSI point when killing a psychically aware enemy, and have a 50% chance of gaining a PSI point when killing any living enemy. You gain *major resistance to psychic energy*.<br /><b>Restraint: Animus Speculum.</b>
+      * List of psychically aware beings and races: Protoss, reticulans, zerg, human mutants, bene gesserit, rossak sorceresses, brain molds, pink horrors, crazy marines. Exceptions: Reticulan Dissidents and eventual Protoss Dark Templar only count as "living", not "psychically aware". Aliens don't even count as living for this power's purposes (as their mind is void-like, I have a comic book that supports this)

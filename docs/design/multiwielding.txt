@@ -1,0 +1,148 @@
+﻿
+one-handed weapons
+
+	These require just one hand to use, but don't benefit from having the other hand free.
+
+	They can be dual-wielded together with another weapon.
+
+	Some handguns would fall in this category.
+	Some melee weapons would fall in this category.
+	Thrown weapons, if wielded, would fall in this category.
+	All unarmed weapons.
+
+	Pea shooter, reticulan zap gun, laser pistol, rayguns
+	elven dagger, anal probe, club, cattle prod, reticulan zap baton, Gom Jabbar, psi blade
+
+
+hand-and-half weapons
+	
+	These require only one hand to use, but benefit from having the other hand free
+
+	They can be dual-wielded together with another weapon.
+
+	Most handguns would fall in this category, with a bonus to hit chance if the other hand is free
+		(You can properly use both hands to balance the pistol)
+	Most swords would fall in this category, with a bonus to damage if the other hand is free
+		(you can use the strength of both arms to deal the blow)
+
+	If you have some sort of unarmed weapon fitted over your off hand, it doesn't count as free
+		(A powerfist, power klaw or psi blade is too heavy to properly balance the pistol, and it'd already be dual-wielding)
+
+	All swords, most pistols (plasma pistol, pistol (ordinary bullet one), Khan, blaster, phaser)
+
+two-handed weapons
+
+	These are usually the biggest weapons and can only be used using the two hands.
+	
+	Mostly like all weapons now since there is only one "wield" slot, except for somebuggy equipment disability details, I think.
+
+	All heavy weapons would be two-handed.
+	Most if not all light guns would fall in this category.
+
+	They can't be dual-wielded in any way.
+
+	All heavy weapons, shotgun, sniper rifle, light flamethrower, laser rifle, plasma rifle, mop, nunchucks, chainsaw, bo
+
+
+
+
+Two-handed weapons could incur a time penalty for scenery interaction (lockpicking a door, fixing a lightbulb, drinking from a vat)
+
+If they do, dual-wielding should incur a larger time penalty (you have to temporarily put away two weapons)
+
+Wielding a single one-hand weapon or a single hand-and-half weapon shouldn't incur any time penalty of that kind
+
+Being unarmed should actually grant a time bonus.
+
+
+
+Dual-wielding skill? How to balance it so that it's worth investing points in it, but not overpowering?
+
+Hmm. Why not make it this way: depending on your points in dual wielding, you'll attack two times per turn sometimes. Something like 30% chance with the first point and then diminishing returns.
+
+
+How other roguelikes handle dual wielding:
+
+POWDER: There is TWOWEAPON skill which allows it. Both weapons get malus to hit and the other weapon has to be lighter and attacks only every second time. There is AMBIDEXTEROUS skill which removes requirement that second weapon be lighter.
+
+NetHack: Only certain classes and monsters may wield two weapons. Both weapons get severe malus to hit but attack always. Two weapon skill only decreases to hit malus.
+
+Skill Angband: From what I was able to decipher second weapon attacks always but with reduced number of blows.
+
+Percentage chance to use second weapon would introduce even more randomness into battle. Even if you have so good skills you would hit all the time you still need RNG to give you good enough numbers to actually use your off-hand weapon. I would go with skill that only eliminates maluses to hit but allow all professions to make use of multiple wielding. Thus dual wielding could reduce penalties but not improve accuracy beyond what wielding the weapon alone would.
+
+Need to split proper weapons that use the unarmed skill (like a power claw or a single psionic blade generator) and *gloves* that boost your *hand* attacks 
+
+That would allow to implement Faraday gloves from Cyrus' design document.
+
+Different setups:
+
+Handgun + melee weapon:
+
+You shoot the gun when (f)iring
+	[accuracy maluses for dual-wielding and potentially off hand]
+You attack with your melee weapon when moving into an enemy, with a chance of whacking them on the head with the handgun
+	[damage or strength maluses for dual-wielding and potentially off hand]
+	[the handgun melee attack is improvised]
+
+This actually should give no penalties except for dealing with environment if you stick to one handed gun and unarmed or one handed melee weapon. At least if you are shooting. If you try to melee in such setup it would be more beneficial to just use the melee weapon hand and ignore the handgun.
+
+Two swords or melee weapons:
+You attack with the main hand weapon, with a chance of also attacking with the off hand weapon
+	[damage or strength maluses for dual-wielding and potentially off hand]
+
+PRIME recognizes so called secondary attacks. Usual melee attacks receive bonus from strength. Secondary attack gets half of this bonus rounded down. This should be fitting for hitting with two weapons. Wield sword with both hands and you receive full bonus once. Wield two swords each in one hand to receive half bonus two times.
+
+Two handguns:
+You shoot with the main hand gun when (f)iring, with a chance of automatically queuing a shot from the off hand gun
+	[accuracy maluses for dual-wielding and off hand, off hand shot somewhat faster than normal to compensate]
+You whack the enemy on the head with your main hand weapon, with a chance of also doing so with the off hand weapon
+	[accuracy maluses for dual-wielding and off hand]
+	[handgun melee attacks are improvised]
+
+Melee attack with handgun is called pistol-whipping. Should be reflected in messages.
+
+
+Unarmed (both weapons and gloves)
+	Dual wielding grants the usual chance of an extra attack.
+
+Half bonus damage applies.
+
+
+
+
+Additional stuff:
+
+Purely one-handed weapons would be mostly auxiliar weapons. For swords this could be a wakizashi or tantô to go with the katana, although an elven dagger would be able to perform that role too.
+
+Or a Gom Jabbar. Even more fun - an anal probe to slow them!
+
+For handguns, the only real candidates that come to mind are the pea shooter, the reticulan zap gun and rayguns. That could make rayguns even more deadly because you could go around slicing regular foes and yet keep a raygun ready to blast the nasty at the back of the room if it gets in shooting range. Should feel pretty epic, that.
+
+Right now there is no advantage to wielding a raygun prior to zapping it. Maybe zapping a wielded raygun could be made faster. There is also the question what is the outcome of wielding two or three rayguns and pressing zap.
+
+Splitting pairs of psi blades into single "arm-worn generators" would make them pretty interesting auxiliar weapons. In fact that would hold for all unarmed skill weapons. 
+
+Yes, this should be done. Some monsters would need to be taught how to do dual wield too.
+
+A new kind of one-handed weapons could be shields. Should be pretty specialized gear, maybe with their own shield skill (that one could go with CON ability) They'd raise AC and maybe other defensive stats and have a humble bashing attack, otherwise being a regular weapon.
+
+That could encompass riot shields used by police. But! Does that not break science-fiction feeling too much? I know we collect all things silly and the funnier the better but it feels kinda meh.
+
+A third hand of whatever origin, would be able only to wield one-handed and hand-and half weapons, and if free while wielding a two-handed weapon (say, you're wielding a rifle and your third hand is empty) should waive the time penalty for manual tasks, and add a further bonus if you have ALL THREE hands fully unarmed. Bonus to manual tasks and chance to attack with the third hand should rely on mutation skillpoints/bugginess of gear.
+
+Third hand would be mutation that cannot have skill points invested. Just like sparky mutant. Let triple wielding skill take care of everything.
+
+YAFM:
+"You'd need a third hand to do that!"
+
+"Wait, you actually have one!"
+
+"You'd need a fourth hand to do that, and that's not going to happen."
+
+We need to think up some excuse why power harness + third hand do not stack.
+
+"Akimbo!" 
+
+TDTTOE
+When the character has a third hand, the displayed name at the E menu for dual wielding is "triple wielding"

@@ -1,0 +1,61 @@
+First Dimensional Fatigue draft:
+
+Permanent increases:
+   * Deployed portable hole +2
+   * Present warpish monsters +1 each
+   * Any toggled Translation powers +1 while in effect
+   * Loc-Nar on level: +3
+   * Protoss Warp Scythe on level: +1
+Transient increases:
+   * Teleporting +1
+   * Any Translation power used successfully: +1 (does<i> not</i> stack to +2 if activating a toggled translation power)
+   * Any Translation power failed: +2
+   * Teleportation, accelerate raygun firing: +1
+Permanent decreases:
+   * Orb of Slavery on level: -1
+   * Present skeletal robots -1 each
+Transient decreases:
+   * Stasis raygun, deccelerate raygun firing: -1
+   * Decays naturally
+Effects:
+
+Total Dimensional Fatigue value is substracted from translation powers success rate.
+   * Every turn, there is a (DF/5)% for a depth-appropriate warpish monster to appear.
+   * Every time the DF value is increased, check the new value for a (DF/2)% chance for a depth-appropriate warpish monster to be spawned in a random position.
+   * Every time the DF value is increased, check the new value for a (DF/10)% chance for an out-of-depth warpish monster to replace a random monster on the level.
+   * Other nasty shit if it's cool enough
+   * Under the effects of Spice, the DF value is taken as a bonus rather than a malus to translation power success rate.
+
+First Suppressed Powers draft:
+
+General rules:
+   * Additional damage dealt is calculated from current psi points:<br />
+      1 Minor additional damage: 1/4 current psi of damage
+      1 Medium additional damage: 1/2 current psi of damage
+      1 Major additional damage: current psi of damage
+
+   * Resistances gained are calculated from Metapsychic School (the applicable skill) score:
+      1 Minor resistance: 2% per Metapsychic School point
+      1 Medium resistance: 4% per Metapsychic School point
+      1 Major resistance: 8% per Metapsychic School point
+
+   * *Elemental Essence*: Fire/electric/freezing versions - levels 2,4,8, Creativity, Metabolic, Supressed:<br /><i>You're saturated with dangerous elemental energy - for good and bad.</i>
+      1 You damage all fire/electricity/cold-vulnerable items you wield, pick up or handle (inventory or external). You inflict minor additional elemental damage when unarmed or using an elven psychic blade, Sword of the Mind, or protoss psi blades. You gain minor resistance to the element you're attuned to. Restraint: Asbestos gloves / winter gloves / faraday gloves.
+      1 You damage all fire/electricity/cold-vulnerable items you wield, pick up, handle, stand over; or are in your inventory EVERY TURN. You inflict medium additional elemental damage when unarmed or using an elven psychic blade, Sword of the Mind, or protoss psi blades. You gain medium resistance to the element you're attuned to. You regain one psi-point when you're hit with an attack of the element you're attuned to. Restraint: asbestos jumpsuit / winter jumpsuit / faraday jumpsuit.
+      1 You damage all fire/electricity/cold vulnerable items you wield, pick up, handle, stand over, stand adjacent to; or are in your inventory EVERY TURN. You inflict major additional elemental damage when unarmed or using an elven psychic blade, Sword of the Mind, or protoss psi blades. You damage all creatures you stand adjacent to, every turn, for minor damage of the element you're attuned to. You gain major resistance to the element you're attuned to. You regain two psi-points and 1-6 HP when you're hit with an attack of the element you're attuned to. Restraint: Any enclosed armor with the appropriate ego (asbestos / winterized / faraday) (let's not be trolls and ignore the helmet issue here)
+   * *Fluid Form*: Levels 2-4-8, Telekinesis, Metabolic, Supressed:<br /><i>When unsupressed, you gain resistances to several energy types and other bonuses, but items might just slip from you.</i>
+      1 There's an 8% chance that any object might elude your grasp when trying to pick it up. There's an 1% chance per turn that your wielded item will slip from your hands and fall to the ground. You gain a minor boost to attack speed. You gain minor resistance to "physical" energy types. Restraint: any gloves.
+      1 There's a 10% chance that any object might elude your grasp when trying to pick it up. There's a 2% chance per turn that your wielded item will slip from your hands and fall to the ground. There's a 2% chance that a melee weapon will fall out of your hands when you attack with it. You gain a slightly better bonus to attack speed, and a bonus to evasion. You gain medium resistance to "physical" energy types. Restraint: Any enclosed armor.
+      1 There's a 12% chance that any object might elude your grasp when trying to pick it up. There's a 3% chance per turn that your wielded item will slip from your hands and fall to the ground. There's a 3% chance that a melee weapon will fall out of your hands when you attack with it. There's a 3% chance for a random worn item to fall to the ground when you're hit in melee. You gain a somewhat better bonus to attack speed, and a better bonus to evasion. You can always stand over floor traps (not rad traps) you've discovered safely, and get out of them in one turn. Your unarmed attacks can reach two tiles away. You gain major resistance to "physical" energy types. Restraint: Any enclosed armor PLUS any enclosed helmet.
+
+   * *Pariah Gene*: Levels 2-4-8, Coercion, Psychic, Supressed:<br /><i>You are a psychic null, and as such you enjoy unique anti-psyker advantages... unfortunately, nearly every living being hates you, inevitably seeing you as an abominable fluke of genetics, or a scion of a vaguely remembered, nightmarish ancient evil. Nature <b>does </b>abhor a vacuum.</i>
+      1 All living, non-mindless beings enjoy +1/+1 targeting bonuses against you. Psychically aware beings and races gain double the bonus(+2/+2). You enjoy a +1/+1 targeting bonus against psychically aware beings and races, and deal minor additional special damage to them. Psychic power success rate is dampened by 10% on all the level (player included). You only suffer 2/3rds of the usual psionic maluses for bionic implants. You have 50% chance of regaining one PSI point when killing a psychically aware enemy. You gain minor resistance to psychic energy. Restraint: harmony dome
+      1 All living, non-mindless beings enjoy +2/+2 targeting bonuses against you. Psychically aware beings and races gain double the bonus(+4/+4). You enjoy a +2/+2 targeting bonus against psychically aware beings and races, and deal medium additional special damage to them. Psychic power success rate is dampened by 20% on all the level (player included). You only suffer 1/3rd of the usual psionic maluses for bionic implants. You gain a guaranteed PSI point when killing a psychically aware enemy, and have a 50% chance of gaining a PSI point when killing any living enemy. You gain medium resistance to psychic energy. Restraint: Harmony dome PLUS non-golden torc.
+      1 All living, non-mindless beings enjoy +3/+3 targeting bonuses against you. Psychically aware beings and races gain double the bonus(+6/+6). You enjoy a +3/+3 targeting bonus gainst psychically aware beings and races, and deal major additional special damage to them. Psychic power success rate is dampened by 30% on all the level (player included). You suffer no psionic maluses from bionic implants. You gain two guaranteeed PSI points when killing a psychically aware enemy and one guaranteed psi point when killing any living enemy. You gain major resistance to psychic energy. Restraint: Animus Speculum (special helmet)
+      1 List of psychically aware beings and races: Protoss, reticulans, zerg, human mutants, bene gesserit, rossak sorceresses, brain molds, pink horrors, crazy marines. Exceptions: Reticulan Dissidents and eventual Protoss Dark Templar only count as "living", not "psychically aware". Aliens don't even count as living for this power's purposes (as their mind is void-like, I have a comic book that supports this)
+
+   * 
+   * Spatial Instability: Levels 2-4-8, Translation, Metabolic, Suppressed:
+      1 There's a 1 in 125 chance every turn that you will spontaneously teleport. There's a 50-current psi% chance that forced teleports (mainly from being shot at with a teleport raygun by someone else, we might need teleport traps) may levelport you to the next or previous level. For each teleport, there's a 25% chance that a kWarpish monster will spawn in the place you previously stood at. For each teleport, there's a 25% chance that you can roughly direct it (asks for a cardinal direction, teleport in that general direction). For each teleport, you gain 1-2 psi points.
+      1 There's a 1 in 100 chance every turn that you will spontaneously teleport. There's a 60-current psi% chance that forced teleports (mainly for being shot at with a teleport raygun by someone else, we might need teleport traps) may levelport you to the next or previous level. For each teleport, there's a 50% chance that a kWarpish monster will spawn in the place you previously stood at. For each teleport, there's a 50% chance that you can roughly direct it (asks for a cardinal direction, teleport in that general direction). For each teleport, you gain 1-4 psi points.
+      1 There's a 1 in 75 chance every turn that you will spontaneously teleport. There's a 70-current psi% chance that forced teleports (mainly for being shot at with a teleport raygun by someone else, we might need teleporot traps) may levelport you to the next or previous level. For each teleport, there' a 75% chance that a kWarpish monster will spawn in the place you previously stood at. For each teleport, there's a 75% chance that you can roughly direct it (asks for a cardinal direction, teleport in that general direction). For each teleport, you gain 1-6 psi points.

@@ -1,47 +1,65 @@
 # This file is intended to be included at the end of OS-specific makefiles.
 
-$(PROGRAM): config.h $(LIBPIO) $(LIBNOTEYE) $(GENFILES) $(OBJS) $(CONOBJS) $(NEOBJS) $(MOREOBJS)
+$(PROGRAM): $(CONFIG) $(LIBPIO) $(LIBNOTEYE) $(GENFILES) $(OBJS) $(CONOBJS) $(NEOBJS) $(MOREOBJS)
 	$(CXX) -g -o $(PROGRAM) $(LDFLAGS) $(OBJS) $(CONOBJS) $(MOREOBJS) $(NEOBJS) $(LIBS) $(NELIBS) $(CONLIBS)
 
-$(PROGRAM)_con: config.h $(LIBPIO) $(GENFILES) $(OBJS) $(CONOBJS)
+$(PROGRAM)_con: $(CONFIG) $(LIBPIO) $(GENFILES) $(OBJS) $(CONOBJS)
 	$(CXX) -g -o $(PROGRAM)_con $(LDFLAGS) $(OBJS) $(CONOBJS) $(LIBS) $(CONLIBS)
 	cp $(PROGRAM)_con $(PROGRAM)
 
 clean:
-	rm -f $(PROGRAM) $(PROGRAM)_con *.o core user/dbg.*
+	rm -f $(PROGRAM) $(PROGRAM)_con obj/* core user/dbg.*
+	rm -vf $(OBJP)/tablemaker{,.o,.tab.[cho]} $(OBJP)/lex.yy.[cho]
 
 cleaner: clean
-	rm -f support/encyclopedia2c noteye/libnoteye.o $(LIBNOTEYE)
-	rm -f user/logfile.txt user/highscores.dat user/config.txt
+	rm -f bin/ency2c bin/tablemk noteye/*.o $(LIBNOTEYE)
+	rm -f score/logfile.txt score/highscores.dat user/config.txt
 	rm -rf build
-	cd support/tablemaker && $(MAKE) clean
-	cd support/pio && $(MAKE) clean
 
 cleangen:
-	rm -f $(GENFILES)
+	rm -vf $(GENFILES)
 
-Attack.h gen/Attack.cpp: Attacks.txt
-	cd support/tablemaker && $(MAKE)
-	m4 < Attacks.txt | support/tablemaker/tablemaker
-	mv Attack.cpp gen
-	touch AttackList.cpp
-Flavor.h gen/Flavor.cpp: Flavor.txt
-	cd support/tablemaker && $(MAKE)
-	m4 < Flavor.txt | support/tablemaker/tablemaker
-	mv Flavor.cpp gen
-	touch FlavorList.cpp
-MonsterIlk.h gen/MonsterIlk.cpp: Monsters.txt
-	cd support/tablemaker && $(MAKE)
-	m4 < Monsters.txt | support/tablemaker/tablemaker
-	mv MonsterIlk.cpp gen
-	touch MonsterList.cpp
-ObjectIlk.h gen/ObjectIlk.cpp: Items.txt
-	cd support/tablemaker && $(MAKE)
-	support/tablemaker/tablemaker < Items.txt
-	mv ObjectIlk.cpp gen
-	touch ObjectList.cpp
-Lore.h Lore.cpp: Lore.txt
-	$(MAKE) support/encyclopedia2c
-	support/encyclopedia2c Lore.txt
-support/encyclopedia2c: support/encyclopedia2c.cpp
-	$(CXX) support/encyclopedia2c.cpp -o support/encyclopedia2c
+src/gen/Attack.h src/gen/Attack.cpp: bin/tablemk src/Attacks.txt
+	m4 < src/Attacks.txt | bin/tablemk src/gen/
+src/gen/Flavor.h src/gen/Flavor.cpp: bin/tablemk src/Flavor.txt
+	m4 < src/Flavor.txt | bin/tablemk src/gen/
+src/gen/MonsterIlk.h src/gen/MonsterIlk.cpp: bin/tablemk src/Monsters.txt
+	m4 < src/Monsters.txt | bin/tablemk src/gen/
+src/gen/ObjectIlk.h src/gen/ObjectIlk.cpp: bin/tablemk src/Items.txt
+	bin/tablemk src/gen/ < src/Items.txt
+src/gen/Lore.h src/gen/Lore.cpp: bin/ency2c src/Lore.txt
+	bin/ency2c src/Lore.txt
+	mv src/Lore.h src/Lore.cpp src/gen
+bin/ency2c: src/ency/encyclopedia2c.cpp
+	$(CXX) src/ency/encyclopedia2c.cpp -o bin/ency2c
+
+# tablemaker part begins
+SRCT = src/tablemk
+
+bin/tablemk: obj/tablemaker.tab.o obj/lex.yy.o $(SRCT)/tablemaker.pas
+	fpc $(SRCT)/tablemaker.pas -gl -o$@ -FEobj
+	mv obj/tablemk $@
+obj/tablemaker.tab.o obj/lex.yy.o: obj/tablemaker.tab.c obj/tablemaker.tab.h obj/lex.yy.c
+	gcc -c -g obj/tablemaker.tab.c obj/lex.yy.c
+	mv tablemaker.tab.o lex.yy.o obj
+obj/tablemaker.tab.c obj/tablemaker.tab.h: $(SRCT)/tablemaker.y
+	bison -d $(SRCT)/tablemaker.y -o $@
+obj/lex.yy.c: $(SRCT)/tablemaker.l
+	flex -o $@ $(SRCT)/tablemaker.l
+
+# libpio part begins
+SRCP = src/pio
+
+# General rule for compiling object files
+obj/%.o: src/%.cpp
+	$(CXX) -c $(CXXFLAGS) $< -o $@
+# Exception for Lore.o which is still generated but actually has its own object file
+# unlike the rest of cpp files residing in src/gen.
+obj/Lore.o: src/gen/Lore.cpp
+	$(CXX) -c $(CXXFLAGS) $< -o $@
+
+# Change to genfiles triggers recompilation of some source files.
+obj/AttackList.o: src/gen/Attack.cpp src/gen/Attack.h
+obj/FlavorList.o: src/gen/Flavor.cpp src/gen/Flavor.h
+obj/MonsterList.o: src/gen/MonsterIlk.cpp src/gen/MonsterIlk.h
+obj/ObjectList.o: src/gen/ObjectIlk.cpp src/gen/ObjectIlk.h

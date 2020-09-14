@@ -1,0 +1,133 @@
+Neuralizer
+
+Limited charges item which when applied creates burst of radius 3 centered on user. Anyone not blind or not wearing glasses (goggles don't count) must make a reflex check to blink. If the check was failed affected creature takes 1 or 2 points of intelligence damage and is stunned for 3 to 6 turns. Player forgets current map if affected.
+
+Reference: Men In Black.
+
+
+
+Ork Teef
+
+%BLUE% We have buckazoids as money items. We may have teef as items too! They would be left by orcs of course. %ENDCOLOR%
+
+%GREEN% Hmm. First thing that came to mind is to introduce some sort of ork roving merchant. But then I thought: hey, Melnorme usually buy BIOLOGICAL DATA about alien lifeforms. Teeth are a classical source of forensic info for their resilience! Just imagine ork teeth! %ENDCOLOR%
+
+%BLUE% Excellent idea. Sounds like 1 toof would be for cheaper services and 2 teef for more expensive one. Also 4 teef for knowledge purchase. The fact these prices are unaffected by your Psi or The Voice would work with Ork economics well where the value of toof stays mostly fixed. %ENDCOLOR%
+
+%GREEN% Let's start with melnorme accepting ork teeth as payment, 1 teef = 5 bz. Only brings up the prices if you actually have enough teef to pay with them. %ENDCOLOR%
+
+%BLUE% If Ork War Wagon costs like hundred of teef I think we can make them more valuable. My idea was to make a cashed teef return random price between 10 and 20 BZ. So, paying Melnorme directly with teef would on average be better idea than cashing them in and then paying with buckazoids. %ENDCOLOR%
+
+%BLUE% If we make Orc Shopkeepers they would accept teef for sure. %ENDCOLOR%
+
+%GREEN% Give them also a new service, "cash ork teef in", price: as many ork teef as you have in your inventory. Might want to make it unavailable if teef &lt; 5. The melnorme gives you 5 bz for each teef (or whatever conversion rate you want, just make teef a multiple of the BZ because they're scarcer). %ENDCOLOR%
+
+%BLUE% It could be confused with others when you're low on teef and you could eliminate it by dropping all your teef before asking for a service. Somewhat akin to dumping your cash before running unknown program in case it is floppy disk of spam. %ENDCOLOR%
+
+%GREEN% Teef, as trophies, could give Yautja bonus score. %ENDCOLOR%
+
+%BLUE% Bonus points! Someday we need to introduce containers like NetHack has. Then one would put there human skulls, teef, xenomorph spleens and what not. %ENDCOLOR%
+
+%GREEN% To tie in to my other favourite conversation topic lately, Fallout New Vegas, in addition to the usual bottlecaps, has NCR dollars ($5, $20 and $100 or $50 I think), and Legion Denarius and Aureus. You can use all sorts of money in all sorts of stores everywhere, although the basic unit of value is the bottlecap. %ENDCOLOR%
+
+%GREEN% Somehow, makes the game funnier. %ENDCOLOR%
+
+%BLUE% Richer, too. %ENDCOLOR%
+
+
+
+Ungooma (http://aliens.wikia.com/wiki/Ungooma)  were race of brain parasites from old game Ascendancy.  The Ungooma would pose as an implant and refuse to be removed by yourself at all times regardless of bugginess.  While "installed" it reduces intelligence.  Under a small chance it can multiply and spawn another ungooma inside your brain.  Ingesting poisons does not kill it because of the brain-blood barrier.  Intelligence reduction: -2 for buggy, -1 for debugged, nothing for optimized.  Cost: 300 BZ.
+
+To remove it:
+   * Pay for docbot implant removal service.
+   * Have a Mi-Go cut it out.
+   * Mind blast yourself to kill one Ungooma.
+   * Have the Ungooma shield you from one mental blast and die in the process.
+
+%GREEN% _Hahahah, Ungooma. I loved Ascendancy. It was the first 4X game I played. We could add some other reference, like something from the tech tree or whatever. The game was a bit dry in certain aspects, but oh boy was it engrossing. I played it for hours. Chronomyst, Dubtaks, Chamachies... ;D and the mind-boggling ship systems, like the Hypersphere Projector or whatever it was called, or the Cannibalizer, or the Plasma Coupler... ah, the nostalgia._ %ENDCOLOR%
+
+_%BLUE%Ascendancy is full of creative alien stuff.  Almost none of their races are humanoid which shows how free were authors in designing them.  Yes, most definitely a mithril mine of ideas.  The name I remember most is Proton Shaver.%ENDCOLOR%_
+
+
+
+Cryolator and Flamethrower
+
+%GREEN% _I say let's have some common sense and - get rid of fuel drums. Make flamethrowers work with napalm canisters, giving them a number of charges, (the smaller the flamethrower, the more charges it gets), making napalm canisters more common if needed._ %ENDCOLOR%
+
+%GREEN% _... I adopted the fuel drum solution at first because I didn't know how else to do it, no other reason, and carrying around tens of fuel drums sounds dumber than doing the same with bullets, batteries, or even railgun slugs._ %ENDCOLOR%
+
+%BLUE% Agreed, this is no good. How about the fuel drums being heavier and storing 50 units of fuel? You would have: %ENDCOLOR%
+
+f - 4 fuel drums  (186 fuel units)
+
+%BLUE% I would like canister of napalm to be kept separate or eliminated. Of the two the fuel drums make more sense. Draft of new fuel drum: %ENDCOLOR%
+
+   * Heavy, twice the weight of a canister.
+   * 50 charges (game will display 'fuel units') per drum.
+   * Different charge count does not prevent stacking.
+   * When number of charges is &le; 50 * (item_count - 1) an empty fuel drum is automatically discarded. This happens on picking up of a new drum too.
+   * Both fuel drums and napalm canisters could load ray guns. You would be asked how many fuel units to pump into ray gun.
+   * Flamethrowers still take their nominal 'ammo' quantities.
+   * Fuel drums can fuel other things like jetpacks, rocket boots and chainsaws.
+   * Maybe in a very distant future we'll get to have vehicles like NetHack has mounts. Guess what these would run on?
+      * Well, except Protoss Quads and the like: http://starcraftd6.tripod.com/Protoss-equip.html#vehicles
+
+When one would consume whole napalm canister for a flamethrower it is gone.  Right now you can use very little energy for flashlights for example.  It would be fun if fuel drums also had this mechanic.  This would fix carrying tens of fuel drums.  You would bring at most ten of them and that would be a lot.
+
+%BLUE% What do you think?  Uh, as I was going to save I had second thoughts.  Then the whole thing would become asymmetric when you consider liquid nitrogen.  Still, I see no other uses for liquid nitrogen except alien embryo killing and freeze ray gun fueling.%ENDCOLOR%
+
+%GREEN% _Your proposal makes perfect sense, go for it. What makes the current implementation stupid is 1 or more fuel drums = 1 shot_ %ENDCOLOR%
+
+
+
+Canister of Sith Alchemical Serum (Arcane Canister when unidentified)
+
+"This canister bears arcane etchings promising great power and untold blessings to those brave enough to imbibe its contents" If the player has telepathy from any source, append "A writhing dark aura seeps from it"
+
+When quaffed, it can give up to two prompts. Each prompt has a specific effect if selected. To get the second effect the player has to reject the first prompt, and to get the third effect the player has to reject the first two prompts. If the player rejects the first two prompts, the third effect can't be avoided.
+
+First prompt and effect: "You hear a dark, enticing voice in the back of your head." "Is there any quality in your being that you hold dear? (y/n) If the player selects yes, a primary ability choice popup appears (strength, constitution, agility, dexterity, intelligence or psionics). When the player makes a choice, that primary ability is crippled by 5 points and each other attribute is raised by 1 point, and the procedure is finished. "Dark energies course through your body, remaking you!" "You feel (weaker, frail, whatever)"
+
+Second prompt and effect: If the player answers the first prompt with a no, the second prompt comes up: "The voice becomes more seducting and somehow closer." "Is there, then, any quality in your being that you despise?" If the player selects yes, a primary ability choice popup appears. Whatever ability the player chooses is raised by 5 points, and every other attribute is crippled by 1 point, and the procedure is finished. "Dark energies course through your body, remaking you!" "You feel (weaker, frail, whatever)"
+
+Third effect: If the player answered no to the first two prompts, print these messages: "The voice takes on an angry tone, booming all around you." "Very well, you are worthy, proud and untrusting. TASTE THE POWER." If the player has mutant powers, 1d2 of the player's mutant powers that together do not sum more than the max power level existing in-game minus one, are chosen. They are erased. Then a single mutant power is granted, of power level equal to the sum of the erased powers plus one. If the player has no mutant powers, one is granted, and Psi is boosted by 5 while all other stats are crippled by 1 (same as if the player despised psionics) "Dark energies course through your cells, mutating you!" "You lose your [mutant power] and [mutant power] powe(s)!" [usual mutation announcement]
+
+This canister is perverse in that the earlier an offer is, the less beneficial it is, and only the last option in its two versions is any net improvement (at least by game numbers). It also cripples something you "hold dear" with the first option. Should catch unwary or unspoiled players off-guard.
+
+By "crippling" I mean permanent, non-restorable reduction of stats. Buggyness should be irrelevant, except that buggy canisters might resist opening (You fiddle with the strange latches and buttons, but can't manage to open the canister!). If a stat is reduced to zero, well, the character dies. Death cause: "Succumbed to an unnatural ambition". If the player had skillpoints invested in any erased powers, those skillpoints should be available again if the player gains the power again through furter mutation. (Otherwise there could be a sizeable, irreparable loss of experience)
+   * With metapsychic faculties this last caveat is a non-issue
+      * %GREEN% _True that._ %ENDCOLOR%
+
+   * _%BLUE%First two questions are implemented. Saying no to both of them is next.%ENDCOLOR%_
+
+
+
+Bisector
+
+Similar to the scythe, make it extremely clumsy (outlandish sword requirements and a large strength requirements) and make the health-cutting proc only a % of the time, maybe based on sword skills too. Explanation: The handle is incomprehensible, the blade is giant, and it's balanced to be wielded with MAN-LONG TENTACLES.
+
+Aka "makes the bat'leth look simple and straightforward".
+
+
+
+Antique Brotherhood Computer
+
+Idea contributed by Steven.
+
+One of very few computers old enough to have no licensing circuits installed. All written programs on this machine are cracked. It is not possible to write matter compiler on this computer because the software is too old to support that and newer programs require presence of the licensing circuits or refuse to work.
+
+ABC is slower than usual computers, tad heavier and has no voice interface. It is suboptimal choice for character's main computer but freedom from licensing makes it worthwhile to carry.
+
+%GREEN% _Suggestion: Computer terminals in FO3 and FONV are depicted as working with "RobCo Unified Operating System". Upgrading (or downgrading) the O.S. removes the special "everything cracked" benefit as the computer becomes a "Restored Brotherhood Computer" - the newer O.S. disks *will* sneak licensing software into it._ %ENDCOLOR%
+
+%GREEN% _Trying to update it prompts a warning:_ %ENDCOLOR%
+
+_"This machine runs on a legacy RobCo Unified Operating System! Are you sure you want to overwrite it? This operation cannot possibly be undone!"_
+
+%GREEN% _It is also incapable of writing cracking programs. On the OGR hand, it would be horribly broken, on the IGR hand, the computer is from before the era of forceful licensing code._ %ENDCOLOR%
+
+%BLUE% Yes, it is horribly unbalanced. However, it could appear very rarely or could be a possible reward in difficult places like the Borg cube. %ENDCOLOR%
+
+%GREEN% _I thought it was going to be an artifact computer!_ %ENDCOLOR%
+
+_%BLUE% You are right.  It will be one of a kind.%ENDCOLOR%_

@@ -1,0 +1,492 @@
+ZAPM - An incomplete guide to an incomplete game
+
+by Cyrus Dolph
+
+
+INTRODUCTION
+
+
+ZapM is a science fiction "roguelike" adventure game in which the
+intrepid hero -- you! -- explores a derelict space hulk in search of
+the fabled "Bizarro Orgasmatron", rumored to be the most powerful
+artifact in the galaxy and the only hope of saving the universe from
+an unknown doom.
+
+ZapM is intended for an immature audience, and contains foul language
+and probably some fart jokes.  If it were a movie, it would be rated
+PG-13 and would have gone straight to video.
+
+The game is free (and frankly, you're getting what you paid for!), but
+if you actually like it and play it then I say you owe me a beer or a
+postcard or something.  Email me (cyrus@zapm.org), or look me up on
+the Zapm web site (http://zapm.org).  There's also a bulletin board on
+the site where you can talk about the game and submit bug reports.
+
+
+CUT THE CRAP, HOW DO I PLAY?
+
+
+ZapM plays a lot like other roguelike games, and care was taken to use
+many of the same interface commands as Nethack so it should feel
+familiar to many people.
+
+
+Let's take a typical ZapM screen:
+
+                  ############                                  eit_cyrus      
+            ##### #..........#                                  Private        
+            +...###..........#############+###                  XL  1:264      
+            #...'.'..........'.......+.......#                                 
+            #...#####'################.......#                  Str 18  Int  8 
+            #...#   #.#                                         Con 14  Wis  8 
+            #...#   #.#                                         Agi  9  Cha 14 
+            #...#   #.#                                         Dex 13         
+            #####   #.#                                                        
+                    #.#                                         Speed  -50     
+                   ##'######          #######                   Armor   13     
+                   #.......#          #F...x#                   HitPts  12(12) 
+                   #....{..#          #.....#                   Energy 198(100)
+                   #.......#          #....=#                   $5     =87     
+                   #.......#          ##@####                   Sore                 
+                   #.......#   #########'####                                  
+                   #.......#####............#                                  
+                   #.......+...'.....>......#                                  
+                   #############...........b#                                  
+                               ##############                   Space Base 1   
+You hit the grid bug.                                                          
+The grid bug is derezzed!                                                      
+                                                                               
+                                                                               
+                                                                               
+Most of the screen is filled with a map of the current level.  This
+map is bordered on the bottom by a message window, and on the right
+by a status display.  Here is a partial key to explain some of the
+symbols on the map (more details below) :
+
+  @ - you, the strapping space hero
+  x - a grid bug (a scary monster that wants to kill you)
+  + - a closed door
+  > - a staircase leading down
+  { - a churning vat of ... something!
+  = - an ammunition clip
+
+The status window displays up-to-microsecond tactical information
+about your character's condition, professional standing, and sex life:
+
+  eit_cyrus        <-- your character's name (defaults to UNIX username).
+  Private          <-- professional rank.
+  XL  1:264        <-- experience level and experience points (XP).  It takes
+                       1000 XP to gain a level in your profession.
+  Str 18  Int  8   <-- abilities: Strength, Constitution, Agility, Dexterity
+  Con 14  Wis  8                  Intelligence, Wisdom and Charisma.
+  Agi  9  Cha 14   
+  Dex 13           
+                 
+  Speed  -50       <-- speed (+100 is double speed, -100 is half speed)
+  Armor   13       <-- armor rating (higher is better)
+  HitPts  12(12)   <-- hit points / max hit points
+  Energy 198(100)  <-- energy / energy capacity
+  $5     =87       <-- buckazoids
+  Sore             <-- various temporary conditions will be listed in
+                       this space.
+                   
+                   
+                 
+  Space Base 1     <-- level of the hulk that you're exploring
+
+
+It is presumed that you are already familiar with RPG concepts such as
+hit points, experience levels, and armor class.  If not, go buy a copy
+of D&D or something.  (But not 4th edition!)
+
+
+THE HERO
+
+
+ZapM is like most RPGs in that the hero chooses a character role.  And
+here are the choices:
+
+Janitor: You're used to being ignored by those with more glamorous job
+  titles, but it's you who keeps the galaxy turning, unclogging its
+  billions and billions of toilets.  You begin your quest with two
+  indispensable tools: a master keycard and monkey wrench.
+
+Psion: You're a scrawny freak.  A freak with strange mutant powers.
+  Momma always said not to drink radioactive waste, but you didn't
+  listen and now your DNA is supercharged. 
+
+Quarterback: Back on Earth, you thrill crowds with your athletic skill
+  and you have a cheerleader girlfriend.  But in space, you can be
+  savior of the universe!
+
+Software Engineer: Your Mountain Dew gut and carpal tunnel syndrome
+  put you at a physical disadvantage but at least you remembered to
+  bring your laptop computer along.  And your innate ability to notice
+  buggy equipment sure is handy.
+
+Space Marine: You're one of the tough hombres that defends our planet
+  against aliens every night and day.  Your equipment is state of the
+  badass art, and you've got a badass attitude to match it.
+
+Some professions are just plain more difficult than others.  Probably
+the best roles for beginners are the Space Marine and the Software
+Engineer.
+
+
+ABILITIES
+
+
+Your starting abilities are chosen at random, and modified according
+to your profession.  I suppose you could keep restarting until you
+get a character with nice stats, but that makes you a weenie.
+Besides, you'll get chances to improve them during the game (for
+example, you can increase an ability every fourth level you gain).
+
+Strength:     Affects your carrying capacity and the damage you do in
+              combat with melee weapons or your bare hands.
+
+Constitution: Figures in to your hit point total and your resistance to
+              illness, poison, and the like.
+
+Agility:      Improves your armor class and your chances of landing a 
+              blow in melee combat.  Helps you dodge certain attacks.
+
+Dexterity:    Helps (or hurts) your shooting ability.  Important for 
+              many manual skills like repairing and picking locks.
+
+Intelligence: Important to your computer hacking skills and certain
+              other intellectual pursuits.
+
+Wisdom:       Affects your ability to resist psionic attacks, and
+              your chances to spot hidden monsters and traps.
+
+Charisma:     Represents your personal strength and your psionic 
+              ability.  Also a measure of how charming you are.
+
+If an ability drops to zero, you die.  An average person's abilities
+are around 10.  You'd expect a real space hero to have all 18's or
+better, wouldn't you?  Too bad that so far your character is only a
+would-be hero.
+
+
+SKILLS
+
+
+Your character uses a variety of skills while adventuring.  Your
+proficiency rating in a skill is computed by adding the number of
+"ranks" you have in that skill to a modifier computed from the skill's
+key ability.  You earn a certain number of skill ranks every time you
+gain a level, which you can distribute as you wish.
+
+The following weapon skills affect your chances of hitting a target
+with a weapon of that type:
+
+Grenade Weapons (Dex): Grenades and any other thrown weapons.
+
+Handguns (Dex): Guns you hold in one hand: pea shooters, pistols,
+  laser pistols, phasers, blasters.
+
+Light Guns (Dex): Most guns you aim with both hands: laser rifles,
+  shotguns, and sniper rifles.
+
+Heavy Guns (Dex): Badass guns: pulse rifles, railguns, chainguns, and
+  laser cannons.
+
+Swords (Agi): Covers all types of swords, including the bat'leth.
+
+Basic Melee Weapons (Agi): Covers all melee weapons that aren't swords,
+  from mop to chainsaw.
+
+The following adventuring skills help you in various ways:
+
+Concentration (Con): Helps you sustain any mutant powers you're using
+  when you might otherwise get distracted.
+
+Pick Locks (Dex): You can pick locks.
+
+Repair (Dex): You can repair damaged droids, and other things, too.
+
+Search (Int): Gives you a better chance to find secrets when you're 
+  actively searching for them.
+
+Spot (Wis): Helps you notice secrets when you're not actively
+  searching for them, even from a distance.
+
+Programming (Int): Helps you do things that involve computer progamming.
+
+Mutant Power Skills (Cha): Each power has a skill associated with
+  it that improves your chances of using the power successfully.
+
+
+THE MAZE
+
+
+Graphics, shmaphics!  These ASCII symbols are all you need to
+understand what's going on:
+
+.  The floor.  The dot helps you count squares, I guess.  A blank
+   space represents either an area you haven't explored or a part of
+   the maze that isn't lit up.
+
+#  A wall.  You can't walk through it.
+
+^  A trap.  Try not to fall in/set it off.  
+
+{  A vat full of radioactive sludge.  You're not really going to drink
+   from it, are you?  Gross!
+
++  A closed door.  Or a bionic implant.  You know, the great thing
+   about the future is you don't have to undergo surgery to install a
+   cranial implant, it just kinda tunnels its way into your brain in
+   like two seconds!
+
+'  An open door.  Did I mention that some doors are automatic, just like
+   at the grocery store?  There are also locked doors that you need an
+   appropriate keycard to open (or you could just kick it down).
+   Also, there could be SEKRIT DOORS!
+
+$  Some money.  The almighty buckazoid can get you all kinds of nifty
+   things.  Don't spend it all in one place.
+
+*  An energy cell.  Used by various devices such as geiger counters and
+   motion trackers.  It's also ammunition for energy weapons such as 
+   laser pistols and phasers.
+
+)  A weapon.  Hopefully it's a rocket launcher, but probably it's a
+   rusty laser pistol.
+
+=  Some ammunition, such as bullets, railgun slugs, or shotgun shells.
+
+[  A piece of clothing.  You can wear up to five articles at once: a
+   jumpsuit, a suit of armor, a helmet, some eyegear, and a belt.
+
+!  A canister.  It could contain something tasty or it might be deadly
+   raygun fuel.  There's more than one way to find out.
+
+?  A floppy disk.  There are all kinds of useful programs on these.
+   You did find a computer, right?
+
+/  A ray gun.  Its function depends on what kind of fuel was loaded
+   into it.
+
+(  A tool or useful item.  Make sure you have plenty of energy cells.
+
+&  A broken device.  Usually a busted up droid.
+
+@  The hero.  Don't get too attached, because the poor fuck will 
+   probably get wasted by a redshirt any minute now.
+
+A-Z,a-z 
+   A monster.  Kill it before it kills you.  
+
+You can always use the look command (type '/') to find out what a
+character on the map represents.  This can often give you additional
+helpful information such as what kind of weapon a monster is wielding.
+
+
+THE COMMANDS
+
+
+  7 8 9  You can move around using the numeric keypad.
+   \|/   
+  4-@-6  If you type the '5' or 'g' key, followed by a direction key,
+   /|\   you will continue moving in that direction until you reach a 
+  1 2 3  wall or something interesting.
+         
+  y k u  If you are an old geezer playing on a VAX machine or something,
+   \|/   you'll probably want to use the vi/Nethack-style movement keys,
+  h-@-l  which you can enable from the options menu (type 'O').  Shift+
+   /|\   these keys (YUHJKLBN) will cause you to move in that direction
+  b j n  until something interesting is found.
+
+  The '<' and '>' keys are for moving up and down, respectively.
+  That's how you can climb staircases.
+
+  These same movement keys will be used when you are asked to specify
+  a direction (for example, when aiming a raygun).  In such situations
+  you can aim at yourself, if you want, by using the '.' key.
+
+  To fight a monster in melee combat, just walk into it.  You will
+  attack with whatever weapon you are currently wielding.
+
+  Here's a list of the other commands (the ^ indicates the Ctrl key):
+
+    ?  Brings up the help menu.
+
+    /  Look at something on the map.
+
+    :  Look at what is here.
+
+    .  Rest (do nothing) for one turn. 
+
+    ,  Pick up an item from the floor.
+
+    i List an inventory of what you're carrying.  Each item is bound
+       to a letter a-z or A-Z, which means you can carry up to 52
+       different items in your pack.  Several items of the same type
+       will stack into one listing, e.g. "h - 3 debugged canisters of
+       napalm".
+
+    d  Drop an item from your inventory.
+
+    D  Drop one or items.
+
+    f  Fire your weapon.  
+
+    t  Throw something.
+
+    o  Open a door.
+
+    c  Close a door.
+
+ k,^D  Kick a door, monster, or object.
+
+    s  Search adjacent squares for traps and secret doors.  You'll
+       probably want to repeat this command a few times.
+
+    w  Wield a weapon.  You can go unarmed by typing '-' at the 
+       ensuing prompt.
+
+    W  Wear a piece of armor or clothing.
+
+    T  Take off a piece of armor.
+
+    I  Install a bionic implant.
+
+    R  Remove an implant.
+
+    a  Activate or apply a tool.
+
+    q  Quaff from a canister or vat.
+
+    x  Execute a floppy disk program.  You must have a computer.
+
+    z  Zap a ray gun. 
+
+  m,Z  Zap a mutant power.  More on this below.
+
+   ^P  Show console message history.
+
+    p  Pay for items in a store.
+
+    S  Save your game and exit.  In ZapM, you get one save file per
+       character, so if you die that's it!  Only low-down cheaters
+       back up their savefiles (a crime known as savescumming), and
+       they never get better at the game.
+
+   ^Q  Quit the game.  This ends your game permanently, are you sure
+       you didn't want to save instead?
+
+    O  Options menu.  This is where you can enable vi-keys and
+       autopickup mode.
+
+    E  Look at your skills.
+
+    A  Adjust inventory.  You can change the letter bound to an item.
+
+    N  Name an object or class of objects. 
+
+    V  Display Version and Copyright information. 
+
+Many commands will prompt you to choose an object from your inventory
+to use - just type the letter of the appropriate item.  A list of the
+likely item letters will be displayed, and you can press '?' to expand
+that list into a menu with descriptions for those items.  In some
+cases, you can press '*' to select an object from a menu of your
+entire inventory.  Also, some commands allow you specify an item count
+by typing numbers in the inventory prompts and menus.  For example,
+you could type the key sequence "d14b" to drop 14 of item b.  Type '-' 
+at such a prompt to select nothing; for example type "w-" to wield no 
+weapon, and fight with your bare hands.
+
+
+MUTANT POWERS
+
+
+If your character has any mutant powers, you'll be able to zap them
+with the 'Z' command.  This will bring up a menu listing all your
+powers and your chances of successfully using each one.  This chance
+depends on several factors such as your charisma score, your character
+level, the level of the power, and your skill.  Also, wearing certain
+equipment (particularly cranium implants) hampers your aura and
+interferes with your psionic ability.
+
+When you attempt to use a power, your charisma will be temporarily
+reduced according to the level of the power.  Your charisma will
+regenerate on its own, or you can hurry the process using certain
+items.  Most mutant powers cause one-time effects, but some powers
+such as X-Ray Vision will be maintained until you deactivate them.
+Charisma spent on these persistant powers won't be restored while they
+are still in use.
+
+How do you gain new mutant powers?  You'll have to figure that out
+for yourself!  
+
+
+ENERGY
+
+
+Much of the high-tech equipment is powered by electric energy.  There
+are two sources of energy: energy cells and power plants.  Energy
+cells are essentially batteries - each one contains a single charge
+and when it is expended, the hero discards it.  Power plants have a
+energy reservoir that is automatically recharged over time.  Whenever
+you use a weapon or other item that needs energy, it will automatic-
+ally be drawn from one of these sources.  Some tools that you activate
+will continuously draw energy, so make sure you keep an eye on your
+power level!
+
+
+ITEMS
+
+
+An important part of ZapM is collecting and identifying useful items.
+The function of objects such as floppy disks and ray guns is unknown
+until you identify them somehow.  Until you've identified these items,
+all you will have to go by is the label or description (for example,
+"a floppy disk labeled XERTH Q3").  Any two objects in the game with
+the same label or description will be of the same type, but these
+assignments are randomized every time you start a new game.  Wouldn't
+be any fun, otherwise, right?
+
+There are a number of ways to identify items.  The simplest and most
+dangerous method is just use it and see what happens.  If the effect
+is obvious (and you don't die in the process), ZapM will automatically
+remember it so that next time you encounter a similer object you'll
+know what it is.  If the effect is unclear, you will be given an
+opportunity to provide your own description for the object (just as if
+you had typed 'N' to use the Name command) as a helpful note (for
+example, "a canister called This smells good").
+
+Weapons and armor can have program enhancements that make them more
+effective.  The degree of enhancement is denoted by a number, which
+indicates the degree to which your ability to hit and damage with a
+weapon is improved, or the degree to which your armor rating is
+improved with an item of clothing.  For example, a +2 suit of armor
+will give you an extra two points of armor rating.  Sometimes
+enhancement number can be negative, which results in a detrimental
+effect.  
+
+Some of the objects you find in the game have been optimized by clever
+programming wizards, while others are riddled with bugs.  Optimized
+equipment generally works better, while buggy equipment tends not to
+function very well and can have all kinds of unpleasant side effects.
+Buggy weapons will become glued to your hands, and it is impossible to
+take off buggy clothing and armor through normal means.  If you know
+the quality of an item, it will be denoted in the description as
+"buggy", "debugged", or "optimized".
+
+Try to get your hands on a computer and some of floppy disks of
+identify to help determine the nature of your equipment.
+
+
+HAPPY ZAPPING!
+
+
+Well, that's all I'm gonna write for now.  Besides, the game is new
+and likely to change dramatically so I'll probably have to redo this
+whole document anyway.  
+
+Please, please send me bug reports and feedback at http://zapm.org!!
+
+Good luck and I hope you have fun!

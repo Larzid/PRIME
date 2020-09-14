@@ -1,0 +1,39 @@
+on-disk-layout suggestions.
+
+* move sources/ into src/
+* move gen/ into src/gen/
+* move noteye/ into src/noteye/
+* move osx/ into src/osx/
+* move win32/ into src/w32/
+
+* move support/pio into src/pio/
+* move support/tablemaker into src/tblm/
+* move support/ into src/ency/
+* move keymaps into user/keymaps/
+* move save-files into user/saves/
+* move shot/ into user/shot/    <<i'm thinking its for screenshots?
+* move help-texts into help/
+* keep config in user/
+* figure out some way to make user/  go to ./config/prime  and/or
+whatever windows likes
+
+
+** move attacks, flavor, items, lore, monsters .txt  into  mods/prime
+** add to config: mod = mods/prime/
+** move gfx/ into mods/prime/gfx/
+** move lua/ into mods/prime/lua/
+ == instantly bill your selves as having a fully modable game
+
+** add to config: mod-base = mods/prime/
+** add some clever logic to fopen() so that files not found in, say,
+<mod>/lua are looked up and read from <mod-base>/lua
+ == instant acclaim for an easy to use modding system :)
+
+
+** add docs/licenses/  and populate at will.
+** add docs/license.txt    .. you might as well
+** add docs/building.txt   .. some info on dependencies wouldnt hurt
+** add stuff like
+	https://github.com/CleverRaven/Cataclysm-DDA
+	https://github.com/CleverRaven/Cataclysm-DDA/blob/master/CONTRIBUTING.md  and put the thing up there ;)
+

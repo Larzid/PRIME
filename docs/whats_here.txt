@@ -1,0 +1,15 @@
+Directory 'zapm' contains documents originally shipped with ZapM sources. They are unchanged except for following:
+ - The changelog previously being part of SPACEHACK file has been moved to its own file ZAPM-changelog.txt. The order of history has been reversed to place newest entries on top.
+ - In town.txt all tabulators were replaced by appropriate number of spaces.
+
+
+In directory 'prime' one may find documents originally descended from Cyrus' work. Guidebook is simply updated (yet still outdated) version of ZapM's guidebook. Man page file is also guidebook with some markup. Finally, there is also a changelog. All of those files were normally part of source PRIME distribution.
+
+
+PRIME once had a wiki for storing information typically exchanged between maintainers by email. Players who contacted us by email also typically were given directions to this place. The wiki was not linked from official website. It ran on Foswiki engine. The directory 'wiki' contains most interesting articles salvaged after its collapse following full system upgrade performed by hosting owner.
+
+
+In directory 'design' some of our discussions, plans and design documents otherwise never released to the public are kept. We had great fun reading Cyrus' SPACEHACK file so generously donated to the public. Led by this example we acted alike. Some files are direct excepts from emails, other are files we were working together on. Three were actually fully fledged Open Office documents before being subject to conversion to plain text: multiwielding.txt, guild_and_quests.txt, on_science_fiction_undead.txt.
+
+
+The directory 'licenses' contains what it says on the tin. However, the main licensing document lies in the same directory the file you are reading now resides. It is called "license.txt". Captain Obvious liked this paragrph so much he wrote us complimenting our literary style. We are likewise sure you have enjoyed reading it.

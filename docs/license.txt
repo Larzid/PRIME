@@ -1,0 +1,11 @@
+This document explains which license covers which files.
+
+The license for PRIME is Aladdin Free Public License. All files except where otherwise noted fall under it. Full text is placed in docs/licenses/ALADDIN.PRIME.txt. At your option you may disregard point 2.c.(i). For this purpose external changelog or source version control is much better choice. Exceptions to this license are enumerated below:
+
+* Files in directory lib/win32/noteye are provided by Necklace of the Eye frontend. Each has respective license in 'licenses' directory.
+
+* Necklace of the Eye frontend consists of src/noteye.h, src/noteye-curses.h, every file in src/noteye directory, every file in src/lua directory except for prime.lua and noetolua.sh. These files are licensed under GPL-3.0. However, PRIME has received licensing exception which waives every requirement and restriction this license would have on PRIME. This exception is granted for PRIME only and if you wish to use Necklace of the Eye sources in another work you have to either obey restrictions of GPL-3.0 or obtain such exception from copyright holder for your work yourself.
+
+* Files in directory gfx except prime.ico and primetiles.png are provided by Necklace of the Eye frontend and fall under its license or the license.txt file present in gfx directory.
+
+* Files in subdirectories of src/win32 directory each have their own licenses mentioned inside the appropriate files.

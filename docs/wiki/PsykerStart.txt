@@ -1,0 +1,9 @@
+| *Faculty* | *Psion* | *Mastermind* | *Empath* | *Weirdboy* |
+| Coercion | Mental blast | Cause fear | random | random |
+| Creativity | Optic blast | Imbue | random | _Psi vomit_ |
+| Farsensing | X-ray vision | _Telepathy_ | Tremorsense | random |
+| Redaction | Restoration | random | Haste | Adrenaline control |
+| Telekinesis | Psychokinetic Shove | random | _War flow_ | Hellbent Charge |
+| Translation | random | random | random | random |
+
+Marked guaranteed powers with italic font. Telepathy and war flow are on at game start.

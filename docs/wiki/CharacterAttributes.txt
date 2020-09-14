@@ -1,0 +1,36 @@
+---++ Strength
+   * Modifies almost all melee damage
+   * Determines half carrying capacity
+   * Determines thrown/kicked object range
+   * Is key skill for unarmed combat and heavy guns
+   * Is drained by poison attacks
+
+---++ Constitution
+   * Determines half carrying capacity
+   * Modifies maximum hit points
+   * Determines how likely is character to succumb to radiation sickness
+   * Is key skill for concentration and in future for power armor training
+   * Is key skill for metabolic MutantPowers
+   * Is drained by radiation sickness
+
+---++ Agility
+   * Grants +5 to speed for every 2 points over 10
+   * Modifies armor class by (AGI - 10) / 2
+   * Affects reflex checks
+   * Is key skill for melee weapons and swords
+
+---++ Dexterity
+   * Is key skill for thrown weapons, handguns, light guns, pick lock and repair
+
+---++ Intelligence
+   * Is key skill for search, programming and spot
+   * Is key skill for mental powers (very few such powers)
+
+---++ Psionics
+   * Is fuel for most MutantPowers
+   * Is key skill for all MetapsychicFaculties and psionic powers
+
+Imbalance for above is easily seen.  Problems:
+   * Dexterity sucks!
+   * Strength is still too important.
+   * Intelligence somewhat sucks.

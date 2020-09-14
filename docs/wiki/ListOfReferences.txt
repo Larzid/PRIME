@@ -1,0 +1,92 @@
+   * Aliens versus Predator
+      * Aliens, Yautja, lots of Yautja gear, space marine profession, pulse rifle, smartgun, motion tracker.
+   * Ascendancy
+      * Ungooma.
+   * Battlestar Galactica
+      * Cylon, cylon centurion.
+   * Bastard Operator From Hell
+      * The BOFH himself, his Eye, debug mode.
+   * Colonial Marines RPG
+      * Light flamer, sniper rifle.
+   * Commander Keen
+      * Football helmet tile.
+   * Deadcold
+      * Khan heavy pistol, speed canister, space suit and boots.
+   * Doctor Who
+      * Daleks.
+   * Doom the roguelike
+      * Fuel barrel, chainsaw.
+   * DOS
+      * Buggy reformat floppy disk.
+   * Duke Nukem
+      * ACME sign (DN1), mighty boot, cryolator.
+   * Dune
+     * Shield belt, suspensor belt, spice melange canister, gom jabbar, reverend mothers, Rossak sorceresses, Bene Gesserit awareness.
+   * Fallout
+      * Brotherhood paladins and armor, radaway, radbugs, Nuka-Cola, radscorpion.
+   * Hacker culture
+      * Floppy disk of debugging.
+   * H. P. Lovecraft
+      * Mi-Go, jarred brain.
+   * Hitchhikers guide to the galaxy
+      * Peril-sensitive goggles, babel fish.
+   * Matrix
+      * Red and blue pills, agents, white killer rabbit, mainframe location.
+   * Metal Gear
+      * Cyborg Ninja.
+   * Monty Python
+      * Killer rabbit.
+   * NetHack
+      * Grid bugs.
+   * Paranoia
+      * Troubleshooters, reflec suit, Bouncy Bubbly Beverage, scrubbot, warbot, docbot, psion profession, Nano-Cola, many of mutant powers.
+   * Pliocene Exile
+      * Torc, metapsyhic faculties.
+   * Quake
+      * High ping bastards, low ping bastards, railgun.
+   * Snow Crash
+      * Katana.
+   * Space Oddysey
+      * Monolith
+   * Space Quest
+      * Buckazoids, janitor uniform, mop, janitor profession.
+   * Spider-Man
+      * Radspider, shoot web power.
+   * Starcraft
+      * Zerg, Protoss, Khaydarin crystal shards, vulture spider mines.
+   * Star Control
+      * Excruciator, Kohr-Ah, glory device, Melnorme.
+   * Star Trek
+      * Klingons, phaser, tricorder, bat'leth, redshirt, borg.
+   * Star Wars
+      * Protocol droid, astromech droid, lightsaber, stormtroopers, blaster, droid caller, restraining bolt, mynock.
+   * System Shock
+      * Shodan
+   * Tron
+      * Grid bugs, recognizer.
+   * TvTropes
+      * SuperHero cape, badass trenchcoat, logic bomb disk.
+   * Unix and Linux
+      * Unix Daemons, debug prompt.
+   * WH40k
+      * Marines of all kinds, chaos sword, chaos armors, mecha-dendrites, pink horrors.
+   * X-COM
+      * Motion tracker tile, plasma weapons, proximity mine, reticulans, stun rod, redshirt, auto-cannon.
+
+Other (minor or not terribly likely to have more references)
+   * ADOM - janitor door repair message.
+   * After Dark's flying toasters screensaver - the flying toaster monster.
+   * Attack of the killer tomatoes - green and red tomato.
+   * BOSS roguelike - confused floppy disk generated descriptions.
+   * Dark Star movie - smart bomb.
+   * Dragon Ball - scouter.
+   * Cheerlearder ninjas - cheerleader ninjas.
+   * Critters - crite monster.
+   * Dune II - rocket turret.
+   * Fifty foot woman - 50ft woman.
+   * Flash Gordon - earthling (any human profession) description, bore worm.
+   * King Kong - giant ape.
+   * Little shop of horrors - man eating plant.
+   * Teenage ninja mutant turtles - mutant turtles, nunchucks, bo.
+   * USENET - web crawler monster, NNTP daemon description, usenet troll.
+   * Xenocide - randomized grenade names.

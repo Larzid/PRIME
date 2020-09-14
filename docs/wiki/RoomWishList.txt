@@ -1,0 +1,183 @@
+Could you make a vault parser? so we can give the game room plans as strings?
+
+_Yes. POWDER, Crawl and NetHack all have their fixed level definitions in external files. Should vault parser merely give floor plans or define loot, mosnters, etc. too?_
+
+Well, floor plans could be parsed from strings, and then loot and monsters could be added in a format like "coordinate, coordinate: barrel" or "coordinate, coordinate: rad trap, 50% raygun" It'd be cool if it could also handle appropriate and out-of-depth random monsters and loot. 
+
+
+Everything for $50 shops
+
+Problems:
+   * Not so many things with exactly that price.
+
+What can be stocked?
+   * Any item of base cost 50 BZ.
+   * Ammo stacks can be generated so that their price matches 50 BZ.
+   * Give grenades in pairs - this means 50 BZ.
+   * Cheaper software can be sold in stacks too. This would make the shop pretty useful.
+
+YAFM:
+   * When hero has no translation "the clerkbot beeps something about 50 buckazoids" as greeting which could stand a chance of confusing players.
+   * Make the message slightly different: "The clerkbot <b>encouragingly </b>chirps something about 50 buckazoids" Also, the purpose of translation is<br />precisely making clear what are the monsters saying.
+
+Mechanics:
+   * Clerkbot refuses to buy anything not worth exactly 50 BZ.
+   * 50 BZ worth in the item property? That means that he'll only buy stuff for which it'll pay exactly 5 BZ.
+   * Clerkbot's money amount is divisible by five.
+
+
+Alien containment room from X-COM. Contains breakable cells.
+
+Inhabitants:
+   * Make some cells empty for flavor.
+   * All creatures must be living and not humanoid.
+   * Creatures inside are at low health except for those that have automatic regeneration.
+   * Aliens inside might be peaceful even if they would not normally be.
+   * Inhabitants get no equipment whatsoever!
+   * Include chance for getting a Melnorme.
+
+Cells:
+   * 3x3 room.
+   * Corner tiles are ordinary wall.
+   * Orthogonal tiles are glass panels.
+   * Center tile is containment cell - it suppresses all mutant power usage.
+
+
+
+A sessile monster inspired by zerg sunken colony from StarCraft occupies center of the room. It is named "tentacled monstrosity".
+
+Has subterranean tentacle attack which can hit anything in the room. The room should be full of revealed empty pits and say upon entering "floor of this room is irregularly permeated with pits and cracks".
+
+The tentacle always hits when hero is in a pit but hero is usually able to dodge it if not trapped (not difficult reflex save).
+
+Note: Probably easiest to implement this attack is by adding monster only mutant power. Best to wait for timed events because having the ability to move from targeted spot after the tentacle burrows would be cool and allow to lure monsters there and to kill them that way.
+
+
+
+Reticulan clinic led by reticulan surgeon. Available services include:
+   1 Alien foetus implantation (get impregnated with advanced state)
+   1 Abduction (FREE! get anal probed)
+   1 Wound treatment (same as docbot)
+   1 Hypnosis immunization ($1000)
+   1 Toxin immunization ($1000)
+   1 Beer immunization ($1000) (use hero story flag to implement; drinking beer will not confuse you and make your character complain bitterly about being cheated out of some joy in life unless the PC is abstinent in which case it will say something else)
+   1 Irradiation (surgeon points <color> flashlight at you) (identify gamma ray gun)
+   1 Rad purification (he gives you canister to drink)
+   1 Consultation (cheap, requires translation, gives you some health related info like how well your "baby" chestburster is, your progress on becoming rad zombie and so on)
+
+Getting Rectal Examination medical procedure performed by a reticulan doctor gets him experience. :-D Aaaand he does it for free. It might make available another service from those expensive immunizations.
+
+This also serves as shout-out to NetHack foocubi: "the reticulan doctor seems to have enjoyed this more than you". If you are an abductor then you enjoy it more and get a level up. :-p
+
+
+
+The Space Inn
+
+It is placed somewhere deeper into the dungeon, not in robot town.
+
+We could come up with some arcane tips about the game, and the detective's advantage would be that he can get tips anywhere.
+
+Patron: A retrofitted clerkbot.
+   * Sells coffee, water, nano-cola and BBB from his own inventory. Or rather generates them, "the retrofitted clerkbot pours a canister of coffee".
+   * Price tag higher than in a shop.
+   * Gives a tip when pouring a drink. (That should deter players and make finding about the tips harder. Only the player that thinks, this canister is very expensive, it must be so for a reason, and goes and buy it will get a tip)
+
+Customers:
+   * 0~4 peaceful monsters out of any @@, h, G, g, k, E, O (mix and match)
+   * May be willing to tag along as pets for a good sum of money (rationale: they're out for mercenary work / they're adventurers themselves)
+   * Cost of recruiting as a function of monster level, slight discount for psionics. (Recruiting a Space Elf Lord should be prohibitive)
+   * Psionics roll to check if they're willing to join, only allowed once per monster - No luck? no luck.
+   * They immediately charge the money to their PayBuddy account (No easy refund on death!)
+   * If the player attacks the patron or any of the customers, they all turn hostile on you (Bar fight!)
+   * Each customer gets generated additional money and at least one random beverage canister.
+Placement and other characteristics:
+   * Generated on a random Space Base level below Space Base: 10
+   * Hidden, magnetically sealed (but not locked!) door.
+   * Only source of non-robotic pets (at least permanent ones if Charm ever gets implemented. Which wouldn't be a bad idea!)
+   * Let the Space Inn have a peaceful man-eating plant behind glass panels.
+
+
+Radiation lab
+
+It is a dead end room where on the end is some pile of items. On the way to it there is a set of radiation traps of at least three spaces wide, so that player has to step on a total of six traps to get in and out. Door must have a lock and not be automatic. Higher chance for the door to have master lock.
+
+Probably easy loot for astronauts but everyone else will have to pass on it early on.
+
+   * Bonus: place a tag on door reading "DANGER: hard radiation zone".
+   * Bonus: let the two walls surrounding the door be yellow.
+
+
+Tombs
+
+A dead-end, 3x3 room behind a 3x1 corridor with locked, hidden doors with forcefields on both ends. Each tile of the room and corridor has a 50% chance of having a trap except the center tile opposite to the corridor. In that tile there is a pile of loot, trying to step onto that tile has a psi-based chance of spawning an unnatural (not randomly generated) monster that instantaneously equips the loot pile. The ghost should be based on an already existing monster type, but with Nonliving immunities (or maybe a new set of immunities) and maybe a slight boost.
+   * Ancient Reticulan Tomb: Enhanced raygun, 50/50 energy dome or harmony dome, 20% enhanced reticulan jumpsuit, 50% spacesuit. Base creature for ghost is a tall grey alien. White walls.
+   * Protoss Tomb: Instead of loot or ghost, there is a Dragoon. Get the fuck out. Golden (yellow) walls.
+   * Space Elf Tomb: Golden Torc, Enhanced elven psionic blade, 50% elven exarch armor, separate 50% elven exarch helmet. Base creature for the ghost is a space elf lord. Pink (magenta) walls.
+   * Skeletal Robot Tomb: 50/50 (Jackal Cowl and Staff of Light) or (Third Eye and Orb of Slavery) and 100 Energy Cells. Instead of a ghost, there is a Skeletal Lord wreck, which reanimates with 50~100% hitpoints on the same conditions as ghost spawning, and also equips the loot instantaneously. Dark grey walls.
+   * Sith Tomb: Unique. 50/50 Enhanced buggy laser sword or Sith Holocron. 100% chance of Canister of Sith Alchemical Serum. Ghost is unique with at least a couple of mutant powers and quite badass. Dark red walls. Part of the Sith quest.
+There should be at most three tombs, counting the sith tomb (if the other tombs are implemented before the Sith tomb, just two tombs), two in the Space Base and one in the Sewers.
+
+
+Other
+   * Radar room. Interfacing with the radar will enable your motion trackers to cover whole level. Can reveal map when operated (consumes some energy).
+D:easy
+
+   * Pet Droid shop. Makes droid a pet without restraining bolt. If you make purchase any droid callers in your inventory are fully identified for free.
+D:moderate
+
+   * Groups of Photon Cannon and only one or two Pylons. Pick cannons by one or charge at pylons.
+D:moderate
+
+   * Room full of man eating plants lined around the walls. Message: "You enter a little shop of horrors!" (could be unique room, generated at most once per game)
+D:easy
+
+
+Quantum Reconstruction Chamber:
+
+Amulet of Life Saving for PRIME. A special 1x1 room/feature that when
+activated gives the player a QR Black Box (implant). If the player
+dies while having the QR Black Box implanted, the black box is
+consumed and s/he is respawned in the chamber and the chamber becomes
+unusable. This should go hand in hand with severe limitations (loss of
+experience or max HP, such hurty things. After all, it'd be an extra
+life). One use only per QR chamber of fucking course.
+
+Potential for trolling, cruelty and dick moves:
+
+   1 Simply make the player respawn STARK NAKED. This could be hinted at by making very basic equipment spawn next to the QR chamber. Makes some sense. Would need to hunt down the old body to recover gear. This would also fit a Paranoia-style cloning machine very nicely. Clean and fun way to screw the player right after resurrection.
+
+%BLUE% _This option appeals to me very much. It sounds like an option for use of second-best gear which stops being junk. Seems like great ground for player stories of doing daring moves to recover lost equipment._ %ENDCOLOR%
+
+   2 Make the reconstruction go horribly wrong if the character is pregnant, suffering from Ungooma or other parasites, or wearing bio-equipment. "The Fly" style.
+
+Possible effects:
+   * Worn bio armor is cloned but cannot be taken off.  This also means no wearing jumpsuit under it.
+   * Ungooma are just cloned?
+   * Pregnancy is recreated exactly in the same stage?
+   * The chestburster is recreated instead of you if death occurred right before birth?
+      * You then *are* this chestburster?
+
+   3 Make the reconstruction go wronger the bigger the radiation dose of the player. A full-blown Radiation Ghoul shouldn't be able to survive quantum reconstruction: the radiation screws up the QR black box' biometric readings, they already have an unique protective advantage being immune to radiation, and above all else: life saving shouldn't work for the undead ;)
+
+Possible effects:
+   * Taking some stat points away and then randomly assigning them back.
+   * Doing the same with skill points.
+   * Possibly losing a power in which there are no or few skill points invested.
+
+   4 Make the quality of the reconstruction/clone depend at least in part on buggyness of the black box.
+
+Possible harmful effects:
+   * max hit points loss
+   * some permanent non-lethal stat loss 
+   * some stats start hurt and need to be restored
+
+   5 Make the QR machine useless against stat death: "Your body is reconstructed. Unfortunately, your condition is still incompatible with life. You die again."
+
+%BLUE% _With permanent stat damage, I agree but dying of poison (str drain) should be saved against easily. It will be also useless against Mi-Go brain jarring._
+
+Why be cruel? Because of roguelikes and meaningful choices. Hooking up to a QR chamber shouldn't be a no-brainer. The player should actually have reasons to ponder whether they'd use an extra life or just bite the bullet and roll a new character when the time of death comes.
+
+%BLUE% _In NetHack and ADOM the choice is made no-brainer because the item occupies a slot which has many important uses. For PRIME this implant still appears as no-brainer to me. There has to be some cost to it._ %ENDCOLOR%
+
+Location:
+   1 After robot town there may be guardbots extracting a high toll for use of the QR chamber.

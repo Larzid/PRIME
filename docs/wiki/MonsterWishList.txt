@@ -1,0 +1,137 @@
+---++ Regular monsters
+
+
+Orz.
+
+Warpish monsters that can spawn when dimensional fatigue is strong. (teleportey or warpish stuff, translation)
+
+Naked Orz: Mostly harmless, they flop around ridiculously, longing for a liquid environment. Strong but clumsy and slow, fumbling.
+
+Orz Scuba Diver: Dangerous, they use some sort of augmenting exoskeleton to move around and attack purposefully. They could carry some canisters, and maybe a weak weapon.
+
+Orz Space Marine: Lethal, they are clad in humanoid (wtf?) all-environment power armor suits, and are armed to the teeth. Beak I mean. Tough as nails, somewhat fast, and using rifles and grenades. Nasty
+
+
+Minor Daemons
+
+Defragmentation Daemon (DEFRAG Daemon?)<br />Scours through the level splitting loot piles into 1-item loot piles.
+
+Scandisk Daemon <br />Scours through the level marking traps (for monsters), patching holes, fixing holes and robot wrecks.
+
+Autorun Daemon. (.INF Daemon?)<br />Weak but insidious daemon type.<br />For each malware daemon on-level, there's a chance that a new one will be spawned every time you execute a floppy disk.
+
+Buggy floppy disk: 75%<br />Debugged floppy disk: 50%<br />Optimized floppy disk: 25%
+
+If the disk is infected, the chance is doubled. If the chance goes over 100%, excess chance is checked separately for a potential second spawn.
+
+New daemons spawned from a charmed parent should be charmed too, allowing for the creation of small meatshield armies (like Crawl's Summon Demonic Horde or spamming Summon Imp)
+
+Virtual Drive Daemon (ROM Daemon? ISO Daemon?)
+
+Commits to memory the last program you used.<br />If pet, allows you to use it once (additional prompt when executing: _Do you want to execute the buggy enhance armor program stored in your ROM Daemon? (y/n)_ )
+
+If hostile, casts the programs for itself (I am aware that this requires extensive adaptation of the executing and program code)
+
+
+Ur-Quan Kzer-Za
+
+&gt;<cite> Truly fearsome. We should think of how to contrast them [Kohr-Ah] to the Kzer-Za - Two different flavors of imminent extermination.</cite>
+
+I recall reading on some forum of SC2 fans that the Kzer-Za would easily overpower their black brethren if only they rallied slave races to their cause. VUX, Mycon, Ilwrath. Even Umgah and Thraddash would help somewhat. Probably some of the good races could be persuaded for this purpose.
+
+NetHack Arch-Liches are loathed for their spell "summon nasties". Basically it fills your screen with random hostile monsters in a single turn.
+
+This all led to following design:
+
+The Kzer-Za will summon hostiles out of thin air. "The Ur-Quan Kzer-Za summons Battle Thralls!"
+
+Created monsters are always sentients. They come fully armed. They can be even fantastic races like the mi-go or brain mold. In fact there would be a table to determine what is nasty enough to be summoned onto the battlefield.
+
+There would be a limit on monster spamming for a single Kzer-Za. Otherwise they could get overpowered.
+
+
+Vulture Hovercraft
+
+We have vulture spider mines so why not vulture hovercars themselves.
+
+They explode on disabling with 50% of spawning a "foulmouthed space biker",a tough-ish melee h. May have a passenger with 50% chance which is another level appropriate h half the time or companion bot.
+
+Companion bot list: catbot, dogbot, astromech droid, protocol droid.
+
+For the biker create an insult attack taking very little time like Angband has.
+
+On explosion:
+   * *"You [ruined/destroyed/killed/totaled] my [bike/steed/steel horse/Maria/Lola/Guinevere]! HOW DARE YOU, [INSULT]?!"*
+
+Combat
+   * "Eat fist, you [insult]!"
+   * "You want a knuckle sandwich, [insult]?"
+   * "Here's some cane discipline, [insult]!"
+   * "I'll introduce you to my friend the [weapon]."
+      * %GREEN% _This should actually make it known for the player whatever weapon type it is, if it was unknown before.. He IS introducing you to it, and saying it's name._ %ENDCOLOR%
+   * "I'll kick you all the way to the Galactic Core, [insult!]
+
+Insult list:
+   * Psykers: "subhuman", "scrawny freak", "pile of genetic leftovers"
+   * Reticulan: "pasty-faced bobblehead", "sheep buggerer", "galactic abortion","B-movie monster"
+   * Orc: "walking mushroom", "lettuce-skinned peabrain", "
+   * Elf: "frail silkhand", "space hippie"
+   * Programmer: "basement dweller", "cowardly nerd", "typing monkey"
+   * Quarterback: "steroids junkie", "buffout junkie", "vigorexic bonehead"
+   * Xel'Naga: " you... just what the HELL are you?!" "pretentious xenomorph" "Satan's ugly cousin"
+   * Space Marine: "imperialist dog", "souped-up eunuch", "carcass worshipper"
+   * Ninja: "wapanese burglar", "sword-toting good-for-nothing","xXx_DaRk_4sSaSs1n_SePh1r0tH_xXx","murderous sneak"
+   * Yautja: "ugly motherfucker", "cunt-for-face", "dreadlocks shmeadlocks"
+   * Astronaut: "glorified guinea pig","Laika's bastard child", "orbital little shit"
+
+
+Dragoon
+
+Hey, remember the rejected protoss tomb?
+
+No ghost. No traps No loot. Just a yellow D.
+
+That's, of course, a Dragoon: a shooty, shielded, killing machine.
+
+It's funny how it's a concept very similar to Daleks: A physically unfit
+alien interred in a mechanical "body". Were daleks shielded too?
+
+Even funnier how there's another contraption which follows the same concept
+and starts with D: Dreadnoughts from WH40k. (just with a mutant human
+inside)
+
+So that D monster class could be expanded in the future to Dalek, Dragoon
+and Dreadnought. Which one should be tougher I guess it's up for debate.
+
+The dalek is brown/dark yellow I think, the Dragoon and Dreadnought could
+be bright yellow and really any other color (Aquamarine Dreadnought more
+close combat, Mean Green Dreadnought more shooty?)
+
+MegaBelterBonus: Dragoons aren't slow but move like grid bugs, to reflect
+how f*cking bad they go around obstacles in SC1 thanks to that odd thing of
+not even turning around. Although they do move in diagonals in SC. Well,
+whatever, no need to do this.
+%ENDTWISTY%
+
+---++ Unique monsters
+
+The Hulk
+
+Represented as green 'H'. He is initially peaceful, has roughly 400 hit points. Killing him should be an optional achievement.
+
+The Hulk can throw very heavy stuff at you from afar.  Stuff should include vats, doors, heaps of space junk (generate a few in his inventory) and of course other monsters. :-p
+
+For flavor print "Hulk SMASH!" when he gets angry.
+
+Make him resist disintegration and have auto-regeneration.
+
+He opens all doors except locked with force fields.  Have him kick locked doors in single turn down.
+
+
+Mara
+
+Needed: quote from Lord of Light.
+
+Creates illusory copies of himself that act in combat like the original but do less damage and have less health.  Illusions are worth no experience.  Killing the real Mara slays all false copies at the same time.
+
+Could be hard to implement - one monster in several copies, interlinked monsters, AI modification, kill list adjustment and probably more.

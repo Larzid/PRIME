@@ -1,0 +1,158 @@
+Recently I am working on Psychokinetic Shove. This mutation is sure a
+complex one! Here are my thoughts on that matter. Perhaps you can
+contribute to ensure TDTTOE:
+
+Targeting monsters:
+ - Direction 'self' does squishing. Usually no effect but tomatoes get
+instantly splatted.
+ - Down does nothing for non-flying creatures unless one is standing over
+a pit or a vat. In that case the monster is shoved into the pit (fall
+damage) or its time there is made longer. Player should be able to drown
+monsters in sewage pool this way.
+ - Down smashes flying creatures against the ground. If there is acid pit
+falling monster causes a 3x3 acid splash "explosion". It will fly out of
+the pit unless you are very fast and paralyze it. Same for sludge vat.
+ - Up direction smashes against the ceiling. Non-flying creatures then
+fall down and may create splash if falling on vat or into acid pit.
+ - Targeting man eating plants with direction 'up' uproots them. They can
+then walk and are no longer sessile creatures. Other directions have no
+effect ("the man eating plant seems to be firmly rooted") unless the
+plant has been uprooted already.
+ - Crashing monsters into each other does damage to both possibly stunning
+them. Crashing single creature against a wall has much better chance of
+stunning it but damages only one entity.
+ - Shoving vat slime into monsters does additional corrosive damage on
+impact.
+ - Throwing two same type slimes one into another merges them into one
+bigger slime.
+ - It should be possible to transport a creature to another level by using
+the up and down direction over stairs. Flying creatures "fly back
+immediately" and take no damage unless denied their flying ability
+somehow.
+ - If the creature is webbed then webs are ripped and move distance is
+greatly reduced. This power may be used on oneself when in this
+situation.
+ - Creature thrown against a door acts as kicking the door with strength
+determined by your power and projectile size. Heavy items also can be
+used for this purpose.
+ - Monolith resist any direct pushes or pulls. However, you can shove
+creatures into it.
+ 1) Should monsters be teleported randomly instead of hitting it?
+ 2) Should player attempting to do this touch monolith or be teleported?
+ 3) Maybe above would depend on you wearing helmet? No headgear => direct
+touch.
+
+Targeting self or pets:
+ - Shove up does not slam you against the ceiling if you are in pit. It is
+assumed you want out.
+ - Shoving self in directions stops right before walls. It can serve as a
+good way to escape.
+
+Targeting features:
+ - Vats may be moved around and need to break when shoved against a wall.
+ - Down does nothing.
+ - Up smashes vats against the ceiling creating rain of corrosive sludge
+and metal bits.
+ - Up for acid pits splashes the acid at the ceiling like a geyser. IMO
+targeting up at position where both a creature and acid pit resides
+should:
+ 1) slam the creature against ceiling
+ 2) if it is still alive hit it with acid
+ 3) if it is still alive and cannot fly slam it into the acid pit
+ - Direction self closes or opens doors remotely. Automatic doors may
+revert immediately. If there is a creature in doorway it gets hit with
+squish effect first (no message unless a tomato) and then with door
+slamming. Small chance for the door to start malfunctioning ("you teach
+the door evil").
+ - Floor grates can be broken if a large monster is shoved upwards and
+falls on it. Same for heavy things like heaps of junk or power armor.
+Grates cannot be destroyed by just affecting it by psychokinetic shove
+directly.
+
+Targeting objects:
+ - Self direction on grenades activates them. Works on proximity mine too.
+ - Throwing a Smart-Disc should trigger the algorithm. You could make some
+elaborate killing patterns with this.
+ - Volatile items like canisters of napalm should explode on impact.
+ - Glass/fragile canisters shatter in place if treated with self direction.
+ - Floppies get broken too possibly releasing an insect if buggy.
+ - Hurling items at yourself has you catch them if you are empty handed.
+
+Targeting empty tiles should be permitted. If you are hit by the Dark
+Templar in a corridor you know where the Protoss is so you should be
+allowed to hurl it away. "You grip something!"
+
+Gee, this is going to be most complicated mutant power out there so far.
+Hopefully also very fun one.
+
+
+
+
+
+> Recently I am working on Psychokinetic Shove. This mutation is sure a
+> complex one! Here are my thoughts on that matter. Perhaps you can
+> contribute to ensure TDTTOE:
+
+Let´s see...
+
+> Targeting monsters:
+>  - Direction 'self' does squishing. Usually no effect but tomatoes get
+> instantly splatted.
+
+- Triggers smartbombs, kamikaze goblins and smart missiles
+- In fact smartbombs in particular should be triggered by ANY direction.
+
+>  - Targeting man eating plants with direction 'up' uproots them. They can
+> then walk and are no longer sessile creatures. Other directions have no
+> effect ("the man eating plant seems to be firmly rooted") unless the
+> plant has been uprooted already.
+
+- Same with sunken colonies, it uproots and changes name to "Spine Crawler"
+
+>  - Monolith resist any direct pushes or pulls. However, you can shove
+> creatures into it.
+>  1) Should monsters be teleported randomly instead of hitting it?
+>  2) Should player attempting to do this touch monolith or be teleported?
+>  3) Maybe above would depend on you wearing helmet? No headgear => direct
+> touch.
+
+1) and 3)
+
+>  - Up for acid pits splashes the acid at the ceiling like a geyser. IMO
+> targeting up at position where both a creature and acid pit resides
+> should:
+>  1) slam the creature against ceiling
+>  2) if it is still alive hit it with acid
+>  3) if it is still alive and cannot fly slam it into the acid pit
+
+... for a thoroughly lethal combo. Yes please :)
+
+>  - Direction self closes or opens doors remotely. Automatic doors may
+> revert immediately. If there is a creature in doorway it gets hit with
+> squish effect first (no message unless a tomato) and then with door
+> slamming. Small chance for the door to start malfunctioning ("you teach
+> the door evil").
+
+you teach the door evil lol
+
+>  - Floor grates can be broken if a large monster is shoved upwards and
+> falls on it. Same for heavy things like heaps of junk or power armor.
+> Grates cannot be destroyed by just affecting it by psychokinetic shove
+> directly.
+
+-Glass panels are broken with any direction EXCEPT self.
+-Slamming a monster between a wall and a moveable feature
+should deliver great damage, and completely squish the
+monster if killed this way.
+
+> Targeting objects:
+>  - Self direction on grenades activates them. Works on proximity mine too.
+
+- Closes or tries to deploy portable holes
+- Portable holes should also be able to be push/pulled around if
+deployed on the ground.
+
+> Gee, this is going to be most complicated mutant power out there so far.
+> Hopefully also very fun one.
+
+Yeah, sounds like a whole new world of push/pulling :D

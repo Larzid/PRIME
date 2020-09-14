@@ -1,0 +1,104 @@
+Floor grating.
+
+Works as normal floor, but if an explosion affects that tile, it turns into a hole. (Have you ever played Crusader: No Remorse?)
+
+_Haven't played the game.  The feature has been implemented and is marked as gray # symbol in curses mode.  Could use a tile._
+
+It's an old isometric 2D shooter/infiltrator from the nineties with quirky mechanics and very destructable environment, you play a supersoldier turncoat that now works as a hitman for the anti-corporative resistance. Weird guns, explosives, disintegrations, awkward controls, transporter accidents, you name it.
+
+
+
+Vending machines doubling as boulders.
+
+"This vending machine is painted ..."
+   1 "in a red and white scheme with flowing letters"
+   1 "with a sunset backdrop and bold letters"
+   1 "in a a stark neon green and steel pointy letters"
+   1 ...(...add/change variants as needed, randomly assigned each playthrough)
+   1 *confused:* "with tapered baguette cut blue garnets" - Such decoration is now possible in DF2012! Dorfs rejoice!
+
+*no translation:* "Such a pity that it's all in Standard Galactic Alphabet. Standard? My ass!"<br />
+*babelfish:* "It's a "nano cola/bbb/coffee/beer/water" vending machine"<br />
+*babelfish & confused*: "But It's a cleverly disguised "dishwasher/entrance to the Gamma Caves/TARDIS"<br />
+*droid:* "The protocol droid cheerfully points out that it is a "nano cola/bbb/coffee/beer/water" vending machine"<br />
+*droid & confused:* "The protocol droid complains that everything had sense until he met BOX" * - (Logan's Run reference)*
+
+- Vending machine can be opened (if not locked) and have its lock picked. Putting in beverage canisters makes them optimized.
+
+
+
+Public terminals.
+
+Allows to execute floppy disks for 5 buckazoids a run.
+If you get it (the terminal) infected or reformatted it locks. If you use a cracked floppy disk knowingly a lawyer may appear and the terminal locks too.
+
+May be generated broken. Use repair to fix it. Badly failed repair check causes it to blow up. This will prevent players from trying until they succeed and gives more meaning to repair skill.
+
+Kicking the terminal can break it.
+
+If there is a generator on the level it needs to be on. Otherwise no power for the terminal and no running programs.
+
+After large amount of uses terminal may lock anyway. "Guest limit exhausted." You want to get a computer of your own.
+
+If you try to use a cracked floppy disk <i>un</i>knowingly, give one of these messages:
+
+"Are you aware that you may be part of a criminal software counterfeiting operation?"<br />"This copy of [disk label/DISK NOT FOUND if unlabeled] is not genuine. Click on this balloon to have the software seized now."
+
+And then a _"Do you want to continue executing this software? (y/n)"_ prompt.
+
+If you choose Yes, go to the "knowingly cracked" routine.<br />If you choose No, the disk is ejected but it's cracked status is now known.
+
+
+
+Everything can be dipped into a vat. Some items react. Others get corroded or not giving you a clue or information about fooproofness.
+
+Having separate "dip" question for dropping into a vat seems silly. Just make every item dropped land in the vat just like dropped items in acid pit receive corrosive damage. Allow all items to be retrieved, but:
+
+   * Willy still goes free.
+   * Dropping big items creates a splash.
+   * Usual bionic implant interaction applies.
+   * Skeletal wrecks "The wreck suddenly reanimates!" [pause] "But it sinks to the bottom, writhing spastically"
+   * Dropping explosives should cause a delayed explosion, big splash and destruction of the vat.
+   * Dropping railgun ammunition should make the sludge less healthy.
+   * Bio armors could become mutant? Same chance as for the PC to gain a mutation.
+
+
+
+Piping
+
+A bundle of tubes. Impassable, they block line of sight and appear next to walls at intervals.
+
+They can be destroyed, maybe releasing a harmful substance in the process (explosion, plasma explosion, acid, sickening wastewater...)
+
+Or maybe they could be a monster like barrels.
+
+  
+  
+
+Ventilation ducts
+
+Single-level branches filled with criss-crossing corridors that connect
+two branches horizontally (e.g. one exit to a sewers level and another
+one to a space base level of equivalent depth).
+
+Should be unlit, filled with i monsters and the occasional A, and their
+placement chosen at random at dungeon generation.
+
+M: Nice, finally an excuse to code another dungeon generator. Even simple one
+is going to be fun trip. As for monsters kInsect and kAlien should suit us
+well. That would allow us to include facehuggers. I'll make sure alien egg
+and alien queen are rejected as those two don't make big sense.
+
+M: Should there be fans? Passing a fan would damage one much like malfunctioning doors do now.
+
+Yes, fans sound pretty interesting.
+
+In some ways they would work the opposite to doors:
+
+They could harm you AND prevent passage while working properly (*You tackle
+the fan! [1-4] of its blades slashes you! *player remains in the same
+square) but do no damage AND allow passage when blocked (item or greater
+than some certain size in the fan tile,)
+
+Really, all these ideas are about making the dungeon more interconnected
+and "whole" and less a collection of discrete levels.

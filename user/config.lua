@@ -13,7 +13,7 @@ fscr = false
 fscrmode = true
 
 -- use OpenGL initially?
-useGL = false
+useGL = true
 
 -- which mode to start in (modeASCII, modeTiles, modeFPP, modeISO, modeMini)
 -- mode = modeTiles

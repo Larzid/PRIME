@@ -1,0 +1,235 @@
+﻿On Science Fiction Undead 
+
+A treatise and proposition by Psiweapon
+
+
+	Inspiration fueled mostly by the recent release of 1.9, during the last three days, interspersed between my notes on the philosophy of Hegel, I haven't been able to restrain myself from writing this.
+
+	There are many fantasy ideas that have a sci-fi counterpart in PRIME, but not (yet) the undead. The translation of fantasy ideas is not a goal in and of itself but does show as a recurring trend given the nature of the game and more importantly the genre.
+
+	This text covers ideas for two types of undead: Ghosts and deathless robots. The deathless robot reference is quite damn obvious but I thought it'd be better to go with the trend that "space elves", "space orcs" and "mean green space marines" set.
+
+
+GHOSTS
+
+
+Ghosts are psychic projections of the disturbed dead.
+
+	Ghost Types:
+	-Small glowing figure (yellow G)		(reticulan ghost)
+	-shifting silhouette (grey h)			(human ghost)
+	-ponderous apparition (dark blue Z)		(protoss ghost)
+	-sith shadow					(unique ghostly sith master)
+
+All should be very similar to their basic counterparts but:
+	-Very resistant to slashing, piercing and bashing (maybe others)
+	-Vulnerable to psychic (maybe magnetic and electrical?)
+	-Bonus:Teleports if low on HP.
+	-MegaDwarfBonus: Immaterial - Treat all squares as if they were floor
+
+Location:
+
+-They should appear on special rooms.
+-They aren't spawned normally but only thanks to certain actions by the player.
+
+ 
+TOMBS:
+
+	Regular tombs can be either of Reticulan, Human, Protoss or Deathless Robot origin (more on Deathless Robots later), the Sith tomb should be unique and part of the sith quest as an optional, out-of-sequence segment.
+
+	Tombs should have different-colored walls to make them stand out, be full of traps and have a couple of medium-to-high security doors that need to be defeated in order to gain access to the tomb proper. Whether the tombs are generated independently or chosen from eligible rooms I'd leave to Michal if he likes the idea.
+
+All tombs should have a pile of gear more or less in the middle:
+
+All tomb equipment should have high chances of being cursed. Equipment that is enhanceable should have a high chance of having a slight positive enhancement (+1/+2)
+
+Reticulan tomb:	Silvery Jumpsuit 
+			50% Energy dome
+			| harmony dome
+			raygun
+
+Human tomb:		Space Helmet
+			50% enhanced space suit
+			| buggy power plant, shield belt
+
+Protoss tomb:		50% Zealot power armor, zealot leg enhancements, pair of psi blades
+			| psionic shield generator, khaydarin crystal shard
+
+Deathless Robot
+tomb:			Skeletal Lord Wreck
+			300 Energy Cells
+			50% Staff of Light + Jackal Cowl
+			| Orb of Slavery + Third Eye
+
+
+
+Upon trying to step on the loot square, there's a 40+(current charisma)% chance of a ghost appearing.
+
+If the ghost appears, it's of corresponding origin to the gear and does so in the loot square, equipping all the items.
+
+If the tomb is of Deathless Robot origin, the Skeletal Lord wreck reanimates with half HP, equipping the items.
+
+If the check fails, the player steps on the loot square normally (no special message printed or anything) and can take the loot away without any resistance (except traps)
+
+SITH TOMB
+
+Unique version, tying in with the talked "sith quest". Could be red colored, and the door might be even harder or with special requirements. The sith shadow always appears.
+
+	Items:
+	Sith robe + canister of sith alchemical gravy
+	50% sith sword	(warlike dark lord)
+	| Holocron		(crafty dark lord)
+
+
+
+
+DEATHLESS ROBOTS
+
+These skeletal automatons are a cruel parody on humanoid life. Stripped of their flesh and souls aeons ago by an unknown agency, they wage an eternal war against gods and the living.
+
+These guys come in three flavors (like reticulans, space orcs and space elves), are robotic and can come back online on their own - they leave wrecks.
+
+They could be represented as dark grey, red/dark red, and green/dark green T s: Skeletal Warriors, Skeletal Fiends and Skeletal Overlords.
+
+They could do with some additional resistances to Slashing and Piercing. Besides that, regular robot resistances.
+
+They auto-repair over time (ruling for that below)
+
+SKELETAL WARRIORS:
+
+	Skeletal warriors should be more or less on par with a protoss zealot in terms of physical 	power,	but quite slow (80-90 base speed)
+
+	They are armed with an ancient plasma gun, midway between the rifle and the cannon (still 	a heavy gun) (I don't think it justifies an entirely new type of weapon? Different from the 	rigle mainly so they don't seem armed with modern weaponry)
+
+SKELETAL FIENDS:
+
+	Same, or similar stats to the skeletal warrior, average or slightly below base speed (90-100)
+
+	Unarmed, they attack with claws – Slow but high damage
+
+	Bonus: They leave trails of blood.
+
+SKELETAL OVERLORDS:
+
+	Somewhat better stats than other deathless robots, average or slightly above base speed.
+	
+	Their equipment varies and they're more hero-ish
+
+	Weapon: Staff of Light (ranged/close combat hybrid)
+
+	Armor: 50% Jackal Cowl (body armor incompatible with helmets)
+
+	Other: 20% Orb of Slavery (tool), 20% Third Eye (implant)
+
+
+
+
+SELF REPAIR OVER TIME
+
+A value that takes into account all deathless wrecks and deathless robots in a room.
+Let's call it ComeBackFactor.
+
+All deathless wrecks add 1 to ComeBackFactor.
+All deathless robots add 1 to ComeBackFactor.
+Able Skeletal Overlords contribute an additional point.
+
+They all have to be on the same room.
+It has no effect on able deathless robots  (well it does but only in the case they have a restraining bolt attached)
+
+Every turn, a (ComeBackFactor)% check is rolled for every deathless wreck.
+
+If the check is passed, the wreck comes back online with however many HP it has managed to repair so far.
+
+If the check is failed, the wreck self-repairs (ComeBackFactor) HP
+
+If the wreck manages to reach full HP, it comes back online.
+
+	
+	
+
+ITEMS MENTIONED:
+
+Sith sword – melee weapon
+Very heavy everythingproof blade
+
+Sith Holocron - tool
+When applied identifies an item with a % chance, and a cost 
+
+Buggy:	40% chance, cost of 2 psi, 10 energy, 5 HP
+Debugged:	50% chance, cost of 2 psi, 10 energy
+Optimized:	60% chance, cost of 2 psi
+
+Translation adds another 20% (being able to understand the most cryptic and ancient fragments of knowledge stored in the holocron)
+
+Telepathy adds another 20% as it gives you a deeper insight into the mind of the previous owner(s?) of the holocron, even if through an indirect medium.
+
+Staff of Light – hybrid weapon
+Doubles up as WH40k and StarGate reference. Suggested as stargate reference by someone at the temple.
+Hybrid ranged / close combat weapon
+3d3 force / exploding projectile / 8 energy / slow / heavy weapon
+1d6 concussive / 1d6 force / slow / basic melee weapon
+Reference: Necron lord weapon and StarGate guards weapon
+
+Jackal Cowl - armor
+StarGate reference but fits deathless robots too.
+Mid armor (around stormtrooper armor) 
+Not compatible with helmets
+Gives resistance to blinding, an air supply and adds 2 points to con.
+Reference: Those things that wore some guards in StarGate
+
+Orb of Slavery - tool
+Represents the Skeletal Overlords' command over their lesser brethren.
+Can be activated to boost ComeBackFactor by 10 for the next turn at the cost of 30*
+
+While wielded all skeletal robots become friendly.
+
+Skeletal Overlords with their own Orb of Slavery never turn friendly, and if one is present upon wielding, chances for the other deathless robots to become friendly go down to 50%
+
+It's fragile. Attacking with it has a 20% chance to break it. It's hard, tough: It doesn't break when kicked unless the player is wearing metal boots. A quarterback would never break it!
+
+Upon breaking it makes a nice plasma explosion.
+
+Reference: Necrons' Resurrection Orb with a control element added.
+
+
+Third Eye - implant
+
+Implants in frontal lobe
+
+Can be zapped for a nasty energy attack (beam, ray or cone?)
+
+It's generated with 2/4/6 charges (based on buggyness)
+
+Has a chance to gain a charge when killing a psychic (with its own attack or otherwise)
+
+With Third Eye attack:
+You absorb the psyker's essence through your third eye! 
+60% chance of recharging the third eye by 1
+Regain 1d3 psi
+Sickens telepathic players for some time (What a harrowing experience!)
+
+With some other kind of attack:
+You siphon shreds of the [monster name]'s sentience!
+20% chance of recharging the third eye by 1
+Regain 1 psi
+
+A psyker dies on the level:
+You briefly catch a glimpse of death with your third eye
+5% chance of recharging the third eye by 1
+
+Zapping a third eye can prove not very recommendable when wearing helmets ;)
+
+Bonus: Boost shroud of the pariah.
+
+ Reference: The Animus Speculum, a HUGE sort of neuro-helm-cannon worn by Culexus assassins,  which damages psychics. Necron pariahs (some sort of neo-necrons which are part human) have a sort of third eye which is believed to be related to the Animus Speculum, since both Culexus assassins and necron Pariahs are anti-psychics recruited (rather "made out of") humans with the Pariah gene – psychic blanks.
+
+
+
+
+Deathless Robots could very well be partially resistant to restraining bolts (Your pathetic technology can't stand against the ancient malevolence of the [monster name]'s engrammatic circuits!)
+
+All deathless robots that have a restraining bolt attached, have a (ComeBackFactor)% chance each turn to shed the restraining bolt and become "free". Buggy restraining bolts should be vaporized.
+
+The restraining bolt is vaporized by a sudden surge in the [monster name]'s eldritch circuits!
+
+The restraining bolt falls off the [monster name]'s gray carapace!
