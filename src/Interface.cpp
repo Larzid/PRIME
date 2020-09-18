@@ -927,7 +927,7 @@ shInterface::drawSideWin (shCreature *c)
         if (c->intr (kBlind)) /* Is obvious so goes last. */
             printQuality (n++, "Blind", BLINDED);
 
-        switch (c->getEncumbrance ()) {
+        switch ((unsigned int)c->getEncumbrance ()) {
         case kOverloaded: condition = "Overloaded"; break;
         case kOvertaxed: condition = "Overtaxed"; break;
         case kStrained: condition = "Strained"; break;
