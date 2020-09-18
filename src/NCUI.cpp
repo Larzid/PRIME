@@ -563,7 +563,7 @@ shNCursesInterface::showVersion ()
     }
 
     wattrset (mWin[kTemp], ColorMap[kBrown]);
-    mvwaddstr (mWin[kTemp], 7, 20, PRIME_VERSION"/Astral Navigator");
+    mvwaddstr (mWin[kTemp], 7, 20, PRIME_VERSION"/Cosmic Drifter");
     mvwaddstr (mWin[kTemp], 9, 7, "Pesky Reticulans, Improvements, More Everything");
     /* The everything part includes bugs.  Tell no one! -- MB */
     wattrset (mWin[kTemp], ColorMap[kYellow]);

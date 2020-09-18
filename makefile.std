@@ -46,10 +46,10 @@ install:
 	mkdir -p $(BINDIR)
 	cp $(PROGRAM) $(BINDIR)
 	mkdir -p $(MANDIR)
-	cp docs/man_page $(MANDIR)/$(PROGRAM).6
+	cp docs/prime/man_page $(MANDIR)/$(PROGRAM).6
 	gzip $(MANDIR)/$(PROGRAM).6
 	mkdir -p $(DATADIR)
-	cp user/* $(DATADIR)
+	cp -r user/* $(DATADIR)
 	chown $(GAMEOWNER) $(DATADIR)
 	mkdir -p $(SCOREDIR)
 	touch $(SCOREDIR)/logfile.txt
@@ -72,7 +72,7 @@ prepare:
 	mkdir -p build/$(PROGRAM)
 	mkdir -p build/$(PROGRAM)/user
 	cp $(PROGRAM) build/$(PROGRAM)/
-	cp user/* build/$(PROGRAM)/user
+	cp -r user/* build/$(PROGRAM)/user
 
 prepare-gui:
 	mkdir -p build/$(PROGRAM)/shot

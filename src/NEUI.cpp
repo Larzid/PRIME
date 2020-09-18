@@ -681,7 +681,7 @@ shNotEyeInterface::showVersion ()
             mCache[x - BX][y - BY].add (x, y, spFlat + spIFloor);
         }
 
-    I->p ("PRIME " PRIME_VERSION " - Astral Navigator");
+    I->p ("PRIME " PRIME_VERSION " - Cosmic Drifter");
     I->p ("Necklace of the Eye version " NOTEYEVERSION);
 }
 
