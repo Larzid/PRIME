@@ -69,7 +69,7 @@ shNCursesInterface::shNCursesInterface ()
     mWin[kMain] = newwin (20, mXMax, 0, 0);
     if (!mWin[kMain]) goto toosmall;
     mPan[kMain] = new_panel (mWin[kMain]);
-    notimeout (mWin[kMain], TRUE);
+    notimeout (mWin[kMain], FALSE);
     mWin[kSide] = newwin (20, 80 - mXMax, 0, mXMax);
     if (!mWin[kSide]) goto toosmall;
     mPan[kSide] = new_panel (mWin[kSide]);
@@ -82,7 +82,7 @@ shNCursesInterface::shNCursesInterface ()
         scrollok (mWin[kDiag], TRUE);
     }
     mWin[kTemp] = newwin (0, 0, 0, 0);
-    notimeout (mWin[kLog], TRUE);
+    notimeout (mWin[kLog], FALSE);
     mLogSize = 5;
     mLogRow = 0;
     mHistoryIdx = 0;
